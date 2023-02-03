@@ -1,0 +1,2027 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TripsLine
+ | MARS LIFE Runtime System </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TripsLine
+ | MARS LIFE Runtime System ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/mars/mars-icon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <ul class="nav level1 navbar-nav">
+                  <li>
+                      <a class="navbar-brand" href="/">
+                          MARS Website
+                      </a>
+                  </li>
+              </ul>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/mars/mars-icon-resized.png" alt="">
+              </a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../simulation/Mars.Core.html" title="Core API">Core API</a>
+                      </li>
+                      <li>
+                          <a href="../soh/SOHBicycleModel.Common.html" title="SmartOpenHamburg API">SmartOpenHamburg API</a>
+                      </li>
+                      <li>
+                          <a href="../components/Mars.Components.html" title="Model Components API">Model Components API</a>
+                      </li>
+                      <li>
+                          <a href="../common/Mars.Common.html" title="Common API">Common API</a>
+                      </li>
+                </ul>            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHBicycleModel.Common.html" title="SOHBicycleModel.Common" class="">SOHBicycleModel.Common</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHBicycleModel.Common.BicycleConstants.html" title="BicycleConstants" class="">BicycleConstants</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Common.BicycleType.html" title="BicycleType" class="">BicycleType</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Common.DriverType.html" title="DriverType" class="">DriverType</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Common.HandleBicycleType.html" title="HandleBicycleType" class="">HandleBicycleType</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Common.HandleDriverType.html" title="HandleDriverType" class="">HandleDriverType</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHBicycleModel.Model.html" title="SOHBicycleModel.Model" class="">SOHBicycleModel.Model</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHBicycleModel.Model.Bicycle.html" title="Bicycle" class="">Bicycle</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHBicycleModel.Parking.html" title="SOHBicycleModel.Parking" class="">SOHBicycleModel.Parking</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHBicycleModel.Parking.BicycleParkingLayer.html" title="BicycleParkingLayer" class="">BicycleParkingLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Parking.BicycleParkingLot.html" title="BicycleParkingLot" class="">BicycleParkingLot</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Parking.IBicycleParkingLayer.html" title="IBicycleParkingLayer" class="">IBicycleParkingLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHBicycleModel.Rental.html" title="SOHBicycleModel.Rental" class="">SOHBicycleModel.Rental</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHBicycleModel.Rental.BicycleRentalLayer.html" title="BicycleRentalLayer" class="">BicycleRentalLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Rental.BicycleRentalStation.html" title="BicycleRentalStation" class="">BicycleRentalStation</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Rental.IBicycleRentalLayer.html" title="IBicycleRentalLayer" class="">IBicycleRentalLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Rental.IBicycleSteeringAndRentalCapable.html" title="IBicycleSteeringAndRentalCapable" class="">IBicycleSteeringAndRentalCapable</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Rental.IRentalBicycle.html" title="IRentalBicycle" class="">IRentalBicycle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Rental.RentalBicycle.html" title="RentalBicycle" class="">RentalBicycle</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHBicycleModel.Steering.html" title="SOHBicycleModel.Steering" class="">SOHBicycleModel.Steering</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHBicycleModel.Steering.BicyclePassengerHandle.html" title="BicyclePassengerHandle" class="">BicyclePassengerHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Steering.BicycleSteeringHandle.html" title="BicycleSteeringHandle" class="">BicycleSteeringHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Steering.IBicycleSteeringCapable.html" title="IBicycleSteeringCapable" class="">IBicycleSteeringCapable</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Steering.WiedemannAccelerator.html" title="WiedemannAccelerator" class="">WiedemannAccelerator</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Steering.WiedemannAccelerator.WiedemannAcceleratorParameters.html" title="WiedemannAccelerator.WiedemannAcceleratorParameters" class="">WiedemannAccelerator.WiedemannAcceleratorParameters</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHCarModel.Common.html" title="SOHCarModel.Common" class="">SOHCarModel.Common</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHCarModel.Common.CarRouteFinder.html" title="CarRouteFinder" class="">CarRouteFinder</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHCarModel.Model.html" title="SOHCarModel.Model" class="">SOHCarModel.Model</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHCarModel.Model.Car.html" title="Car" class="">Car</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Model.CarDriver.html" title="CarDriver" class="">CarDriver</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Model.CarLayer.html" title="CarLayer" class="">CarLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Model.Golf.html" title="Golf" class="">Golf</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Model.ICarLayer.html" title="ICarLayer" class="">ICarLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Model.RentalCar.html" title="RentalCar" class="">RentalCar</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHCarModel.Parking.html" title="SOHCarModel.Parking" class="">SOHCarModel.Parking</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHCarModel.Parking.CarParkingLayer.html" title="CarParkingLayer" class="">CarParkingLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Parking.CarParkingSpace.html" title="CarParkingSpace" class="">CarParkingSpace</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Parking.ICarParkingLayer.html" title="ICarParkingLayer" class="">ICarParkingLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Parking.IParkingCar.html" title="IParkingCar" class="">IParkingCar</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHCarModel.Rental.html" title="SOHCarModel.Rental" class="">SOHCarModel.Rental</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHCarModel.Rental.CarRentalLayer.html" title="CarRentalLayer" class="">CarRentalLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Rental.ICarRentalCapable.html" title="ICarRentalCapable" class="">ICarRentalCapable</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Rental.ICarRentalLayer.html" title="ICarRentalLayer" class="">ICarRentalLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHCarModel.Steering.html" title="SOHCarModel.Steering" class="">SOHCarModel.Steering</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHCarModel.Steering.CarPassengerHandle.html" title="CarPassengerHandle" class="">CarPassengerHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Steering.CarSteeringHandle.html" title="CarSteeringHandle" class="">CarSteeringHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Steering.ICarSteeringCapable.html" title="ICarSteeringCapable" class="">ICarSteeringCapable</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Common.html" title="SOHDomain.Common" class="">SOHDomain.Common</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Common.HumanVelocityConstants.html" title="HumanVelocityConstants" class="">HumanVelocityConstants</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Common.NormalDist.html" title="NormalDist" class="">NormalDist</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Common.OsmFeatureCodes.html" title="OsmFeatureCodes" class="">OsmFeatureCodes</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Common.OsmGroups.html" title="OsmGroups" class="">OsmGroups</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Common.VehicleConstants.html" title="VehicleConstants" class="">VehicleConstants</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Graph.html" title="SOHDomain.Graph" class="">SOHDomain.Graph</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Graph.ISpatialGraphLayer.html" title="ISpatialGraphLayer" class="">ISpatialGraphLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Graph.SidewalkLayer.html" title="SidewalkLayer" class="">SidewalkLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Graph.SpatialGraphMediatorLayer.html" title="SpatialGraphMediatorLayer" class="">SpatialGraphMediatorLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Graph.StreetLayer.html" title="StreetLayer" class="">StreetLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Model.html" title="SOHDomain.Model" class="">SOHDomain.Model</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Model.IModalLayer.html" title="IModalLayer" class="">IModalLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Model.IVehicleEntrance-4.html" title="IVehicleEntrance&lt;TDriver, TPassenger, TSteeringHandle, TPassengerHandle&gt;" class="">IVehicleEntrance&lt;TDriver, TPassenger, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Model.RoadUser.html" title="RoadUser" class="">RoadUser</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Model.Vehicle-4.html" title="Vehicle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;" class="">Vehicle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Model.WalkingShoes.html" title="WalkingShoes" class="">WalkingShoes</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Steering.Acceleration.html" title="SOHDomain.Steering.Acceleration" class="">SOHDomain.Steering.Acceleration</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Steering.Acceleration.IntelligentDriverAccelerator.html" title="IntelligentDriverAccelerator" class="">IntelligentDriverAccelerator</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Acceleration.IVehicleAccelerator.html" title="IVehicleAccelerator" class="">IVehicleAccelerator</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Acceleration.WalkingAccelerator.html" title="WalkingAccelerator" class="">WalkingAccelerator</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Steering.Capables.html" title="SOHDomain.Steering.Capables" class="">SOHDomain.Steering.Capables</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Steering.Capables.IPassengerCapable.html" title="IPassengerCapable" class="">IPassengerCapable</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Capables.ISteeringCapable.html" title="ISteeringCapable" class="">ISteeringCapable</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Capables.IWalkingCapable.html" title="IWalkingCapable" class="">IWalkingCapable</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Steering.Common.html" title="SOHDomain.Steering.Common" class="">SOHDomain.Steering.Common</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Steering.Common.PassengerMessage.html" title="PassengerMessage" class="">PassengerMessage</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Steering.Handles.html" title="SOHDomain.Steering.Handles" class="">SOHDomain.Steering.Handles</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.IdlePassengerSteeringHandle.html" title="IdlePassengerSteeringHandle" class="">IdlePassengerSteeringHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.IPassengerHandle.html" title="IPassengerHandle" class="">IPassengerHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.ISteeringHandle.html" title="ISteeringHandle" class="">ISteeringHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.VehiclePassengerHandle-4.html" title="VehiclePassengerHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;" class="">VehiclePassengerHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.VehicleSteeringHandle-4.html" title="VehicleSteeringHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;" class="">VehicleSteeringHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.WalkingSteeringHandle.html" title="WalkingSteeringHandle" class="">WalkingSteeringHandle</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Steering.Handles.Intersection.html" title="SOHDomain.Steering.Handles.Intersection" class="">SOHDomain.Steering.Handles.Intersection</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.Intersection.AbstractIntersectionHandle-4.html" title="AbstractIntersectionHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;" class="">AbstractIntersectionHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.Intersection.FifoIntersectionHandle-4.html" title="FifoIntersectionHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;" class="">FifoIntersectionHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.Intersection.IIntersectionTrafficCode.html" title="IIntersectionTrafficCode" class="">IIntersectionTrafficCode</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.Intersection.RightBeforeLeftIntersectionHandle-4.html" title="RightBeforeLeftIntersectionHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;" class="">RightBeforeLeftIntersectionHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHFerryModel.Model.html" title="SOHFerryModel.Model" class="">SOHFerryModel.Model</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHFerryModel.Model.Ferry.html" title="Ferry" class="">Ferry</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Model.FerryDriver.html" title="FerryDriver" class="">FerryDriver</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Model.FerryLayer.html" title="FerryLayer" class="">FerryLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Model.FerrySchedulerLayer.html" title="FerrySchedulerLayer" class="">FerrySchedulerLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHFerryModel.Route.html" title="SOHFerryModel.Route" class="">SOHFerryModel.Route</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHFerryModel.Route.FerryRoute.html" title="FerryRoute" class="">FerryRoute</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Route.FerryRoute.FerryRouteEnumerator.html" title="FerryRoute.FerryRouteEnumerator" class="">FerryRoute.FerryRouteEnumerator</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Route.FerryRouteEntry.html" title="FerryRouteEntry" class="">FerryRouteEntry</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Route.FerryRouteLayer.html" title="FerryRouteLayer" class="">FerryRouteLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Route.FerryRouteReader.html" title="FerryRouteReader" class="">FerryRouteReader</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHFerryModel.Station.html" title="SOHFerryModel.Station" class="">SOHFerryModel.Station</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHFerryModel.Station.FerryStation.html" title="FerryStation" class="">FerryStation</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Station.FerryStationLayer.html" title="FerryStationLayer" class="">FerryStationLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Station.IFerryStationLayer.html" title="IFerryStationLayer" class="">IFerryStationLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHFerryModel.Steering.html" title="SOHFerryModel.Steering" class="">SOHFerryModel.Steering</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHFerryModel.Steering.FerryPassengerHandle.html" title="FerryPassengerHandle" class="">FerryPassengerHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Steering.FerrySteeringHandle.html" title="FerrySteeringHandle" class="">FerrySteeringHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Steering.IFerryPassenger.html" title="IFerryPassenger" class="">IFerryPassenger</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Steering.IFerrySteeringCapable.html" title="IFerrySteeringCapable" class="">IFerrySteeringCapable</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Commons.html" title="SOHMultimodalModel.Commons" class="">SOHMultimodalModel.Commons</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Commons.PedestrianAverageSpeedGenerator.html" title="PedestrianAverageSpeedGenerator" class="">PedestrianAverageSpeedGenerator</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Commons.PointOfInterest.html" title="PointOfInterest" class="">PointOfInterest</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Layers.html" title="SOHMultimodalModel.Layers" class="">SOHMultimodalModel.Layers</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.MediatorLayer.html" title="MediatorLayer" class="">MediatorLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.VectorBuildingsLayer.html" title="VectorBuildingsLayer" class="">VectorBuildingsLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.VectorLanduseLayer.html" title="VectorLanduseLayer" class="">VectorLanduseLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.VectorPoiLayer.html" title="VectorPoiLayer" class="">VectorPoiLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.VectorServiceLayer.html" title="VectorServiceLayer" class="">VectorServiceLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Layers.TrafficLight.html" title="SOHMultimodalModel.Layers.TrafficLight" class="">SOHMultimodalModel.Layers.TrafficLight</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.TrafficLight.TrafficLight.html" title="TrafficLight" class="">TrafficLight</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.TrafficLight.TrafficLightController.html" title="TrafficLightController" class="">TrafficLightController</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.TrafficLight.TrafficLightLayer.html" title="TrafficLightLayer" class="">TrafficLightLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Model.html" title="SOHMultimodalModel.Model" class="">SOHMultimodalModel.Model</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.Citizen.html" title="Citizen" class="">Citizen</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.CitizenLayer.html" title="CitizenLayer" class="">CitizenLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.CitizenSchedulerLayer.html" title="CitizenSchedulerLayer" class="">CitizenSchedulerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.CycleTraveler.html" title="CycleTraveler" class="">CycleTraveler</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.CycleTravelerLayer.html" title="CycleTravelerLayer" class="">CycleTravelerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.CycleTravelerSchedulerLayer.html" title="CycleTravelerSchedulerLayer" class="">CycleTravelerSchedulerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.DockWorker.html" title="DockWorker" class="">DockWorker</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.DockWorkerLayer.html" title="DockWorkerLayer" class="">DockWorkerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.DockWorkerSchedulerLayer.html" title="DockWorkerSchedulerLayer" class="">DockWorkerSchedulerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.GenderType.html" title="GenderType" class="">GenderType</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.HumanTraveler.html" title="HumanTraveler" class="">HumanTraveler</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.HumanTravelerLayer.html" title="HumanTravelerLayer" class="">HumanTravelerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.ModalityChooser.html" title="ModalityChooser" class="">ModalityChooser</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.MultiCapableAgent-1.html" title="MultiCapableAgent&lt;TLayer&gt;" class="">MultiCapableAgent&lt;TLayer&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.PassengerTraveler.html" title="PassengerTraveler" class="">PassengerTraveler</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.PassengerTravelerLayer.html" title="PassengerTravelerLayer" class="">PassengerTravelerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.Traveler-1.html" title="Traveler&lt;TLayer&gt;" class="">Traveler&lt;TLayer&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.TravelerConstants.html" title="TravelerConstants" class="">TravelerConstants</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.WorkingType.html" title="WorkingType" class="">WorkingType</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Multimodal.html" title="SOHMultimodalModel.Multimodal" class="">SOHMultimodalModel.Multimodal</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Multimodal.AbstractMultimodalLayer.html" title="AbstractMultimodalLayer" class="">AbstractMultimodalLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Multimodal.IMultimodalLayer.html" title="IMultimodalLayer" class="">IMultimodalLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Multimodal.IMultimodalRouteFinder.html" title="IMultimodalRouteFinder" class="">IMultimodalRouteFinder</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Multimodal.MultimodalAgent-1.html" title="MultimodalAgent&lt;TLayer&gt;" class="">MultimodalAgent&lt;TLayer&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Multimodal.Whereabouts.html" title="Whereabouts" class="">Whereabouts</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Output.Route.html" title="SOHMultimodalModel.Output.Route" class="">SOHMultimodalModel.Output.Route</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Route.MultimodalRouteOutputAdapter.html" title="MultimodalRouteOutputAdapter" class="">MultimodalRouteOutputAdapter</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Output.Ticks.html" title="SOHMultimodalModel.Output.Ticks" class="">SOHMultimodalModel.Output.Ticks</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Ticks.ITickOutputAgent.html" title="ITickOutputAgent" class="">ITickOutputAgent</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Ticks.TickOutputAdapter.html" title="TickOutputAdapter" class="">TickOutputAdapter</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Output.Trips.html" title="SOHMultimodalModel.Output.Trips" class="">SOHMultimodalModel.Output.Trips</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Trips.ITripSavingAgent.html" title="ITripSavingAgent" class="">ITripSavingAgent</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Trips.TripPositionCoordinateConverter.html" title="TripPositionCoordinateConverter" class="">TripPositionCoordinateConverter</a>
+                          </li>
+                          <li class="active">
+                            <a href="SOHMultimodalModel.Output.Trips.TripsLine.html" title="TripsLine" class="active">TripsLine</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Trips.TripsLineConverter.html" title="TripsLineConverter" class="">TripsLineConverter</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Trips.TripsOutputAdapter.html" title="TripsOutputAdapter" class="">TripsOutputAdapter</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Planning.html" title="SOHMultimodalModel.Planning" class="">SOHMultimodalModel.Planning</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Planning.DayPlanGenerator.html" title="DayPlanGenerator" class="">DayPlanGenerator</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Planning.Tour.html" title="Tour" class="">Tour</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Planning.Trip.html" title="Trip" class="">Trip</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Planning.TripReason.html" title="TripReason" class="">TripReason</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Routing.html" title="SOHMultimodalModel.Routing" class="">SOHMultimodalModel.Routing</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.GatewayLayer.html" title="GatewayLayer" class="">GatewayLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.GatewayPoint.html" title="GatewayPoint" class="">GatewayPoint</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.MultimodalRouteCommons.html" title="MultimodalRouteCommons" class="">MultimodalRouteCommons</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.MultimodalRouteFinder.html" title="MultimodalRouteFinder" class="">MultimodalRouteFinder</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.WalkingCarDrivingRentalMultimodalRoute.html" title="WalkingCarDrivingRentalMultimodalRoute" class="">WalkingCarDrivingRentalMultimodalRoute</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.WalkingDrivingMultimodalRoute.html" title="WalkingDrivingMultimodalRoute" class="">WalkingDrivingMultimodalRoute</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.WalkingFerryDrivingMultimodalRoute.html" title="WalkingFerryDrivingMultimodalRoute" class="">WalkingFerryDrivingMultimodalRoute</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.WalkingMultimodalRoute.html" title="WalkingMultimodalRoute" class="">WalkingMultimodalRoute</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.WalkingTrainDrivingMultimodalRoute.html" title="WalkingTrainDrivingMultimodalRoute" class="">WalkingTrainDrivingMultimodalRoute</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Steering.html" title="SOHMultimodalModel.Steering" class="">SOHMultimodalModel.Steering</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Steering.IWalkingRoadUser.html" title="IWalkingRoadUser" class="">IWalkingRoadUser</a>
+                          </li>
+                        </ul>                    </li>
+                  </ul>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SOHMultimodalModel.Output.Trips.TripsLine">
+
+
+  <h1 id="SOHMultimodalModel_Output_Trips_TripsLine" data-uid="SOHMultimodalModel.Output.Trips.TripsLine" class="text-break">Class TripsLine
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NetTopologySuite.Geometries.Geometry</span></div>
+    <div class="level2"><span class="xref">NetTopologySuite.Geometries.LineString</span></div>
+    <div class="level3"><span class="xref">TripsLine</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IComparable</span></div>
+    <div><span class="xref">System.IComparable</span>&lt;<span class="xref">NetTopologySuite.Geometries.Geometry</span>&gt;</div>
+    <div><span class="xref">NetTopologySuite.Geometries.ILineal</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.Empty</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.GetCoordinateN(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.GetPointN(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.Reverse()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.ReverseInternal()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.IsCoordinate(NetTopologySuite.Geometries.Coordinate)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.Apply(NetTopologySuite.Geometries.IEntireCoordinateSequenceFilter)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.CoordinateSequence</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.StartPoint</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.EndPoint</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.IsRing</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.Length</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.Item[System.Int32]</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.LineString.Count</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.TypeNamePoint</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.TypeNameMultiPoint</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.TypeNameLineString</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.TypeNameLinearRing</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.TypeNameMultiLineString</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.TypeNamePolygon</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.TypeNameMultiPolygon</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.TypeNameGeometryCollection</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.DefaultFactory</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.HasNonEmptyElements(NetTopologySuite.Geometries.Geometry[])</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.HasNullElements(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.HasNullElements&lt;T&gt;(System.Collections.Generic.IEnumerable&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.GetGeometryN(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Distance(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.IsWithinDistance(NetTopologySuite.Geometries.Geometry, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.GeometryChanged()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.GeometryChangedAction()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Disjoint(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Touches(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Intersects(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Crosses(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Within(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Contains(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Overlaps(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Covers(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.CoveredBy(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Relate(NetTopologySuite.Geometries.Geometry, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Relate(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Equals(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.EqualsTopologically(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.ToText()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.AsText()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.ToBinary()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.AsBinary()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.ToGMLFeature()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Buffer(System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Buffer(System.Double, NetTopologySuite.Operation.Buffer.EndCapStyle)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Buffer(System.Double, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Buffer(System.Double, System.Int32, NetTopologySuite.Operation.Buffer.EndCapStyle)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Buffer(System.Double, NetTopologySuite.Operation.Buffer.BufferParameters)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.ConvexHull()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Intersection(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Union(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Difference(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.SymmetricDifference(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Union()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.EqualsExact(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.EqualsNormalized(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Copy()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Normalized()</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.CompareTo(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.CompareTo(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.CompareTo(System.Object, System.Collections.Generic.IComparer&lt;NetTopologySuite.Geometries.CoordinateSequence&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.CheckNotGeometryCollection(NetTopologySuite.Geometries.Geometry)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Compare(System.Collections.Generic.List&lt;NetTopologySuite.Geometries.Geometry&gt;, System.Collections.Generic.List&lt;NetTopologySuite.Geometries.Geometry&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Equal(NetTopologySuite.Geometries.Coordinate, NetTopologySuite.Geometries.Coordinate, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.CreateArray(System.Int32, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.CreateArray(NetTopologySuite.Geometries.CoordinateSequence, NetTopologySuite.Geometries.Ordinate)</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Factory</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.UserData</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.SRID</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.PrecisionModel</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.NumGeometries</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.IsSimple</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.IsValid</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Area</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Centroid</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.InteriorPoint</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.PointOnSurface</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.Envelope</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.EnvelopeInternal</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.IsGeometryCollection</span>
+    </div>
+    <div>
+      <span class="xref">NetTopologySuite.Geometries.Geometry.IsRectangle</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SOHMultimodalModel.Output.Trips.html">SOHMultimodalModel.Output.Trips</a></h6>
+  <h6><strong>Assembly</strong>: SOHMultimodalModel.dll</h6>
+  <h5 id="SOHMultimodalModel_Output_Trips_TripsLine_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class TripsLine : LineString, IComparable, IComparable&lt;Geometry&gt;, ILineal</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine__ctor_Mars_Core_Data_Wrapper_Memory_TripPosition___.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.%23ctor(Mars.Core.Data.Wrapper.Memory.TripPosition%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L27">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine__ctor_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.#ctor*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine__ctor_Mars_Core_Data_Wrapper_Memory_TripPosition___" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.#ctor(Mars.Core.Data.Wrapper.Memory.TripPosition[])">TripsLine(TripPosition[])</h4>
+  <div class="markdown level1 summary">
+Initializes a new instance of the <span class="xref">NetTopologySuite.Geometries.LineString</span> class.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TripsLine(TripPosition[] points)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../simulation/Mars.Core.Data.Wrapper.Memory.TripPosition.html">TripPosition</a>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td>The coordinates used for create this <span class="xref">NetTopologySuite.Geometries.LineString</span>.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="SOHMultimodalModel_Output_Trips_TripsLine__ctor_Mars_Core_Data_Wrapper_Memory_TripPosition____remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+For create this <span class="xref">NetTopologySuite.Geometries.Geometry</span> is used a standard <span class="xref">NetTopologySuite.Geometries.GeometryFactory</span>
+with <span class="xref">NetTopologySuite.Geometries.PrecisionModel</span> <code> == </code> <span class="xref">NetTopologySuite.Geometries.PrecisionModels.Floating</span>.
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td>If too few points are provided</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_Boundary.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.Boundary%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L101">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_Boundary_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Boundary*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_Boundary" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Boundary">Boundary</h4>
+  <div class="markdown level1 summary">
+Returns the boundary, or an empty geometry of appropriate dimension
+if this <code>Geometry</code> is empty.
+For a discussion of this function, see the OpenGIS Simple
+Features Specification. As stated in SFS Section 2.1.13.1, &quot;the boundary
+of a Geometry is a set of Geometries of the next lower dimension.&quot;
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Geometry Boundary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.Geometry</span></td>
+        <td>The closure of the combinatorial boundary of this <code>Geometry</code>.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.Boundary</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_BoundaryDimension.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.BoundaryDimension%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L58">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_BoundaryDimension_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.BoundaryDimension*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_BoundaryDimension" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.BoundaryDimension">BoundaryDimension</h4>
+  <div class="markdown level1 summary">
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dimension BoundaryDimension { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.Dimension</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.BoundaryDimension</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_Coordinate.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.Coordinate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L50">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_Coordinate_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Coordinate*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_Coordinate" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Coordinate">Coordinate</h4>
+  <div class="markdown level1 summary">
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Coordinate Coordinate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.Coordinate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.Coordinate</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_Coordinates.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.Coordinates%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L46">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_Coordinates_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Coordinates*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_Coordinates" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Coordinates">Coordinates</h4>
+  <div class="markdown level1 summary">
+Returns an array containing the values of all the vertices for
+this geometry.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Coordinate[] Coordinates { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.Coordinate</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.Coordinates</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_Dimension.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.Dimension%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L54">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_Dimension_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Dimension*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_Dimension" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Dimension">Dimension</h4>
+  <div class="markdown level1 summary">
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Dimension Dimension { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.Dimension</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.Dimension</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_GeometryType.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.GeometryType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L86">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_GeometryType_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.GeometryType*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_GeometryType" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.GeometryType">GeometryType</h4>
+  <div class="markdown level1 summary">
+Returns the name of this object&apos;s interface.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GeometryType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td>&quot;LineString&quot;</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.GeometryType</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_IsClosed.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.IsClosed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L79">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_IsClosed_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.IsClosed*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_IsClosed" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.IsClosed">IsClosed</h4>
+  <div class="markdown level1 summary">
+Gets a value indicating if this <code>LINESTRING</code> is closed.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsClosed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.IsClosed</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_IsEmpty.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.IsEmpty%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L69">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_IsEmpty_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.IsEmpty*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_IsEmpty" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary">
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.IsEmpty</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_NumPoints.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.NumPoints%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L73">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_NumPoints_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.NumPoints*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_NumPoints" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.NumPoints">NumPoints</h4>
+  <div class="markdown level1 summary">
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int NumPoints { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.NumPoints</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_OgcGeometryType.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.OgcGeometryType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L91">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_OgcGeometryType_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.OgcGeometryType*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_OgcGeometryType" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.OgcGeometryType">OgcGeometryType</h4>
+  <div class="markdown level1 summary">
+Gets the OGC geometry type
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override OgcGeometryType OgcGeometryType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.OgcGeometryType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.OgcGeometryType</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_SortIndex.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.SortIndex%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L40">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_SortIndex_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.SortIndex*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_SortIndex" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.SortIndex">SortIndex</h4>
+  <div class="markdown level1 summary">
+Gets a value to sort the geometry
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Geometry.SortIndexValue SortIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.Geometry.SortIndexValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.SortIndex</span></div>
+  <h5 id="SOHMultimodalModel_Output_Trips_TripsLine_SortIndex_remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+NOTE:<br>
+For JTS v1.17 this property&apos;s getter has been renamed to <code>getTypeCode()</code>.
+In order not to break binary compatibility we did not follow.
+</div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_Apply_NetTopologySuite_Geometries_ICoordinateFilter_.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.Apply(NetTopologySuite.Geometries.ICoordinateFilter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L162">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_Apply_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Apply*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_Apply_NetTopologySuite_Geometries_ICoordinateFilter_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Apply(NetTopologySuite.Geometries.ICoordinateFilter)">Apply(ICoordinateFilter)</h4>
+  <div class="markdown level1 summary">
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Apply(ICoordinateFilter filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.ICoordinateFilter</span></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.Apply(NetTopologySuite.Geometries.ICoordinateFilter)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_Apply_NetTopologySuite_Geometries_ICoordinateSequenceFilter_.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.Apply(NetTopologySuite.Geometries.ICoordinateSequenceFilter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L175">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_Apply_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Apply*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_Apply_NetTopologySuite_Geometries_ICoordinateSequenceFilter_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Apply(NetTopologySuite.Geometries.ICoordinateSequenceFilter)">Apply(ICoordinateSequenceFilter)</h4>
+  <div class="markdown level1 summary">
+Performs an operation on the coordinates in this <code>Geometry</code>&apos;s.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Apply(ICoordinateSequenceFilter filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.ICoordinateSequenceFilter</span></td>
+        <td><span class="parametername">filter</span></td>
+        <td>The filter to apply</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.Apply(NetTopologySuite.Geometries.ICoordinateSequenceFilter)</span></div>
+  <h5 id="SOHMultimodalModel_Output_Trips_TripsLine_Apply_NetTopologySuite_Geometries_ICoordinateSequenceFilter__remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+If the filter reports that a coordinate value has been changed,
+<span class="xref">NetTopologySuite.Geometries.Geometry.GeometryChanged()</span> will be called automatically.
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_Apply_NetTopologySuite_Geometries_IGeometryComponentFilter_.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.Apply(NetTopologySuite.Geometries.IGeometryComponentFilter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L199">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_Apply_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Apply*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_Apply_NetTopologySuite_Geometries_IGeometryComponentFilter_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Apply(NetTopologySuite.Geometries.IGeometryComponentFilter)">Apply(IGeometryComponentFilter)</h4>
+  <div class="markdown level1 summary">
+Performs an operation with or on this Geometry and its
+component Geometry&apos;s. Only GeometryCollections and
+Polygons have component Geometry&apos;s; for Polygons they are the LinearRings
+of the shell and holes.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Apply(IGeometryComponentFilter filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.IGeometryComponentFilter</span></td>
+        <td><span class="parametername">filter</span></td>
+        <td>The filter to apply to this <code>Geometry</code>.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.Apply(NetTopologySuite.Geometries.IGeometryComponentFilter)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_Apply_NetTopologySuite_Geometries_IGeometryFilter_.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.Apply(NetTopologySuite.Geometries.IGeometryFilter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L187">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_Apply_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Apply*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_Apply_NetTopologySuite_Geometries_IGeometryFilter_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Apply(NetTopologySuite.Geometries.IGeometryFilter)">Apply(IGeometryFilter)</h4>
+  <div class="markdown level1 summary">
+Performs an operation with or on this <code>Geometry</code> and its
+subelement <code>Geometry</code>s (if any).
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Apply(IGeometryFilter filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.IGeometryFilter</span></td>
+        <td><span class="parametername">filter</span></td>
+        <td>
+The filter to apply to this <code>Geometry</code> (and
+its children, if it is a <code>GeometryCollection</code>).
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.Apply(NetTopologySuite.Geometries.IGeometryFilter)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_CompareToSameClass_System_Object_System_Collections_Generic_IComparer_NetTopologySuite_Geometries_CoordinateSequence__.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.CompareToSameClass(System.Object%2CSystem.Collections.Generic.IComparer%7BNetTopologySuite.Geometries.CoordinateSequence%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L234">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_CompareToSameClass_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.CompareToSameClass*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_CompareToSameClass_System_Object_System_Collections_Generic_IComparer_NetTopologySuite_Geometries_CoordinateSequence__" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.CompareToSameClass(System.Object,System.Collections.Generic.IComparer{NetTopologySuite.Geometries.CoordinateSequence})">CompareToSameClass(Object, IComparer&lt;CoordinateSequence&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int CompareToSameClass(object o, IComparer&lt;CoordinateSequence&gt; comp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">o</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IComparer</span>&lt;<span class="xref">NetTopologySuite.Geometries.CoordinateSequence</span>&gt;</td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.CompareToSameClass(System.Object, System.Collections.Generic.IComparer&lt;NetTopologySuite.Geometries.CoordinateSequence&gt;)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_CompareToSameClass_System_Object_.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.CompareToSameClass(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L229">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_CompareToSameClass_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.CompareToSameClass*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_CompareToSameClass_System_Object_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.CompareToSameClass(System.Object)">CompareToSameClass(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int CompareToSameClass(object o)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">o</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.CompareToSameClass(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_ComputeEnvelopeInternal.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.ComputeEnvelopeInternal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L116">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_ComputeEnvelopeInternal_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.ComputeEnvelopeInternal*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_ComputeEnvelopeInternal" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.ComputeEnvelopeInternal">ComputeEnvelopeInternal()</h4>
+  <div class="markdown level1 summary">
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Envelope ComputeEnvelopeInternal()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.Envelope</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.ComputeEnvelopeInternal()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_CopyInternal.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.CopyInternal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L206">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_CopyInternal_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.CopyInternal*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_CopyInternal" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.CopyInternal">CopyInternal()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Geometry CopyInternal()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.Geometry</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.CopyInternal()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_EqualsExact_NetTopologySuite_Geometries_Geometry_System_Double_.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.EqualsExact(NetTopologySuite.Geometries.Geometry%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L145">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_EqualsExact_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.EqualsExact*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_EqualsExact_NetTopologySuite_Geometries_Geometry_System_Double_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.EqualsExact(NetTopologySuite.Geometries.Geometry,System.Double)">EqualsExact(Geometry, Double)</h4>
+  <div class="markdown level1 summary">
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool EqualsExact(Geometry other, double tolerance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.Geometry</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">tolerance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.EqualsExact(NetTopologySuite.Geometries.Geometry, System.Double)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_GetOrdinates_NetTopologySuite_Geometries_Ordinate_.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.GetOrdinates(NetTopologySuite.Geometries.Ordinate)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L108">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_GetOrdinates_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.GetOrdinates*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_GetOrdinates_NetTopologySuite_Geometries_Ordinate_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.GetOrdinates(NetTopologySuite.Geometries.Ordinate)">GetOrdinates(Ordinate)</h4>
+  <div class="markdown level1 summary">
+Gets an array of <span class="xref">System.Double</span> ordinate values
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override double[] GetOrdinates(Ordinate ordinate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.Ordinate</span></td>
+        <td><span class="parametername">ordinate</span></td>
+        <td>The ordinate index</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td>An array of ordinate values</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.GetOrdinates(NetTopologySuite.Geometries.Ordinate)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_IsEquivalentClass_NetTopologySuite_Geometries_Geometry_.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.IsEquivalentClass(NetTopologySuite.Geometries.Geometry)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L223">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_IsEquivalentClass_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.IsEquivalentClass*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_IsEquivalentClass_NetTopologySuite_Geometries_Geometry_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.IsEquivalentClass(NetTopologySuite.Geometries.Geometry)">IsEquivalentClass(Geometry)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsEquivalentClass(Geometry other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.Geometry</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.IsEquivalentClass(NetTopologySuite.Geometries.Geometry)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine_Normalize.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine.Normalize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L218">View Source</a>
+  </span>
+  <a id="SOHMultimodalModel_Output_Trips_TripsLine_Normalize_" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Normalize*"></a>
+  <h4 id="SOHMultimodalModel_Output_Trips_TripsLine_Normalize" data-uid="SOHMultimodalModel.Output.Trips.TripsLine.Normalize">Normalize()</h4>
+  <div class="markdown level1 summary">
+Normalizes a <code>LineString</code>.  A normalized <code>LineString</code>
+has the first point which is not equal to it&apos;s reflected point
+less than the reflected point.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Normalize()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">NetTopologySuite.Geometries.LineString.Normalize()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IComparable</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">NetTopologySuite.Geometries.ILineal</span>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHMultimodalModel_Output_Trips_TripsLine.md&amp;value=---%0Auid%3A%20SOHMultimodalModel.Output.Trips.TripsLine%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHMultimodalModel/Output/Trips/TripsLine.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright &copy; MARS GROUP. <strong>HAW Hamburg</strong></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
