@@ -1,5 +1,5 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 description: API reference for the MARS configuration file.
 slug: /api/config
 ---
