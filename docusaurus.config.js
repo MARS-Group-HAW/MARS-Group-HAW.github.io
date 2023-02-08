@@ -107,6 +107,10 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/mars_group_haw',
               },
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/@marsgroup5456'
+              }
             ],
           },
           {
