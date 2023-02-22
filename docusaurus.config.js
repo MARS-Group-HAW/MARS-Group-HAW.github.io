@@ -78,7 +78,7 @@ const config = {
 
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/team', label: 'Team', position: 'left'},
-          {to: '/student', label: 'For students', position: 'left'},
+          {to: '/student', label: 'For Students', position: 'left'},
           {to: '/publications', label: 'Publications', position: 'left'},
           {to: '/projects', label: 'Projects', position: 'left'},
           {

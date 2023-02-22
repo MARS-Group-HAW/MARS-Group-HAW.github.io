@@ -5,31 +5,28 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Multi-agent Modelling',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/mars-group.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        The MARS Groups develops it's own C#-framework for multi-agent simulations, called LIFE.
       </>
     ),
   },
   {
-    title: 'Research driven',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Interdisciplinarity',
+    Svg: require('@site/static/img/undraw_pair_programming_re_or4x.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        The MARS Groups focuses on interdisciplinary teams. Through different and diverse mind sets best results <a href="/projects">come to live</a>.
       </>
     ),
   },
   {
     title: 'HAW Hamburg',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/HAW_Marke_RGB.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        The MARS Group is based at the <a href="https://www.haw-hamburg.de/">HAW Hamburg</a> on the Computer Science Campus at Berliner Tor. 
       </>
     ),
   },
