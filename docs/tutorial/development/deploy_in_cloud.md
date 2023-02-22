@@ -1,20 +1,24 @@
-# Starting a simulation in the Kubernetes cluster
+---
+sidebar_label: Kubernetes
+---
+
+# Simulations in a Kubernetes cluster
 
 Simulations can be run both locally and distributed within a Kubernetes cluster (K8s). Kubernetes orchestrates applications across a set of heterogeneous computing machines.
 
-### Prerequisite.
+## Prerequisite.
 
-* [docker](https://www.docker.com/products/docker-desktop)
+* [Docker](https://www.docker.com/products/docker-desktop)
 * [kubectl](https://kubernetes.io/de/docs/tasks/tools/install-kubectl/)
 * [kubelogin](https://userdoc.informatik.haw-hamburg.de/doku.php?id=docu:informatikcomputecloud#login/) (If simulation is to be started in MARS ICC-K8s).
 
 ## Customize the simulation start
 
-To start a simulation in the K8s computing cluster the model must be built. Navigate to the directory where the `csproj` file and your entry point `Main()` is located (More about defining the entry point can be found [here](./../basic-concepts/model.md)).
+To start a simulation in the K8s computing cluster the model must be built. Navigate to the directory where the `csproj` file and your entry point `Main()` is located (More about defining the entry point can be found [here](model.md)).
 
 Open the file and create a `ModelDescription` like [here](../basic-concepts/model.md).
 
-```c#
+```csharp
 using Mars.Interfaces;
 using Mars.Interfaces.Model;
 using Mars.Components.Starter;
@@ -64,11 +68,12 @@ An existing model must be packaged into a container to run in a K8s cluster. The
 dotnet publish -c Release -o my_simulation_app
 ```
 
-> Make sure that all relevant input files (e.g.: `geojson` or `asc` files) are present in the folder `my_simulatio_app`.
+Make sure that all relevant input files (e.g.: `geojson` or `asc` files) are present in the folder `my_simulatio_app`.
+
 
 ## Preparing a container
 
-The easiest way to create a container is as a Docker container. To do this, a `Dockerfile` must be created from which the **Docker image** will be created:
+The easiest way to create a container is as a Docker container. To do this, an empty file called `Dockerfile` must be created, from which the **Docker image** will be created:
 
 ```bash
 touch Dockerfile
@@ -76,7 +81,7 @@ touch Dockerfile
 
 Open the `Dockerfile` and insert the following lines:
 
-````dockerfile
+````dockerfile title="Dockerfile"
 FROM mcr.microsoft.com/dotnet/runtime:6.0
 
 COPY ./ ./
@@ -85,7 +90,12 @@ WORKDIR ./
 ENTRYPOINT dotnet <YourModelName>.dll 
 ````
 
-> Adjust the variable `YourModelName` for your model. This is the name of the `csproj` file where you run these commands.
+
+:::info
+
+Adjust the variable `YourModelName` for your model. This is the name of the `csproj` file where you run these commands.
+
+:::
 
 Build the Docker image and tag it with a fully-qualified name of your container repo. The container repo is where the image is then stored and can be loaded and run by K8s:
 
@@ -114,7 +124,7 @@ First make sure you have a [deploy-token configured](https://icc.informatik.haw-
 
 Then create a `my_simulation_job.yml` file and add the following content:
 
-```yaml+
+```yaml
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -163,18 +173,16 @@ The `kubectl` tool can be used to apply the specification to the set cluster:
 ```bash
 kubectl apply -f my_simulation_job.yml
 ```
-K8s then tries to load the created and uploaded Docker image (here ``) and start the container. At startup, the simulation application loads the simulation configuration from the environment variable `CONFIG`. Via the command:
 
-```bash
-kubectl get pod
-```
+K8s then tries to load the created and uploaded Docker image and start the container. At startup, the simulation application loads the simulation configuration from the environment variable `CONFIG`. 
 
-currently running applications are listed. An entry of the form `my_simulation-cbf7c989d-fnpzv` should appear and have the status `Running` or `Creating`.
+Via the command `$ kubectl get pod` currently running applications are listed. An entry of the form `my_simulation-cbf7c989d-fnpzv` should appear and have the status `Running` or `Creating`.
 
 If the container has the status `Succeeded`, the simulation application has finished successfully.
 If the container has the status `Failed`, the cause is usually a configuration- or model error and the reason must be determined using simulation logs or the K8s logs:
 
 Showing the internal logs and console output when something crashed within the simulation:
+
 ```bash
 kubectl logs pod/my_simulation-cbf7c989d-fnpzv
 ```

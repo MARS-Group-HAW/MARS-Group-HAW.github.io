@@ -1,12 +1,12 @@
 # Spawning and Removing Agents and Entities
 
-To **create** instances of agent types and **registering** them at the runtime system to process the ``Tick()``, two concepts are available:
+To **create** instances of agent types and **registering** them at the runtime system to process the `Tick()`, two concepts are available:
 
-### Creating and Registering single object using ``RegisterAgent``
+## Creating and Registering single object using `RegisterAgent`
 
-Individual instances can be instantiated directly using ``new`` constructor expression. The instance must be registered with the runtime system by calling the  ``RegisterAgent`` handle given through the ``InitLayer`` method of the ``ILayer`` implementation.
+Individual instances can be instantiated directly using `new` constructor expression. The instance must be registered with the runtime system by calling the `RegisterAgent` handle given through the `InitLayer` method of the `ILayer` implementation.
 
-```c#
+```csharp
 public bool InitLayer(TInitData layerInitData, 
     RegisterAgent registerAgentHandle, UnregisterAgent unregisterAgentHandle) 
 {
@@ -22,7 +22,7 @@ Optionally the ``RegisterAgent`` handle allows to set and override the execution
 
 If an output has been specified using ``output``, the object is managed accordingly in the output as well automatically.
 
-### Mass Generation using ``AgentManager``
+## Mass Generation using `AgentManager`
 
 The `AgentManager` is a service component that can be used to initialize agent quantities from the input.
 
@@ -33,7 +33,7 @@ The `AgentManager` is a static class that can be referenced directly and offers 
 
 Spawning of agents is usually done within the ``InitLayer`` method of an ``ILayer`` implementation.
 
-```c#
+```csharp
 public bool InitLayer(
 	TInitData layerInitData,
 	RegisterAgent registerAgentHandle, 
@@ -54,7 +54,7 @@ Since the agent interacts with the system via its layer, it is necessary that th
 
 In the agent this dependent layer can be referenced as a property which is resolved by the system via ``PropertyInjection``, for example as follows:
 
-```c#
+```csharp
 public class MyAgentType : AbstractAgent 
 {
 	[PropertyDescription]
@@ -66,12 +66,14 @@ public class MyAgentType : AbstractAgent
 }
 ```
 
-
 Alternatively, dependent layer can be defined directly as **constructor parameter** as showed below: 
 
-> &#10071;&#10071;&#10071; Because of the **testing** of your own model, it is recommended to keep the required constructor parameters as low as possible.
+:::danger
+Because of the **testing** of your own model, it is recommended to keep the required constructor parameters as low as possible.
+:::
 
-```c#
+
+```csharp
 public class MyAgentType : AbstractAgent 
 {
 	public MyLayerType Layer { get; set; }
@@ -87,5 +89,4 @@ public class MyAgentType : AbstractAgent
 }
 ```
 
-### Removing and unregister an object from simulation
-
+## Removing and unregister an object from simulation

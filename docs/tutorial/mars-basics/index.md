@@ -6,27 +6,31 @@ sidebar_label: Concepts
 
 # Concepts
 
-The **MARS runtime system** provides agent-based simulation and geographical query processing methods with a set of standard mathematical functions and data structures for [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/3.1).
+A **simulation** is the execution of a *model* (representation of a system) in a predefined *scenario*. 
 
-The framework provides simulation core to execute the simulation with variable step-size. It is compatible with multiple platforms including **Microsoft Windows**, **MacOS**, **Xamarin**, **Unity3D**, **Windows Store applications**, **Linux** or **mobile**.
+The **scenario** consists of configurations of certain aspects like:
 
-> The framework offers a unified API to develop and execute individual-based models and scenarios. 
+- the simulation time frame (start and endpoint) 
+- the tick size (in our tick-based-system every tick represents a time frame; the simulation is executed tick by tick)
+- the number of involved agents
+- input data that is used in the model to initialize or update agents, entities and layers
 
-A simulation is the execution of a model (representation of a system) in a predefined scenario. The scenario consists of configurations of certain aspects like the simulation time frame (start and endpoint) or the tick size (in our tick-based-system every tick represents a time frame; the simulation is executed tick by tick) or the number of involved agents, and input data that is used in the model to initialize or update agents, entities and layers.
-Every scenario, therefore, consists of a model description that defines which parts of the model are part of the scenario (e.g. which layers and agents are involved) and the mentioned simulation config.
+Every scenario, therefore, consists of a **model description** that defines which parts of the model are part of the scenario (e.g. which layers and agents are involved) and the mentioned simulation config.
+
 The model is described by the concept of agents, entities and layers.
 
 ## Agents
 
-[Agents](../basic-concepts/agent.md) are independent and active components that can sense surroundings and act upon these findings and their internal state (memory, goals, desires, ..).
+[Agents](../development/agent.md) are independent and active components that can sense surroundings and act upon these findings and their internal state (memory, goals, desires, …).
+
 
 ## Entities
 
-[Entities](../basic-concepts/entity.md) are like agents components with a life-cycle (they are created initially, initialized with data and eventually removed from the simulation later). Unlike agents, they cannot act. They, therefore, represent model objects that exist in the model and can be used by the agent. 
+[Entities](../development/entity.md) are like agents components with a life-cycle (they are created initially, initialized with data and eventually removed from the simulation later). Unlike agents, they cannot act. They, therefore, represent model objects that exist in the model and can be used by the agent. 
 
 ## Layers
 
-[Layers](../basic-concepts/layers.md) could be described as playgrounds of the simulation if you would describe agents as players. They provide information for certain aspects of the model and can be used by agents to acquire tempo-spatial data or provide an interface for exploring entities or other agents. There is a specific bond between agents and their main layer, initially provided to the agent on initialization. This layer may be responsible for creating the agent with an ``AgentManager``.
+[Layers](../development/layers.md) could be described as playgrounds of the simulation if you would describe agents as players. They provide information for certain aspects of the model and can be used by agents to acquire tempo-spatial data or provide an interface for exploring entities or other agents. There is a specific bond between agents and their main layer, initially provided to the agent on initialization. This layer may be responsible for creating the agent with an `AgentManager`.
 
 ## Tick
 
@@ -41,7 +45,7 @@ Single time step of a simulation of a MARS model.
 
 ## Sample Model: Wolf-Sheep-Predation
 
-Check out the [Wolf-Sheep-Model](https://git.haw-hamburg.de/mars/model-deployments/-/tree/master/C%23%20Models/model-wolf-sheep) to make yourself familiar with the [basic concepts](../basic-concepts/model.md), like [layers](../basic-concepts/layers.md) and [agents](../basic-concepts/agent.md).
+Check out the [Wolf-Sheep-Model](https://git.haw-hamburg.de/mars/model-deployments/-/tree/master/C%23%20Models/model-wolf-sheep) to make yourself familiar with the [basic concepts](../development/model.md), like [layers](../development/layers.md) and [agents](../development/agent.md).
 
 The folder ``WolfSheepPredation`` contains a simple predation model in which sheep and wolves move on a grid. ``Sheep`` eat grass and periodically increased by a ``GrassGrowthAgent``). ``Wolf`` hunt sheep and eat them if close enough. Both animals reproduce eventually by losing half their energy. Energy is also consumed in every tick and can be replenished by eating food. If the energy is zero, the animal dies.
 

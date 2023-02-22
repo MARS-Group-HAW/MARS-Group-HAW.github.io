@@ -1,4 +1,7 @@
+# Agent
+
 ## Definition of Agents
+
 Along with [layers](layers.md), agents are the main part of every model. Once the layers have been created, agent types can be specified. For this step, the modeler needs to know what each agent type is going to be, what attributes define it, and what its actions will look like. Once this has been established, the agent type creation can be started.
 
 Agents are the central part of the MARS simulation, which can be viewed as an information system with three phases. First, there is some kind of input data that is integrated in the model, either in layer or agent. The model execution is then performed and generates output data in different formats for analyzation.

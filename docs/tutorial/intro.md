@@ -17,6 +17,11 @@ sidebar_label: Introduction
 
 Software framework written in object-oriented C# that enables the development and simulation of ABMs.
 
+The **MARS runtime system** provides agent-based simulation and geographical query processing methods with a set of standard mathematical functions and data structures for [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/3.1).
+
+The framework provides simulation core to execute the simulation with variable step-size. It is compatible with multiple platforms including **Microsoft Windows**, **macOS**, **Xamarin**, **Unity3D**, **Windows Store applications**, **Linux** or **mobile**.
+
+> The framework offers a unified API to develop and execute individual-based models and scenarios. 
 
 
 ## References 

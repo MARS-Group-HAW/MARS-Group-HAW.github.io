@@ -50,21 +50,19 @@ Create a file called `Program.cs`. Define a class called `Program` containing **
 
 > This is the default for each .Net program you write, nothing special for MARS
 
-```c#
+```csharp
 public class Program {
 
-    
-
-}    
+}
 ```
 
-Thats it, now you can start your .Net program &#10024; 
+Thats it, now you can start your .NET program. ✨ 
 
 ## Describe your model
 
 At the beginning of the `Main`, a ModelDescription (let's call it `description`) is defined. It contains all layer types and agent types that are part of the model.
 
-```c#
+```csharp
 public static void Main(string[] args)
 {
 	var description = new ModelDescription();
@@ -78,11 +76,11 @@ public static void Main(string[] args)
 
 In order to define a simulation configuration that exists within the `Main`, a SimulationConfig (let's call it `config`) object can be created. The code that defines the configuration can be written in a method outside of the `Main`, as seen in the following example:
 
-```c#
-    var config = CreateDefaultConfig();
+```csharp
+var config = CreateDefaultConfig();
 ```
 
-```c#
+```csharp
 private static SimulationConfig CreateDefaultConfig()
 {
     var startPoint = DateTime.Parse("2020-01-01T00:00:00");
@@ -119,7 +117,6 @@ For more information on layer configuration, please click [here](../model-config
 
 For more information on agent configuration, please click [here](../model-configuration/agent_config.md).
 
-___
 
 ## Use external simulation configurations (JSON)
 
@@ -201,15 +198,15 @@ ___
 In order to store agent trips (for later analysis and visualization), the following code can be added to the example in Part 3.
 
 ```csharp
-	var layers = state.Model.AllActiveLayers;
-	foreach (var layer in layers)
+var layers = state.Model.AllActiveLayers;
+foreach (var layer in layers)
+{
+    if (layer is CitizenLayer citizenLayer)
     {
-        if (layer is CitizenLayer citizenLayer)
-        {
-        var citizens = citizenLayer.PedestrianMap.Values;
-        TripsOutputAdapter.PrintTripResult(citizens);
-        }
+    var citizens = citizenLayer.PedestrianMap.Values;
+    TripsOutputAdapter.PrintTripResult(citizens);
     }
+}
 ```
 
 For more information on agent trips and visualization of agent movement, please click [here](../analysis-and-visualization/visualizing_agent_trips_kepler.md).

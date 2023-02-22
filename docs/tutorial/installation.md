@@ -5,27 +5,25 @@ sidebar_label: Installation
 
 # Installation
 
+The MARS framework is written in C#/.NET, so you need to install the [.NET-SDK](https://dotnet.microsoft.com/en-us/download) on your computer to develop MARS models.
 
-- Rider empfehlen
-- C#/.NET SKD installieren v6 oder v7 ???
-- Nuget Pagacke
-    - Blueprint Model anschauen! -> da is es chon drin
-    - manuell hinzufügen
+The easiest way is to install [JetBrains Rider](https://www.jetbrains.com/rider/) as an Integrated Development Environment (IDE). This will handle the installation of .NET for you and give an easy way to execute and debug your models. Though a license is required for using Rider, which is [free for students](https://www.jetbrains.com/community/education/#students).
 
 
+## NuGet Packages
 
-To install the framework in your application, please use the public `nuget` feed from Microsoft and is compatible with `netstandard2.0`. It is designed to use with `netcore`.
-The runtime system is available as a public NuGet package and simply be added to your project using the `dotnet` CLI or your preferred IDE:
+The MARS framework is organized in [NuGet packages](https://www.nuget.org/packages/Mars.Life.Simulations/). To install the framework in your application, use the public `nuget` feed from Microsoft and make your you app is compatible with `netstandard2.0`.
+
+The runtime system is available as a public NuGet package and can simply be added to your project using the `dotnet` CLI with:
 
 ```bash
 dotnet add package Mars.Life.Simulations
 ```
 
-> Optional when you are using the IDE:
->* If you are using Visual Studio, right-click on the **References** item in your solution folder, and select **Manage NuGet Packages**.
-> * If you are using Jetbrains Rider, click on NuGet package management below.
->
->Search for ``Mars.Life.Simulations`` ([or equivalently Mars](https://www.nuget.org/packages/Mars.Life.Simulations/)) and select "Install."
+Or if you are using an IDE:
 
+- For Visual Studio, right-click on the **References** item in your solution folder, and select **Manage NuGet Packages**.
+- For JetBrains Rider, click on NuGet package management below.
 
-## NuGet Packages
+Search for `Mars.Life.Simulations` and select <kbd>Install</kbd>.
+
