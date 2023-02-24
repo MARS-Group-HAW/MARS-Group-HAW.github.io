@@ -1,15 +1,12 @@
 # Comma-Separated Values (CSV)
 
-CSV files are used in the system from multiple point of views. The system reads CSV files and infers on of the following  separators: _comma_ `,`, _semicolon_ `;`, _space_ ` `, or _tabulator_ `\t`. 
+CSV files are used in the system from multiple point of views. The system reads CSV files and infers on of the following separators: _comma_ `,`, _semicolon_ `;`, _space_ ` `, or _tabulator_ `\t`. 
 
-
-The system creates CSV files for simulation . Below is a description for both use cases.
-
-___
+The system creates CSV files for simulation. Below is a description for both use cases.
 
 ## How to assign agent attribute values with data from a CSV file?
 
-In the simulation configuration file (see this [article](../model-configuration/agent_config.md) for more information), an agent initialization file can be specified for each agent type. The file needs to contain a header row with attribute names (**note:** these names must match the attribute names in the corresponding agent type class). Each subsequent row is used to assign values to one agent's attributes. If the CSV file contains fewer rows than the number of agents instantiated at the beginning of the simulation, then the initialization file will loop back to the first row until all agents' attributes have values.
+In the simulation configuration file (see this [article](../configuration/agent_config.md) for more information), an agent initialization file can be specified for each agent type. The file needs to contain a header row with attribute names (**note:** these names must match the attribute names in the corresponding agent type class). Each subsequent row is used to assign values to one agent's attributes. If the CSV file contains fewer rows than the number of agents instantiated at the beginning of the simulation, then the initialization file will loop back to the first row until all agents' attributes have values.
 
 Here is an example of an agent initialization file:
 
@@ -27,12 +24,11 @@ Here is an example of an agent initialization file:
 |1|0.22|50|True|False|True|0||1.7|0.46|71.41|
 
 
-Columns are mapped automatically to the input attributes of the agent when using the ``AgentManager``. More about spawning can be found [here](../basic-concepts/spawning.md).
-___
+Columns are mapped automatically to the input attributes of the agent when using the `AgentManager`. More about spawning can be found [here](../development/spawning.md).
 
 ## How to store simulation output data in a CSV file?
 
-Simulation output data can be stored in a CSV file. For more information on this and on how to store data in a database, please click [here](../model-configuration/sim_output_formats.md).
+Simulation output data can be stored in a CSV file. For more information on this and on how to store data in a database, please click [here](../configuration/sim_output_formats.md).
 
 Here is an example of a simulation output file:
 
@@ -49,8 +45,7 @@ Here is an example of a simulation output file:
 |11644|11644|2020-01-01T03:14:04|0|Walking|6|135.22416886964015|False|5.3213083928973735|7|Male|9.9517046|53.5605164|
 |11743|11743|2020-01-01T03:15:43|0|Walking|12|0|False|15.266971536423336|13|Female|9.9438129|53.5508932|
 |12216|12216|2020-01-01T03:23:36|0|Walking|785|263.5532996107888|False|564.1441930826505|792|Female|9.9347918|53.5475968|
-___
 
 ## Issues with CSV related to system settings
 
-Depending on operating system setting and application settings (e.g., Excel), the separator/delimiter in CSV files are not identified correctly. This might lead to incorrect column separations while reading the file at the beginning of a simulation (agent initialization) or writing data into the file at the end of the simulation (simulation output data). To learn how to avoid this issue, please check out the section "CSV" in this [tutorial](../help/index.md#csv).
+Depending on operating system setting and application settings (e.g., Excel), the separator/delimiter in CSV files are not identified correctly. This might lead to incorrect column separations while reading the file at the beginning of a simulation (agent initialization) or writing data into the file at the end of the simulation (simulation output data). To learn how to avoid this issue, please check out the section "CSV" in this [tutorial](../development/known-problems.md#csv).

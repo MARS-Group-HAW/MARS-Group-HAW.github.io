@@ -47,7 +47,7 @@ ___
 - You now have your desired shape as a vector layer. If this is the desired format:
     - Right-click the layer in the Layer window.
     - Select "Export" and "Save object as...".
-    - Specify the file name and format. (For more information, please check out this <A HREF = "../data-sources/geospatial_data_types.md">article</A>)
+    - Specify the file name and format. (For more information, please check out this [article](geospatial_data_types.md))
     - Click OK
 - You now have a vector layer file ready for use in your MARS model. For more information on how to configure layers, please check out this <A HREF = "../model-configuration/layer_config.md">article</A>.
 
