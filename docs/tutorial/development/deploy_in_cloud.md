@@ -1,5 +1,6 @@
 ---
 sidebar_label: Kubernetes
+sidebar_position: 100
 ---
 
 # Simulations in a Kubernetes cluster

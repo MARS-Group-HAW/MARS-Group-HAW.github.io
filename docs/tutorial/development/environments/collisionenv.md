@@ -1,8 +1,15 @@
+---
+sidebar_position: 30
+---
+
 # Collision Environment
 
 A `CollisionEnvironment` is a game environment that manages characters and obstacles. A character is an agent that participates in the game that is played in the environment (for more information on `Character`, click [here](#character)). An obstacle is a physical object with a given geometric shape that is positioned in the environment (for more information on `Obstacle`, click [here](#obstacle)). The environment can handle different collision types, each described by a `CollisionKind` (for more information on `CollisionKind`, click [here](#character)). A simple example showing a few functionalities can be found [here](https://git.haw-hamburg.de/mars/model-deployments/-/tree/master/C%23%20Models/Collision_Test%20CS).
 
-**Note:** While a `CollisionEnvironment` does not feature agents and entities, it has characters and obstacles. A character corresponds to an agent, and an obstacle corresponds to an entity. Characters can interact with obstacles, similar to how agents can interact with entities.
+
+:::note
+While a `CollisionEnvironment` does not feature agents and entities, it has characters and obstacles. A character corresponds to an agent, and an obstacle corresponds to an entity. Characters can interact with obstacles, similar to how agents can interact with entities.
+:::
 
 ## Creating an environment
 
@@ -30,6 +37,7 @@ var lineString = new LineString(new[] {
   new Coordinate(8,8) 
 });
 ```
+
 ```csharp
 var polygon = new Polygon(new LinearRing(new[]  
 {  
@@ -40,12 +48,10 @@ var polygon = new Polygon(new LinearRing(new[]
 }));
 ```
 
-<center>
-  <figure>
-    <img src="../../../../images/docu/environment_with_two_obstacles.png" alt="environment_with_two_obstacles" width="40%"/>
-    <figcaption>Fig.1: Illustration of a possible <tt>CollisionEnvironment</tt> with a bounding box spanning the coordinates between <tt>(0,0)</tt> and <tt>(9,9)</tt>. The environment holds the obstacles generated in the two above code snippets. The red line represents <tt>lineString</tt> and the blue triangle represents <tt>polygon</tt>.</figcaption>
-  </figure>
-</center>
+| ![environment_with_two_obstacles](environment_with_two_obstacles.png) | Fig.1: Illustration of a possible `CollisionEnvironment` with a bounding box spanning the coordinates between $(0,0)$ and $(9,9)$. The environment holds the obstacles generated in the two above code snippets. The red line represents `lineString` and the blue triangle represents `polygon`. |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+
+
 
 The two generated geometries can be inserted into the environment as follows.
 
@@ -58,12 +64,9 @@ The `environment` consists of a graph (made up of nodes and edges) that holds in
 
 TODO: Einstellungsparameter für Environment-Initialisierung finden und hier dokumentieren.
 
-<center>
-  <figure>
-    <img src="../../../../images/docu/environment_full.png" alt="environment_full" width="65%"/>
-    <figcaption>Fig.2: Illustration of a possible <tt>CollisionEnvironment</tt> with a spatial extent that was generated dynamically based on the positioning of the obstacles. The routing points that have a slight offset. The edges represent possible paths through the environment. The purple boxes represent obstacles.</figcaption>
-  </figure>
-</center>
+| ![environment_full](environment_full.png) | Fig.2: Illustration of a possible `CollisionEnvironment` with a spatial extent that was generated dynamically based on the positioning of the obstacles. The routing points that have a slight offset. The edges represent possible paths through the environment. The purple boxes represent obstacles. |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+
 
 The offset can be introduced as follows. Here, a total of `225` routing points are distributed homogeneously across the `environment` with an offset per routing point of `0.05`. The resulting distribution of routing points can look like the set of routing points shown in Fig.2.
 
@@ -92,7 +95,7 @@ Position = RandomPosition();
 Environment.Insert(this);
 ```
 
-This example takes place in the initialization method of an character `Player`. The character has a property `Position`. This property is initialized with a random position that consists of a tuple (x,y). Once the character has a defined position, it can be placed on the `Environment` by calling the environment's `Insert(<object reference>)` method and passing a reference to the character.
+This example takes place in the initialization method of a character `Player`. The character has a property `Position`. This property is initialized with a random position that consists of a tuple $(x,y)$. Once the character has a defined position, it can be placed on the `Environment` by calling the environment's `Insert(<object reference>)` method and passing a reference to the character.
 
 ### Remove an existing object
 
@@ -147,7 +150,7 @@ TODO
 A `Character` is an active participant of the game that is played in a `CollisionEnvironment`. It is described by the following properties:
 
 - `ID`: A `Guid` that uniquely identifies a `Character`
-- `Position`: The current position, described by a tuple (x,y), of a `Character`
+- `Position`: The current position, described by a tuple $(x,y)$, of a `Character`
 - `Extent`: The spatial extent of a `Character`
 
 Furthermore, the following method is inherent to every `Character`:
@@ -167,7 +170,3 @@ A `CollisionKind` can be one of three actions:
 A `VisibilityKind` describes whether an `Obstacle` is `Transparent` or `Opaque` with respect to the vision of a `Character`:
 - `Transparent`: A `Character` can see through the `Obstacle`
 - `Opaque`: A `Character` cannot see through the `Obstacle`
-
-## Special Cases
-
-TODO

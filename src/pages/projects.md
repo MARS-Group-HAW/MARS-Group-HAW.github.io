@@ -13,8 +13,8 @@ Projects the MARS Group is involved in:
 
 
 <div class="row row--align-center">
-    <Teaser title="ESIDA" description="lorem upsum" img="/img/logos/ESIDA.png" link="/projects/esida" />
-    <Teaser title="SmartOpenHamburg" description="lorem upsum" img="/img/logos/SmartOpenHamburg.png" link="/projects/smartopenhamburg" />
+    <Teaser title="ESIDA" description="" img="/img/logos/ESIDA.png" link="/projects/esida" />
+    <Teaser title="SmartOpenHamburg" description="" img="/img/logos/SmartOpenHamburg.png" link="/projects/smartopenhamburg" />
 </div>
 
 
@@ -23,5 +23,5 @@ Projects the MARS Group is involved in:
 ## Previous projects
 
 <div class="row row--align-center">
-    <Teaser title="EMSAfrica" description="lorem upsum" img="/img/logos/EMS_Africa.png" link="/projects/emsafrica" />
+    <Teaser title="EMSAfrica" description="" img="/img/logos/EMS_Africa.png" link="/projects/emsafrica" />
 </div>

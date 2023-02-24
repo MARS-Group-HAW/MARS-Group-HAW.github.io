@@ -1,3 +1,7 @@
+---
+sidebar_position: 90
+---
+
 # Known Problems and Solutions 
 
 This article includes a list of common problems that might occur when working with the MARS runtime system and offers some solutions to them.
@@ -12,7 +16,7 @@ ___
 
 When working with an internal configuration file (directly in the Program.cs file), the culture setting can be specified in the `CsvOptions` object within the `Globals` object as follows:
 
-```c#
+```csharp
 Globals =
 {
    // other global settings here
@@ -42,7 +46,7 @@ When working with an external configuration file (JSON), the culture setting can
 
 Alternatively, the following line of code can be written in the Program.cs file at the beginning of the `Main` method.
 
-```c#
+```csharp
 Thread.CurrentThread.CurrentCulture = new CultureInfo("EN-US");
 ```
 ---
@@ -62,14 +66,13 @@ ___
 
 **Note:** when working with a SmartOpenHamburg model, the following class can be used to examine and specify paths to certain directories that fulfil specific functions within the model.
 
-```c#
+```csharp
 namespace SOHResources {
    public static class ResourcesConstants {
         // ...
     }
 }
 ```
-
 ___
 
 ### Source coordinate standard for GIS data

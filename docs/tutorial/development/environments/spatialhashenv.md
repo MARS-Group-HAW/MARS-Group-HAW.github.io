@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # SpatialHashEnvironment (Grid Environment)
 
 A grid is an environment in which the world is divided into cells of equal size, like on a chessboard. An object (an agent or an entity) on the grid can be moved along the horizontal, vertical, and diagonal axes. A simple example showing a few functionalities can be found [here](https://git.haw-hamburg.de/mars/model-deployments/-/tree/master/C%23%20Models/Grid_Test%20CS).

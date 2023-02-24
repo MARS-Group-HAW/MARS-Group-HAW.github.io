@@ -10,4 +10,4 @@ MARS Group contributes to this project a traffic model of the city of Hamburg in
 
 The SOHH model is in continuous development and strives to be able to simulate a variety of scenarios relevant to traffic and urban planning. Visit us also on our project website [smartopenhamburg.de](https://smartopenhamburg.de/)!
 
-Current SOHH deployments for testing can be found [here](https://mars.haw-hamburg.de/articles/soh/scenarios/index.html).
+Current SOHH deployments for testing can be found [here](/docs/tutorial/soh/scenarios).

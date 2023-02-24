@@ -1,14 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-import ThemedImage from '@theme/ThemedImage';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-import Image from '@theme/IdealImage';
-
-
-import styles from './styles.module.css';
-
-
 
 export default function Teaser({title, description, img, link}) {
   return (

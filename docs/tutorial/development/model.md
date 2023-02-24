@@ -1,3 +1,9 @@
+---
+sidebar_position: 5
+---
+
+# ModelDescription
+
 ## Model Definition
 
 In order to use a model, entities, agents and layer types must be made known to the system.

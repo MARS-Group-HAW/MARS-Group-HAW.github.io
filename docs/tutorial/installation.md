@@ -10,6 +10,12 @@ The MARS framework is written in C#/.NET, so you need to install the [.NET-SDK](
 The easiest way is to install [JetBrains Rider](https://www.jetbrains.com/rider/) as an Integrated Development Environment (IDE). This will handle the installation of .NET for you and give an easy way to execute and debug your models. Though a license is required for using Rider, which is [free for students](https://www.jetbrains.com/community/education/#students).
 
 
+:::info
+
+For a more playful introduction into modelling with MARS, have a look at the [MARS Explorer](mars-explorer.md), which provides a simpler IDE suited for smaller models and first steps into MARS.
+
+:::
+
 ## NuGet Packages
 
 The MARS framework is organized in [NuGet packages](https://www.nuget.org/packages/Mars.Life.Simulations/). To install the framework in your application, use the public `nuget` feed from Microsoft and make your you app is compatible with `netstandard2.0`.

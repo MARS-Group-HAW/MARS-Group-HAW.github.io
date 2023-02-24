@@ -1,17 +1,22 @@
-## Definition of Entities
+---
+sidebar_position: 20
+---
 
+# Entity
+
+## Definition of Entities
 
 In contrast to agents, entities are pure objects without a ``Tick()`` method. However, entities are also identified by a UUID (Guid) ``ID`` and can be included in the model to enter other data that is not directly part of the agent parameterization. Entity are versioned and snapshots are persisted just the same as with agents.
 
 In your model code, add a ``using Mars.Interfaces.Agents`` to make the namespace directly available.
 
-```C#
+```csharp
 using Mars.Interfaces.Agents
 ```
 
 Create a class (called e.g., `MyEntityType`) and implement the `IEntity` interface
 
-```C#
+```csharp
 public class MyEntityType : IEntity 
 {
     public Guid ID { get; set; }
@@ -24,10 +29,9 @@ Alternatively you can infer directly from `AbstractEntity`, available in `Mars.C
 
 Entities must be made known in the model, so that they can be initialized by a given simulation configuration. In the entry point ``Main()``, the newly defined entity type must be registered within the ``ModelDescription``.
 
-```c#
+```csharp
 // Define the description is not already happened
 // var description = new ModelDescription();
-
 description.AddEntity<MyEntityType>()
 ```
 
@@ -38,13 +42,13 @@ Entities can be loaded into the model by using the ``IEntityManager`` component 
 
 > The ``IEntityManager`` component can be resolved using the global simulation container ``ISimulationContainer``. When the ``AbstractLayer`` implementation is used (as described in [layer definition](layers.md)) the ``IEntityManager`` is already accessible. Otherwise the components needs to be resolved as follows:
 
-````c#
+````csharp
 var manager = container.Resolve<IEntityManager>();
 ````
 
 An agent can create concrete entities directly and bind them to itself:
 
-```c#
+```csharp
 var entity = manager.Create<MyAgentType>("keyField", "keyValue");
 ```
 

@@ -1,3 +1,7 @@
+---
+sidebar_position: 50
+---
+
 # Spawning and Removing Agents and Entities
 
 To **create** instances of agent types and **registering** them at the runtime system to process the `Tick()`, two concepts are available:

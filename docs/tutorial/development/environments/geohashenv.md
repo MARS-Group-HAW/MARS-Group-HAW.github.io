@@ -1,3 +1,7 @@
+---
+sidebar_position: 10
+---
+
 # GeoHashEnvironment (Geospatial Grid Environment)
 
 A geospatial environment is an environment that consists of geospatial point objects. A geospatial point objects is a georeferenced location that consists of a longitude and latitude, in this case based on the coordinate reference system WGS84 EPSG:4326 CRS. A simple example showing a few functionalities can be found [here](https://git.haw-hamburg.de/mars/model-deployments/-/tree/master/C%23%20Models/Geo_Test%20CS).
