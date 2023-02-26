@@ -18,7 +18,7 @@ Agent-based modelling derives from the field of artificial intelligence (AI). Th
 
 The way of creating results bottom-up from an individual's actions leading to complex effect makes multi-agent modelling especially well-suited for research in the social sciences.
 
-**Tick-based** simulation are in contrast to continuous simulations divided into steps. These steps symbolize a time-driven progress. Every tick stands for an equally large time frame, which is called Δt. This time frame is fixed for the whole simulation, so that for example a simulation is progressing in steps of 1 minute. Every scenario runs for a defined amount of ticks. In every tick all tick-based elements (agents and active layers) have the possibility to act. Time-referenced scenarios have a start and an end time-point and a step length (Δt). The amount of ticks is then inferred.
+**Tick-based** simulation are in contrast to continuous simulations divided into steps. These steps symbolize a time-driven progress. Every tick stands for an equally large time frame, which is called $\Delta t$. This time frame is fixed for the whole simulation, so that for example a simulation is progressing in steps of 1 minute. Every scenario runs for a defined amount of ticks. In every tick all tick-based elements (agents and active layers) have the possibility to act. Time-referenced scenarios have a start and an end time-point and a step length ($\Delta t$). The amount of ticks is then inferred.
 
 ## What is MARS?
 
