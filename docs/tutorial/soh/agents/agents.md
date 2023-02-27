@@ -2,13 +2,12 @@
 
 SmartOpenHamburg uses agents to map mobility behaviour. The system offers different pre-defined types that can be used to investigate different scenarios. Existing types can be reused, and new classes can be defined. 
 
-```plantUml
-class VectorPoiLayer {
-}
-VectorLayer <|-- VectorPoiLayer
-class RasterDensityLayer {
-}
+```mermaid
+classDiagram
+    VectorLayer <|-- VectorPoiLayer
 
+    class VectorPoiLayer {
+    }
 ```
 
 The model includes the following agent types:
@@ -29,7 +28,7 @@ SmartOpenHamburg implements the following execution models. Further models such 
 
 This mode creates concrete ``Traveler`` agents that start from a source and move towards a target. On the way, travellers can use different available modalities to reach their destination. 
 
-A Traveler Agent is a specialization of the ``MultiCapableAgent`` (more about this type of agent can be found [here](agents/multi_capable_agent.md))
+A Traveler Agent is a specialization of the ``MultiCapableAgent`` (more about this type of agent can be found [here](multi_capable_agent.md))
 
 Planning is done based on the destination concerning the static travel time of identified ``MultimodalRoute``s. A multimodal route consists of several subroutes, each assigned to an individual modality.
 The ``Traveler`` tries to obtain, use and return these modalities on the way.
@@ -62,6 +61,12 @@ The following table shows a schedule configuration for everything `Citizen`. Eac
 
 The diary creates a dynamic history in the attached image.
 
-![Dayplan](dayplan.png)
 
-> For _half-day_ or _non-working agents_, either the second work block after the lunch break or the complete work block is omitted.
+<figure>
+
+![Dayplan](dayplan.png)
+<figcaption>
+
+For _half-day_ or _non-working agents_, either the second work block after the lunch break or the complete work block is omitted.
+</figcaption>
+</figure>

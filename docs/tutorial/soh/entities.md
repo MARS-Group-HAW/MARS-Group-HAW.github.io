@@ -1,6 +1,10 @@
+---
+sidebar_position: 20
+---
+
 # Entities
 
-SmartOpenHamburg distinguishes between [`agents`](agents.md) (acting individuals) and `entities` (usable objects) within the simulation. Both can be initialized using files (see [Agent Configuration](../configuration/agent_config.md)).
+SmartOpenHamburg distinguishes between [`agents`](agents/agents.md) (acting individuals) and `entities` (usable objects) within the simulation. Both can be initialized using files (see [Agent Configuration](../configuration/agent_config.md)).
 Entities are initialized by an `EntityManager` that has a data source (e.g. a csv-file like `car.csv`). While every agent is unique, there may be multiple entities with the same initialization. 
 
 The following example displays a `car.csv`. It defines values for relevant attributes of the [`Car`](#car). Every instance of a car is initialized by referencing the *type* column. All cars of *type* `Golf` have for instance a `maxSpeed` of 13.89 m/s.

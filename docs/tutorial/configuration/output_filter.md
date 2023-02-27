@@ -1,36 +1,65 @@
+---
+sidebar_position: 70
+description: Explains how to configure output filters to reduce output size.
+---
+
 # Output Filter
 
-Since MARS supports model scenario e.g. the TreeModel or SOH with a huge set of involved agents, the modeler can only be interested in a specific subset of them or for specific model-states, regarding the e.g., "is of specific tree kind or has juveniles, etc." Only those entities applying this predicate will be persisted.
+Since MARS supports model scenarios that can potentially generate huge amount of data, the logging of those extensive data can slow the performance of a model (e.g. SmartOpenHamburg models with a huge set of involved agents). The modeler can only be interested in a specific subset of agents or for specific agent-states, e.g., _is the agent in specfici state_ or _log data only for an agent of specific attribute_. 
 
-A dynamic predicate can provided to filter those entities matching the condition. An agent or entity  type can have an optional ``outputFilter`` which is able to accept a set of `AND` associated expressions in form of:
+MARS provides `outputFilter`s for agent to reduce the amount of logged data to those of interest. A dynamic predicate can be provided to filter those entities matching the condition. An agent or entity type can have an optional `outputFilter` which is able to accept a set of `AND` associated expressions in form of:
 
-```json
+```json title="Agent configuration in the config.js"
 {
-"name": "Tree",
-"count": 5049322,
-"file": "../../model_input/tree_bushbuckridge.csv",
-"frequency": 1,
-"outputFrequency": 365,
-"outputFilter": [{
-        "parameter": "species",
+    "name": "MyAgent",
+    "count": 10000,
+    "file": "output.csv",
+    "outputFilter": [{
+        "parameter": "Species",
         "operator": "in",
-        "values": ["tt", "ca"]
-    },
-    {
-        "parameter": "treeAgeGroup",
-        "operator": "notIn",
-        "values": ["seed"]
-    }
-]
+        "values": ["SpeciesA", "SpeciesC"]
+    }]
 }
 ```
 
-The `outputFilter` is collection of AND associated conditions specifying predicate on attribute-level as: 
+For this example for an Agent class `MyAgent` the output rows per tick would only be created, if in the tick the agent's property `Species` has the value `SpeciesA` or `SpeciesC`. 
 
-```bash
-   parameter "x" is "in" or "notIn" a given value (in the example above ["tt", "ca"])
+You can define multiple filter which will be chained. All individual filters must evaluate to `true` if the values of the tick should be logged.
+
+If you don't have a specific property you want to watch for, it can be a good option to define a new property to enable/disable the logging of a tick result like this:
+
+```csharp title="Agent property"
+public bool StoreTickResult { get; set; } = false;
 ```
 
-Containment or non-containment is only checked via a semantic-equality operator.
+```json title="Agent configuration in config.js
+{
+    "name": "MyAgent",
+    "output": "csv",
+    "outputFilter":[{
+        "parameter": "StoreTickResult",
+        "operator": "in",
+        "values": [true]
+    }]
+}
+```
 
-> Skipping the checks do not cause any problems since it is only be used to reduce the amount of data written out and therefore improving the system performance.
+In side the `Tick()` method you can now do as follows. This will log all agent properties only when your expression `YourContraint` is `true`.
+
+```csharp title="Tick() method with outputFilter"
+public void Tick()
+{
+    // at beginning of each tick set 
+    // to false to prevent logging
+    StoreTickResult = false;
+
+    // your logic...
+
+    // your logic reached a state where you want 
+    // to log all agent properties
+    if (YourConstraint)
+    {
+        StoreTickResult = true;
+    }
+}
+```

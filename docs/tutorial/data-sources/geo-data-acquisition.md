@@ -13,7 +13,10 @@ For the usage with the tool QGIS see [How to prepare a vector/raster layer file]
 1. Installing the [OSMnx package](https://osmnx.readthedocs.io/en/stable)
 2. [Examples of usage](https://github.com/gboeing/osmnx-examples)
 
-**Hint:** On Windows additional packages are required for proper working: the GDAL package for your respective python version.  Using an example with the Galapagos Island and the use of OSMnx.
+
+:::note
+On Windows additional packages are required for proper working: the GDAL package for your respective python version. Using an example with the Galapagos Island and the use of OSMnx.
+:::
 
 ```python
 import osmnx as ox
@@ -43,7 +46,7 @@ The model environment is already available (e.g., in the form of a base model) a
       3. Ok
       4. Edit &#8594; Add "any polygon form that fits your requirements"
       5. Layer &#8594; Toggle Editing &#8594; Save
-   3. Vector (possibily Vektor) &#8594;  geo processing tools &#8594;  Intersection...
+   3. Vector (possibily Vektor) &#8594;  geo processing tools &#8594; Intersection...
    4. Drop-down menu "Input layer": base layer
    5. Drop-down menu "Overlay layer": bounding box (or the other way around)
    6. Click "Start"
@@ -63,7 +66,9 @@ Base data with red bounding box (above) and the new data in dimension of mask as
 
 If the necessary data are not available, it is possible to obtain them via a browser (satellite data freely available from ESA). How to crop the data is explained in this section.
 
-**Note**: To download the files in a geo format, an account is required. Accounts are for free.
+:::note 
+To download the files in a geo format, an account is required. Accounts are for free.
+:::
 
 1. Model environment is **not** available; data acquisition via external data sources
 2. **EO Browser:** freely available satellite images (globally) from the ESA (European Space Agency)
@@ -89,23 +94,25 @@ The Mars Runtime System uses vector and raster layers. In order to make raster l
 
 1. Import the desired `tiff` file into QGIS (drag-and-drop)
 2. We require the layer in greyscale.
-    1.Raster &#8594;  Raster Calculator
+    1.Raster &#8594; Raster Calculator
     2. Enter the formula (R + G + B) / 3 into the raster calculator expression (R = chanel 1, G = chanel 2, B = chanel 3)
     3. From "raster chanels", select the three chanels R, G, and B. These appear in the raster calculator expression. Enclose them with round parentheses and divide the expression by 3.
       ![QGIS_geo_tiff_grayscale](geo_tiff_grayscale.png)
     4. In "Result layer" &#8594; "Output layer" specify the file name and file format (GeoTIFF)
     5. Select OK
 3. Save the newly generated layer (let's call it *GrayscaleGEOTIFF*) as an asc file
-   1. Raster &#8594;  Conversion &#8594; Translate (Convert Format)/ Convert (format conversion)...
+   1. Raster &#8594; Conversion &#8594; Translate (Convert Format)/ Convert (format conversion)...
    2. Input layer: GrayscaleGEOTIFF
-   3. In the field "Converted", click "..." and "Save to File..."
+   3. In the field "Converted", click "…" and "Save to File…"
    4. Specify the file name and file format (ASC)
       ![QGIS_geo_tiff_grayscale](geo_tiff_grayscale_to_asc.png)
    5. Click "Save"
    6. Click "Run"
 7. The geodata are exported from QGIS and saved as an asc file
 
-**Note:** An `asc` file contains only one band. This example assumes a `tiff` file with three bands (red, green, and blue). Generally, it is important to specify which band should be exported. For a `geotiff` file with only one band, no additional steps are necessary.
+:::note 
+An `asc` file contains only one band. This example assumes a `tiff` file with three bands (red, green, and blue). Generally, it is important to specify which band should be exported. For a `geotiff` file with only one band, no additional steps are necessary.
+:::
 
 ### 2. Manipulation of GeoTIFF file 
 
@@ -175,7 +182,9 @@ However, the data offered is available in very similar formats. The format `geot
    4. Click "Export"
    5. An `osm` file is downloaded which can be imported into and visualized in QGIS (drag-and-drop)
 
-**Note:** If the area is too large, the import into QGIS might fail
+:::note
+If the area is too large, the import into QGIS might fail.
+:::
 
 ## 8. Time series layer
 
@@ -221,9 +230,11 @@ The `asc` files and the metadata.csv must be stored in the same directory (may a
 
 Data is made usable in the MARS system via layers. These layers contain a wide variety of data with which an agent can interact.
 
-1. How to use a layer file during a MARS model simulation can be found [here](../model-configuration/layer_config.md).
+How to use a layer file during a MARS model simulation can be found [here](../configuration/layer_config.md).
 
-**Note:** Data from external sources should always be validated regarding completeness, integrity, and plausibility.
+:::note
+Data from external sources should always be validated regarding completeness, integrity, and plausibility.
+:::
 
 # 10 Data acquisition using the example of HVV
 
@@ -312,6 +323,11 @@ It is possible to apply certain operations to the attributes. In this way it is 
 
 ![selektion-altona](selection-altona.png)
 
-**Hint:** Depending on the version of QGIS, the query may also look different. Here is an example as an SQL query with the HVV and the S-Bahn routes.
+:::note
+Depending on the version of QGIS, the query may also look different. 
+:::
+
+Here is an example as an SQL query with the HVV and the S-Bahn routes:
 
 ![sql-request-formular](sql-request.png)
+

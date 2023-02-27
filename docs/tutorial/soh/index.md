@@ -21,9 +21,11 @@ The goals of SOH are the conception and realization of a decision support system
 
 ## Example 
 
-The following video shows an example scenario using ``Citizen`` agents and the [daily schedule model](agents.md) for the urban area in Altona Hamburg:
+The following video shows an example scenario using ``Citizen`` agents and the [daily schedule model](agents/agents.md) for the urban area in Altona Hamburg:
 
-> [!Video https://www.youtube.com/embed/7w0kmC8R3FE]
+<div class="text--center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7w0kmC8R3FE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ## Lifecycle
 
@@ -33,7 +35,6 @@ The life cycle of each agent consists of a sequence of consumed services and day
 The figure below shows the synthetic ``work`` target selection based on the provided public land used services.
 
 ![POI Hamburg](working_relationship.png)
-
 
 
 

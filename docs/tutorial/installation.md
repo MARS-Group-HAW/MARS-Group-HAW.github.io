@@ -18,6 +18,8 @@ For a more playful introduction into modelling with MARS, have a look at the [MA
 
 ## NuGet Packages
 
+![](https://img.shields.io/nuget/v/Mars.Life.Simulations)
+
 The MARS framework is organized in [NuGet packages](https://www.nuget.org/packages/Mars.Life.Simulations/). To install the framework in your application, use the public `nuget` feed from Microsoft and make your you app is compatible with `netstandard2.0`.
 
 The runtime system is available as a public NuGet package and can simply be added to your project using the `dotnet` CLI with:
@@ -33,3 +35,26 @@ Or if you are using an IDE:
 
 Search for `Mars.Life.Simulations` and select <kbd>Install</kbd>.
 
+
+## `config.json` validation in Rider
+
+The simulation configuration is generally stored in a [`config.json` file](./configuration/sim_config_options.md). Because JSON is a pure data format and not a schema-based format, it has no native support for schema definitions. But it would be nice to have a guideline how to fill the `config.json`, knowing which options are available and which parts of configuration are mandatory.
+
+For this purpose, we use [_JSON Schema_](https://json-schema.org/). It is supported by multiple IDEs; the following describes a short introduction how to use it in Rider.
+
+Open the `JetBrainsRider > Preferences` menu. Go to `Languages & Framework > Schemas and DTDs > JSON Schema Mappings`. Paste the URL of the MARS schema to `Schema file or URL`:
+
+```
+https://mars-group-haw.github.io/mars_config.schema.json
+```
+
+Use the preselected `Schema version: JSON Schema version 4`. 
+
+Add a `File path pattern` for files that are named `config.json`. `Save`.
+
+![rider_preferences_schema](rider_json_schema_preferences.png)
+
+That's it. Know you have full schema support for manipulation on your simulation configuration json-file.
+
+
+![rider_json_schema](rider_json_schema.png)

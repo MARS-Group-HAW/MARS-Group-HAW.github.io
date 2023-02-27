@@ -1,45 +1,62 @@
+---
+sidebar_position: 10
+---
+
 # Multi-Capable Agent
 
 The ``MultiCapableAgent`` agent is a [``MultimodalAgent``](multi_modal_agent.md) that implements different steering capabilities.
 As right now it supports car driving (``ICarSteeringCapable``) and cycling (``IBicycleSteeringAndRentalCapable``). 
-Moreover it allows to use the [``ferry``](../entities/ferry.md) and walking (``Pedestrian``). 
+Moreover, it allows to use the [``ferry``](../entities.md#ferry) and walking (``Pedestrian``). 
 
-```plantUml
-abstract class MultiCapableAgent {
-    + MultiCapableAgent(multimodalLayer:IMultimodalLayer, position:Position)
-    + Capabilities : IEnumerable<ModalType> <<get>>
-    + AgentCapabilities : string <<get>>
-    + CapabilityDriving : bool <<get>> <<set>>
-    + CapabilityCycling : bool <<get>> <<set>>
-    + ExpectedTravelTime : int <<get>> <<protected set>>
-    + StoreTickResult : bool <<get>> <<set>>
-    + ActualTravelTime : int <<get>>
-    + RouteMainModalActualTravelTime : int <<get>> <<protected set>>
-    + RouteMainModality : string <<get>>
-    + RouteModalities : string <<get>>
-    + RouteModalityCount : int <<get>>
-    + RouteMainModalRouteLength : int <<get>>
-    + <<override>> Move() : void
-    + <<override>> Notify(passengerMessage:PassengerMessage) : void
-    + ActiveCapability : ModalType <<get>>
-    + OvertakingActivated : bool <<get>>
-    + CurrentlyCarDriving : bool <<get>>
-    + DriverRandom : double <<get>>
-    + DriverType : DriverType <<get>>
-    + CyclingPower : double <<get>>
-    + Gradient : double <<get>> = 0
-}
-Pedestrian <|-- MultiCapableAgent
-ICarSteeringCapable <|-- MultiCapableAgent
-IBicycleSteeringAndRentalCapable <|-- MultiCapableAgent
+```mermaid
+classDiagram
+
+   Pedestrian <|-- MultiCapableAgent
+   ICarSteeringCapable <|-- MultiCapableAgent
+   IBicycleSteeringAndRentalCapable <|-- MultiCapableAgent
+
+   class MultiCapableAgent {
+      <<Abstract>>
+      + MultiCapableAgent(multimodalLayer:IMultimodalLayer, position:Position)
+      + Capabilities IEnumerable~ModalType~
+      + AgentCapabilities string 
+      + CapabilityDriving bool  
+      + CapabilityCycling bool  
+      + ExpectedTravelTime int  protected set
+      + StoreTickResult bool  
+      + ActualTravelTime int 
+      + RouteMainModalActualTravelTime int  <<protected set>>
+      + RouteMainModality string 
+      + RouteModalities string 
+      + RouteModalityCount int 
+      + RouteMainModalRouteLength int 
+      + ^Move() void
+      + ^Notify(passengerMessage:PassengerMessage) void
+      + ActiveCapability ModalType 
+      + OvertakingActivated bool 
+      + CurrentlyCarDriving bool 
+      + DriverRandom double 
+      + DriverType DriverType 
+      + CyclingPower double 
+      + Gradient double = 0.0
+   }
+
+   class ICarSteeringCapable {
+      <<Interface>>
+   }
+
+   class IBicycleSteeringAndRentalCapable {
+      <<Interface>>
+   }
+
 ```
 
-### Dynamic capabilities
+## Dynamic capabilities
 
 The ``MultiCapableAgent`` agent can be configured by enabling and disabling these capabilities so that different agents (of the same type) may have different modalities at hand to choose from.  
-The capabiltity for car driving can be set with over the property ``CapabilityDriving`` and for cycling with ``CapabilityCycling``.
+The capability for car driving can be set with over the property ``CapabilityDriving`` and for cycling with ``CapabilityCycling``.
 
-### Output aggregation
+## Output aggregation
 
 The result output as simulation results can be generated for each individual agent to perform detailed analysis.
 For bigger scenarios it might make sense to switch to an aggregate output. The ``MultiCapableAgent`` allows to only store information for successfully finished multimodal routes.
@@ -57,7 +74,7 @@ As aggregate data following information is provided:
 |RouteModalityCount             |The amount of different route sections (e.g. Walk:arrow_right:Cycle:arrow_right:Walk = 3)                                             
 
 
-To activate the multimodal route aggregation output use following definition in the config.json.
+To activate the multimodal route aggregation output use following definition in the `config.json`.
 
 ```json
 {

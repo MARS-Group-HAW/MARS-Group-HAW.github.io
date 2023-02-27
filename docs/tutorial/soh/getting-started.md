@@ -1,10 +1,14 @@
+---
+sidebar_position: 1
+---
+
 # Quick Start
 
 This **getting started** describes the steps to download the model, which necessary dependencies have to be installed and how a concrete model is started.
 
 ## Contents
 
-The repository contains projects and a number of libraries to simulate mobility behaviour in citie
+The repository contains projects and a number of libraries to simulate mobility behavior in cities.
 
 **SOHModelStarter**: a model that is geared towards determining optimal routes using several modes of travel (modalities). Per default, the model is set in the district of Altona, Hamburg to run for 24 simulation hours with one agent (type `Citizen`) who is able to travel by walking on foot, riding a bicycle, and driving a car. The agent has a predefined daily routine which includes activities like work, errands, and others.
 

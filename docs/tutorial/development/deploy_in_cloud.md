@@ -17,7 +17,7 @@ Simulations can be run both locally and distributed within a Kubernetes cluster 
 
 To start a simulation in the K8s computing cluster the model must be built. Navigate to the directory where the `csproj` file and your entry point `Main()` is located (More about defining the entry point can be found [here](model.md)).
 
-Open the file and create a `ModelDescription` like [here](../basic-concepts/model.md).
+Open the file and create a `ModelDescription` like [here](../development/model.md).
 
 ```csharp
 using Mars.Interfaces;
@@ -158,7 +158,7 @@ spec:
             '
 ```
 
-Note that the [here](../model-configuration/index.md) simulation configuration is noted in JSON and available as a string via the environment variable `CONFIG` in the application. Thus the scenario can be adapted directly via this specification. Furthermore, all input files (e.g. `geojson` or `asc` files) must be included in the image.
+Note that the [here](../configuration/sim_config_options.md) simulation configuration is noted in JSON and available as a string via the environment variable `CONFIG` in the application. Thus the scenario can be adapted directly via this specification. Furthermore, all input files (e.g. `geojson` or `asc` files) must be included in the image.
 
 ## Starting the simulation in the cluster
 

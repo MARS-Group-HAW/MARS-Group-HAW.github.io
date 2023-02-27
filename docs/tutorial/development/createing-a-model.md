@@ -115,11 +115,11 @@ private static SimulationConfig CreateDefaultConfig()
 |`ShowConsoleProgress`|if `true`, the simulation progress is displayed in the terminal|`true` or `false`|
 |`OutputTarget`|the medium into which simulation output data is stored (set to csv in the above example)|`csv`|
 
-For more information on simulation output formats, please click [here](../model-configuration/sim_output_formats.md).
+For more information on simulation output formats, please click [here](../configuration/sim_output_formats.md).
 
-For more information on layer configuration, please click [here](../model-configuration/layer_config.md).
+For more information on layer configuration, please click [here](../configuration/layer_config.md).
 
-For more information on agent configuration, please click [here](../model-configuration/agent_config.md).
+For more information on agent configuration, please click [here](../configuration/agent_config.md).
 
 
 ## Use external simulation configurations (JSON)
@@ -148,11 +148,11 @@ In order to define a simulation configuration that exist outside of the model, a
 * `console`: if `true`, the simulation progress is displayed in the terminal
 * `output`: the medium into which simulation output data is stored
 
-For more information on simulation output formats, please click [here](../model-configuration/sim_output_formats.md).
+For more information on simulation output formats, please click [here](../configuration/sim_output_formats.md).
 
-For more information on layer configuration, please click [here](../model-configuration/layer_config.md).
+For more information on layer configuration, please click [here](../configuration/layer_config.md).
 
-For more information on agent configuration, please click [here](../model-configuration/agent_config.md).
+For more information on agent configuration, please click [here](../configuration/agent_config.md).
 
 ___
 
@@ -195,9 +195,7 @@ The simulation is started by resolving the application and calling `StartSimulat
 }
 ```
 
-___
-
-## Store agent trips in GEOJSON file
+## Store agent trips in GeoJSON file
 
 In order to store agent trips (for later analysis and visualization), the following code can be added to the example in Part 3.
 
@@ -213,4 +211,4 @@ foreach (var layer in layers)
 }
 ```
 
-For more information on agent trips and visualization of agent movement, please click [here](../analysis-and-visualization/visualizing_agent_trips_kepler.md).
+For more information on agent trips and visualization of agent movement, please click [here](../analysis/visualizing_agent_trips_kepler.md).

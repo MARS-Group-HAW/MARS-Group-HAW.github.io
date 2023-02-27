@@ -2,15 +2,13 @@
 
 Simulation outputs can be analyzed and plotted with various tools. In this article, the analysis with [FalconSQL](https://plotly.com/chart-studio-help/database-connectors/personal-login/) is used as an example.
 
-___
-
 ## How to plot simulation output data with FalconSQL
 
-**FalconSQL** requires data stored in a database. Set the output to use one of the supported relational output kinds, described [here](../model-configuration/sim_output_formats.md).
+**FalconSQL** requires data stored in a database. Set the output to use one of the supported relational output kinds, described [here](../configuration/sim_output_formats.md).
 
 1. Go to [Plotly](https://plotly.com/chart-studio-help/database-connectors/personal-login/) and download and install FalconSQL for your desired operating system.
 
-2. Create a connection to your running database or database file (e.g., when using SQLite more about the output formats [here](../model-configuration/sim_output_formats.md)). If FalconSQL is connected (in the Connection tab), you can submit SQL queries (in the query tab) to extract and visualize the desired data.
+2. Create a connection to your running database or database file (e.g., when using SQLite more about the output formats [here](../configuration/sim_output_formats.md)). If FalconSQL is connected (in the Connection tab), you can submit SQL queries (in the query tab) to extract and visualize the desired data.
 
 3. After the query ran successfully, the extracted attributes are available in the Chart tab. Click `Trace` to generate a new plot. You can generate multiple traces to visualize and compare different data.
 
@@ -30,8 +28,6 @@ ___
    ![Barchart for walking and cycling](walk_cycle_barchart.png)
    The chart shows the number of walking and cycling agents per hours for the duration of the 24-hour simulation time.
 
-___
-
 ## How to plot simulation output data with Tableau
 
 Tableau can take your simulation's output data via a csv file or a database connection. Tableau is a useful tool for analyzing and aggregating data as well as creating custom functions to process data as needed.
@@ -43,8 +39,6 @@ Tableau can take your simulation's output data via a csv file or a database conn
 2. Open Tableau and select your data source (csv or database connection).
 
 3. _Tableau_ offers online [Tutorials and Documentation](https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm).
-
-___
 
 ## How to create a heat map of agents density per tick
 

@@ -1,6 +1,6 @@
 # Vector Layer
 
-The SmartOpenHamburg model implements a number of vector-layers (more about vector-layers and how to define them can be found [here](../../core/basic-concepts/layers.md)).
+The SmartOpenHamburg model implements a number of vector-layers (more about vector-layers and how to define them can be found [here](../../development/layers.md)).
 
 Vector layers are used in the model to map environmental information of the city. This environmental information includes the following types:
 
@@ -17,15 +17,17 @@ Vector layers are used in the model to map environmental information of the city
 
 ## Point of Interests
 
-The `VectorPoiLayer` (POI) is a point layer that includes service points. It supports the [Daily Schedule Model](../agents.md) of the Citizen Agents. 
+The `VectorPoiLayer` (POI) is a point layer that includes service points. It supports the [Daily Schedule Model](../agents/agents.md#daily-schedule-model) of the Citizen Agents. 
 
-```plantUml
-class VectorPoiLayer {
-}
-VectorLayer <|-- VectorPoiLayer
+
+```mermaid
+classDiagram
+    class VectorPoiLayer {
+    }
+    VectorLayer <|-- VectorPoiLayer
 ```
 
-The `VectorPoiLayer` wird dazu verwendet um die `Freetime` Kategorie zu erfüllen.
+The `VectorPoiLayer` is used to fulfill the `Freetime` category.
 
 ![LandUse](poi.png)
 
@@ -33,18 +35,21 @@ The `VectorPoiLayer` wird dazu verwendet um die `Freetime` Kategorie zu erfülle
 
 The public transport layer is a point layer that includes public train stations, bus stops and landing stages, decoupled from the `POI` layer. It can be used to identify multimodal routes for public transport.
 
-```plantUml
-class VectorPublicStations {
-}
-VectorLayer <|-- VectorPublicStations
+```mermaid
+classDiagram
+    class VectorPublicStations {
+    }
+    VectorLayer <|-- VectorPublicStations
 ```
+
 
 ## Landuse Layer
 
-```plantUml
-class VectorLanduseLayer {
-}
-VectorLayer <|-- VectorLanduseLayer
+```mermaid
+classDiagram
+    class VectorLanduseLayer {
+    }
+    VectorLayer <|-- VectorLanduseLayer
 ```
 
 Der Landuse Layer wird verwendet um Service Gebiete in der Stadt zu identifizieren, anhand dere der Tageplan des `Citizen` Agenten ausgelegt werden kann. Er enthält weitere nicht nach Service Punkten benannnte Orte wie Grünflächen oder Inndustrie Bezirke. Desweiteren wird er verwendet um Wohnsitutation in der Stadt abzubilden um daraus die `Home` Lokalität im Tagesplan zu ermitteln.
@@ -55,21 +60,23 @@ Die obige Abbildung zeigt den Landuse Layer mit hervorgehobenen `residential` (b
 
 K-NN Anfrange könen an den `VectorLanduseLayer` gestellt werden um nach naheliegenden Grünflächen zu suchen:
 
-```c#
+```csharp
 var nearestLands = VectorLanduseLayer.Explore(new []{9.941650, 53.587268}, 100, 1, land => land.Type == "grass");
 ```
 
 ## Buildings Footprint
 
-The Buildings Footprint is multi-polygon based layer and represents the positioned buildings of the city to support the categories for using the [Daily Schedule Model](../agents.md)
+The Buildings Footprint is multi-polygon based layer and represents the positioned buildings of the city to support the categories for using the [Daily Schedule Model](../agents/agents.md)
 
-```plantUml
-class VectorBuildingsLayer {
-}
-VectorLayer <|-- VectorBuildingsLayer
+
+```mermaid
+classDiagram
+    class VectorBuildingsLayer {
+    }
+    VectorLayer <|-- VectorBuildingsLayer
 ```
 
-A `VectorBuildingsLayer` can be used similar to the `VectorLanduseLayer` to search for nearby service locations. The following figure shows the integrated buildings footprint of Hamburg, highlightinng the universities (red):
+A `VectorBuildingsLayer` can be used similar to the `VectorLanduseLayer` to search for nearby service locations. The following figure shows the integrated buildings' footprint of Hamburg, highlighting the universities (red):
 
 ![LandUse](buildings.png)
 
@@ -94,7 +101,20 @@ The walk network is managed by the ``CitizenLayer`` for the walk modality, the `
 
 A `CarParkingLayer` is a `VectorLayer` that holds `CarParkingSpaces`.
 
-![UML](UML-CarParkingLayer.png)
+
+```mermaid
+classDiagram
+    class CarParkingLayer {
+    }
+
+    class CarParkingSpace {
+
+    }
+
+    VectorLayer <|-- CarParkingLayer
+    IVectorFeature <|-- CarParkingSpace
+
+```
 
 It can be filled with data that hold the geocoordinates of parking areas and parking spaces. Each feature of the imported vector layer maps to one `CarParkingSpace` in the `CarParkingLayer`. Below is a screenshot of a vector layer in QGIS that shows the geocoordinates of parking areas and parking spaces in the inner city of Hamburg, Germany.
 

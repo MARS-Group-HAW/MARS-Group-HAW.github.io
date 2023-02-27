@@ -22,7 +22,7 @@ public bool InitLayer(TInitData layerInitData,
 }
 ```
 
-Optionally the ``RegisterAgent`` handle allows to set and override the execution frequency (for more see [here](../model-configuration/execution.md)) to specify **after how many ticks** the agent should be called again. Otherwise the registry uses the settings from the simulation configuration ``config.json``. 
+Optionally the ``RegisterAgent`` handle allows to set and override the execution frequency (for more see [here](../configuration/execution.md)) to specify **after how many ticks** the agent should be called again. Otherwise the registry uses the settings from the simulation configuration ``config.json``. 
 
 If an output has been specified using ``output``, the object is managed accordingly in the output as well automatically.
 

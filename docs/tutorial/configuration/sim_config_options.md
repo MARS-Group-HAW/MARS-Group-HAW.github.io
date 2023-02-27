@@ -1,12 +1,17 @@
+---
+sidebar_position: 1
+description: Lists the simulation configuration options available for the config.
+---
+
+# Simulation Configuration
+
 ## Options for Simulation Configuration 
 
 This is a list of all the attributes that can be defined in different sections of the simulation configuration.
 
-___
-
 ### Execution
 
-The simulation is executed in parallel if multiple processors are available. Sometimes its handy to switch to a sequential execution to evade problems with locks or synchronization.
+The simulation is executed in parallel if multiple processors are available. Sometimes it's handy to switch to a sequential execution to evade problems with locks or synchronization.
 
 Therefore use in top level config option `execution` the `maxProcessCount` property and set it to `1`. 
 
@@ -20,9 +25,6 @@ Therefore use in top level config option `execution` the `maxProcessCount` prope
   }
 }
 ````
-
-
-___
 
 ### Globals
 
@@ -126,7 +128,7 @@ ___
 
 ___
 
-### Layer
+## Layer
 
 | Property                   | Type                                                   | Default          | Required | Constraints     |
 | -------------------------- | ------------------------------------------------------ | ---------------- | -------- | --------------- |
@@ -137,33 +139,32 @@ ___
 
 The layer section includes a list of configurations for each layer type defined in the model. Here is an example of the configuration for two layers:
 
-   ```json
+```json
+{
+  "layers": [
     {
-      "layers": [
+      "name": "TrafficLightLayer",
+      "file": "res/traffic_lights/traffic_lights_harburg_zentrum.zip"
+    },
+    {
+      "name": "CitizenLayer",
+      "file": "res/networks/harburg_zentrum_walk_graph.geojson",
+      "mapping": [
         {
-          "name": "TrafficLightLayer",
-          "file": "res/traffic_lights/traffic_lights_harburg_zentrum.zip"
-        },
-        {
-          "name": "CitizenLayer",
-          "file": "res/networks/harburg_zentrum_walk_graph.geojson",
-          "mapping": [
-            {
-              "parameter": "ParkingOccupancy",
-              "value": 0.779
-            }
-          ]
+          "parameter": "ParkingOccupancy",
+          "value": 0.779
         }
       ]
     }
-   
-   ```
+  ]
+}
+```
 
-   `name:` the name of the layer type. **Note:** this must match the layer type's name in the model.
+`name:` the name of the layer type. **Note:** this must match the layer type's name in the model.
 
-   `file:` the path to a file with geodata that is used to populate the layer.
+`file:` the path to a file with geodata that is used to populate the layer.
 
-   `mapping:` a list of additional mappings for the layer.
+`mapping:` a list of additional mappings for the layer.
 
 ### Raster Layer
 
@@ -189,36 +190,30 @@ The layer section includes a list of configurations for each layer type defined 
 
 :::
 
-
-
-___
-
-
 ### Vector Layer
 
-| Property          | Type                                                         | Default | Required | Constraints                                 |
-| ----------------- | ------------------------------------------------------------ | ------- | -------- | ------------------------------------------- |
+| Property          | Type                   | Default | Required | Constraints                                 |
+| ----------------- | ---------------------- | ------- | -------- | ------------------------------------------- |
 | <ins>file</ins>   | `Path`                 |         | &#9744;  | allowed file types: geoJSON, ESRI Shapefile |
 | <ins>output</ins> | `VectorLayerOutputOptions` | asc     | &#9744;  | options: asc, geoJSON, ESRI Shapefile, none |
 
-___
 
-### Agents
+## Agents
 
-| Property                   | Type                                                   | Default                   | Required | Constraints                       | Excludes |
-| -------------------------- | ------------------------------------------------------ | ------------------------- | -------- | --------------------------------- | -------- |
-| <ins>name</ins>            | `String`            | classname provided by AST | &#9745;  | agent must exist in model         |          |
-| <ins>frequency</ins>       | `Integer` | 1                         | &#9744;  | value > 0                         |          |
-| <ins>file</ins>            | `Path`           |                           | &#9744;  | path exists                       | count    |
+| Property                   | Type           | Default                   | Required | Constraints                       | Excludes |
+| -------------------------- | -------------- | ------------------------- | -------- | --------------------------------- | -------- |
+| <ins>name</ins>            | `String`       | classname provided by AST | &#9745;  | agent must exist in model         |          |
+| <ins>frequency</ins>       | `Integer`      | 1                         | &#9744;  | value > 0                         |          |
+| <ins>file</ins>            | `Path`         |                           | &#9744;  | path exists                       | count    |
 | <ins>output</ins>          | `OutputOption` | Global Output Value       | &#9744;  |                                   |          |
-| <ins>outputFrequency</ins> | `Integer` | 1                         | &#9744;  | value &#8805; 0                   |          |
-| <ins>outputFilter</ins>    | `FilterList`        |                           | &#9744;  |                                   |          |
-| <ins>count</ins>           | `Integer` | 0                         | &#9744;  | value &#8805; 0                   |          |
-| <ins>mapping</ins>         | `Mapping`           |                           | &#9745;  | external variables must be mapped |          |
+| <ins>outputFrequency</ins> | `Integer`      | 1                         | &#9744;  | value &#8805; 0                   |          |
+| <ins>outputFilter</ins>    | `FilterList`   |                           | &#9744;  |                                   |          |
+| <ins>count</ins>           | `Integer`      | 0                         | &#9744;  | value &#8805; 0                   |          |
+| <ins>mapping</ins>         | `Mapping`      |                           | &#9745;  | external variables must be mapped |          |
 
-The ``Agents`` section includes a configuration (an `AgentMapping`) for each agent type defined in the model.  Here is an example:
+The ``Agents`` section includes a configuration (an `AgentMapping`) for each agent type defined in the model. Here is an example:
 
-   ```json
+```json
 {
   "agents": [
     {
@@ -241,30 +236,18 @@ The ``Agents`` section includes a configuration (an `AgentMapping`) for each age
     }
   ]
 }
-     
-   ```
-
-   `name:` the name of the agent type. **Note:** this must match the agent type's name in the model.
-
-   `count:` the number of agents of this agent type that should be spawned at the beginning of the simulation
-
-   `file:` the path to a csv file that contains a set of attributes and attribute values to parametrize the agents
-
-   ​	**Note:** if a `file` is specified, the key `options` can be used to define further details such as the `delimiter`.
-
-   `mapping:` a list of additional mappings for the agents.
-
-The **Output Filter** is displayed in the following example. For aggregate output of each multimodal route see also [MultiCapableAgent](../../soh/agents/multi_capable_agent.md).
-
-```JSON
-[
-	{
-		"name": "energy", "operator": "in|notIn", "values": []
-	}
-]
 ```
 
-___
+`name:` the name of the agent type. **Note:** this must match the agent type's name in the model.
+
+`count:` the number of agents of this agent type that should be spawned at the beginning of the simulation
+
+`file:` the path to a csv file that contains a set of attributes and attribute values to parametrize the agents
+
+​	**Note:** if a `file` is specified, the key `options` can be used to define further details such as the `delimiter`.
+
+`mapping:` a list of additional mappings for the agents.
+
 
 ### Mapping
 
@@ -275,7 +258,7 @@ ___
 | <ins>field</ins>     | `String`        |               | &#9744;  | allowed if input file is specified; must exist in .csv   | value    |
 | <ins>type</ins>      | `PrimitiveTypes` | read from AST | &#9745;  |                                                          |          |
 
-```JSON
+```json
 {
   "mapping": [
     {
@@ -286,4 +269,3 @@ ___
   ]
 }
 ```
-

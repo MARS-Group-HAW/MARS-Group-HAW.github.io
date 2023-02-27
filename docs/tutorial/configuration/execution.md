@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Execution Configuration
 
 The execution of the simulation can be defined **globally** or **individually per agent type or instance**. It specifies exactly how often an agent or the model should be executed.
@@ -68,7 +72,7 @@ The following time units are available:
 |``years``|
 
 
-Due to the existing real time, a further attribute ``DateTime`` is created in the output of the results, which assigns the corresponding validity time to the version of an object.
+Due to the existing real time, a further attribute `DateTime` is created in the output of the results, which assigns the corresponding validity time to the version of an object.
 
 
 ## Individual Execution Time
@@ -77,7 +81,7 @@ The frequency of execution of concrete agent and **active** layer instances can 
 
 The setting always refers to the simulation tick that maps to the logical simulation step or the real-time step (see above). 
 
-In the simulation configuration, the so-called ``executionFrequency`` can be specified under the type mapping (``agents`` or ``layers``). This specifies an integer value, which tells after how many ticks, instances of these types should be executed.
+In the simulation configuration, the so-called `executionFrequency` can be specified under the type mapping (`agents` or `layers`). This specifies an integer value, which tells after how many ticks, instances of these types should be executed.
 
 ```json
 {
@@ -99,7 +103,8 @@ In the simulation configuration, the so-called ``executionFrequency`` can be spe
 	]
 }
 ```
-In conjunction with the global real-time based execution every minute, this setting means: Every ``Marula`` is executed after each passed 10 minutes and every citizen is executed after every minute.
 
-The ``executionFrequency`` applies to **all** instances of the type ``Marula`` and can be individually assigned to an output group for selected instances when registering to the runtime system (more about spawning and registering [here](../basic-concepts/spawning.md).
+In conjunction with the global real-time based execution every minute, this setting means: Every `Marula` is executed after each passed 10 minutes and every citizen is executed after every minute.
+
+The `executionFrequency` applies to **all** instances of the type `Marula` and can be individually assigned to an output group for selected instances when registering to the runtime system (more about spawning and registering [here](../development/spawning.md).
 

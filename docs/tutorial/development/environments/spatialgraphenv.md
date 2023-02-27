@@ -74,7 +74,7 @@ SpatialGraphExploreResult result = Environment.Explore(<entity>, <route>, <dista
 This call has two additional parameters `<only_next>` (set to `false` per default) and `<explore_direction>` (set to `ExploreDirection.Forward` per default). `<only_next>` is a boolean that, if `true`, returns only the first entity/agent per edge that is returned in `result`. The parameter `<explore_direction>` specifies the direction in which the exploration should occur. This can be either `ExploreDirection.Forward`, `ExploreDirection.Backward`, or `ExploreDirection.Both`.
 
 :::note
-Usually, an agent's exploration activities occur via a `RasterLayer` or `VectorLayer`. For more information on the exploration options provided by these layer types, please click [here](../layers.html).
+Usually, an agent's exploration activities occur via a `RasterLayer` or `VectorLayer`. For more information on the exploration options provided by these layer types, please click [here](../layers.md).
 :::
 
 ## Importing data for a SGE

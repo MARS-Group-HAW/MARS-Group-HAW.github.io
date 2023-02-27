@@ -1,3 +1,8 @@
+---
+sidebar_position: 60
+description: Describes the different formats in which simulation output data can be stored
+---
+
 # Simulation Output Formats
 
 The output of the simulation can be set to which file format or database results should be saved. There are different output types which are useful for different analyses. 
@@ -11,9 +16,9 @@ Current supported output types are:
 |vector-layer |``csv``,``geojson``,``mongodb``,``postgres``,``sqlite``,``geojsonsocket``
 |raster-layer |``csv``, ``asc`` |
 
-> The output of ASCII Grid ``asc`` for ``raster-layer`` and GeoJSON ``geojson`` for ``vector-layer`` each generate new files. It is therefore recommended not to enable full output.
-
-___
+:::note
+The output of ASCII Grid ``asc`` for ``raster-layer`` and GeoJSON ``geojson`` for ``vector-layer`` each generate new files. It is therefore recommended not to enable full output.
+:::
 
 ## CSV (Comma Separated File)
 
@@ -21,27 +26,24 @@ By default MARS supports the output in CSV and TSC format. For each type an indi
 
 ```json
 {
-"globals": {
-    
-    "output": "csv",
-    "csvOptions": {
-        "delimiter": "127.0.0.1",
-        "port": 5432,  
-        "user": "postgres",
-        "password": "mypassword"
-    }
-}
+	"globals": {
+		"output": "csv",
+		"csvOptions": {
+			"delimiter": "127.0.0.1",
+			"port": 5432,  
+			"user": "postgres",
+			"password": "mypassword"
+		}
+	}
 }
 ```
 
-
 The CSV output can be configured with user-defined delimiter and output formats.
 
-___
 
 ## Relational database
 
-Simulation results can be stored in a relational database and queried via SQL. MARS creates and manages ad-hoc database schemas and adds new data to this schema. For analysis via SQL some examples are described [here](../analysis-and-visualization/visualizing_sim_results.md). 
+Simulation results can be stored in a relational database and queried via SQL. MARS creates and manages ad-hoc database schemas and adds new data to this schema. For analysis via SQL some examples are described [here](../analysis/visualizing_sim_results.md). 
 
 Data is created according to the Table per Class Hierachy principle. Concrete types of which instances can be created have a representation as table and columns store the value properties. No ``1:n``, ``n:m`` relationships are managed.
 
@@ -53,8 +55,9 @@ PostgreSQL is a free, object-relational database management system that is large
 
 The PostGIS is the extension for the management and processing of *geospatial* data of the form:
 
-```postgresql
-select tick, id, ST_SetSRID(ST_MakePoint(x, y),4326) as geometry from my_scenario.my_agent
+```sql
+SELECT tick, id, ST_SetSRID(ST_MakePoint(x, y),4326) AS geometry 
+FROM my_scenario.my_agent
 ```
 
 An overview of PostGIS spatial operations can be found [here](http://postgis.net/workshops/postgis-intro/indexing.html#spatially-indexed-functions).
@@ -71,7 +74,10 @@ mkdir ~/my_postgis_storage
 
 Start the database instance with the following command:
 
-> Make sure you have start Docker engine and deamon first, before executing the command below 
+:::note
+Make sure you have start Docker engine and deamon first, before executing the command below
+:::
+
 ```bash
 docker run -d --rm --name mars-postgis -e POSTGRES_PASSWORD=mypassword -e PGDATA=/var/lib/postgresql/data/pgdata -v ~/my_postgis_storage:/var/lib/postgresql/data -p 5432:5432 postgis/postgis
 ```
@@ -116,11 +122,13 @@ If your agents have no `outputs`-key defined, their data will be automatically l
 
 By default MARS connects to `127.0.0.1` and port `5432` using the default user `postgres` without any password. It is therefore sufficient to specify only the `mypassword`.
 
+
 ### SQLite
 
 SQLite is a free program library and contains a local relational database system. Results are written to a local ``mars.sqlite`` file and can be processed via SQL clients.
 
-For output to SQLite the configuration must be set `sqlite`: 
+For output to SQLite the configuration must be set `sqlite`:
+
 ```json
 {
 	"globals": {
@@ -129,8 +137,10 @@ For output to SQLite the configuration must be set `sqlite`:
 }
 ```
 
+:::caution
+If the model is extended with new properties and types, the old schema is overwritten in `sqlite` and previous simulation results are lost.
+:::
 
-> &#10071;&#10071;&#10071; If the model is extended with new properties and types, the old schema is overwritten in `sqlite` and previous simulation results are lost 
 
 To keep your simulation results. The `mars.sqlite` can be copied and saved or always be recreated with a unique name:
 
@@ -144,11 +154,11 @@ To keep your simulation results. The `mars.sqlite` can be copied and saved or al
     }
 }
 ```
+
 This saves all results into the into `your-uniqe-scenario-name.sqlite`.
 
-___
 
-## Realtime WebSocket
+## Real-time WebSocket
 
 The WebSocket protocol is a TCP-based network protocol designed to establish a bi-directional connection between a web application and a WebSocket server or a web server that also supports WebSockets.
 
@@ -156,11 +166,10 @@ Data is provided at `geojsonsocket` and `framesocket` via a WebSocket and can be
 
 If configured, the socket can be reached via `ws://127.0.0.1:4567`. Depending on the socket type the socket service needs to be accessed via a `/` service: 
 
-|Model Type | Support                      |
-|---------|------------------------------|
-|`framesocket` | `ws://127.0.0.1:4567/frames` |
-|`geojsonsocket` | `ws://127.0.0.1:4567/geojson` |
-
+| Model Type      | Support                       |
+|-----------------|-------------------------------|
+| `framesocket`   | `ws://127.0.0.1:4567/frames`  |
+| `geojsonsocket` | `ws://127.0.0.1:4567/geojson` |
 
 The `framesocket` output for an agent looks like this:
 

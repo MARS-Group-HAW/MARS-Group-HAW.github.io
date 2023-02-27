@@ -12,8 +12,7 @@ Agents are the central part of the MARS simulation, which can be viewed as an in
 
 ![MARS simulation as information system](mars_simulation_system.png)
 
-
-A more detailed view on the system emphasises that the input files are described in the [simulation config](../model-configuration/index.md). The input data is used to initialize certain properties of the agent, which may afterwards finalize the initialization process with model code. The model execution ticks the agent in every time step. The output is created automatically by the system. Output formats as well as filter criteria need to be defined in the simulation config. To analyze the results, as for now, external tools are required. 
+A more detailed view on the system emphasises that the input files are described in the [simulation config](../configuration/sim_config_options.md). The input data is used to initialize certain properties of the agent, which may afterwards finalize the initialization process with model code. The model execution ticks the agent in every time step. The output is created automatically by the system. Output formats as well as filter criteria need to be defined in the simulation config. To analyze the results, as for now, external tools are required. 
 
 ![MARS simulation as information system](agent_lifecycle.png)
 
@@ -90,7 +89,7 @@ description.AddLayer<MyLayerType>();
 description.AddAgent<MyAgentType, MyLayerType>();
 ```
 
-When each agent type is registered, the type and their parameter can be used within the [scenario configuration](../model-configuration/agent_config.md). 
+When each agent type is registered, the type and their parameter can be used within the [scenario configuration](../configuration/agent_config.md). 
 
 > Note that the respective layer type must be registered to the `ModelDescription` beforehand.
 
@@ -155,7 +154,7 @@ public class MyAgentType : IAgent<MyLayer>
 
 ````
 
-The `PropertyDescription` is used to mark properties of a type to make this a scenario configuration (described [here](../model-configuration/agent_config.md)) externally visible.
+The `PropertyDescription` is used to mark properties of a type to make this a scenario configuration (described [here](../configuration/agent_config.md)) externally visible.
 
 Inside the `mappings` a value or indirection mapping can be done via the name of the model element (here `InputProperty`).
 

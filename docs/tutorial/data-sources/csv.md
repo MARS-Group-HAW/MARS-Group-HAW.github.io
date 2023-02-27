@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Comma-Separated Values (CSV)
 
 CSV files are used in the system from multiple point of views. The system reads CSV files and infers on of the following separators: _comma_ `,`, _semicolon_ `;`, _space_ ` `, or _tabulator_ `\t`. 
