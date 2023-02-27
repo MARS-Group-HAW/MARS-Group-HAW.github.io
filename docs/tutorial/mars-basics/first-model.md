@@ -9,19 +9,28 @@ After reading about the concepts in the previous chapter you are now ready to bu
 
 You can either choose on of the blueprint start models, or go with the [Wolf-Sheep-Model](https://github.com/MARS-Group-HAW/model-wolf-sheep):
 
-- For grid based models: https://github.com/MARS-Group-HAW/blueprint-grid
-- For Geo-referenced, with free movement https://github.com/MARS-Group-HAW/blueprint-georaster
-- For Geo-referenced, with a graph: https://github.com/MARS-Group-HAW/blueprint-geovector
-
-In the following sections we will explain the basic interactions with the model based on the `blueprint-grid` model. Nevertheless, the ideas should be transferable to all suggested model. Also, we will explain the expected behaviors when running the model with the JetBrains Rider IDE.
+- For grid based models: [blueprint-grid](https://github.com/MARS-Group-HAW/blueprint-grid)
+- For Geo-referenced, with free movement [blueprint-georaster](https://github.com/MARS-Group-HAW/blueprint-georaster)
+- For Geo-referenced, with a graph: [blueprint-geovector](https://github.com/MARS-Group-HAW/blueprint-geovector)
 
 <details>
 <summary>Create a model from scratch</summary>
-<div>
 
-On How to cerate a new model from scratch, see [this article](./../development/createing-a-model.md).
-</div>
+On how to create a new model from scratch, see [this article](./../development/createing-a-model.md).
 </details>
+
+In the following sections we will explain the basic interactions with the model based on the `blueprint-grid` model. Nevertheless, the ideas should be transferable to all suggested model. Also, we will explain the expected behaviors when running the model with the JetBrains Rider IDE.
+
+The `blueprint-grid` is a small model, wherein a few agents walk on a two-dimensional grid.
+
+The model consists of the following agent types and layer types:
+
+- `SimpleAgent`: an agent that can move randomly.
+- `ComplexAgent`: an agent that can move in different ways (randomly, bearing-based, goal-oriented), plan trips, and interact with `SimpleAgent` instances.
+- `GridLayer`: the layer on which the agents live and move.
+
+
+
 
 ## Setup 
 
