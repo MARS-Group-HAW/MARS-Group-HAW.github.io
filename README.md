@@ -45,7 +45,7 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 ### LaTeX
 
-You can wriite LaTeX code inside the Mardkown files with `$ … $` or create blocks with:
+You can wriite LaTeX code inside the Markdown files with `$ … $` or create blocks with:
 
 ```
 $$
