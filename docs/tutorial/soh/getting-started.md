@@ -6,6 +6,13 @@ sidebar_position: 1
 
 This **getting started** describes the steps to download the model, which necessary dependencies have to be installed and how a concrete model is started.
 
+## Installation
+
+[![](https://img.shields.io/nuget/v/Mars.Life.SOH?label=Mars.Life.SOH)](https://www.nuget.org/packages/Mars.Life.SOH/)
+
+
+The SmartOpenHamburg features of MARS are provided in a separate NuGet Package: [`Mars.Life.SOH`](https://www.nuget.org/packages/Mars.Life.SOH/)
+
 ## Contents
 
 The repository contains projects and a number of libraries to simulate mobility behavior in cities.
@@ -23,7 +30,7 @@ git clone https://git.haw-hamburg.de/mars/model-smart-open-hamburg-po.git
 Download and install the SDK for NetCore 3.1 from the official [website](https://dotnet.microsoft.com/download/dotnet-core/3.1).
 
 
-Navigate into the cloned directory and make sure that all required dependencies are installed automatically by building the model in the directory where the SOHModel.sln file is located:
+Navigate into the cloned directory and make sure that all required dependencies are installed automatically by building the model in the directory where the `SOHModel.sln` file is located:
 
 ```
 dotnet build

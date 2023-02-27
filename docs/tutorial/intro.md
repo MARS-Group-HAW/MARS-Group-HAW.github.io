@@ -22,21 +22,22 @@ The way of creating results bottom-up from an individual's actions leading to co
 
 ## What is MARS?
 
-Software framework written in object-oriented C# that enables the development and simulation of ABMs.
+MARS is a software framework written in object-oriented C# that enables the development and simulation of ABMs.
 
 The **MARS runtime system** provides agent-based simulation and geographical query processing methods with a set of standard mathematical functions and data structures for [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/3.1).
 
 The framework provides simulation core to execute the simulation with variable step-size. It is compatible with multiple platforms including **Microsoft Windows**, **macOS**, **Xamarin**, **Unity3D**, **Windows Store applications**, **Linux** or **mobile**.
 
-> The framework offers a unified API to develop and execute individual-based models and scenarios. 
-
+The framework offers a unified API to develop and execute individual-based models and scenarios. 
 
 ## References 
 
-- Wolf Sheep? -> VIdeos auf Daniels accounts
-- bandbreite der MARS modelle zeigen
-- bswp. ein knp model
-- esida model (?)
-- green4bikes
+See the following video, for what's possible with MARS:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/geu-ipLQTiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Also see some more [complex models regarding mobility in urban settings](./soh/scenarios/).
+
+For a more simple model have a look at our [Wold-Sheep-Model](https://github.com/MARS-Group-HAW/model-wolf-sheep) for an introduction into what's possible with ABM, to simulation a predator-prey dynamic.
+
+Also have a look at further models at our [GitHub account](https://github.com/MARS-Group-HAW?q=model).

@@ -18,11 +18,13 @@ For a more playful introduction into modelling with MARS, have a look at the [MA
 
 ## NuGet Packages
 
-![](https://img.shields.io/nuget/v/Mars.Life.Simulations)
-
 The MARS framework is organized in [NuGet packages](https://www.nuget.org/packages/Mars.Life.Simulations/). To install the framework in your application, use the public `nuget` feed from Microsoft and make your you app is compatible with `netstandard2.0`.
 
+[![](https://img.shields.io/nuget/v/Mars.Life.Simulations?label=Mars.Life.Simulations)](https://www.nuget.org/packages/Mars.Life.Simulations/)
+
 The runtime system is available as a public NuGet package and can simply be added to your project using the `dotnet` CLI with:
+
+
 
 ```bash
 dotnet add package Mars.Life.Simulations
@@ -33,7 +35,9 @@ Or if you are using an IDE:
 - For Visual Studio, right-click on the **References** item in your solution folder, and select **Manage NuGet Packages**.
 - For JetBrains Rider, click on NuGet package management below.
 
-Search for `Mars.Life.Simulations` and select <kbd>Install</kbd>.
+Search for `Mars.Life.Simulations` and select Install.
+
+The `Mars.Life.Simulations` provides the base for all MARS models. For models in need of more complex movement and modality (Walking, Driving, …) have a look at our [SmartOpenHamburg](./soh/) Package as well. It provides more detailed features regarding movement of agents.
 
 
 ## `config.json` validation in Rider

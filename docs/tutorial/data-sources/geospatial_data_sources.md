@@ -174,7 +174,7 @@ Shapefile is a geospatial vector data format for GIS software that is also used 
 2. `.shx`: shape index format; a positional index of the feature geometry to allow seeking forwards and backwards quickly
 3. `.dbf`: attribute format; columnar attributes for each shape, in dBase IV format
 
-For more information on Shapefile specifications, please see the [ESRI technical description](https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf).
+For more information on Shapefile specifications, please see the [ESRI technical description](https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdfdocs/).
 
 ### Geopackage
 
