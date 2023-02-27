@@ -39,3 +39,30 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+
+## Usage
+
+### LaTeX
+
+You can wriite LaTeX code inside the Mardkown files with `$ … $` or create blocks with:
+
+```
+$$
+…
+$$
+```
+
+### Charts
+
+You can create dynamic charts with [Mermaid](https://mermaid.js.org/intro/).
+
+Create a code block and set the "language" to `mermaid`
+
+    ```mermaid
+    graph TD;
+        A-->B;
+        A-->C;
+        B-->D;
+        C-->D;
+    ```
