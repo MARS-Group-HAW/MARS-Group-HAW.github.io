@@ -1,0 +1,3255 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MathHelper
+ | MARS LIFE Runtime System </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MathHelper
+ | MARS LIFE Runtime System ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/mars/mars-icon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <ul class="nav level1 navbar-nav">
+                  <li>
+                      <a class="navbar-brand" href="/">
+                          MARS Website
+                      </a>
+                  </li>
+              </ul>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/mars/mars-icon-resized.png" alt="">
+              </a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../simulation/Mars.Core.html" title="Core API">Core API</a>
+                      </li>
+                      <li>
+                          <a href="../soh/SOHBicycleModel.Common.html" title="SmartOpenHamburg API">SmartOpenHamburg API</a>
+                      </li>
+                      <li>
+                          <a href="../components/Mars.Components.html" title="Model Components API">Model Components API</a>
+                      </li>
+                      <li>
+                          <a href="../common/Mars.Common.html" title="Common API">Common API</a>
+                      </li>
+                </ul>            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.html" title="Mars.Common" class="">Mars.Common</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.GeoHash.html" title="GeoHash" class="">GeoHash</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.GeoHashDecoder.html" title="GeoHashDecoder" class="">GeoHashDecoder</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.GeohashDecodeResult.html" title="GeohashDecodeResult" class="">GeohashDecodeResult</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.GeoHashEncoder.html" title="GeoHashEncoder" class="">GeoHashEncoder</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.GeoHashPrecision.html" title="GeoHashPrecision" class="">GeoHashPrecision</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Hyperrectangle.html" title="Hyperrectangle" class="">Hyperrectangle</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.InputHashHelper.html" title="InputHashHelper" class="">InputHashHelper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.PositionHelper.html" title="PositionHelper" class="">PositionHelper</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.Collections.html" title="Mars.Common.Collections" class="">Mars.Common.Collections</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.Collections.BinaryArrayHeap-1.html" title="BinaryArrayHeap&lt;T&gt;" class="">BinaryArrayHeap&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.DoubleBits.html" title="DoubleBits" class="">DoubleBits</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.FibonacciHeap-2.html" title="FibonacciHeap&lt;T, TKey&gt;" class="">FibonacciHeap&lt;T, TKey&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.FibonacciHeapDoubleKey-1.html" title="FibonacciHeapDoubleKey&lt;T&gt;" class="">FibonacciHeapDoubleKey&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.FibonacciHeapNode-2.html" title="FibonacciHeapNode&lt;T, TKey&gt;" class="">FibonacciHeapNode&lt;T, TKey&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.FibonacciHeapNodeDoubleKey-1.html" title="FibonacciHeapNodeDoubleKey&lt;T&gt;" class="">FibonacciHeapNodeDoubleKey&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.HeapNode.html" title="HeapNode" class="">HeapNode</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.IntervalSize.html" title="IntervalSize" class="">IntervalSize</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.K2DTree-1.html" title="K2DTree&lt;T&gt;" class="">K2DTree&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.K2dTreeNode-1.html" title="K2dTreeNode&lt;T&gt;" class="">K2dTreeNode&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KdTree.html" title="KdTree" class="">KdTree</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KdTree-1.html" title="KdTree&lt;T&gt;" class="">KdTree&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KdTreeBase-1.html" title="KdTreeBase&lt;TNode&gt;" class="">KdTreeBase&lt;TNode&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KdTreeNode.html" title="KdTreeNode" class="">KdTreeNode</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KdTreeNode-1.html" title="KdTreeNode&lt;T&gt;" class="">KdTreeNode&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KdTreeNodeBase-1.html" title="KdTreeNodeBase&lt;TNode&gt;" class="">KdTreeNodeBase&lt;TNode&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KdTreeNodeCollection-1.html" title="KdTreeNodeCollection&lt;TNode&gt;" class="">KdTreeNodeCollection&lt;TNode&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KdTreeNodeList-1.html" title="KdTreeNodeList&lt;T&gt;" class="">KdTreeNodeList&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Key.html" title="Key" class="">Key</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Node-1.html" title="Node&lt;T&gt;" class="">Node&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.NodeBase-1.html" title="NodeBase&lt;T&gt;" class="">NodeBase&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.NodeDataContainer-1.html" title="NodeDataContainer&lt;T&gt;" class="">NodeDataContainer&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.NodeDistance-1.html" title="NodeDistance&lt;TNode&gt;" class="">NodeDistance&lt;TNode&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.QuadTree-1.html" title="QuadTree&lt;T&gt;" class="">QuadTree&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Root-1.html" title="Root&lt;T&gt;" class="">Root&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.TreeDataContainer-1.html" title="TreeDataContainer&lt;T&gt;" class="">TreeDataContainer&lt;T&gt;</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.Collections.CritBit.html" title="Mars.Common.Collections.CritBit" class="">Mars.Common.Collections.CritBit</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.Collections.CritBit.ICritBitTree-1.html" title="ICritBitTree&lt;TValue&gt;" class="">ICritBitTree&lt;TValue&gt;</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.Collections.Graph.html" title="Mars.Common.Collections.Graph" class="">Mars.Common.Collections.Graph</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.EdgeData.html" title="EdgeData" class="">EdgeData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.GraphData.html" title="GraphData" class="">GraphData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.GraphSerializer.html" title="GraphSerializer" class="">GraphSerializer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.ISpatialGraph.html" title="ISpatialGraph" class="">ISpatialGraph</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.KeyContainer.html" title="KeyContainer" class="">KeyContainer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.NodeData.html" title="NodeData" class="">NodeData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.SpatialGraph.html" title="SpatialGraph" class="">SpatialGraph</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.SpatialGraphHelper.html" title="SpatialGraphHelper" class="">SpatialGraphHelper</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.Collections.Graph.Algorithms.html" title="Mars.Common.Collections.Graph.Algorithms" class="">Mars.Common.Collections.Graph.Algorithms</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.Algorithms.AStar.html" title="AStar" class="">AStar</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.Algorithms.CompressedPathDatabase.html" title="CompressedPathDatabase" class="">CompressedPathDatabase</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.Algorithms.ContractionSearch.html" title="ContractionSearch" class="">ContractionSearch</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.Algorithms.DepthLimitedTraversal.html" title="DepthLimitedTraversal" class="">DepthLimitedTraversal</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.Collections.Graph.Helper.html" title="Mars.Common.Collections.Graph.Helper" class="">Mars.Common.Collections.Graph.Helper</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.Helper.INodeFinder.html" title="INodeFinder" class="">INodeFinder</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.Helper.KdTreeNodeFinder.html" title="KdTreeNodeFinder" class="">KdTreeNodeFinder</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.Graph.Helper.RunLengthEncoder.html" title="RunLengthEncoder" class="">RunLengthEncoder</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.Collections.KNNGraph.html" title="Mars.Common.Collections.KNNGraph" class="">Mars.Common.Collections.KNNGraph</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.DefaultRandomGenerator.html" title="DefaultRandomGenerator" class="">DefaultRandomGenerator</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.DistanceUtils.html" title="DistanceUtils" class="">DistanceUtils</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.EventSources.html" title="EventSources" class="">EventSources</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.EventSources.GraphBuildEventSource.html" title="EventSources.GraphBuildEventSource" class="">EventSources.GraphBuildEventSource</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.EventSources.GraphSearchEventSource.html" title="EventSources.GraphSearchEventSource" class="">EventSources.GraphSearchEventSource</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.IProgressReporter.html" title="IProgressReporter" class="">IProgressReporter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.IProvideRandomValues.html" title="IProvideRandomValues" class="">IProvideRandomValues</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.KnnGraph-2.html" title="KnnGraph&lt;TItem, TDistance&gt;" class="">KnnGraph&lt;TItem, TDistance&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.KnnGraph-2.KnnSearchResult.html" title="KnnGraph&lt;TItem, TDistance&gt;.KnnSearchResult" class="">KnnGraph&lt;TItem, TDistance&gt;.KnnSearchResult</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.KnnGraph-2.Parameters.html" title="KnnGraph&lt;TItem, TDistance&gt;.Parameters" class="">KnnGraph&lt;TItem, TDistance&gt;.Parameters</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.Node.html" title="Node" class="">Node</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.ReverseComparer-1.html" title="ReverseComparer&lt;T&gt;" class="">ReverseComparer&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.ReverseComparerExtensions.html" title="ReverseComparerExtensions" class="">ReverseComparerExtensions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.SelectionKind.html" title="SelectionKind" class="">SelectionKind</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Collections.KNNGraph.TravelingCosts-2.html" title="TravelingCosts&lt;TItem, TDistance&gt;" class="">TravelingCosts&lt;TItem, TDistance&gt;</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.Compat.html" title="Mars.Common.Compat" class="">Mars.Common.Compat</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.Compat.FormatDecoderAttribute.html" title="FormatDecoderAttribute" class="">FormatDecoderAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Compat.FormatEncoderAttribute.html" title="FormatEncoderAttribute" class="">FormatEncoderAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Compat.FormatHandlerAttribute.html" title="FormatHandlerAttribute" class="">FormatHandlerAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Compat.IntegerAttribute.html" title="IntegerAttribute" class="">IntegerAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Compat.NegativeIntegerAttribute.html" title="NegativeIntegerAttribute" class="">NegativeIntegerAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Compat.NonnegativeIntegerAttribute.html" title="NonnegativeIntegerAttribute" class="">NonnegativeIntegerAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Compat.NonpositiveIntegerAttribute.html" title="NonpositiveIntegerAttribute" class="">NonpositiveIntegerAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Compat.PositiveIntegerAttribute.html" title="PositiveIntegerAttribute" class="">PositiveIntegerAttribute</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.Data.html" title="Mars.Common.Data" class="">Mars.Common.Data</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.Data.DomainDataImporter.html" title="DomainDataImporter" class="">DomainDataImporter</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.Data.Providers.html" title="Mars.Common.Data.Providers" class="">Mars.Common.Data.Providers</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.Data.Providers.AscDataProvider.html" title="AscDataProvider" class="">AscDataProvider</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Data.Providers.GeoJsonFeatureCollectionConverter.html" title="GeoJsonFeatureCollectionConverter" class="">GeoJsonFeatureCollectionConverter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Data.Providers.GeoJsonFeatureConverter.html" title="GeoJsonFeatureConverter" class="">GeoJsonFeatureConverter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Data.Providers.GeoJsonHelper.html" title="GeoJsonHelper" class="">GeoJsonHelper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Data.Providers.GeometryDataProvider.html" title="GeometryDataProvider" class="">GeometryDataProvider</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Data.Providers.GraphMlProvider.html" title="GraphMlProvider" class="">GraphMlProvider</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Data.Providers.HttpDataProvider.html" title="HttpDataProvider" class="">HttpDataProvider</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Data.Providers.IDataProvider-1.html" title="IDataProvider&lt;TInput&gt;" class="">IDataProvider&lt;TInput&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Data.Providers.JsonFileDataProvider.html" title="JsonFileDataProvider" class="">JsonFileDataProvider</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Data.Providers.JsonTextDataProvider.html" title="JsonTextDataProvider" class="">JsonTextDataProvider</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Data.Providers.XmlFileDataProvider.html" title="XmlFileDataProvider" class="">XmlFileDataProvider</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Data.Providers.XmlTextDataProvider.html" title="XmlTextDataProvider" class="">XmlTextDataProvider</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.Exceptions.html" title="Mars.Common.Exceptions" class="">Mars.Common.Exceptions</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.Exceptions.DimensionMismatchException.html" title="DimensionMismatchException" class="">DimensionMismatchException</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Exceptions.ParseException.html" title="ParseException" class="">ParseException</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.IO.html" title="Mars.Common.IO" class="">Mars.Common.IO</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.IO.ExtensionMethods.html" title="ExtensionMethods" class="">ExtensionMethods</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.FileClientUtils.html" title="FileClientUtils" class="">FileClientUtils</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.FileKeys.html" title="FileKeys" class="">FileKeys</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.HttpClientUtils.html" title="HttpClientUtils" class="">HttpClientUtils</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.ObjectSerialize.html" title="ObjectSerialize" class="">ObjectSerialize</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Serializer.html" title="Serializer" class="">Serializer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.SerializerCompression.html" title="SerializerCompression" class="">SerializerCompression</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.SparseFormat.html" title="SparseFormat" class="">SparseFormat</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.SparseReader.html" title="SparseReader" class="">SparseReader</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.SparseWriter.html" title="SparseWriter" class="">SparseWriter</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.IO.Attributes.html" title="Mars.Common.IO.Attributes" class="">Mars.Common.IO.Attributes</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.IO.Attributes.SerializationBinderAttribute.html" title="SerializationBinderAttribute" class="">SerializationBinderAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Attributes.SurrogateSelectorAttribute.html" title="SurrogateSelectorAttribute" class="">SurrogateSelectorAttribute</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.IO.Console.html" title="Mars.Common.IO.Console" class="">Mars.Common.IO.Console</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.IO.Console.ChildProgressBar.html" title="ChildProgressBar" class="">ChildProgressBar</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Console.IProgressBar.html" title="IProgressBar" class="">IProgressBar</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Console.ProgressBar.html" title="ProgressBar" class="">ProgressBar</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Console.ProgressBarBase.html" title="ProgressBarBase" class="">ProgressBarBase</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Console.ProgressBarHeight.html" title="ProgressBarHeight" class="">ProgressBarHeight</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Console.ProgressBarOptions.html" title="ProgressBarOptions" class="">ProgressBarOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Console.ProgressBarSimple.html" title="ProgressBarSimple" class="">ProgressBarSimple</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.IO.Csv.html" title="Mars.Common.IO.Csv" class="">Mars.Common.IO.Csv</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.IO.Csv.CsvAnalyzer.html" title="CsvAnalyzer" class="">CsvAnalyzer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Csv.CsvReader.html" title="CsvReader" class="">CsvReader</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Csv.CsvReader.RecordEnumerator.html" title="CsvReader.RecordEnumerator" class="">CsvReader.RecordEnumerator</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Csv.CsvWriter.html" title="CsvWriter" class="">CsvWriter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Csv.MissingFieldAction.html" title="MissingFieldAction" class="">MissingFieldAction</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Csv.ParseErrorAction.html" title="ParseErrorAction" class="">ParseErrorAction</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Csv.ValueTrimmingOptions.html" title="ValueTrimmingOptions" class="">ValueTrimmingOptions</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.IO.Events.html" title="Mars.Common.IO.Events" class="">Mars.Common.IO.Events</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.IO.Events.ParseErrorEventArgs.html" title="ParseErrorEventArgs" class="">ParseErrorEventArgs</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.IO.Exceptions.html" title="Mars.Common.IO.Exceptions" class="">Mars.Common.IO.Exceptions</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.IO.Exceptions.MalformedCsvException.html" title="MalformedCsvException" class="">MalformedCsvException</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Exceptions.MissingFieldCsvException.html" title="MissingFieldCsvException" class="">MissingFieldCsvException</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.IO.Mapped.html" title="Mars.Common.IO.Mapped" class="">Mars.Common.IO.Mapped</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Context.html" title="Context" class="">Context</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.DefaultArrayFactory.html" title="DefaultArrayFactory" class="">DefaultArrayFactory</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Extensions.html" title="Extensions" class="">Extensions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.IArrayFactory.html" title="IArrayFactory" class="">IArrayFactory</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.ISerializableToStream.html" title="ISerializableToStream" class="">ISerializableToStream</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.MappedAccessor-1.html" title="MappedAccessor&lt;T&gt;" class="">MappedAccessor&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.MemoryMap.html" title="MemoryMap" class="">MemoryMap</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.MemoryMap.CreateAccessorFunc-1.html" title="MemoryMap.CreateAccessorFunc&lt;T&gt;" class="">MemoryMap.CreateAccessorFunc&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.MemoryMap.ReadFromDelegate-1.html" title="MemoryMap.ReadFromDelegate&lt;T&gt;" class="">MemoryMap.ReadFromDelegate&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.MemoryMap.WriteToDelegate-1.html" title="MemoryMap.WriteToDelegate&lt;T&gt;" class="">MemoryMap.WriteToDelegate&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.MemoryMapDelegates.html" title="MemoryMapDelegates" class="">MemoryMapDelegates</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.MemoryMapDelegates.CreateAccessorFunc-1.html" title="MemoryMapDelegates.CreateAccessorFunc&lt;T&gt;" class="">MemoryMapDelegates.CreateAccessorFunc&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.MemoryMapStream.html" title="MemoryMapStream" class="">MemoryMapStream</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.IO.Mapped.Accessors.html" title="Mars.Common.IO.Mapped.Accessors" class="">Mars.Common.IO.Mapped.Accessors</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Accessors.MappedAccessorByte.html" title="MappedAccessorByte" class="">MappedAccessorByte</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Accessors.MappedAccessorDouble.html" title="MappedAccessorDouble" class="">MappedAccessorDouble</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Accessors.MappedAccessorInt16.html" title="MappedAccessorInt16" class="">MappedAccessorInt16</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Accessors.MappedAccessorInt32.html" title="MappedAccessorInt32" class="">MappedAccessorInt32</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Accessors.MappedAccessorInt64.html" title="MappedAccessorInt64" class="">MappedAccessorInt64</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Accessors.MappedAccessorSingle.html" title="MappedAccessorSingle" class="">MappedAccessorSingle</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Accessors.MappedAccessorUInt16.html" title="MappedAccessorUInt16" class="">MappedAccessorUInt16</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Accessors.MappedAccessorUInt32.html" title="MappedAccessorUInt32" class="">MappedAccessorUInt32</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Accessors.MappedAccessorUInt64.html" title="MappedAccessorUInt64" class="">MappedAccessorUInt64</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Accessors.MappedAccessorVariable-1.html" title="MappedAccessorVariable&lt;T&gt;" class="">MappedAccessorVariable&lt;T&gt;</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.IO.Mapped.Arrays.html" title="Mars.Common.IO.Mapped.Arrays" class="">Mars.Common.IO.Mapped.Arrays</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Arrays.Array-1.html" title="Array&lt;T&gt;" class="">Array&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Arrays.ArrayBase-1.html" title="ArrayBase&lt;T&gt;" class="">ArrayBase&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Arrays.ArrayProfile.html" title="ArrayProfile" class="">ArrayProfile</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Arrays.MappedArray-2.html" title="MappedArray&lt;TMapped, T&gt;" class="">MappedArray&lt;TMapped, T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Arrays.MappedArray-2.MapFrom.html" title="MappedArray&lt;TMapped, T&gt;.MapFrom" class="">MappedArray&lt;TMapped, T&gt;.MapFrom</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Arrays.MappedArray-2.MapTo.html" title="MappedArray&lt;TMapped, T&gt;.MapTo" class="">MappedArray&lt;TMapped, T&gt;.MapTo</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Arrays.MemoryArray-1.html" title="MemoryArray&lt;T&gt;" class="">MemoryArray&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Arrays.VariableArray-1.html" title="VariableArray&lt;T&gt;" class="">VariableArray&lt;T&gt;</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.IO.Mapped.Collections.html" title="Mars.Common.IO.Mapped.Collections" class="">Mars.Common.IO.Mapped.Collections</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Collections.MemoryBackedDictionary-2.html" title="MemoryBackedDictionary&lt;TKey, TValue&gt;" class="">MemoryBackedDictionary&lt;TKey, TValue&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Collections.MemoryBackedList-1.html" title="MemoryBackedList&lt;T&gt;" class="">MemoryBackedList&lt;T&gt;</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.IO.Mapped.Indexes.html" title="Mars.Common.IO.Mapped.Indexes" class="">Mars.Common.IO.Mapped.Indexes</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Indexes.Index-1.html" title="Index&lt;T&gt;" class="">Index&lt;T&gt;</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.IO.Mapped.Streams.html" title="Mars.Common.IO.Mapped.Streams" class="">Mars.Common.IO.Mapped.Streams</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.IO.Mapped.Streams.CappedStream.html" title="CappedStream" class="">CappedStream</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.Socket.html" title="Mars.Common.Socket" class="">Mars.Common.Socket</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.Socket.ByteOrder.html" title="ByteOrder" class="">ByteOrder</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.CloseEventArgs.html" title="CloseEventArgs" class="">CloseEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.CloseStatusCode.html" title="CloseStatusCode" class="">CloseStatusCode</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.CompressionMethod.html" title="CompressionMethod" class="">CompressionMethod</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.ErrorEventArgs.html" title="ErrorEventArgs" class="">ErrorEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.Ext.html" title="Ext" class="">Ext</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.MessageEventArgs.html" title="MessageEventArgs" class="">MessageEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.WebSocket.html" title="WebSocket" class="">WebSocket</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.WebSocketException.html" title="WebSocketException" class="">WebSocketException</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.WebSocketState.html" title="WebSocketState" class="">WebSocketState</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Common.Socket.Server.html" title="Mars.Common.Socket.Server" class="">Mars.Common.Socket.Server</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Common.Socket.Server.IWebSocketSession.html" title="IWebSocketSession" class="">IWebSocketSession</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.Server.WebHeaderCollection.html" title="WebHeaderCollection" class="">WebHeaderCollection</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.Server.WebSocketBehavior.html" title="WebSocketBehavior" class="">WebSocketBehavior</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.Server.WebSocketContext.html" title="WebSocketContext" class="">WebSocketContext</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.Server.WebSocketServer.html" title="WebSocketServer" class="">WebSocketServer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.Server.WebSocketServiceHost.html" title="WebSocketServiceHost" class="">WebSocketServiceHost</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.Server.WebSocketServiceManager.html" title="WebSocketServiceManager" class="">WebSocketServiceManager</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Common.Socket.Server.WebSocketSessionManager.html" title="WebSocketSessionManager" class="">WebSocketSessionManager</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Numerics.html" title="Mars.Numerics" class="">Mars.Numerics</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Numerics.Classes.html" title="Classes" class="">Classes</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Combinatorics.html" title="Combinatorics" class="">Combinatorics</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Constants.html" title="Constants" class="">Constants</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distance.html" title="Distance" class="">Distance</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Elementwise.html" title="Elementwise" class="">Elementwise</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Jagged.html" title="Jagged" class="">Jagged</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.MathematicsException.html" title="MathematicsException" class="">MathematicsException</a>
+                          </li>
+                          <li class="active">
+                            <a href="Mars.Numerics.MathHelper.html" title="MathHelper" class="active">MathHelper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Matrix.html" title="Matrix" class="">Matrix</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.MatrixOrder.html" title="MatrixOrder" class="">MatrixOrder</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.MatrixType.html" title="MatrixType" class="">MatrixType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Norm.html" title="Norm" class="">Norm</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Sort.html" title="Sort" class="">Sort</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Sorting.html" title="Sorting" class="">Sorting</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Sparse.html" title="Sparse" class="">Sparse</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Sparse-1.html" title="Sparse&lt;T&gt;" class="">Sparse&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Tools.html" title="Tools" class="">Tools</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Vector.html" title="Vector" class="">Vector</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.VectorHelper.html" title="VectorHelper" class="">VectorHelper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.VectorType.html" title="VectorType" class="">VectorType</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Numerics.Comparers.html" title="Mars.Numerics.Comparers" class="">Mars.Numerics.Comparers</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Numerics.Comparers.ArrayComparer-1.html" title="ArrayComparer&lt;T&gt;" class="">ArrayComparer&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Comparers.ComparerDirection.html" title="ComparerDirection" class="">ComparerDirection</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Comparers.CustomComparer-1.html" title="CustomComparer&lt;T&gt;" class="">CustomComparer&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Comparers.ElementComparer.html" title="ElementComparer" class="">ElementComparer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Comparers.ElementComparer-1.html" title="ElementComparer&lt;T&gt;" class="">ElementComparer&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Comparers.GeneralComparer.html" title="GeneralComparer" class="">GeneralComparer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Comparers.StableComparer-1.html" title="StableComparer&lt;T&gt;" class="">StableComparer&lt;T&gt;</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Numerics.Distances.html" title="Mars.Numerics.Distances" class="">Mars.Numerics.Distances</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Angular.html" title="Angular" class="">Angular</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Chebyshev.html" title="Chebyshev" class="">Chebyshev</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Cosine.html" title="Cosine" class="">Cosine</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Dirac-1.html" title="Dirac&lt;T&gt;" class="">Dirac&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Euclidean.html" title="Euclidean" class="">Euclidean</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Hamming.html" title="Hamming" class="">Hamming</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Hamming-1.html" title="Hamming&lt;T&gt;" class="">Hamming&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Haversine.html" title="Haversine" class="">Haversine</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Jaccard.html" title="Jaccard" class="">Jaccard</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Jaccard-1.html" title="Jaccard&lt;T&gt;" class="">Jaccard&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Kulczynski.html" title="Kulczynski" class="">Kulczynski</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Levenshtein.html" title="Levenshtein" class="">Levenshtein</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Levenshtein-1.html" title="Levenshtein&lt;T&gt;" class="">Levenshtein&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Manhattan.html" title="Manhattan" class="">Manhattan</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Matching.html" title="Matching" class="">Matching</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Minkowski.html" title="Minkowski" class="">Minkowski</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.SquareEuclidean.html" title="SquareEuclidean" class="">SquareEuclidean</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Vincenty.html" title="Vincenty" class="">Vincenty</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Vincenty.Ellipsoid.html" title="Vincenty.Ellipsoid" class="">Vincenty.Ellipsoid</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Numerics.Distances.Base.html" title="Mars.Numerics.Distances.Base" class="">Mars.Numerics.Distances.Base</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Base.IDistance-1.html" title="IDistance&lt;T&gt;" class="">IDistance&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Base.IDistance-2.html" title="IDistance&lt;TFirst, TSecond&gt;" class="">IDistance&lt;TFirst, TSecond&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Base.IMetric-1.html" title="IMetric&lt;T&gt;" class="">IMetric&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Base.ISimilarity-2.html" title="ISimilarity&lt;T, TU&gt;" class="">ISimilarity&lt;T, TU&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Distances.Base.ISimilarity-1.html" title="ISimilarity&lt;T&gt;" class="">ISimilarity&lt;T&gt;</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Numerics.Exceptions.html" title="Mars.Numerics.Exceptions" class="">Mars.Numerics.Exceptions</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Numerics.Exceptions.DimensionMismatchException.html" title="DimensionMismatchException" class="">DimensionMismatchException</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Exceptions.NonPositiveDefiniteMatrixException.html" title="NonPositiveDefiniteMatrixException" class="">NonPositiveDefiniteMatrixException</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Exceptions.SingularMatrixException.html" title="SingularMatrixException" class="">SingularMatrixException</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Numerics.Formats.html" title="Mars.Numerics.Formats" class="">Mars.Numerics.Formats</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Numerics.Formats.DefaultMatrixFormatProvider.html" title="DefaultMatrixFormatProvider" class="">DefaultMatrixFormatProvider</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Formats.IMatrixFormatProvider.html" title="IMatrixFormatProvider" class="">IMatrixFormatProvider</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Formats.MatrixFormatProviderBase.html" title="MatrixFormatProviderBase" class="">MatrixFormatProviderBase</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Formats.MatrixFormatter.html" title="MatrixFormatter" class="">MatrixFormatter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Formats.OctaveMatrixFormatProvider.html" title="OctaveMatrixFormatProvider" class="">OctaveMatrixFormatProvider</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Numerics.Ranges.html" title="Mars.Numerics.Ranges" class="">Mars.Numerics.Ranges</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Numerics.Ranges.ByteRange.html" title="ByteRange" class="">ByteRange</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Ranges.DoubleRange.html" title="DoubleRange" class="">DoubleRange</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Ranges.FloatRange.html" title="FloatRange" class="">FloatRange</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Ranges.IntRange.html" title="IntRange" class="">IntRange</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Ranges.IRange-1.html" title="IRange&lt;T&gt;" class="">IRange&lt;T&gt;</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Numerics.Statistics.html" title="Mars.Numerics.Statistics" class="">Mars.Numerics.Statistics</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.ConstValueDistribution-1.html" title="ConstValueDistribution&lt;T&gt;" class="">ConstValueDistribution&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.Distribution-1.html" title="Distribution&lt;T&gt;" class="">Distribution&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.FastGaussianDistributionD.html" title="FastGaussianDistributionD" class="">FastGaussianDistributionD</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.FastGaussianDistributionF.html" title="FastGaussianDistributionF" class="">FastGaussianDistributionF</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.IDistribution.html" title="IDistribution" class="">IDistribution</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.UniformDiscreteDistribution.html" title="UniformDiscreteDistribution" class="">UniformDiscreteDistribution</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.UniformDistributionD.html" title="UniformDistributionD" class="">UniformDistributionD</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.UniformDistributionF.html" title="UniformDistributionF" class="">UniformDistributionF</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Numerics.Statistics.Base.html" title="Mars.Numerics.Statistics.Base" class="">Mars.Numerics.Statistics.Base</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.Base.BinarySearch.html" title="BinarySearch" class="">BinarySearch</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.Base.DistributionBase.html" title="DistributionBase" class="">DistributionBase</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.Base.ISampleableDistribution-1.html" title="ISampleableDistribution&lt;TObservations&gt;" class="">ISampleableDistribution&lt;TObservations&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.Base.IUnivariateDistribution.html" title="IUnivariateDistribution" class="">IUnivariateDistribution</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.Base.IUnivariateDistribution-1.html" title="IUnivariateDistribution&lt;TObservation&gt;" class="">IUnivariateDistribution&lt;TObservation&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Numerics.Statistics.Base.UnivariateDiscreteDistribution.html" title="UnivariateDiscreteDistribution" class="">UnivariateDiscreteDistribution</a>
+                          </li>
+                        </ul>                    </li>
+                  </ul>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mars.Numerics.MathHelper">
+
+
+  <h1 id="Mars_Numerics_MathHelper" data-uid="Mars.Numerics.MathHelper" class="text-break">Class MathHelper
+</h1>
+  <div class="markdown level0 summary">
+Provides useful mathematical algorithms and functions.
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MathHelper</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mars.Numerics.html">Mars.Numerics</a></h6>
+  <h6><strong>Assembly</strong>: Mars.Numerics.dll</h6>
+  <h5 id="Mars_Numerics_MathHelper_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MathHelper</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_E.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.E%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L51">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_E" data-uid="Mars.Numerics.MathHelper.E">E</h4>
+  <div class="markdown level1 summary">
+Defines the value of E as a <span class="xref">System.Single</span>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float E = 2.718282F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Log10E.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Log10E%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L56">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_Log10E" data-uid="Mars.Numerics.MathHelper.Log10E">Log10E</h4>
+  <div class="markdown level1 summary">
+Defines the base-10 logarithm of E.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float Log10E = 0.4342945F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Log2E.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Log2E%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L61">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_Log2E" data-uid="Mars.Numerics.MathHelper.Log2E">Log2E</h4>
+  <div class="markdown level1 summary">
+Defines the base-2 logarithm of E.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float Log2E = 1.442695F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Pi.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Pi%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L16">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_Pi" data-uid="Mars.Numerics.MathHelper.Pi">Pi</h4>
+  <div class="markdown level1 summary">
+Defines the value of Pi as a <span class="xref">System.Single</span>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float Pi = 3.141593F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_PiOver2.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.PiOver2%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L21">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_PiOver2" data-uid="Mars.Numerics.MathHelper.PiOver2">PiOver2</h4>
+  <div class="markdown level1 summary">
+Defines the value of Pi divided by two as a <span class="xref">System.Single</span>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float PiOver2 = 1.5707964F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_PiOver3.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.PiOver3%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L26">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_PiOver3" data-uid="Mars.Numerics.MathHelper.PiOver3">PiOver3</h4>
+  <div class="markdown level1 summary">
+Defines the value of Pi divided by three as a <span class="xref">System.Single</span>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float PiOver3 = 1.047198F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_PiOver4.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.PiOver4%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L31">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_PiOver4" data-uid="Mars.Numerics.MathHelper.PiOver4">PiOver4</h4>
+  <div class="markdown level1 summary">
+Defines the value of  Pi divided by four as a <span class="xref">System.Single</span>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float PiOver4 = 0.7853982F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_PiOver6.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.PiOver6%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L36">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_PiOver6" data-uid="Mars.Numerics.MathHelper.PiOver6">PiOver6</h4>
+  <div class="markdown level1 summary">
+Defines the value of Pi divided by six as a <span class="xref">System.Single</span>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float PiOver6 = 0.5235988F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_ThreePiOver2.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.ThreePiOver2%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L46">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_ThreePiOver2" data-uid="Mars.Numerics.MathHelper.ThreePiOver2">ThreePiOver2</h4>
+  <div class="markdown level1 summary">
+Defines the value of Pi multiplied by 3 and divided by two as a <span class="xref">System.Single</span>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float ThreePiOver2 = 4.712389F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_ToDegreeFactorD.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.ToDegreeFactorD%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L81">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_ToDegreeFactorD" data-uid="Mars.Numerics.MathHelper.ToDegreeFactorD">ToDegreeFactorD</h4>
+  <div class="markdown level1 summary">
+Gets the double precision factor to convert radian to degree
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double ToDegreeFactorD = 57.29577951308232</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_ToDegreeFactorF.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.ToDegreeFactorF%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L76">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_ToDegreeFactorF" data-uid="Mars.Numerics.MathHelper.ToDegreeFactorF">ToDegreeFactorF</h4>
+  <div class="markdown level1 summary">
+Gets the single precision factor to convert degree to radian
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float ToDegreeFactorF = 57.295776F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_ToRadianFactorD.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.ToRadianFactorD%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L71">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_ToRadianFactorD" data-uid="Mars.Numerics.MathHelper.ToRadianFactorD">ToRadianFactorD</h4>
+  <div class="markdown level1 summary">
+Gets the double precision factor to convert degree to radian.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double ToRadianFactorD = 0.01745329238474369</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_ToRadianFactorF.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.ToRadianFactorF%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L66">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_ToRadianFactorF" data-uid="Mars.Numerics.MathHelper.ToRadianFactorF">ToRadianFactorF</h4>
+  <div class="markdown level1 summary">
+Gets the single precision factor to convert degree to radian.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float ToRadianFactorF = 0.017453292F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_TwoPi.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.TwoPi%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L41">View Source</a>
+  </span>
+  <h4 id="Mars_Numerics_MathHelper_TwoPi" data-uid="Mars.Numerics.MathHelper.TwoPi">TwoPi</h4>
+  <div class="markdown level1 summary">
+Defines the value of Pi multiplied by two as a <span class="xref">System.Single</span>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float TwoPi = 6.283185F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_BinomialCoefficient_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.BinomialCoefficient(System.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L622">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_BinomialCoefficient_" data-uid="Mars.Numerics.MathHelper.BinomialCoefficient*"></a>
+  <h4 id="Mars_Numerics_MathHelper_BinomialCoefficient_System_Int32_System_Int32_" data-uid="Mars.Numerics.MathHelper.BinomialCoefficient(System.Int32,System.Int32)">BinomialCoefficient(Int32, Int32)</h4>
+  <div class="markdown level1 summary">
+Computes the binomial coefficient of (n, k), also read as &quot;n choose k&quot;.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long BinomialCoefficient(int n, int k)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td>n, must be a value equal to or greater than 0.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">k</span></td>
+        <td>k, a value in the range [0, <code data-dev-comment-type="paramref" class="paramref">n</code>].</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td>
+The binomial coefficient.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mars_Numerics_MathHelper_BinomialCoefficient_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+This method returns a binomial coefficient. The result is the k&apos;th element in the n&apos;th row
+of Pascal&apos;s triangle (using zero-based indices for k and n). This method returns 0 for
+negative <code data-dev-comment-type="paramref" class="paramref">n</code>.
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Bitmask_System_UInt32_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Bitmask(System.UInt32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L515">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Bitmask_" data-uid="Mars.Numerics.MathHelper.Bitmask*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Bitmask_System_UInt32_" data-uid="Mars.Numerics.MathHelper.Bitmask(System.UInt32)">Bitmask(UInt32)</h4>
+  <div class="markdown level1 summary">
+Creates the smallest bitmask that is greater than or equal to the given value.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint Bitmask(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td>The value.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td>
+A bitmask where the left bits are 0 and the right bits are 1. The value of the bitmask
+is ≥ <code data-dev-comment-type="paramref" class="paramref">value</code>.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mars_Numerics_MathHelper_Bitmask_System_UInt32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+<p>
+    This result can also be interpreted as finding the smallest x such that 2<sup>x</sup> >
+<code data-dev-comment-type="paramref" class="paramref">value</code> and returning 2<sup>x</sup> - 1.
+</p>
+<p>
+    Another useful application: Bitmask(x) + 1 returns the next power of 2 that is greater than
+    x.
+</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Clamp__1___0___0___0_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Clamp%60%601(%60%600%2C%60%600%2C%60%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L286">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Clamp_" data-uid="Mars.Numerics.MathHelper.Clamp*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Clamp__1___0___0___0_" data-uid="Mars.Numerics.MathHelper.Clamp``1(``0,``0,``0)">Clamp&lt;T&gt;(T, T, T)</h4>
+  <div class="markdown level1 summary">
+Clamps the specified value.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Clamp&lt;T&gt;(T value, T min, T max)
+    where T : IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td>The value which should be clamped.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">min</span></td>
+        <td>The min limit.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">max</span></td>
+        <td>The max limit.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td>
+<code data-dev-comment-type="paramref" class="paramref">value</code> clamped to the interval
+[<code data-dev-comment-type="paramref" class="paramref">min</code>, <code data-dev-comment-type="paramref" class="paramref">max</code>].
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td>The type of the value.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mars_Numerics_MathHelper_Clamp__1___0___0___0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+Values within the limits are not changed. Values exceeding the limits are cut off.
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Factorial_System_Int32_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Factorial(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L141">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Factorial_" data-uid="Mars.Numerics.MathHelper.Factorial*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Factorial_System_Int32_" data-uid="Mars.Numerics.MathHelper.Factorial(System.Int32)">Factorial(Int32)</h4>
+  <div class="markdown level1 summary">Calculates the factorial of a given natural number.</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long Factorial(int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td>The number.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td>n!</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_FastFloor_System_Double_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.FastFloor(System.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L257">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_FastFloor_" data-uid="Mars.Numerics.MathHelper.FastFloor*"></a>
+  <h4 id="Mars_Numerics_MathHelper_FastFloor_System_Double_" data-uid="Mars.Numerics.MathHelper.FastFloor(System.Double)">FastFloor(Double)</h4>
+  <div class="markdown level1 summary">
+Returns the largest integer less than or equal to the specified decimal number.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FastFloor(double d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">d</span></td>
+        <td>A decimal number.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td>The largest integer less than or equal to <code data-dev-comment-type="paramref" class="paramref">d</code>.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mars_Numerics_MathHelper_FastFloor_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+Note that the method returns an integral value of type <span class="xref">System.Math</span>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Frac_System_Double_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Frac(System.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L661">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Frac_" data-uid="Mars.Numerics.MathHelper.Frac*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Frac_System_Double_" data-uid="Mars.Numerics.MathHelper.Frac(System.Double)">Frac(Double)</h4>
+  <div class="markdown level1 summary">
+Calculates the fractional part of a specified double-precision floating-point number.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Frac(double d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">d</span></td>
+        <td>The number.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td>The fractional part of <code data-dev-comment-type="paramref" class="paramref">d</code>.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Frac_System_Single_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Frac(System.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L649">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Frac_" data-uid="Mars.Numerics.MathHelper.Frac*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Frac_System_Single_" data-uid="Mars.Numerics.MathHelper.Frac(System.Single)">Frac(Single)</h4>
+  <div class="markdown level1 summary">
+Calculates the fractional part of a specified single-precision floating-point number.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Frac(float f)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">f</span></td>
+        <td>The number.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td>The fractional part of <code data-dev-comment-type="paramref" class="paramref">f</code>.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Gaussian_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Gaussian(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L600">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Gaussian_" data-uid="Mars.Numerics.MathHelper.Gaussian*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Gaussian_System_Double_System_Double_System_Double_System_Double_" data-uid="Mars.Numerics.MathHelper.Gaussian(System.Double,System.Double,System.Double,System.Double)">Gaussian(Double, Double, Double, Double)</h4>
+  <div class="markdown level1 summary">
+<summary>
+    Computes the Gaussian function y = k * e^( -(x-μ)<sup>2</sup>/(2σ<sup>2</sup>)
+    (double-precision).
+</summary>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Gaussian(double x, double coefficient, double expectedValue, double standardDeviation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td>The argument x.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">coefficient</span></td>
+        <td>The coefficient k.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">expectedValue</span></td>
+        <td>The expected value μ.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">standardDeviation</span></td>
+        <td>The standard deviation σ.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td>The height of the Gaussian bell curve at x.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mars_Numerics_MathHelper_Gaussian_System_Double_System_Double_System_Double_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+This method computes the Gaussian bell curve.
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Gaussian_System_Single_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Gaussian(System.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L577">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Gaussian_" data-uid="Mars.Numerics.MathHelper.Gaussian*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Gaussian_System_Single_System_Single_System_Single_System_Single_" data-uid="Mars.Numerics.MathHelper.Gaussian(System.Single,System.Single,System.Single,System.Single)">Gaussian(Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary">
+Computes the Gaussian function y = k * e^( -(x-μ)<sup>2</sup>/(2σ<sup>2</sup>)
+(single precision).
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Gaussian(float x, float coefficient, float expectedValue, float standardDeviation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td>The argument x.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">coefficient</span></td>
+        <td>The coefficient k.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">expectedValue</span></td>
+        <td>The expected value μ.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">standardDeviation</span></td>
+        <td>The standard deviation σ.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td>The height of the Gaussian bell curve at x.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mars_Numerics_MathHelper_Gaussian_System_Single_System_Single_System_Single_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+This method computes the Gaussian bell curve.
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Hypotenuse_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Hypotenuse(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L340">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Hypotenuse_" data-uid="Mars.Numerics.MathHelper.Hypotenuse*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Hypotenuse_System_Double_System_Double_" data-uid="Mars.Numerics.MathHelper.Hypotenuse(System.Double,System.Double)">Hypotenuse(Double, Double)</h4>
+  <div class="markdown level1 summary">
+Computes Sqrt(a*a + b*b) without underflow/overflow (double-precision).
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Hypotenuse(double cathetusA, double cathetusB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">cathetusA</span></td>
+        <td>Cathetus a.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">cathetusB</span></td>
+        <td>Cathetus b.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td>The hypotenuse c, which is Sqrt(a*a + b*b).</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Hypotenuse_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Hypotenuse(System.Single%2CSystem.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L315">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Hypotenuse_" data-uid="Mars.Numerics.MathHelper.Hypotenuse*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Hypotenuse_System_Single_System_Single_" data-uid="Mars.Numerics.MathHelper.Hypotenuse(System.Single,System.Single)">Hypotenuse(Single, Single)</h4>
+  <div class="markdown level1 summary">
+Computes Sqrt(a*a + b*b) without underflow/overflow (single-precision).
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Hypotenuse(float cathetusA, float cathetusB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">cathetusA</span></td>
+        <td>Cathetus a.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">cathetusB</span></td>
+        <td>Cathetus b.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td>The hypotenuse c, which is Sqrt(a*a + b*b).</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_InverseSqrtFast_System_Double_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.InverseSqrtFast(System.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L187">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_InverseSqrtFast_" data-uid="Mars.Numerics.MathHelper.InverseSqrtFast*"></a>
+  <h4 id="Mars_Numerics_MathHelper_InverseSqrtFast_System_Double_" data-uid="Mars.Numerics.MathHelper.InverseSqrtFast(System.Double)">InverseSqrtFast(Double)</h4>
+  <div class="markdown level1 summary">
+Returns an approximation of the inverse square root of left number.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double InverseSqrtFast(double x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td>A number.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td>An approximation of the inverse square root of the specified number, with an upper error bound of 0.001</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mars_Numerics_MathHelper_InverseSqrtFast_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+This is an improved implementation of the the method known as Carmack&apos;s inverse square root
+which is found in the Quake III source code. This implementation comes from
+http://www.codemaestro.com/reviews/review00000105.html. For the history of this method, see
+http://www.beyond3d.com/content/articles/8/
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_InverseSqrtFast_System_Single_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.InverseSqrtFast(System.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L161">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_InverseSqrtFast_" data-uid="Mars.Numerics.MathHelper.InverseSqrtFast*"></a>
+  <h4 id="Mars_Numerics_MathHelper_InverseSqrtFast_System_Single_" data-uid="Mars.Numerics.MathHelper.InverseSqrtFast(System.Single)">InverseSqrtFast(Single)</h4>
+  <div class="markdown level1 summary">
+Returns an approximation of the inverse square root of left number.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float InverseSqrtFast(float x)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td>A number.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td>An approximation of the inverse square root of the specified number, with an upper error bound of 0.001</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mars_Numerics_MathHelper_InverseSqrtFast_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+This is an improved implementation of the the method known as Carmack&apos;s inverse square root
+which is found in the Quake III source code. This implementation comes from
+http://www.codemaestro.com/reviews/review00000105.html. For the history of this method, see
+http://www.beyond3d.com/content/articles/8/
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_IsPowerOfTwo_System_Int32_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.IsPowerOfTwo(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L536">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_IsPowerOfTwo_" data-uid="Mars.Numerics.MathHelper.IsPowerOfTwo*"></a>
+  <h4 id="Mars_Numerics_MathHelper_IsPowerOfTwo_System_Int32_" data-uid="Mars.Numerics.MathHelper.IsPowerOfTwo(System.Int32)">IsPowerOfTwo(Int32)</h4>
+  <div class="markdown level1 summary">
+Determines whether the specified value is a power of two.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPowerOfTwo(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td>The value.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td>
+<span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">value</code> is a power of two; otherwise,
+<span class="xref">false</span>.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Log2GreaterOrEqual_System_UInt32_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Log2GreaterOrEqual(System.UInt32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L440">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Log2GreaterOrEqual_" data-uid="Mars.Numerics.MathHelper.Log2GreaterOrEqual*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Log2GreaterOrEqual_System_UInt32_" data-uid="Mars.Numerics.MathHelper.Log2GreaterOrEqual(System.UInt32)">Log2GreaterOrEqual(UInt32)</h4>
+  <div class="markdown level1 summary">
+Returns the smallest non-negative integer x such that 2<sup>x</sup> ≥ <code data-dev-comment-type="paramref" class="paramref">value</code>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint Log2GreaterOrEqual(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td>The value.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td>
+The smallest non-negative integer x such that 2<sup>x</sup> ≥ <code data-dev-comment-type="paramref" class="paramref">value</code>.
+Exception: If <code data-dev-comment-type="paramref" class="paramref">value</code> is 0, 0 is returned.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Log2LessOrEqual_System_UInt32_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Log2LessOrEqual(System.UInt32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L377">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Log2LessOrEqual_" data-uid="Mars.Numerics.MathHelper.Log2LessOrEqual*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Log2LessOrEqual_System_UInt32_" data-uid="Mars.Numerics.MathHelper.Log2LessOrEqual(System.UInt32)">Log2LessOrEqual(UInt32)</h4>
+  <div class="markdown level1 summary">
+Returns the largest non-negative integer x such that 2<sup>x</sup> ≤ <code data-dev-comment-type="paramref" class="paramref">value</code>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint Log2LessOrEqual(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td>The value.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td>
+The largest non-negative integer x such that 2<sup>x</sup> ≤ <code data-dev-comment-type="paramref" class="paramref">value</code>.
+Exception: If <code data-dev-comment-type="paramref" class="paramref">value</code> is 0 then 0 is returned.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Magnitude_System_Collections_Generic_IList_System_Single__.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Magnitude(System.Collections.Generic.IList%7BSystem.Single%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L672">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Magnitude_" data-uid="Mars.Numerics.MathHelper.Magnitude*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Magnitude_System_Collections_Generic_IList_System_Single__" data-uid="Mars.Numerics.MathHelper.Magnitude(System.Collections.Generic.IList{System.Single})">Magnitude(IList&lt;Single&gt;)</h4>
+  <div class="markdown level1 summary">
+Calculates magnitude of the vector.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Magnitude(IList&lt;float&gt; vector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">vector</span></td>
+        <td>The vector to calculate magnitude for.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td>The magnitude.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_MagnitudeSimd_System_Single___.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.MagnitudeSimd(System.Single%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L685">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_MagnitudeSimd_" data-uid="Mars.Numerics.MathHelper.MagnitudeSimd*"></a>
+  <h4 id="Mars_Numerics_MathHelper_MagnitudeSimd_System_Single___" data-uid="Mars.Numerics.MathHelper.MagnitudeSimd(System.Single[])">MagnitudeSimd(Single[])</h4>
+  <div class="markdown level1 summary">
+Calculates magnitude of the vector using SIMD (single instruction multiple data parallelism).
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float MagnitudeSimd(float[] vector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">vector</span></td>
+        <td>The vector to calculate magnitude for.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td>The magnitude.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_NextPowerOf2_System_UInt32_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.NextPowerOf2(System.UInt32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L553">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_NextPowerOf2_" data-uid="Mars.Numerics.MathHelper.NextPowerOf2*"></a>
+  <h4 id="Mars_Numerics_MathHelper_NextPowerOf2_System_UInt32_" data-uid="Mars.Numerics.MathHelper.NextPowerOf2(System.UInt32)">NextPowerOf2(UInt32)</h4>
+  <div class="markdown level1 summary">
+Returns the smallest power of two that is greater than the given value.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint NextPowerOf2(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td>The value.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td>
+The smallest power of two (2<sup>x</sup>) that is greater than <code data-dev-comment-type="paramref" class="paramref">value</code>.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mars_Numerics_MathHelper_NextPowerOf2_System_UInt32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+For example, <code>NextPowerOf2(7)</code> is <code>8</code> and <code>NextPowerOf2(8)</code> is <code>16</code>.
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_NextPowerOfTwo_System_Double_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.NextPowerOfTwo(System.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L130">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_NextPowerOfTwo_" data-uid="Mars.Numerics.MathHelper.NextPowerOfTwo*"></a>
+  <h4 id="Mars_Numerics_MathHelper_NextPowerOfTwo_System_Double_" data-uid="Mars.Numerics.MathHelper.NextPowerOfTwo(System.Double)">NextPowerOfTwo(Double)</h4>
+  <div class="markdown level1 summary">
+Returns the next power of two that is larger than the specified number.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double NextPowerOfTwo(double n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">n</span></td>
+        <td>The specified number.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td>The next power of two.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_NextPowerOfTwo_System_Int32_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.NextPowerOfTwo(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L104">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_NextPowerOfTwo_" data-uid="Mars.Numerics.MathHelper.NextPowerOfTwo*"></a>
+  <h4 id="Mars_Numerics_MathHelper_NextPowerOfTwo_System_Int32_" data-uid="Mars.Numerics.MathHelper.NextPowerOfTwo(System.Int32)">NextPowerOfTwo(Int32)</h4>
+  <div class="markdown level1 summary">
+Returns the next power of two that is larger than the specified number.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NextPowerOfTwo(int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td>The specified number.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td>The next power of two.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_NextPowerOfTwo_System_Int64_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.NextPowerOfTwo(System.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L91">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_NextPowerOfTwo_" data-uid="Mars.Numerics.MathHelper.NextPowerOfTwo*"></a>
+  <h4 id="Mars_Numerics_MathHelper_NextPowerOfTwo_System_Int64_" data-uid="Mars.Numerics.MathHelper.NextPowerOfTwo(System.Int64)">NextPowerOfTwo(Int64)</h4>
+  <div class="markdown level1 summary">
+Returns the next power of two that is larger than the specified number.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long NextPowerOfTwo(long n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">n</span></td>
+        <td>The specified number.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td>The next power of two.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_NextPowerOfTwo_System_Single_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.NextPowerOfTwo(System.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L117">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_NextPowerOfTwo_" data-uid="Mars.Numerics.MathHelper.NextPowerOfTwo*"></a>
+  <h4 id="Mars_Numerics_MathHelper_NextPowerOfTwo_System_Single_" data-uid="Mars.Numerics.MathHelper.NextPowerOfTwo(System.Single)">NextPowerOfTwo(Single)</h4>
+  <div class="markdown level1 summary">
+Returns the next power of two that is larger than the specified number.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float NextPowerOfTwo(float n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">n</span></td>
+        <td>The specified number.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td>The next power of two.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_NormalizeSimd_System_Single___.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.NormalizeSimd(System.Single%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L710">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_NormalizeSimd_" data-uid="Mars.Numerics.MathHelper.NormalizeSimd*"></a>
+  <h4 id="Mars_Numerics_MathHelper_NormalizeSimd_System_Single___" data-uid="Mars.Numerics.MathHelper.NormalizeSimd(System.Single[])">NormalizeSimd(Single[])</h4>
+  <div class="markdown level1 summary">
+Calculates normalization of the vector using SIMD (single instruction multiple data).
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void NormalizeSimd(float[] vector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">vector</span></td>
+        <td>The vector to calculate magnitude for.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Swap_System_Double__System_Double__.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Swap(System.Double%40%2CSystem.Double%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L263">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Swap_" data-uid="Mars.Numerics.MathHelper.Swap*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Swap_System_Double__System_Double__" data-uid="Mars.Numerics.MathHelper.Swap(System.Double@,System.Double@)">Swap(ref Double, ref Double)</h4>
+  <div class="markdown level1 summary">Swaps two double values.</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Swap(ref double a, ref double b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">a</span></td>
+        <td>The first value.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">b</span></td>
+        <td>The second value.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Swap_System_Single__System_Single__.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Swap(System.Single%40%2CSystem.Single%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L269">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Swap_" data-uid="Mars.Numerics.MathHelper.Swap*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Swap_System_Single__System_Single__" data-uid="Mars.Numerics.MathHelper.Swap(System.Single@,System.Single@)">Swap(ref Single, ref Single)</h4>
+  <div class="markdown level1 summary">Swaps two float values.</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Swap(ref float a, ref float b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">a</span></td>
+        <td>The first value.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">b</span></td>
+        <td>The second value.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_Swap__1___0____0__.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.Swap%60%601(%60%600%40%2C%60%600%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L365">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_Swap_" data-uid="Mars.Numerics.MathHelper.Swap*"></a>
+  <h4 id="Mars_Numerics_MathHelper_Swap__1___0____0__" data-uid="Mars.Numerics.MathHelper.Swap``1(``0@,``0@)">Swap&lt;T&gt;(ref T, ref T)</h4>
+  <div class="markdown level1 summary">
+Swaps the content of two variables.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Swap&lt;T&gt;(ref T obj1, ref T obj2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td>First variable.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td>Second variable.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td>The type of the objects.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_ToBearing_System_Double_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.ToBearing(System.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L734">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_ToBearing_" data-uid="Mars.Numerics.MathHelper.ToBearing*"></a>
+  <h4 id="Mars_Numerics_MathHelper_ToBearing_System_Double_" data-uid="Mars.Numerics.MathHelper.ToBearing(System.Double)">ToBearing(Double)</h4>
+  <div class="markdown level1 summary">
+Gets the compass-bearing in degree for the specified <code>radian</code>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ToBearing(double radian)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">radian</span></td>
+        <td>The radian, getting the bearing.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td>The compass-bearing</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_ToDegrees_System_Double_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.ToDegrees(System.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L242">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_ToDegrees_" data-uid="Mars.Numerics.MathHelper.ToDegrees*"></a>
+  <h4 id="Mars_Numerics_MathHelper_ToDegrees_System_Double_" data-uid="Mars.Numerics.MathHelper.ToDegrees(System.Double)">ToDegrees(Double)</h4>
+  <div class="markdown level1 summary">
+Converts an angle value from radians to degrees (double-precision).
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ToDegrees(double radians)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">radians</span></td>
+        <td>The angle in radians.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td>The angle in degrees.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_ToDegrees_System_Single_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.ToDegrees(System.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L230">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_ToDegrees_" data-uid="Mars.Numerics.MathHelper.ToDegrees*"></a>
+  <h4 id="Mars_Numerics_MathHelper_ToDegrees_System_Single_" data-uid="Mars.Numerics.MathHelper.ToDegrees(System.Single)">ToDegrees(Single)</h4>
+  <div class="markdown level1 summary">
+Converts an angle value from radians to degrees (single-precision).
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ToDegrees(float radians)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">radians</span></td>
+        <td>The angle in radians.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td>The angle in degrees.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_ToRadians_System_Double_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.ToRadians(System.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L214">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_ToRadians_" data-uid="Mars.Numerics.MathHelper.ToRadians*"></a>
+  <h4 id="Mars_Numerics_MathHelper_ToRadians_System_Double_" data-uid="Mars.Numerics.MathHelper.ToRadians(System.Double)">ToRadians(Double)</h4>
+  <div class="markdown level1 summary">
+Converts an angle value from degrees to radians (double-precision).
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double ToRadians(double degree)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">degree</span></td>
+        <td>The angle in degrees.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td>The angle in radians.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper_ToRadians_System_Single_.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper.ToRadians(System.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L203">View Source</a>
+  </span>
+  <a id="Mars_Numerics_MathHelper_ToRadians_" data-uid="Mars.Numerics.MathHelper.ToRadians*"></a>
+  <h4 id="Mars_Numerics_MathHelper_ToRadians_System_Single_" data-uid="Mars.Numerics.MathHelper.ToRadians(System.Single)">ToRadians(Single)</h4>
+  <div class="markdown level1 summary">
+Converts an angle value from degrees to radians (single-precision).
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ToRadians(float degree)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">degree</span></td>
+        <td>The angle in degrees.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td>The angle in radians.</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Numerics_MathHelper.md&amp;value=---%0Auid%3A%20Mars.Numerics.MathHelper%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Numerics/MathHelper.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright &copy; MARS GROUP. <strong>HAW Hamburg</strong></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2899 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SpatialEdge
+ | MARS LIFE Runtime System </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SpatialEdge
+ | MARS LIFE Runtime System ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/mars/mars-icon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <ul class="nav level1 navbar-nav">
+                  <li>
+                      <a class="navbar-brand" href="/">
+                          MARS Website
+                      </a>
+                  </li>
+              </ul>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/mars/mars-icon-resized.png" alt="">
+              </a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../simulation/Mars.Core.html" title="Core API">Core API</a>
+                      </li>
+                      <li>
+                          <a href="../soh/SOHBicycleModel.Common.html" title="SmartOpenHamburg API">SmartOpenHamburg API</a>
+                      </li>
+                      <li>
+                          <a href="../components/Mars.Components.html" title="Model Components API">Model Components API</a>
+                      </li>
+                      <li>
+                          <a href="../common/Mars.Common.html" title="Common API">Common API</a>
+                      </li>
+                </ul>            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.html" title="Mars.Components" class="">Mars.Components</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.DependencyRegistrationModelling.html" title="DependencyRegistrationModelling" class="">DependencyRegistrationModelling</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.Agents.html" title="Mars.Components.Agents" class="">Mars.Components.Agents</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.Agents.AbstractAgent.html" title="AbstractAgent" class="">AbstractAgent</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Agents.AbstractEntity.html" title="AbstractEntity" class="">AbstractEntity</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Agents.Agent.html" title="Agent" class="">Agent</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.Environments.html" title="Mars.Components.Environments" class="">Mars.Components.Environments</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.Environments.AbstractEnvironment.html" title="AbstractEnvironment" class="">AbstractEnvironment</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.AbstractGraphElement.html" title="AbstractGraphElement" class="">AbstractGraphElement</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.AlwaysPassingNodeGuard.html" title="AlwaysPassingNodeGuard" class="">AlwaysPassingNodeGuard</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.EntityLane-1.html" title="EntityLane&lt;TEntity&gt;" class="">EntityLane&lt;TEntity&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.GeoEnvironment.html" title="GeoEnvironment" class="">GeoEnvironment</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.GeoHashEnvironment-1.html" title="GeoHashEnvironment&lt;T&gt;" class="">GeoHashEnvironment&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.IEnvironmentMediator.html" title="IEnvironmentMediator" class="">IEnvironmentMediator</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.IModalChoiceResolver.html" title="IModalChoiceResolver" class="">IModalChoiceResolver</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.PathHeuristics.html" title="PathHeuristics" class="">PathHeuristics</a>
+                          </li>
+                          <li class="active">
+                            <a href="Mars.Components.Environments.SpatialEdge.html" title="SpatialEdge" class="active">SpatialEdge</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.SpatialGraphEntityExtensions.html" title="SpatialGraphEntityExtensions" class="">SpatialGraphEntityExtensions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.SpatialGraphEnvironment.html" title="SpatialGraphEnvironment" class="">SpatialGraphEnvironment</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.SpatialGraphHelper.html" title="SpatialGraphHelper" class="">SpatialGraphHelper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.SpatialHashEnvironment-1.html" title="SpatialHashEnvironment&lt;TEntity&gt;" class="">SpatialHashEnvironment&lt;TEntity&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.SpatialLane.html" title="SpatialLane" class="">SpatialLane</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.SpatialNode.html" title="SpatialNode" class="">SpatialNode</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.WorldIndexExtensions.html" title="WorldIndexExtensions" class="">WorldIndexExtensions</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.Environments.Cartesian.html" title="Mars.Components.Environments.Cartesian" class="">Mars.Components.Environments.Cartesian</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.CartesianEnvironment-1.html" title="CartesianEnvironment&lt;TEntity&gt;" class="">CartesianEnvironment&lt;TEntity&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.CollisionEnvironment-2.html" title="CollisionEnvironment&lt;TCharacter, TObstacle&gt;" class="">CollisionEnvironment&lt;TCharacter, TObstacle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.CollisionKind.html" title="CollisionKind" class="">CollisionKind</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.ConeExplorationView.html" title="ConeExplorationView" class="">ConeExplorationView</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.ExplorationView.html" title="ExplorationView" class="">ExplorationView</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.GeometryFactory.html" title="GeometryFactory" class="">GeometryFactory</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.ICartesianEnvironment-1.html" title="ICartesianEnvironment&lt;TEntity&gt;" class="">ICartesianEnvironment&lt;TEntity&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.ICharacter.html" title="ICharacter" class="">ICharacter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.ICollidable.html" title="ICollidable" class="">ICollidable</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.ICollisionEnvironment-2.html" title="ICollisionEnvironment&lt;TCharacter, TObstacle&gt;" class="">ICollisionEnvironment&lt;TCharacter, TObstacle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.IObstacle.html" title="IObstacle" class="">IObstacle</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.IVisible.html" title="IVisible" class="">IVisible</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.RayExplorationView.html" title="RayExplorationView" class="">RayExplorationView</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.TrapezoidExploration.html" title="TrapezoidExploration" class="">TrapezoidExploration</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.VisibilityKind.html" title="VisibilityKind" class="">VisibilityKind</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.Environments.Cartesian.Routing.html" title="Mars.Components.Environments.Cartesian.Routing" class="">Mars.Components.Environments.Cartesian.Routing</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.Routing.CartesianRoutingService-1.html" title="CartesianRoutingService&lt;TObstacle&gt;" class="">CartesianRoutingService&lt;TObstacle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.Routing.GeometryCoordinatesRoutingPointsGenerator.html" title="GeometryCoordinatesRoutingPointsGenerator" class="">GeometryCoordinatesRoutingPointsGenerator</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.Routing.HomogenousRoutingPointsGenerator.html" title="HomogenousRoutingPointsGenerator" class="">HomogenousRoutingPointsGenerator</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.Routing.IRoutingPointsGenerator.html" title="IRoutingPointsGenerator" class="">IRoutingPointsGenerator</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.Routing.RandomRoutingPointsGenerator.html" title="RandomRoutingPointsGenerator" class="">RandomRoutingPointsGenerator</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Environments.Cartesian.Routing.SectionalRandomRoutingPointsGenerator.html" title="SectionalRandomRoutingPointsGenerator" class="">SectionalRandomRoutingPointsGenerator</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.Layers.html" title="Mars.Components.Layers" class="">Mars.Components.Layers</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.Layers.AbstractActiveLayer.html" title="AbstractActiveLayer" class="">AbstractActiveLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.AbstractEnvelopedLayer.html" title="AbstractEnvelopedLayer" class="">AbstractEnvelopedLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.AbstractLayer.html" title="AbstractLayer" class="">AbstractLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.AbstractVectorFeature.html" title="AbstractVectorFeature" class="">AbstractVectorFeature</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.AgentSchedulerLayer-2.html" title="AgentSchedulerLayer&lt;TAgent, TLayer&gt;" class="">AgentSchedulerLayer&lt;TAgent, TLayer&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.QuerySourceLoader.html" title="QuerySourceLoader" class="">QuerySourceLoader</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.RasterLayer.html" title="RasterLayer" class="">RasterLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.SchedulerEntry.html" title="SchedulerEntry" class="">SchedulerEntry</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.SchedulerLayer.html" title="SchedulerLayer" class="">SchedulerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.VectorFeature.html" title="VectorFeature" class="">VectorFeature</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.VectorLayer.html" title="VectorLayer" class="">VectorLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.VectorLayer-1.html" title="VectorLayer&lt;T&gt;" class="">VectorLayer&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.VectorLayerHelper.html" title="VectorLayerHelper" class="">VectorLayerHelper</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.Layers.Temporal.html" title="Mars.Components.Layers.Temporal" class="">Mars.Components.Layers.Temporal</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.Layers.Temporal.IQueryFieldProvider.html" title="IQueryFieldProvider" class="">IQueryFieldProvider</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.Temporal.ITemporalObjectCatalog.html" title="ITemporalObjectCatalog" class="">ITemporalObjectCatalog</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.Temporal.ITemporalObjectIterator.html" title="ITemporalObjectIterator" class="">ITemporalObjectIterator</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.Temporal.TemporalCatalogFeature-1.html" title="TemporalCatalogFeature&lt;TKey&gt;" class="">TemporalCatalogFeature&lt;TKey&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.Temporal.TemporalFeatureKind.html" title="TemporalFeatureKind" class="">TemporalFeatureKind</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Layers.Temporal.TemporalMetadataLoader.html" title="TemporalMetadataLoader" class="">TemporalMetadataLoader</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.Services.html" title="Mars.Components.Services" class="">Mars.Components.Services</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.Services.AgentManager.html" title="AgentManager" class="">AgentManager</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.Services.Explorations.html" title="Mars.Components.Services.Explorations" class="">Mars.Components.Services.Explorations</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.Services.Explorations.BoltzmannExploration.html" title="BoltzmannExploration" class="">BoltzmannExploration</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Explorations.EpsilonGreedyExploration.html" title="EpsilonGreedyExploration" class="">EpsilonGreedyExploration</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Explorations.IExplorationPolicy.html" title="IExplorationPolicy" class="">IExplorationPolicy</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Explorations.RouletteWheelExploration.html" title="RouletteWheelExploration" class="">RouletteWheelExploration</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Explorations.TabuSearchExploration.html" title="TabuSearchExploration" class="">TabuSearchExploration</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.Services.Learning.html" title="Mars.Components.Services.Learning" class="">Mars.Components.Services.Learning</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.Services.Learning.InfiniteQLearning.html" title="InfiniteQLearning" class="">InfiniteQLearning</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Learning.QLearning.html" title="QLearning" class="">QLearning</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Learning.Sarsa.html" title="Sarsa" class="">Sarsa</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.Services.Planning.html" title="Mars.Components.Services.Planning" class="">Mars.Components.Services.Planning</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.ActionPlanResult.html" title="ActionPlanResult" class="">ActionPlanResult</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.GoapAction.html" title="GoapAction" class="">GoapAction</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.GoapAgentStates.html" title="GoapAgentStates" class="">GoapAgentStates</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.GoapGoal.html" title="GoapGoal" class="">GoapGoal</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.GoapPlanner.html" title="GoapPlanner" class="">GoapPlanner</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.GoapStateKey-1.html" title="GoapStateKey&lt;T&gt;" class="">GoapStateKey&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.GoapStateProperty.html" title="GoapStateProperty" class="">GoapStateProperty</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.GoapStateProperty-1.html" title="GoapStateProperty&lt;TElement&gt;" class="">GoapStateProperty&lt;TElement&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.IGoapAction.html" title="IGoapAction" class="">IGoapAction</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.IGoapAgentStates.html" title="IGoapAgentStates" class="">IGoapAgentStates</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.IGoapGoal.html" title="IGoapGoal" class="">IGoapGoal</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.IGoapPlanner.html" title="IGoapPlanner" class="">IGoapPlanner</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.IGoapStateKey.html" title="IGoapStateKey" class="">IGoapStateKey</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.StatesCommons.html" title="StatesCommons" class="">StatesCommons</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.Services.Planning.ActionCommons.html" title="Mars.Components.Services.Planning.ActionCommons" class="">Mars.Components.Services.Planning.ActionCommons</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.ActionCommons.AllGoalsSatisfiedAction.html" title="AllGoalsSatisfiedAction" class="">AllGoalsSatisfiedAction</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Services.Planning.ActionCommons.NoGoalReachableAction.html" title="NoGoalReachableAction" class="">NoGoalReachableAction</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.Starter.html" title="Mars.Components.Starter" class="">Mars.Components.Starter</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.Starter.Command.html" title="Command" class="">Command</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Starter.CommandArgumentContainer.html" title="CommandArgumentContainer" class="">CommandArgumentContainer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Starter.CommandParser.html" title="CommandParser" class="">CommandParser</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Starter.CommandSet.html" title="CommandSet" class="">CommandSet</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Starter.HelpCommand.html" title="HelpCommand" class="">HelpCommand</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Starter.Option.html" title="Option" class="">Option</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Starter.OptionContext.html" title="OptionContext" class="">OptionContext</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Starter.OptionException.html" title="OptionException" class="">OptionException</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Starter.OptionSet.html" title="OptionSet" class="">OptionSet</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Starter.OptionValueCollection.html" title="OptionValueCollection" class="">OptionValueCollection</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Starter.OptionValueType.html" title="OptionValueType" class="">OptionValueType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Components.Starter.SimulationStarter.html" title="SimulationStarter" class="">SimulationStarter</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Components.Starter.Exceptions.html" title="Mars.Components.Starter.Exceptions" class="">Mars.Components.Starter.Exceptions</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Components.Starter.Exceptions.SimulationStartupException.html" title="SimulationStartupException" class="">SimulationStartupException</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Interfaces.html" title="Mars.Interfaces" class="">Mars.Interfaces</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Interfaces.IModelObject.html" title="IModelObject" class="">IModelObject</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.ISimulationContainer.html" title="ISimulationContainer" class="">ISimulationContainer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.ISimulationContext.html" title="ISimulationContext" class="">ISimulationContext</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.ISimulationModule.html" title="ISimulationModule" class="">ISimulationModule</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.ISimulationState.html" title="ISimulationState" class="">ISimulationState</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.IStepExecutionContext.html" title="IStepExecutionContext" class="">IStepExecutionContext</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.SimulationContext.html" title="SimulationContext" class="">SimulationContext</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.SimulationContext.WorkflowStateType.html" title="SimulationContext.WorkflowStateType" class="">SimulationContext.WorkflowStateType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.StepExecutionContext.html" title="StepExecutionContext" class="">StepExecutionContext</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Interfaces.Agents.html" title="Mars.Interfaces.Agents" class="">Mars.Interfaces.Agents</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Interfaces.Agents.IAgent.html" title="IAgent" class="">IAgent</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Agents.IAgent-1.html" title="IAgent&lt;TLayer&gt;" class="">IAgent&lt;TLayer&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Agents.IEntity.html" title="IEntity" class="">IEntity</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Agents.IMarsDslAgent.html" title="IMarsDslAgent" class="">IMarsDslAgent</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Agents.IModalCapabilitiesAgent.html" title="IModalCapabilitiesAgent" class="">IModalCapabilitiesAgent</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Agents.ISpatialGraphEntity.html" title="ISpatialGraphEntity" class="">ISpatialGraphEntity</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Agents.ITickClient.html" title="ITickClient" class="">ITickClient</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Interfaces.Annotations.html" title="Mars.Interfaces.Annotations" class="">Mars.Interfaces.Annotations</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Interfaces.Annotations.ActiveConstructor.html" title="ActiveConstructor" class="">ActiveConstructor</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Annotations.PropertyDescription.html" title="PropertyDescription" class="">PropertyDescription</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Interfaces.Data.html" title="Mars.Interfaces.Data" class="">Mars.Interfaces.Data</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.AbstractDomainData.html" title="AbstractDomainData" class="">AbstractDomainData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.GeometryData.html" title="GeometryData" class="">GeometryData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.IDomainData.html" title="IDomainData" class="">IDomainData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.IGeometryData.html" title="IGeometryData" class="">IGeometryData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.IIdentifiableData.html" title="IIdentifiableData" class="">IIdentifiableData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.IMarsFeature.html" title="IMarsFeature" class="">IMarsFeature</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.IRasterBandData.html" title="IRasterBandData" class="">IRasterBandData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.ISource.html" title="ISource" class="">ISource</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.IStringData.html" title="IStringData" class="">IStringData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.IStringStructuredData.html" title="IStringStructuredData" class="">IStringStructuredData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.IStructuredData.html" title="IStructuredData" class="">IStructuredData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.IStructuredDataGeometry.html" title="IStructuredDataGeometry" class="">IStructuredDataGeometry</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.IValueData.html" title="IValueData" class="">IValueData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.LayerInitData.html" title="LayerInitData" class="">LayerInitData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.RasterBandData.html" title="RasterBandData" class="">RasterBandData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.StringDataDto.html" title="StringDataDto" class="">StringDataDto</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.StructuredData.html" title="StructuredData" class="">StructuredData</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Data.VectorStructuredData.html" title="VectorStructuredData" class="">VectorStructuredData</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Interfaces.Environments.html" title="Mars.Interfaces.Environments" class="">Mars.Interfaces.Environments</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.BoundingBox.html" title="BoundingBox" class="">BoundingBox</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.DirectionType.html" title="DirectionType" class="">DirectionType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.EdgeExploreResult.html" title="EdgeExploreResult" class="">EdgeExploreResult</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.EdgeStop.html" title="EdgeStop" class="">EdgeStop</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.ExploreDirection.html" title="ExploreDirection" class="">ExploreDirection</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.GeoPositionExtension.html" title="GeoPositionExtension" class="">GeoPositionExtension</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.HighwayType.html" title="HighwayType" class="">HighwayType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.IEdge-2.html" title="IEdge&lt;TEdge, TNode&gt;" class="">IEdge&lt;TEdge, TNode&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.IEntityLane-1.html" title="IEntityLane&lt;TEntity&gt;" class="">IEntityLane&lt;TEntity&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.IEnvironment.html" title="IEnvironment" class="">IEnvironment</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.IEnvironment-1.html" title="IEnvironment&lt;TEntity&gt;" class="">IEnvironment&lt;TEntity&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.IGeoGridEnvironment-1.html" title="IGeoGridEnvironment&lt;T&gt;" class="">IGeoGridEnvironment&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.IGraphEntity.html" title="IGraphEntity" class="">IGraphEntity</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.IGraphEnvironment-2.html" title="IGraphEnvironment&lt;TEdge, TNode&gt;" class="">IGraphEnvironment&lt;TEdge, TNode&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.INode-2.html" title="INode&lt;TEdge, TNode&gt;" class="">INode&lt;TEdge, TNode&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.INodeGuard.html" title="INodeGuard" class="">INodeGuard</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.IPositionable.html" title="IPositionable" class="">IPositionable</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.IRoutePlanner.html" title="IRoutePlanner" class="">IRoutePlanner</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.ISpatialEdge.html" title="ISpatialEdge" class="">ISpatialEdge</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.ISpatialGraphEnvironment.html" title="ISpatialGraphEnvironment" class="">ISpatialGraphEnvironment</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.ISpatialLane.html" title="ISpatialLane" class="">ISpatialLane</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.ISpatialNode.html" title="ISpatialNode" class="">ISpatialNode</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.LaneExploreResult.html" title="LaneExploreResult" class="">LaneExploreResult</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.ModalChoice.html" title="ModalChoice" class="">ModalChoice</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.MultimodalRoute.html" title="MultimodalRoute" class="">MultimodalRoute</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.NodeIntegrationKind.html" title="NodeIntegrationKind" class="">NodeIntegrationKind</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.Position.html" title="Position" class="">Position</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.Route.html" title="Route" class="">Route</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.RouteStop.html" title="RouteStop" class="">RouteStop</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.Size.html" title="Size" class="">Size</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.SpatialGraphExploreResult.html" title="SpatialGraphExploreResult" class="">SpatialGraphExploreResult</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.SpatialModalityType.html" title="SpatialModalityType" class="">SpatialModalityType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Environments.TrafficLightPhase.html" title="TrafficLightPhase" class="">TrafficLightPhase</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Interfaces.Layers.html" title="Mars.Interfaces.Layers" class="">Mars.Interfaces.Layers</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.FinallySimulationStep.html" title="FinallySimulationStep" class="">FinallySimulationStep</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.IChangingLayer.html" title="IChangingLayer" class="">IChangingLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.IDataContainer.html" title="IDataContainer" class="">IDataContainer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.IDataLayer.html" title="IDataLayer" class="">IDataLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.IDataSet.html" title="IDataSet" class="">IDataSet</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.IEnvelopDataLayer.html" title="IEnvelopDataLayer" class="">IEnvelopDataLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.ILayer.html" title="ILayer" class="">ILayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.IMarsDslLayer.html" title="IMarsDslLayer" class="">IMarsDslLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.IModalChoiceConsumer.html" title="IModalChoiceConsumer" class="">IModalChoiceConsumer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.InitSimulationStep.html" title="InitSimulationStep" class="">InitSimulationStep</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.INotifyChangedSource-1.html" title="INotifyChangedSource&lt;T&gt;" class="">INotifyChangedSource&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.IRaster-1.html" title="IRaster&lt;TValue&gt;" class="">IRaster&lt;TValue&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.IRasterLayer.html" title="IRasterLayer" class="">IRasterLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.ISteppedActiveLayer.html" title="ISteppedActiveLayer" class="">ISteppedActiveLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.IVectorFeature.html" title="IVectorFeature" class="">IVectorFeature</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.IVectorLayer.html" title="IVectorLayer" class="">IVectorLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.IVectorLayer-1.html" title="IVectorLayer&lt;T&gt;" class="">IVectorLayer&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.IVectorNode-1.html" title="IVectorNode&lt;TEntity&gt;" class="">IVectorNode&lt;TEntity&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.RegisterAgent.html" title="RegisterAgent" class="">RegisterAgent</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Layers.UnregisterAgent.html" title="UnregisterAgent" class="">UnregisterAgent</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Interfaces.Model.html" title="Mars.Interfaces.Model" class="">Mars.Interfaces.Model</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.ActiveTypeMapping.html" title="ActiveTypeMapping" class="">ActiveTypeMapping</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.AgentMapping.html" title="AgentMapping" class="">AgentMapping</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.AgentType.html" title="AgentType" class="">AgentType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.ConstructorType.html" title="ConstructorType" class="">ConstructorType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.ContainsOperator.html" title="ContainsOperator" class="">ContainsOperator</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.DataContainer.html" title="DataContainer" class="">DataContainer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.DataType.html" title="DataType" class="">DataType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.EntityMapping.html" title="EntityMapping" class="">EntityMapping</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.EntityType.html" title="EntityType" class="">EntityType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Execution.html" title="Execution" class="">Execution</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.FeatureType.html" title="FeatureType" class="">FeatureType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Globals.html" title="Globals" class="">Globals</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.IdentifiableElement.html" title="IdentifiableElement" class="">IdentifiableElement</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.IndividualMapping.html" title="IndividualMapping" class="">IndividualMapping</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Input.html" title="Input" class="">Input</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.InputConfiguration.html" title="InputConfiguration" class="">InputConfiguration</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.LayerMapping.html" title="LayerMapping" class="">LayerMapping</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.LayerType.html" title="LayerType" class="">LayerType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.ModelDescription.html" title="ModelDescription" class="">ModelDescription</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.ModelElement.html" title="ModelElement" class="">ModelElement</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.ObjectType.html" title="ObjectType" class="">ObjectType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Output.html" title="Output" class="">Output</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.OutputConfiguration.html" title="OutputConfiguration" class="">OutputConfiguration</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.OutputFilter.html" title="OutputFilter" class="">OutputFilter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.OutputKind.html" title="OutputKind" class="">OutputKind</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.OutputTargetType.html" title="OutputTargetType" class="">OutputTargetType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.ParameterMapping.html" title="ParameterMapping" class="">ParameterMapping</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Processing.html" title="Processing" class="">Processing</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.ProcessingConfiguration.html" title="ProcessingConfiguration" class="">ProcessingConfiguration</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.ProcessingTargetType.html" title="ProcessingTargetType" class="">ProcessingTargetType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.PropertyType.html" title="PropertyType" class="">PropertyType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.SimulationConfig.html" title="SimulationConfig" class="">SimulationConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.TimeSpanUnit.html" title="TimeSpanUnit" class="">TimeSpanUnit</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.TimeSpanUnitExtensions.html" title="TimeSpanUnitExtensions" class="">TimeSpanUnitExtensions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.TypeElement.html" title="TypeElement" class="">TypeElement</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.TypeMapping.html" title="TypeMapping" class="">TypeMapping</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Interfaces.Model.Converters.html" title="Mars.Interfaces.Model.Converters" class="">Mars.Interfaces.Model.Converters</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Converters.CultureConverter.html" title="CultureConverter" class="">CultureConverter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Converters.SerializationTypeConverter.html" title="SerializationTypeConverter" class="">SerializationTypeConverter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Converters.TimeSpanUnitConverter.html" title="TimeSpanUnitConverter" class="">TimeSpanUnitConverter</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Interfaces.Model.Exceptions.html" title="Mars.Interfaces.Model.Exceptions" class="">Mars.Interfaces.Model.Exceptions</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Exceptions.InvalidTypeException.html" title="InvalidTypeException" class="">InvalidTypeException</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Exceptions.MissingTypeException.html" title="MissingTypeException" class="">MissingTypeException</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Interfaces.Model.Options.html" title="Mars.Interfaces.Model.Options" class="">Mars.Interfaces.Model.Options</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.AbstractEndpointOptions.html" title="AbstractEndpointOptions" class="">AbstractEndpointOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.AbstractFileOptions.html" title="AbstractFileOptions" class="">AbstractFileOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.AbstractOptions.html" title="AbstractOptions" class="">AbstractOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.AscOptions.html" title="AscOptions" class="">AscOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.CsvOptions.html" title="CsvOptions" class="">CsvOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.GeoJsonOptions.html" title="GeoJsonOptions" class="">GeoJsonOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.MongoOptions.html" title="MongoOptions" class="">MongoOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.MqttOptions.html" title="MqttOptions" class="">MqttOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.PostgresSqlOptions.html" title="PostgresSqlOptions" class="">PostgresSqlOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.RedisOptions.html" title="RedisOptions" class="">RedisOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.RelationalEndpointOptions.html" title="RelationalEndpointOptions" class="">RelationalEndpointOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.SerializationType.html" title="SerializationType" class="">SerializationType</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.SocketOutputOptions.html" title="SocketOutputOptions" class="">SocketOutputOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.SpatialGraphOptions.html" title="SpatialGraphOptions" class="">SpatialGraphOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.SqLiteOptions.html" title="SqLiteOptions" class="">SqLiteOptions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Interfaces.Model.Options.TripsOptions.html" title="TripsOptions" class="">TripsOptions</a>
+                          </li>
+                        </ul>                    </li>
+                  </ul>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mars.Components.Environments.SpatialEdge">
+
+
+  <h1 id="Mars_Components_Environments_SpatialEdge" data-uid="Mars.Components.Environments.SpatialEdge" class="text-break">Class SpatialEdge
+</h1>
+  <div class="markdown level0 summary">
+Represents a spatial or geometric edge of this graph which is able to persist and to manage
+entities on a continuous geometric line in meters.
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mars.Components.Environments.AbstractGraphElement.html">AbstractGraphElement</a></div>
+    <div class="level2"><span class="xref">SpatialEdge</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Mars.Components.Environments.AbstractGraphElement.html">AbstractGraphElement</a>&gt;</div>
+    <div><a class="xref" href="Mars.Interfaces.Environments.ISpatialEdge.html">ISpatialEdge</a></div>
+    <div><a class="xref" href="Mars.Interfaces.Environments.IEdge-2.html">IEdge</a>&lt;<a class="xref" href="Mars.Interfaces.Environments.ISpatialEdge.html">ISpatialEdge</a>, <a class="xref" href="Mars.Interfaces.Environments.ISpatialNode.html">ISpatialNode</a>&gt;</div>
+    <div><a class="xref" href="Mars.Interfaces.Environments.IGraphEntity.html">IGraphEntity</a></div>
+    <div><span class="xref">System.Collections.Generic.IEqualityComparer</span>&lt;<a class="xref" href="Mars.Interfaces.Environments.IGraphEntity.html">IGraphEntity</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mars.Components.Environments.AbstractGraphElement.html#Mars_Components_Environments_AbstractGraphElement_Equals_Mars_Components_Environments_AbstractGraphElement_">AbstractGraphElement.Equals(AbstractGraphElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mars.Components.Environments.AbstractGraphElement.html#Mars_Components_Environments_AbstractGraphElement_Index">AbstractGraphElement.Index</a>
+    </div>
+    <div>
+      <a class="xref" href="Mars.Components.Environments.AbstractGraphElement.html#Mars_Components_Environments_AbstractGraphElement_Equals_Mars_Interfaces_Environments_IGraphEntity_Mars_Interfaces_Environments_IGraphEntity_">AbstractGraphElement.Equals(IGraphEntity, IGraphEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mars.Components.Environments.AbstractGraphElement.html#Mars_Components_Environments_AbstractGraphElement_GetHashCode_Mars_Interfaces_Environments_IGraphEntity_">AbstractGraphElement.GetHashCode(IGraphEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mars.Components.Environments.AbstractGraphElement.html#Mars_Components_Environments_AbstractGraphElement_GetHashCode">AbstractGraphElement.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mars.Components.Environments.AbstractGraphElement.html#Mars_Components_Environments_AbstractGraphElement_Equals_System_Object_">AbstractGraphElement.Equals(Object)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mars.Components.Environments.html">Mars.Components.Environments</a></h6>
+  <h6><strong>Assembly</strong>: Mars.Components.dll</h6>
+  <h5 id="Mars_Components_Environments_SpatialEdge_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MessagePackObject(true)]
+public class SpatialEdge : AbstractGraphElement, IEquatable&lt;AbstractGraphElement&gt;, ISpatialEdge, IEdge&lt;ISpatialEdge, ISpatialNode&gt;, IGraphEntity, IEqualityComparer&lt;IGraphEntity&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge__ctor.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L28">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge__ctor_" data-uid="Mars.Components.Environments.SpatialEdge.#ctor*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge__ctor" data-uid="Mars.Components.Environments.SpatialEdge.#ctor">SpatialEdge()</h4>
+  <div class="markdown level1 summary">
+Represents a spatial or geometric edge of this graph which is able to persist and to manage
+entities on a continuous geometric line in meters.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializationConstructor]
+public SpatialEdge()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge__ctor_Mars_Interfaces_Environments_ISpatialNode_Mars_Interfaces_Environments_ISpatialNode_System_Double_System_Int32_Mars_Interfaces_Environments_SpatialModalityType___.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.%23ctor(Mars.Interfaces.Environments.ISpatialNode%2CMars.Interfaces.Environments.ISpatialNode%2CSystem.Double%2CSystem.Int32%2CMars.Interfaces.Environments.SpatialModalityType%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L54">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge__ctor_" data-uid="Mars.Components.Environments.SpatialEdge.#ctor*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge__ctor_Mars_Interfaces_Environments_ISpatialNode_Mars_Interfaces_Environments_ISpatialNode_System_Double_System_Int32_Mars_Interfaces_Environments_SpatialModalityType___" data-uid="Mars.Components.Environments.SpatialEdge.#ctor(Mars.Interfaces.Environments.ISpatialNode,Mars.Interfaces.Environments.ISpatialNode,System.Double,System.Int32,Mars.Interfaces.Environments.SpatialModalityType[])">SpatialEdge(ISpatialNode, ISpatialNode, Double, Int32, SpatialModalityType[])</h4>
+  <div class="markdown level1 summary">
+Creates a new instance of the directed <a class="xref" href="Mars.Interfaces.Environments.ISpatialEdge.html">ISpatialEdge</a> with no parent graph environment
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpatialEdge(ISpatialNode from, ISpatialNode to, double length, int laneCount = 1, SpatialModalityType[] passableTypes = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.ISpatialNode.html">ISpatialNode</a></td>
+        <td><span class="parametername">from</span></td>
+        <td>The origin of this edge</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.ISpatialNode.html">ISpatialNode</a></td>
+        <td><span class="parametername">to</span></td>
+        <td>The target of this edge</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">length</span></td>
+        <td>The length of this spatial edge</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">laneCount</span></td>
+        <td>The amount of lanes of this spatial edge.</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.SpatialModalityType.html">SpatialModalityType</a>[]</td>
+        <td><span class="parametername">passableTypes</span></td>
+        <td>The set of <a class="xref" href="Mars.Interfaces.Environments.SpatialModalityType.html">SpatialModalityType</a>s which can access this edge.</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge__ctor_Mars_Interfaces_Environments_ISpatialNode_Mars_Interfaces_Environments_ISpatialNode_.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.%23ctor(Mars.Interfaces.Environments.ISpatialNode%2CMars.Interfaces.Environments.ISpatialNode)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L40">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge__ctor_" data-uid="Mars.Components.Environments.SpatialEdge.#ctor*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge__ctor_Mars_Interfaces_Environments_ISpatialNode_Mars_Interfaces_Environments_ISpatialNode_" data-uid="Mars.Components.Environments.SpatialEdge.#ctor(Mars.Interfaces.Environments.ISpatialNode,Mars.Interfaces.Environments.ISpatialNode)">SpatialEdge(ISpatialNode, ISpatialNode)</h4>
+  <div class="markdown level1 summary">
+Creates a new instance of the <a class="xref" href="Mars.Components.Environments.SpatialEdge.html">SpatialEdge</a> without source or target.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpatialEdge(ISpatialNode from, ISpatialNode to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.ISpatialNode.html">ISpatialNode</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.ISpatialNode.html">ISpatialNode</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Attributes.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Attributes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L106">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Attributes_" data-uid="Mars.Components.Environments.SpatialEdge.Attributes*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Attributes" data-uid="Mars.Components.Environments.SpatialEdge.Attributes">Attributes</h4>
+  <div class="markdown level1 summary">
+Gets all all data associated to this edge get out by the importer from the provided source
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;string, object&gt; Attributes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_DataLaneCount.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.DataLaneCount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L85">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_DataLaneCount_" data-uid="Mars.Components.Environments.SpatialEdge.DataLaneCount*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_DataLaneCount" data-uid="Mars.Components.Environments.SpatialEdge.DataLaneCount">DataLaneCount</h4>
+  <div class="markdown level1 summary">
+Gets or sets the <a class="xref" href="Mars.Components.Environments.SpatialEdge.html#Mars_Components_Environments_SpatialEdge_LaneCount">LaneCount</a> <code>without</code> initialization.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DataLaneCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_DataLanes.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.DataLanes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L80">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_DataLanes_" data-uid="Mars.Components.Environments.SpatialEdge.DataLanes*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_DataLanes" data-uid="Mars.Components.Environments.SpatialEdge.DataLanes">DataLanes</h4>
+  <div class="markdown level1 summary">
+Gets or sets the <a class="xref" href="Mars.Components.Environments.SpatialEdge.html#Mars_Components_Environments_SpatialEdge_SpatialLanes">SpatialLanes</a> <code>without</code> initialization.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SpatialLane&gt; DataLanes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mars.Components.Environments.SpatialLane.html">SpatialLane</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_DataModalities.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.DataModalities%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L95">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_DataModalities_" data-uid="Mars.Components.Environments.SpatialEdge.DataModalities*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_DataModalities" data-uid="Mars.Components.Environments.SpatialEdge.DataModalities">DataModalities</h4>
+  <div class="markdown level1 summary">
+Gets or sets the <a class="xref" href="Mars.Components.Environments.SpatialEdge.html#Mars_Components_Environments_SpatialEdge_Modalities">Modalities</a> <code>without</code> initialization.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISet&lt;SpatialModalityType&gt; DataModalities { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<a class="xref" href="Mars.Interfaces.Environments.SpatialModalityType.html">SpatialModalityType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_DataModalityLaneRanges.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.DataModalityLaneRanges%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L90">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_DataModalityLaneRanges_" data-uid="Mars.Components.Environments.SpatialEdge.DataModalityLaneRanges*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_DataModalityLaneRanges" data-uid="Mars.Components.Environments.SpatialEdge.DataModalityLaneRanges">DataModalityLaneRanges</h4>
+  <div class="markdown level1 summary">
+Gets or sets the <a class="xref" href="Mars.Components.Environments.SpatialEdge.html#Mars_Components_Environments_SpatialEdge_DataModalityLaneRanges">DataModalityLaneRanges</a> <code>without</code> initialization.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;SpatialModalityType, (int, int)&gt; DataModalityLaneRanges { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<a class="xref" href="Mars.Interfaces.Environments.SpatialModalityType.html">SpatialModalityType</a>, <span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_EdgeConnections.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.EdgeConnections%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L100">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_EdgeConnections_" data-uid="Mars.Components.Environments.SpatialEdge.EdgeConnections*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_EdgeConnections" data-uid="Mars.Components.Environments.SpatialEdge.EdgeConnections">EdgeConnections</h4>
+  <div class="markdown level1 summary">
+Gets or sets the <a class="xref" href="../common/Mars.Common.Collections.Graph.EdgeData.html">EdgeData</a> assigned to the representing road.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;EdgeData&gt; EdgeConnections { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../common/Mars.Common.Collections.Graph.EdgeData.html">EdgeData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Entities.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Entities%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L148">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Entities_" data-uid="Mars.Components.Environments.SpatialEdge.Entities*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Entities" data-uid="Mars.Components.Environments.SpatialEdge.Entities">Entities</h4>
+  <div class="markdown level1 summary">
+Gets all the entities on this edge as
+a readonly collection.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreMember]
+public IReadOnlyCollection&lt;ISpatialGraphEntity&gt; Entities { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="Mars.Interfaces.Agents.ISpatialGraphEntity.html">ISpatialGraphEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_EntityLanes.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.EntityLanes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L178">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_EntityLanes_" data-uid="Mars.Components.Environments.SpatialEdge.EntityLanes*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_EntityLanes" data-uid="Mars.Components.Environments.SpatialEdge.EntityLanes">EntityLanes</h4>
+  <div class="markdown level1 summary">
+Gets the internal index maintaining all entities positioned along an edge and
+separated into multiple lane by the index of the outer array.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreMember]
+public List&lt;IEntityLane&lt;ISpatialGraphEntity&gt;&gt; EntityLanes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mars.Interfaces.Environments.IEntityLane-1.html">IEntityLane</a>&lt;<a class="xref" href="Mars.Interfaces.Agents.ISpatialGraphEntity.html">ISpatialGraphEntity</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_From.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.From%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L111">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_From_" data-uid="Mars.Components.Environments.SpatialEdge.From*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_From" data-uid="Mars.Components.Environments.SpatialEdge.From">From</h4>
+  <div class="markdown level1 summary">
+The starting point (node) of the edge
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreMember]
+public ISpatialNode From { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.ISpatialNode.html">ISpatialNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_FromNode.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.FromNode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L126">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_FromNode_" data-uid="Mars.Components.Environments.SpatialEdge.FromNode*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_FromNode" data-uid="Mars.Components.Environments.SpatialEdge.FromNode">FromNode</h4>
+  <div class="markdown level1 summary">
+Gets or sets the key used to identify the <a class="xref" href="Mars.Components.Environments.SpatialEdge.html#Mars_Components_Environments_SpatialEdge_From">From</a> node.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FromNode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mars_Components_Environments_SpatialEdge_FromNode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+This property is only be used for de-/serialization purposes.
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Geometry.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Geometry%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L301">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Geometry_" data-uid="Mars.Components.Environments.SpatialEdge.Geometry*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Geometry" data-uid="Mars.Components.Environments.SpatialEdge.Geometry">Geometry</h4>
+  <div class="markdown level1 summary">
+Gets the line and curve form of this spatial edge
+as a set of ordered geospatial points.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Position[] Geometry { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.Position.html">Position</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_GeometryLength.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.GeometryLength%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L311">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_GeometryLength_" data-uid="Mars.Components.Environments.SpatialEdge.GeometryLength*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_GeometryLength" data-uid="Mars.Components.Environments.SpatialEdge.GeometryLength">GeometryLength</h4>
+  <div class="markdown level1 summary">
+Gets the line with each element representing the length codes as integer (value * 10000) until this point.
+<remarks>
+    This is helper collection to improve the lookup for nearest coordinates along the path in log(log(n)
+    complexity,
+    performed by the interpolation search (<a class="xref" href="Mars.Interfaces.Environments.ISpatialEdge.html#Mars_Interfaces_Environments_ISpatialEdge_Geometry">Geometry</a>).
+</remarks>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] GeometryLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_HighwayType.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.HighwayType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L324">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_HighwayType_" data-uid="Mars.Components.Environments.SpatialEdge.HighwayType*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_HighwayType" data-uid="Mars.Components.Environments.SpatialEdge.HighwayType">HighwayType</h4>
+  <div class="markdown level1 summary">
+Gets or sets the highway kind of this road segment.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HighwayType HighwayType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.HighwayType.html">HighwayType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_IsOneWay.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.IsOneWay%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L329">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_IsOneWay_" data-uid="Mars.Components.Environments.SpatialEdge.IsOneWay*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_IsOneWay" data-uid="Mars.Components.Environments.SpatialEdge.IsOneWay">IsOneWay</h4>
+  <div class="markdown level1 summary">
+Gets or sets a flag indicating that this edge has no opposite edge.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOneWay { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_LaneCount.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.LaneCount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L213">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_LaneCount_" data-uid="Mars.Components.Environments.SpatialEdge.LaneCount*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_LaneCount" data-uid="Mars.Components.Environments.SpatialEdge.LaneCount">LaneCount</h4>
+  <div class="markdown level1 summary">
+The amount of lanes where agents can be placed on.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreMember]
+public int LaneCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Lanes.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Lanes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L170">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Lanes_" data-uid="Mars.Components.Environments.SpatialEdge.Lanes*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Lanes" data-uid="Mars.Components.Environments.SpatialEdge.Lanes">Lanes</h4>
+  <div class="markdown level1 summary">
+Gets the lanes of this road edge.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ISpatialLane&gt; Lanes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Mars.Interfaces.Environments.ISpatialLane.html">ISpatialLane</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Length.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Length%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L269">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Length_" data-uid="Mars.Components.Environments.SpatialEdge.Length*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Length" data-uid="Mars.Components.Environments.SpatialEdge.Length">Length</h4>
+  <div class="markdown level1 summary">
+Gets the length in meters of this spatial edge
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Length { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_MaxSpeed.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.MaxSpeed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L256">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_MaxSpeed_" data-uid="Mars.Components.Environments.SpatialEdge.MaxSpeed*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_MaxSpeed" data-uid="Mars.Components.Environments.SpatialEdge.MaxSpeed">MaxSpeed</h4>
+  <div class="markdown level1 summary">
+Defines the max speed for this edge in m/s. If the attribute value holds multiple max speeds, then the min
+value is chosen.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MaxSpeed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Modalities.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Modalities%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L288">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Modalities_" data-uid="Mars.Components.Environments.SpatialEdge.Modalities*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Modalities" data-uid="Mars.Components.Environments.SpatialEdge.Modalities">Modalities</h4>
+  <div class="markdown level1 summary">
+Gets or sets the modalities, identified as string to distinguish imported multiple graphs.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISet&lt;SpatialModalityType&gt; Modalities { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<a class="xref" href="Mars.Interfaces.Environments.SpatialModalityType.html">SpatialModalityType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_ModalityLaneRanges.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.ModalityLaneRanges%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L235">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_ModalityLaneRanges_" data-uid="Mars.Components.Environments.SpatialEdge.ModalityLaneRanges*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_ModalityLaneRanges" data-uid="Mars.Components.Environments.SpatialEdge.ModalityLaneRanges">ModalityLaneRanges</h4>
+  <div class="markdown level1 summary">
+Gets the mapping of each <a class="xref" href="Mars.Interfaces.Environments.SpatialModalityType.html">SpatialModalityType</a> to their lane range on this edge
+e.g. <a class="xref" href="Mars.Interfaces.Environments.SpatialModalityType.html#Mars_Interfaces_Environments_SpatialModalityType_CarDriving">CarDriving</a> --> (0,1)
+<a class="xref" href="Mars.Interfaces.Environments.SpatialModalityType.html#Mars_Interfaces_Environments_SpatialModalityType_Cycling">Cycling</a> --> (2,2)
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreMember]
+public IDictionary&lt;SpatialModalityType, (int, int)&gt; ModalityLaneRanges { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<a class="xref" href="Mars.Interfaces.Environments.SpatialModalityType.html">SpatialModalityType</a>, <span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_RoadArea.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.RoadArea%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L317">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_RoadArea_" data-uid="Mars.Components.Environments.SpatialEdge.RoadArea*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_RoadArea" data-uid="Mars.Components.Environments.SpatialEdge.RoadArea">RoadArea</h4>
+  <div class="markdown level1 summary">
+Gets the polygon representing the area of this road segment.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreMember]
+public Polygon RoadArea { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">NetTopologySuite.Geometries.Polygon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_SpatialEdgeLock.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.SpatialEdgeLock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L249">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_SpatialEdgeLock_" data-uid="Mars.Components.Environments.SpatialEdge.SpatialEdgeLock*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_SpatialEdgeLock" data-uid="Mars.Components.Environments.SpatialEdge.SpatialEdgeLock">SpatialEdgeLock</h4>
+  <div class="markdown level1 summary">
+Gets the lock to handle concurrency on the edge.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreMember]
+public ReaderWriterLockSlim SpatialEdgeLock { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.ReaderWriterLockSlim</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_SpatialLanes.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.SpatialLanes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L198">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_SpatialLanes_" data-uid="Mars.Components.Environments.SpatialEdge.SpatialLanes*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_SpatialLanes" data-uid="Mars.Components.Environments.SpatialEdge.SpatialLanes">SpatialLanes</h4>
+  <div class="markdown level1 summary">
+Gets or sets the individual lane array describing each lane with restrictions, geometry and width.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreMember]
+public List&lt;SpatialLane&gt; SpatialLanes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mars.Components.Environments.SpatialLane.html">SpatialLane</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mars_Components_Environments_SpatialEdge_SpatialLanes_examples">Examples</h5>
+  
+______________________________________
+[                     |              |
+driving             [_   _   _   _  _   _ |              |
+[                     |              |
+driving,cycling     [_   _   _   _  _   _ | Intersection |
+[#####################|              |
+cycling,walking     [/\/\/\/\/\/\/\/\/\/ >|              |
+walking             [O O O O O O O O O O >|______________|
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_To.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.To%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L117">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_To_" data-uid="Mars.Components.Environments.SpatialEdge.To*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_To" data-uid="Mars.Components.Environments.SpatialEdge.To">To</h4>
+  <div class="markdown level1 summary">
+The end point (node) of the edge
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IgnoreMember]
+public ISpatialNode To { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.ISpatialNode.html">ISpatialNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_ToNode.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.ToNode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L138">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_ToNode_" data-uid="Mars.Components.Environments.SpatialEdge.ToNode*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_ToNode" data-uid="Mars.Components.Environments.SpatialEdge.ToNode">ToNode</h4>
+  <div class="markdown level1 summary">
+Gets or sets the key used to identify the <a class="xref" href="Mars.Components.Environments.SpatialEdge.html#Mars_Components_Environments_SpatialEdge_To">To</a> node.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ToNode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mars_Components_Environments_SpatialEdge_ToNode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks">
+This property is only be used for de-/serialization purposes.
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_TravelTime.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.TravelTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L283">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_TravelTime_" data-uid="Mars.Components.Environments.SpatialEdge.TravelTime*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_TravelTime" data-uid="Mars.Components.Environments.SpatialEdge.TravelTime">TravelTime</h4>
+  <div class="markdown level1 summary">
+Gets the <code>static</code> travel time in <code>seconds</code> required to cross this edge
+when the max-speed restrictions and the length are considered.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TravelTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Clear.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Clear%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L509">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Clear_" data-uid="Mars.Components.Environments.SpatialEdge.Clear*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Clear" data-uid="Mars.Components.Environments.SpatialEdge.Clear">Clear()</h4>
+  <div class="markdown level1 summary">
+Removes all entities on this edge.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Explore_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_Mars_Interfaces_Environments_ISpatialEdge_.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Explore(Mars.Interfaces.Agents.ISpatialGraphEntity%2CSystem.Double%2CMars.Interfaces.Environments.ISpatialEdge)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.Explore.cs/#L159">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Explore_" data-uid="Mars.Components.Environments.SpatialEdge.Explore*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Explore_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_Mars_Interfaces_Environments_ISpatialEdge_" data-uid="Mars.Components.Environments.SpatialEdge.Explore(Mars.Interfaces.Agents.ISpatialGraphEntity,System.Double,Mars.Interfaces.Environments.ISpatialEdge)">Explore(ISpatialGraphEntity, Double, ISpatialEdge)</h4>
+  <div class="markdown level1 summary">
+Explore the agents surroundings
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EdgeExploreResult Explore(ISpatialGraphEntity entity, double distance = 15, ISpatialEdge nextEdge = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Agents.ISpatialGraphEntity.html">ISpatialGraphEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td>the agent around the explore takes place</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">distance</span></td>
+        <td>
+determines which objects the agent see&apos;s
+objects that are farther ahead than &quot;distance&quot; will not be returned
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.ISpatialEdge.html">ISpatialEdge</a></td>
+        <td><span class="parametername">nextEdge</span></td>
+        <td>
+the next edge the agent will move to after
+traversing the current edge
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.EdgeExploreResult.html">EdgeExploreResult</a></td>
+        <td>an edge explore result which contains the found agents</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Explore_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_System_Boolean_Mars_Interfaces_Environments_ExploreDirection_Mars_Interfaces_Environments_ISpatialEdge_System_Int32___.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Explore(Mars.Interfaces.Agents.ISpatialGraphEntity%2CSystem.Double%2CSystem.Boolean%2CMars.Interfaces.Environments.ExploreDirection%2CMars.Interfaces.Environments.ISpatialEdge%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.Explore.cs/#L101">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Explore_" data-uid="Mars.Components.Environments.SpatialEdge.Explore*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Explore_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_System_Boolean_Mars_Interfaces_Environments_ExploreDirection_Mars_Interfaces_Environments_ISpatialEdge_System_Int32___" data-uid="Mars.Components.Environments.SpatialEdge.Explore(Mars.Interfaces.Agents.ISpatialGraphEntity,System.Double,System.Boolean,Mars.Interfaces.Environments.ExploreDirection,Mars.Interfaces.Environments.ISpatialEdge,System.Int32[])">Explore(ISpatialGraphEntity, Double, Boolean, ExploreDirection, ISpatialEdge, Int32[])</h4>
+  <div class="markdown level1 summary">
+Explore the agents surrounded entities for a specified <code>distance</code>
+in meters and a selected set of lanes or the whole <a class="xref" href="Mars.Interfaces.Environments.ISpatialEdge.html">ISpatialEdge</a>
+if nothing was defined. Every entity what can be see within the distance are collected.
+Explored entities will be returned grouped by lane in the <a class="xref" href="Mars.Interfaces.Environments.EdgeExploreResult.html">EdgeExploreResult</a>
+and ordered by the <code>distance</code> to the outgoing source <code>agent</code>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EdgeExploreResult Explore(ISpatialGraphEntity entity, double distance, bool onlyNext = false, ExploreDirection direction = ExploreDirection.Forward, ISpatialEdge nextEdge = null, params int[] lanes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Agents.ISpatialGraphEntity.html">ISpatialGraphEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td>The outgoing agent specifying the source the exploration.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">distance</span></td>
+        <td>The exploration distance in meters.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">onlyNext</span></td>
+        <td>
+The flag indicating that no the entity behind another
+one with different position shall be explored.
+Default is false so that each entity also them behind the next one will be collected.
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.ExploreDirection.html">ExploreDirection</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td>The direction of the exploration. Default is <code>forward</code> same direction as the edge.</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.ISpatialEdge.html">ISpatialEdge</a></td>
+        <td><span class="parametername">nextEdge</span></td>
+        <td>The next edge the agent will move to after traversing the current edge.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">lanes</span></td>
+        <td>
+The selected lanes to explore as indices, starting with 0.
+If no lane was passed each lane will be queried.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.EdgeExploreResult.html">EdgeExploreResult</a></td>
+        <td>
+An <a class="xref" href="Mars.Interfaces.Environments.EdgeExploreResult.html">EdgeExploreResult</a> containing a grouping of explores by each lane.
+Each lane exploration is ordered by the distance of the object to the source.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Explore_System_Double_System_Double_System_Boolean_Mars_Interfaces_Environments_ExploreDirection_Mars_Interfaces_Environments_ISpatialEdge_System_Int32___.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Explore(System.Double%2CSystem.Double%2CSystem.Boolean%2CMars.Interfaces.Environments.ExploreDirection%2CMars.Interfaces.Environments.ISpatialEdge%2CSystem.Int32%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.Explore.cs/#L49">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Explore_" data-uid="Mars.Components.Environments.SpatialEdge.Explore*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Explore_System_Double_System_Double_System_Boolean_Mars_Interfaces_Environments_ExploreDirection_Mars_Interfaces_Environments_ISpatialEdge_System_Int32___" data-uid="Mars.Components.Environments.SpatialEdge.Explore(System.Double,System.Double,System.Boolean,Mars.Interfaces.Environments.ExploreDirection,Mars.Interfaces.Environments.ISpatialEdge,System.Int32[])">Explore(Double, Double, Boolean, ExploreDirection, ISpatialEdge, Int32[])</h4>
+  <div class="markdown level1 summary">
+Explore the agents surrounded entities for a specified <code>distance</code>
+in meters and a selected set of lanes or the whole <a class="xref" href="Mars.Interfaces.Environments.ISpatialEdge.html">ISpatialEdge</a>
+if nothing was defined. Every entity what can be see within the distance are collected.
+Explored entities will be returned grouped by lane in the <a class="xref" href="Mars.Interfaces.Environments.EdgeExploreResult.html">EdgeExploreResult</a>
+and ordered by the <code>distance</code> to the outgoing source <code>agent</code>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EdgeExploreResult Explore(double source, double distance, bool onlyNext = false, ExploreDirection direction = ExploreDirection.Both, ISpatialEdge nextEdge = null, params int[] lanes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">source</span></td>
+        <td>The outgoing source position from which to start the exploration.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">distance</span></td>
+        <td>The exploration distance in meters.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">onlyNext</span></td>
+        <td>
+The flag indicating that no the entity behind another
+one with different position shall be explored.
+Default is false so that each entity also them behind the next one will be collected.
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.ExploreDirection.html">ExploreDirection</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td>The direction of the exploration. Default is <code>forward</code> same direction as the edge.</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.ISpatialEdge.html">ISpatialEdge</a></td>
+        <td><span class="parametername">nextEdge</span></td>
+        <td>The next edge the agent will move to after traversing the current edge.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">lanes</span></td>
+        <td>
+The selected lanes to explore as indices, starting with 0.
+If no lane was passed each lane will be queried.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Environments.EdgeExploreResult.html">EdgeExploreResult</a></td>
+        <td>
+An <a class="xref" href="Mars.Interfaces.Environments.EdgeExploreResult.html">EdgeExploreResult</a> containing a grouping of explores by each lane.
+Each lane exploration is ordered by the distance of the object to the source.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_ExploreInLaneOnEdge_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.ExploreInLaneOnEdge(Mars.Interfaces.Agents.ISpatialGraphEntity%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.Explore.cs/#L224">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_ExploreInLaneOnEdge_" data-uid="Mars.Components.Environments.SpatialEdge.ExploreInLaneOnEdge*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_ExploreInLaneOnEdge_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_" data-uid="Mars.Components.Environments.SpatialEdge.ExploreInLaneOnEdge(Mars.Interfaces.Agents.ISpatialGraphEntity,System.Double)">ExploreInLaneOnEdge(ISpatialGraphEntity, Double)</h4>
+  <div class="markdown level1 summary">
+Represents a spatial or geometric edge of this graph which is able to persist and to manage
+entities on a continuous geometric line in meters.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ExploreInLaneOnEdge(ISpatialGraphEntity entity, double distance = 15)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Agents.ISpatialGraphEntity.html">ISpatialGraphEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">distance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Insert_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_System_Int32_.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Insert(Mars.Interfaces.Agents.ISpatialGraphEntity%2CSystem.Double%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L348">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Insert_" data-uid="Mars.Components.Environments.SpatialEdge.Insert*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Insert_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_System_Int32_" data-uid="Mars.Components.Environments.SpatialEdge.Insert(Mars.Interfaces.Agents.ISpatialGraphEntity,System.Double,System.Int32)">Insert(ISpatialGraphEntity, Double, Int32)</h4>
+  <div class="markdown level1 summary">
+Add an entity to the edge
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Insert(ISpatialGraphEntity entity, double position, int laneIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Agents.ISpatialGraphEntity.html">ISpatialGraphEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td>The respective entity to insert</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">position</span></td>
+        <td>The position it should be inserted</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">laneIndex</span></td>
+        <td>The lane it should be inserted</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td>
+true -> entity was inserted at desired position and lane
+false -> the entity was already on the edge
+or the desired position is already occupied
+or the desired position is ahead of another entity
+which would result in an unwanted overtaking maneuver
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_InsertUnsafe_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_System_Int32_.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.InsertUnsafe(Mars.Interfaces.Agents.ISpatialGraphEntity%2CSystem.Double%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L418">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_InsertUnsafe_" data-uid="Mars.Components.Environments.SpatialEdge.InsertUnsafe*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_InsertUnsafe_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_System_Int32_" data-uid="Mars.Components.Environments.SpatialEdge.InsertUnsafe(Mars.Interfaces.Agents.ISpatialGraphEntity,System.Double,System.Int32)">InsertUnsafe(ISpatialGraphEntity, Double, Int32)</h4>
+  <div class="markdown level1 summary">
+Add an entity to the edge
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InsertUnsafe(ISpatialGraphEntity entity, double position, int laneIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Agents.ISpatialGraphEntity.html">ISpatialGraphEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td>The respective entity to insert</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">position</span></td>
+        <td>The position it should be inserted</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">laneIndex</span></td>
+        <td>The lane it should be inserted</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td>
+true -> entity was inserted at desired position and lane
+false -> the entity was already on the edge
+or the desired position is already occupied
+or the desired position is ahead of another entity
+which would result in an unwanted overtaking maneuver
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_IsLaneFree_System_Int32_.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.IsLaneFree(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.Explore.cs/#L211">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_IsLaneFree_" data-uid="Mars.Components.Environments.SpatialEdge.IsLaneFree*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_IsLaneFree_System_Int32_" data-uid="Mars.Components.Environments.SpatialEdge.IsLaneFree(System.Int32)">IsLaneFree(Int32)</h4>
+  <div class="markdown level1 summary">
+Represents a spatial or geometric edge of this graph which is able to persist and to manage
+entities on a continuous geometric line in meters.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLaneFree(int lane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lane</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Merge_Mars_Common_Collections_Graph_EdgeData_.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Merge(Mars.Common.Collections.Graph.EdgeData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L530">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Merge_" data-uid="Mars.Components.Environments.SpatialEdge.Merge*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Merge_Mars_Common_Collections_Graph_EdgeData_" data-uid="Mars.Components.Environments.SpatialEdge.Merge(Mars.Common.Collections.Graph.EdgeData)">Merge(EdgeData)</h4>
+  <div class="markdown level1 summary">
+Initialize and merges each lanes from given <a class="xref" href="../common/Mars.Common.Collections.Graph.EdgeData.html">EdgeData</a>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Merge(EdgeData laneEdges)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../common/Mars.Common.Collections.Graph.EdgeData.html">EdgeData</a></td>
+        <td><span class="parametername">laneEdges</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Move_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_System_Int32_.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Move(Mars.Interfaces.Agents.ISpatialGraphEntity%2CSystem.Double%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.Move.cs/#L176">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Move_" data-uid="Mars.Components.Environments.SpatialEdge.Move*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Move_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_System_Int32_" data-uid="Mars.Components.Environments.SpatialEdge.Move(Mars.Interfaces.Agents.ISpatialGraphEntity,System.Double,System.Int32)">Move(ISpatialGraphEntity, Double, Int32)</h4>
+  <div class="markdown level1 summary">
+Move an entity on the edge
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Move(ISpatialGraphEntity entity, double distance, int desiredLane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Agents.ISpatialGraphEntity.html">ISpatialGraphEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td>the entity to move</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">distance</span></td>
+        <td>the distance the entity shall be moved forth</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">desiredLane</span></td>
+        <td>
+the lane the entities wants to move on. This can either
+be his current lane which or another lane (overtaking maneuver)
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td>
+an edge move results which contains information about the movement
+like a success statement and the entities new position (if successfully)
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_PosAt_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_System_Int32_.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.PosAt(Mars.Interfaces.Agents.ISpatialGraphEntity%2CSystem.Double%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.Move.cs/#L14">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_PosAt_" data-uid="Mars.Components.Environments.SpatialEdge.PosAt*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_PosAt_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Double_System_Int32_" data-uid="Mars.Components.Environments.SpatialEdge.PosAt(Mars.Interfaces.Agents.ISpatialGraphEntity,System.Double,System.Int32)">PosAt(ISpatialGraphEntity, Double, Int32)</h4>
+  <div class="markdown level1 summary">
+Represents a spatial or geometric edge of this graph which is able to persist and to manage
+entities on a continuous geometric line in meters.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PosAt(ISpatialGraphEntity entity, double position, int desiredLaneIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Agents.ISpatialGraphEntity.html">ISpatialGraphEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">desiredLaneIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_Remove_Mars_Interfaces_Agents_ISpatialGraphEntity_.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.Remove(Mars.Interfaces.Agents.ISpatialGraphEntity)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L477">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_Remove_" data-uid="Mars.Components.Environments.SpatialEdge.Remove*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_Remove_Mars_Interfaces_Agents_ISpatialGraphEntity_" data-uid="Mars.Components.Environments.SpatialEdge.Remove(Mars.Interfaces.Agents.ISpatialGraphEntity)">Remove(ISpatialGraphEntity)</h4>
+  <div class="markdown level1 summary">
+Remove an entity from the edge and from the respective lane
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(ISpatialGraphEntity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Agents.ISpatialGraphEntity.html">ISpatialGraphEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td>The respective entity to remove.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td>
+true -> entity was removed
+false -> entity wasn&apos;t on the edge
+or the remove failed
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge_RemoveUnsafe_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Int32_.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge.RemoveUnsafe(Mars.Interfaces.Agents.ISpatialGraphEntity%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.cs/#L501">View Source</a>
+  </span>
+  <a id="Mars_Components_Environments_SpatialEdge_RemoveUnsafe_" data-uid="Mars.Components.Environments.SpatialEdge.RemoveUnsafe*"></a>
+  <h4 id="Mars_Components_Environments_SpatialEdge_RemoveUnsafe_Mars_Interfaces_Agents_ISpatialGraphEntity_System_Int32_" data-uid="Mars.Components.Environments.SpatialEdge.RemoveUnsafe(Mars.Interfaces.Agents.ISpatialGraphEntity,System.Int32)">RemoveUnsafe(ISpatialGraphEntity, Int32)</h4>
+  <div class="markdown level1 summary">
+Provides a custom remove operation based on specific passed <code>position</code> value, where look at on the
+specified lane to remove the desired <code>entity</code>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveUnsafe(ISpatialGraphEntity entity, int lane = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mars.Interfaces.Agents.ISpatialGraphEntity.html">ISpatialGraphEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td>The entity to remove.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lane</span></td>
+        <td>The concrete or maybe last lane on which to remove the entity. Default is 0</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td>
+Returns true, when the old entry was successfully removed with the passed <code>pos</code>, otherwise false.
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="Mars.Interfaces.Environments.ISpatialEdge.html">ISpatialEdge</a>
+  </div>
+  <div>
+      <a class="xref" href="Mars.Interfaces.Environments.IEdge-2.html">IEdge&lt;TEdge, TNode&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mars.Interfaces.Environments.IGraphEntity.html">IGraphEntity</a>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEqualityComparer&lt;T&gt;</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../common/Mars.Common.IO.Serializer.html#Mars_Common_IO_Serializer_Save__1___0_System_Byte____Mars_Common_IO_SerializerCompression_">Serializer.Save&lt;T&gt;(T, out Byte[], SerializerCompression)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Common.IO.Serializer.html#Mars_Common_IO_Serializer_Save__1___0_System_IO_Stream_Mars_Common_IO_SerializerCompression_">Serializer.Save&lt;T&gt;(T, Stream, SerializerCompression)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Common.IO.Serializer.html#Mars_Common_IO_Serializer_Save__1___0_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_System_IO_Stream_Mars_Common_IO_SerializerCompression_">Serializer.Save&lt;T&gt;(T, BinaryFormatter, Stream, SerializerCompression)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Common.IO.Serializer.html#Mars_Common_IO_Serializer_Save__1___0_System_String_Mars_Common_IO_SerializerCompression_">Serializer.Save&lt;T&gt;(T, String, SerializerCompression)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Common.IO.Serializer.html#Mars_Common_IO_Serializer_Save__1___0_System_String_">Serializer.Save&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Numerics.Matrix.html#Mars_Numerics_Matrix_Concatenate__1___0___0___">Matrix.Concatenate&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Numerics.Matrix.html#Mars_Numerics_Matrix_Replace__1___0_System_Object_System_Object_">Matrix.Replace&lt;T&gt;(T, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mars.Components.Environments.SpatialGraphHelper.html#Mars_Components_Environments_SpatialGraphHelper_ToFeature_Mars_Interfaces_Environments_ISpatialEdge_">SpatialGraphHelper.ToFeature(ISpatialEdge)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mars.Components.Environments.SpatialGraphHelper.html#Mars_Components_Environments_SpatialGraphHelper_ToGeometry_Mars_Interfaces_Environments_ISpatialEdge_">SpatialGraphHelper.ToGeometry(ISpatialEdge)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Common.Data.DomainDataImporter.html#Mars_Common_Data_DomainDataImporter_Import_System_Object_Mars_Interfaces_Model_InputConfiguration_">DomainDataImporter.Import(Object, InputConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Common.IO.ObjectSerialize.html#Mars_Common_IO_ObjectSerialize_Serialize_System_Object_">ObjectSerialize.Serialize(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Numerics.Matrix.html#Mars_Numerics_Matrix_IsEqual_System_Object_System_Object_System_Decimal_System_Decimal_">Matrix.IsEqual(Object, Object, Decimal, Decimal)</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Components_Environments_SpatialEdge.md&amp;value=---%0Auid%3A%20Mars.Components.Environments.SpatialEdge%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Components/Environments/Graph/Model/SpatialEdge.Move.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright &copy; MARS GROUP. <strong>HAW Hamburg</strong></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

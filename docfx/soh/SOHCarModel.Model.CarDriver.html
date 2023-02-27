@@ -1,0 +1,1658 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CarDriver
+ | MARS LIFE Runtime System </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CarDriver
+ | MARS LIFE Runtime System ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/mars/mars-icon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <ul class="nav level1 navbar-nav">
+                  <li>
+                      <a class="navbar-brand" href="/">
+                          MARS Website
+                      </a>
+                  </li>
+              </ul>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/mars/mars-icon-resized.png" alt="">
+              </a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../simulation/Mars.Core.html" title="Core API">Core API</a>
+                      </li>
+                      <li>
+                          <a href="../soh/SOHBicycleModel.Common.html" title="SmartOpenHamburg API">SmartOpenHamburg API</a>
+                      </li>
+                      <li>
+                          <a href="../components/Mars.Components.html" title="Model Components API">Model Components API</a>
+                      </li>
+                      <li>
+                          <a href="../common/Mars.Common.html" title="Common API">Common API</a>
+                      </li>
+                </ul>            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHBicycleModel.Common.html" title="SOHBicycleModel.Common" class="">SOHBicycleModel.Common</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHBicycleModel.Common.BicycleConstants.html" title="BicycleConstants" class="">BicycleConstants</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Common.BicycleType.html" title="BicycleType" class="">BicycleType</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Common.DriverType.html" title="DriverType" class="">DriverType</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Common.HandleBicycleType.html" title="HandleBicycleType" class="">HandleBicycleType</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Common.HandleDriverType.html" title="HandleDriverType" class="">HandleDriverType</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHBicycleModel.Model.html" title="SOHBicycleModel.Model" class="">SOHBicycleModel.Model</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHBicycleModel.Model.Bicycle.html" title="Bicycle" class="">Bicycle</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHBicycleModel.Parking.html" title="SOHBicycleModel.Parking" class="">SOHBicycleModel.Parking</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHBicycleModel.Parking.BicycleParkingLayer.html" title="BicycleParkingLayer" class="">BicycleParkingLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Parking.BicycleParkingLot.html" title="BicycleParkingLot" class="">BicycleParkingLot</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Parking.IBicycleParkingLayer.html" title="IBicycleParkingLayer" class="">IBicycleParkingLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHBicycleModel.Rental.html" title="SOHBicycleModel.Rental" class="">SOHBicycleModel.Rental</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHBicycleModel.Rental.BicycleRentalLayer.html" title="BicycleRentalLayer" class="">BicycleRentalLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Rental.BicycleRentalStation.html" title="BicycleRentalStation" class="">BicycleRentalStation</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Rental.IBicycleRentalLayer.html" title="IBicycleRentalLayer" class="">IBicycleRentalLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Rental.IBicycleSteeringAndRentalCapable.html" title="IBicycleSteeringAndRentalCapable" class="">IBicycleSteeringAndRentalCapable</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Rental.IRentalBicycle.html" title="IRentalBicycle" class="">IRentalBicycle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Rental.RentalBicycle.html" title="RentalBicycle" class="">RentalBicycle</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHBicycleModel.Steering.html" title="SOHBicycleModel.Steering" class="">SOHBicycleModel.Steering</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHBicycleModel.Steering.BicyclePassengerHandle.html" title="BicyclePassengerHandle" class="">BicyclePassengerHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Steering.BicycleSteeringHandle.html" title="BicycleSteeringHandle" class="">BicycleSteeringHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Steering.IBicycleSteeringCapable.html" title="IBicycleSteeringCapable" class="">IBicycleSteeringCapable</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Steering.WiedemannAccelerator.html" title="WiedemannAccelerator" class="">WiedemannAccelerator</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHBicycleModel.Steering.WiedemannAccelerator.WiedemannAcceleratorParameters.html" title="WiedemannAccelerator.WiedemannAcceleratorParameters" class="">WiedemannAccelerator.WiedemannAcceleratorParameters</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHCarModel.Common.html" title="SOHCarModel.Common" class="">SOHCarModel.Common</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHCarModel.Common.CarRouteFinder.html" title="CarRouteFinder" class="">CarRouteFinder</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHCarModel.Model.html" title="SOHCarModel.Model" class="">SOHCarModel.Model</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHCarModel.Model.Car.html" title="Car" class="">Car</a>
+                          </li>
+                          <li class="active">
+                            <a href="SOHCarModel.Model.CarDriver.html" title="CarDriver" class="active">CarDriver</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Model.CarLayer.html" title="CarLayer" class="">CarLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Model.Golf.html" title="Golf" class="">Golf</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Model.ICarLayer.html" title="ICarLayer" class="">ICarLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Model.RentalCar.html" title="RentalCar" class="">RentalCar</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHCarModel.Parking.html" title="SOHCarModel.Parking" class="">SOHCarModel.Parking</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHCarModel.Parking.CarParkingLayer.html" title="CarParkingLayer" class="">CarParkingLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Parking.CarParkingSpace.html" title="CarParkingSpace" class="">CarParkingSpace</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Parking.ICarParkingLayer.html" title="ICarParkingLayer" class="">ICarParkingLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Parking.IParkingCar.html" title="IParkingCar" class="">IParkingCar</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHCarModel.Rental.html" title="SOHCarModel.Rental" class="">SOHCarModel.Rental</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHCarModel.Rental.CarRentalLayer.html" title="CarRentalLayer" class="">CarRentalLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Rental.ICarRentalCapable.html" title="ICarRentalCapable" class="">ICarRentalCapable</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Rental.ICarRentalLayer.html" title="ICarRentalLayer" class="">ICarRentalLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHCarModel.Steering.html" title="SOHCarModel.Steering" class="">SOHCarModel.Steering</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHCarModel.Steering.CarPassengerHandle.html" title="CarPassengerHandle" class="">CarPassengerHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Steering.CarSteeringHandle.html" title="CarSteeringHandle" class="">CarSteeringHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHCarModel.Steering.ICarSteeringCapable.html" title="ICarSteeringCapable" class="">ICarSteeringCapable</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Common.html" title="SOHDomain.Common" class="">SOHDomain.Common</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Common.HumanVelocityConstants.html" title="HumanVelocityConstants" class="">HumanVelocityConstants</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Common.NormalDist.html" title="NormalDist" class="">NormalDist</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Common.OsmFeatureCodes.html" title="OsmFeatureCodes" class="">OsmFeatureCodes</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Common.OsmGroups.html" title="OsmGroups" class="">OsmGroups</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Common.VehicleConstants.html" title="VehicleConstants" class="">VehicleConstants</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Graph.html" title="SOHDomain.Graph" class="">SOHDomain.Graph</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Graph.ISpatialGraphLayer.html" title="ISpatialGraphLayer" class="">ISpatialGraphLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Graph.SidewalkLayer.html" title="SidewalkLayer" class="">SidewalkLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Graph.SpatialGraphMediatorLayer.html" title="SpatialGraphMediatorLayer" class="">SpatialGraphMediatorLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Graph.StreetLayer.html" title="StreetLayer" class="">StreetLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Model.html" title="SOHDomain.Model" class="">SOHDomain.Model</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Model.IModalLayer.html" title="IModalLayer" class="">IModalLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Model.IVehicleEntrance-4.html" title="IVehicleEntrance&lt;TDriver, TPassenger, TSteeringHandle, TPassengerHandle&gt;" class="">IVehicleEntrance&lt;TDriver, TPassenger, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Model.RoadUser.html" title="RoadUser" class="">RoadUser</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Model.Vehicle-4.html" title="Vehicle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;" class="">Vehicle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Model.WalkingShoes.html" title="WalkingShoes" class="">WalkingShoes</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Steering.Acceleration.html" title="SOHDomain.Steering.Acceleration" class="">SOHDomain.Steering.Acceleration</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Steering.Acceleration.IntelligentDriverAccelerator.html" title="IntelligentDriverAccelerator" class="">IntelligentDriverAccelerator</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Acceleration.IVehicleAccelerator.html" title="IVehicleAccelerator" class="">IVehicleAccelerator</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Acceleration.WalkingAccelerator.html" title="WalkingAccelerator" class="">WalkingAccelerator</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Steering.Capables.html" title="SOHDomain.Steering.Capables" class="">SOHDomain.Steering.Capables</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Steering.Capables.IPassengerCapable.html" title="IPassengerCapable" class="">IPassengerCapable</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Capables.ISteeringCapable.html" title="ISteeringCapable" class="">ISteeringCapable</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Capables.IWalkingCapable.html" title="IWalkingCapable" class="">IWalkingCapable</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Steering.Common.html" title="SOHDomain.Steering.Common" class="">SOHDomain.Steering.Common</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Steering.Common.PassengerMessage.html" title="PassengerMessage" class="">PassengerMessage</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Steering.Handles.html" title="SOHDomain.Steering.Handles" class="">SOHDomain.Steering.Handles</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.IdlePassengerSteeringHandle.html" title="IdlePassengerSteeringHandle" class="">IdlePassengerSteeringHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.IPassengerHandle.html" title="IPassengerHandle" class="">IPassengerHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.ISteeringHandle.html" title="ISteeringHandle" class="">ISteeringHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.VehiclePassengerHandle-4.html" title="VehiclePassengerHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;" class="">VehiclePassengerHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.VehicleSteeringHandle-4.html" title="VehicleSteeringHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;" class="">VehicleSteeringHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.WalkingSteeringHandle.html" title="WalkingSteeringHandle" class="">WalkingSteeringHandle</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHDomain.Steering.Handles.Intersection.html" title="SOHDomain.Steering.Handles.Intersection" class="">SOHDomain.Steering.Handles.Intersection</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.Intersection.AbstractIntersectionHandle-4.html" title="AbstractIntersectionHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;" class="">AbstractIntersectionHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.Intersection.FifoIntersectionHandle-4.html" title="FifoIntersectionHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;" class="">FifoIntersectionHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.Intersection.IIntersectionTrafficCode.html" title="IIntersectionTrafficCode" class="">IIntersectionTrafficCode</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHDomain.Steering.Handles.Intersection.RightBeforeLeftIntersectionHandle-4.html" title="RightBeforeLeftIntersectionHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;" class="">RightBeforeLeftIntersectionHandle&lt;TSteeringCapable, TPassengerCapable, TSteeringHandle, TPassengerHandle&gt;</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHFerryModel.Model.html" title="SOHFerryModel.Model" class="">SOHFerryModel.Model</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHFerryModel.Model.Ferry.html" title="Ferry" class="">Ferry</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Model.FerryDriver.html" title="FerryDriver" class="">FerryDriver</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Model.FerryLayer.html" title="FerryLayer" class="">FerryLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Model.FerrySchedulerLayer.html" title="FerrySchedulerLayer" class="">FerrySchedulerLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHFerryModel.Route.html" title="SOHFerryModel.Route" class="">SOHFerryModel.Route</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHFerryModel.Route.FerryRoute.html" title="FerryRoute" class="">FerryRoute</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Route.FerryRoute.FerryRouteEnumerator.html" title="FerryRoute.FerryRouteEnumerator" class="">FerryRoute.FerryRouteEnumerator</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Route.FerryRouteEntry.html" title="FerryRouteEntry" class="">FerryRouteEntry</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Route.FerryRouteLayer.html" title="FerryRouteLayer" class="">FerryRouteLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Route.FerryRouteReader.html" title="FerryRouteReader" class="">FerryRouteReader</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHFerryModel.Station.html" title="SOHFerryModel.Station" class="">SOHFerryModel.Station</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHFerryModel.Station.FerryStation.html" title="FerryStation" class="">FerryStation</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Station.FerryStationLayer.html" title="FerryStationLayer" class="">FerryStationLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Station.IFerryStationLayer.html" title="IFerryStationLayer" class="">IFerryStationLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHFerryModel.Steering.html" title="SOHFerryModel.Steering" class="">SOHFerryModel.Steering</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHFerryModel.Steering.FerryPassengerHandle.html" title="FerryPassengerHandle" class="">FerryPassengerHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Steering.FerrySteeringHandle.html" title="FerrySteeringHandle" class="">FerrySteeringHandle</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Steering.IFerryPassenger.html" title="IFerryPassenger" class="">IFerryPassenger</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHFerryModel.Steering.IFerrySteeringCapable.html" title="IFerrySteeringCapable" class="">IFerrySteeringCapable</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Commons.html" title="SOHMultimodalModel.Commons" class="">SOHMultimodalModel.Commons</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Commons.PedestrianAverageSpeedGenerator.html" title="PedestrianAverageSpeedGenerator" class="">PedestrianAverageSpeedGenerator</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Commons.PointOfInterest.html" title="PointOfInterest" class="">PointOfInterest</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Layers.html" title="SOHMultimodalModel.Layers" class="">SOHMultimodalModel.Layers</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.MediatorLayer.html" title="MediatorLayer" class="">MediatorLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.VectorBuildingsLayer.html" title="VectorBuildingsLayer" class="">VectorBuildingsLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.VectorLanduseLayer.html" title="VectorLanduseLayer" class="">VectorLanduseLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.VectorPoiLayer.html" title="VectorPoiLayer" class="">VectorPoiLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.VectorServiceLayer.html" title="VectorServiceLayer" class="">VectorServiceLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Layers.TrafficLight.html" title="SOHMultimodalModel.Layers.TrafficLight" class="">SOHMultimodalModel.Layers.TrafficLight</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.TrafficLight.TrafficLight.html" title="TrafficLight" class="">TrafficLight</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.TrafficLight.TrafficLightController.html" title="TrafficLightController" class="">TrafficLightController</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Layers.TrafficLight.TrafficLightLayer.html" title="TrafficLightLayer" class="">TrafficLightLayer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Model.html" title="SOHMultimodalModel.Model" class="">SOHMultimodalModel.Model</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.Citizen.html" title="Citizen" class="">Citizen</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.CitizenLayer.html" title="CitizenLayer" class="">CitizenLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.CitizenSchedulerLayer.html" title="CitizenSchedulerLayer" class="">CitizenSchedulerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.CycleTraveler.html" title="CycleTraveler" class="">CycleTraveler</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.CycleTravelerLayer.html" title="CycleTravelerLayer" class="">CycleTravelerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.CycleTravelerSchedulerLayer.html" title="CycleTravelerSchedulerLayer" class="">CycleTravelerSchedulerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.DockWorker.html" title="DockWorker" class="">DockWorker</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.DockWorkerLayer.html" title="DockWorkerLayer" class="">DockWorkerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.DockWorkerSchedulerLayer.html" title="DockWorkerSchedulerLayer" class="">DockWorkerSchedulerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.GenderType.html" title="GenderType" class="">GenderType</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.HumanTraveler.html" title="HumanTraveler" class="">HumanTraveler</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.HumanTravelerLayer.html" title="HumanTravelerLayer" class="">HumanTravelerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.ModalityChooser.html" title="ModalityChooser" class="">ModalityChooser</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.MultiCapableAgent-1.html" title="MultiCapableAgent&lt;TLayer&gt;" class="">MultiCapableAgent&lt;TLayer&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.PassengerTraveler.html" title="PassengerTraveler" class="">PassengerTraveler</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.PassengerTravelerLayer.html" title="PassengerTravelerLayer" class="">PassengerTravelerLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.Traveler-1.html" title="Traveler&lt;TLayer&gt;" class="">Traveler&lt;TLayer&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.TravelerConstants.html" title="TravelerConstants" class="">TravelerConstants</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Model.WorkingType.html" title="WorkingType" class="">WorkingType</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Multimodal.html" title="SOHMultimodalModel.Multimodal" class="">SOHMultimodalModel.Multimodal</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Multimodal.AbstractMultimodalLayer.html" title="AbstractMultimodalLayer" class="">AbstractMultimodalLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Multimodal.IMultimodalLayer.html" title="IMultimodalLayer" class="">IMultimodalLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Multimodal.IMultimodalRouteFinder.html" title="IMultimodalRouteFinder" class="">IMultimodalRouteFinder</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Multimodal.MultimodalAgent-1.html" title="MultimodalAgent&lt;TLayer&gt;" class="">MultimodalAgent&lt;TLayer&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Multimodal.Whereabouts.html" title="Whereabouts" class="">Whereabouts</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Output.Route.html" title="SOHMultimodalModel.Output.Route" class="">SOHMultimodalModel.Output.Route</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Route.MultimodalRouteOutputAdapter.html" title="MultimodalRouteOutputAdapter" class="">MultimodalRouteOutputAdapter</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Output.Ticks.html" title="SOHMultimodalModel.Output.Ticks" class="">SOHMultimodalModel.Output.Ticks</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Ticks.ITickOutputAgent.html" title="ITickOutputAgent" class="">ITickOutputAgent</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Ticks.TickOutputAdapter.html" title="TickOutputAdapter" class="">TickOutputAdapter</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Output.Trips.html" title="SOHMultimodalModel.Output.Trips" class="">SOHMultimodalModel.Output.Trips</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Trips.ITripSavingAgent.html" title="ITripSavingAgent" class="">ITripSavingAgent</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Trips.TripPositionCoordinateConverter.html" title="TripPositionCoordinateConverter" class="">TripPositionCoordinateConverter</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Trips.TripsLine.html" title="TripsLine" class="">TripsLine</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Trips.TripsLineConverter.html" title="TripsLineConverter" class="">TripsLineConverter</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Output.Trips.TripsOutputAdapter.html" title="TripsOutputAdapter" class="">TripsOutputAdapter</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Planning.html" title="SOHMultimodalModel.Planning" class="">SOHMultimodalModel.Planning</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Planning.DayPlanGenerator.html" title="DayPlanGenerator" class="">DayPlanGenerator</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Planning.Tour.html" title="Tour" class="">Tour</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Planning.Trip.html" title="Trip" class="">Trip</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Planning.TripReason.html" title="TripReason" class="">TripReason</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Routing.html" title="SOHMultimodalModel.Routing" class="">SOHMultimodalModel.Routing</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.GatewayLayer.html" title="GatewayLayer" class="">GatewayLayer</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.GatewayPoint.html" title="GatewayPoint" class="">GatewayPoint</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.MultimodalRouteCommons.html" title="MultimodalRouteCommons" class="">MultimodalRouteCommons</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.MultimodalRouteFinder.html" title="MultimodalRouteFinder" class="">MultimodalRouteFinder</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.WalkingCarDrivingRentalMultimodalRoute.html" title="WalkingCarDrivingRentalMultimodalRoute" class="">WalkingCarDrivingRentalMultimodalRoute</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.WalkingDrivingMultimodalRoute.html" title="WalkingDrivingMultimodalRoute" class="">WalkingDrivingMultimodalRoute</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.WalkingFerryDrivingMultimodalRoute.html" title="WalkingFerryDrivingMultimodalRoute" class="">WalkingFerryDrivingMultimodalRoute</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.WalkingMultimodalRoute.html" title="WalkingMultimodalRoute" class="">WalkingMultimodalRoute</a>
+                          </li>
+                          <li class="">
+                            <a href="SOHMultimodalModel.Routing.WalkingTrainDrivingMultimodalRoute.html" title="WalkingTrainDrivingMultimodalRoute" class="">WalkingTrainDrivingMultimodalRoute</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SOHMultimodalModel.Steering.html" title="SOHMultimodalModel.Steering" class="">SOHMultimodalModel.Steering</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SOHMultimodalModel.Steering.IWalkingRoadUser.html" title="IWalkingRoadUser" class="">IWalkingRoadUser</a>
+                          </li>
+                        </ul>                    </li>
+                  </ul>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SOHCarModel.Model.CarDriver">
+
+
+  <h1 id="SOHCarModel_Model_CarDriver" data-uid="SOHCarModel.Model.CarDriver" class="text-break">Class CarDriver
+</h1>
+  <div class="markdown level0 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../components/Mars.Components.Agents.AbstractEntity.html">AbstractEntity</a></div>
+    <div class="level2"><a class="xref" href="../components/Mars.Components.Agents.AbstractAgent.html">AbstractAgent</a></div>
+    <div class="level3"><span class="xref">CarDriver</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="../components/Mars.Interfaces.Agents.IAgent.html">IAgent</a></div>
+    <div><a class="xref" href="../components/Mars.Interfaces.Agents.ITickClient.html">ITickClient</a></div>
+    <div><a class="xref" href="../components/Mars.Interfaces.Agents.IEntity.html">IEntity</a></div>
+    <div><a class="xref" href="../components/Mars.Interfaces.IModelObject.html">IModelObject</a></div>
+    <div><a class="xref" href="SOHCarModel.Steering.ICarSteeringCapable.html">ICarSteeringCapable</a></div>
+    <div><a class="xref" href="SOHDomain.Steering.Capables.ISteeringCapable.html">ISteeringCapable</a></div>
+    <div><a class="xref" href="SOHDomain.Steering.Capables.IPassengerCapable.html">IPassengerCapable</a></div>
+    <div><a class="xref" href="../components/Mars.Interfaces.Environments.IPositionable.html">IPositionable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../components/Mars.Components.Agents.AbstractEntity.html#Mars_Components_Agents_AbstractEntity_ID">AbstractEntity.ID</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SOHCarModel.Model.html">SOHCarModel.Model</a></h6>
+  <h6><strong>Assembly</strong>: SOHCarModel.dll</h6>
+  <h5 id="SOHCarModel_Model_CarDriver_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class CarDriver : AbstractAgent, IAgent, ITickClient, IEntity, IModelObject, ICarSteeringCapable, ISteeringCapable, IPassengerCapable, IPositionable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver__ctor_SOHCarModel_Model_CarLayer_Mars_Interfaces_Layers_RegisterAgent_Mars_Interfaces_Layers_UnregisterAgent_System_Int32_System_Double_System_Double_System_Double_System_Double_Mars_Interfaces_Environments_ISpatialEdge_System_String_System_String_.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.%23ctor(SOHCarModel.Model.CarLayer%2CMars.Interfaces.Layers.RegisterAgent%2CMars.Interfaces.Layers.UnregisterAgent%2CSystem.Int32%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CMars.Interfaces.Environments.ISpatialEdge%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L18">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver__ctor_" data-uid="SOHCarModel.Model.CarDriver.#ctor*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver__ctor_SOHCarModel_Model_CarLayer_Mars_Interfaces_Layers_RegisterAgent_Mars_Interfaces_Layers_UnregisterAgent_System_Int32_System_Double_System_Double_System_Double_System_Double_Mars_Interfaces_Environments_ISpatialEdge_System_String_System_String_" data-uid="SOHCarModel.Model.CarDriver.#ctor(SOHCarModel.Model.CarLayer,Mars.Interfaces.Layers.RegisterAgent,Mars.Interfaces.Layers.UnregisterAgent,System.Int32,System.Double,System.Double,System.Double,System.Double,Mars.Interfaces.Environments.ISpatialEdge,System.String,System.String)">CarDriver(CarLayer, RegisterAgent, UnregisterAgent, Int32, Double, Double, Double, Double, ISpatialEdge, String, String)</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CarDriver(CarLayer layer, RegisterAgent register, UnregisterAgent unregister, int driveMode, double startLat = 0, double startLon = 0, double destLat = 0, double destLon = 0, ISpatialEdge startingEdge = null, string osmRoute = &quot;&quot;, string trafficCode = &quot;german&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SOHCarModel.Model.CarLayer.html">CarLayer</a></td>
+        <td><span class="parametername">layer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../components/Mars.Interfaces.Layers.RegisterAgent.html">RegisterAgent</a></td>
+        <td><span class="parametername">register</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../components/Mars.Interfaces.Layers.UnregisterAgent.html">UnregisterAgent</a></td>
+        <td><span class="parametername">unregister</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">driveMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">startLat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">startLon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">destLat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">destLon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../components/Mars.Interfaces.Environments.ISpatialEdge.html">ISpatialEdge</a></td>
+        <td><span class="parametername">startingEdge</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">osmRoute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">trafficCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_BrakingActivated.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.BrakingActivated%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L122">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_BrakingActivated_" data-uid="SOHCarModel.Model.CarDriver.BrakingActivated*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_BrakingActivated" data-uid="SOHCarModel.Model.CarDriver.BrakingActivated">BrakingActivated</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BrakingActivated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_Car.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.Car%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L119">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_Car_" data-uid="SOHCarModel.Model.CarDriver.Car*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_Car" data-uid="SOHCarModel.Model.CarDriver.Car">Car</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Car Car { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SOHCarModel.Model.Car.html">Car</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_CurrentEdgeId.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.CurrentEdgeId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L128">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_CurrentEdgeId_" data-uid="SOHCarModel.Model.CarDriver.CurrentEdgeId*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_CurrentEdgeId" data-uid="SOHCarModel.Model.CarDriver.CurrentEdgeId">CurrentEdgeId</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CurrentEdgeId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_CurrentlyCarDriving.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.CurrentlyCarDriving%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L124">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_CurrentlyCarDriving_" data-uid="SOHCarModel.Model.CarDriver.CurrentlyCarDriving*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_CurrentlyCarDriving" data-uid="SOHCarModel.Model.CarDriver.CurrentlyCarDriving">CurrentlyCarDriving</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CurrentlyCarDriving { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_GoalReached.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.GoalReached%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L117">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_GoalReached_" data-uid="SOHCarModel.Model.CarDriver.GoalReached*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_GoalReached" data-uid="SOHCarModel.Model.CarDriver.GoalReached">GoalReached</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GoalReached { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_Latitude.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.Latitude%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L82">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_Latitude_" data-uid="SOHCarModel.Model.CarDriver.Latitude*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_Latitude" data-uid="SOHCarModel.Model.CarDriver.Latitude">Latitude</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Latitude { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_Longitude.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.Longitude%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L84">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_Longitude_" data-uid="SOHCarModel.Model.CarDriver.Longitude*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_Longitude" data-uid="SOHCarModel.Model.CarDriver.Longitude">Longitude</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Longitude { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_MaxSpeed.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.MaxSpeed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L100">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_MaxSpeed_" data-uid="SOHCarModel.Model.CarDriver.MaxSpeed*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_MaxSpeed" data-uid="SOHCarModel.Model.CarDriver.MaxSpeed">MaxSpeed</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MaxSpeed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_NextTrafficLightPhase.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.NextTrafficLightPhase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L89">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_NextTrafficLightPhase_" data-uid="SOHCarModel.Model.CarDriver.NextTrafficLightPhase*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_NextTrafficLightPhase" data-uid="SOHCarModel.Model.CarDriver.NextTrafficLightPhase">NextTrafficLightPhase</h4>
+  <div class="markdown level1 summary">
+Indicates the current light phase (red,green,yellow) of the next traffic light if available.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NextTrafficLightPhase { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_OvertakingActivated.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.OvertakingActivated%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L121">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_OvertakingActivated_" data-uid="SOHCarModel.Model.CarDriver.OvertakingActivated*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_OvertakingActivated" data-uid="SOHCarModel.Model.CarDriver.OvertakingActivated">OvertakingActivated</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OvertakingActivated { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_Position.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.Position%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L74">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_Position_" data-uid="SOHCarModel.Model.CarDriver.Position*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_Position" data-uid="SOHCarModel.Model.CarDriver.Position">Position</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Position Position { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../components/Mars.Interfaces.Environments.Position.html">Position</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_PositionOnEdge.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.PositionOnEdge%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L112">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_PositionOnEdge_" data-uid="SOHCarModel.Model.CarDriver.PositionOnEdge*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_PositionOnEdge" data-uid="SOHCarModel.Model.CarDriver.PositionOnEdge">PositionOnEdge</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double PositionOnEdge { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_RemainingDistanceOnEdge.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.RemainingDistanceOnEdge%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L110">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_RemainingDistanceOnEdge_" data-uid="SOHCarModel.Model.CarDriver.RemainingDistanceOnEdge*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_RemainingDistanceOnEdge" data-uid="SOHCarModel.Model.CarDriver.RemainingDistanceOnEdge">RemainingDistanceOnEdge</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double RemainingDistanceOnEdge { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_RemainingRouteDistanceToGoal.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.RemainingRouteDistanceToGoal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L126">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_RemainingRouteDistanceToGoal_" data-uid="SOHCarModel.Model.CarDriver.RemainingRouteDistanceToGoal*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_RemainingRouteDistanceToGoal" data-uid="SOHCarModel.Model.CarDriver.RemainingRouteDistanceToGoal">RemainingRouteDistanceToGoal</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double RemainingRouteDistanceToGoal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_Route.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.Route%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L80">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_Route_" data-uid="SOHCarModel.Model.CarDriver.Route*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_Route" data-uid="SOHCarModel.Model.CarDriver.Route">Route</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Route Route { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../components/Mars.Interfaces.Environments.Route.html">Route</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_SpeedLimit.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.SpeedLimit%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L107">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_SpeedLimit_" data-uid="SOHCarModel.Model.CarDriver.SpeedLimit*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_SpeedLimit" data-uid="SOHCarModel.Model.CarDriver.SpeedLimit">SpeedLimit</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double SpeedLimit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_StableId.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.StableId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L114">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_StableId_" data-uid="SOHCarModel.Model.CarDriver.StableId*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_StableId" data-uid="SOHCarModel.Model.CarDriver.StableId">StableId</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StableId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_TrafficCode.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.TrafficCode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L144">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_TrafficCode_" data-uid="SOHCarModel.Model.CarDriver.TrafficCode*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_TrafficCode" data-uid="SOHCarModel.Model.CarDriver.TrafficCode">TrafficCode</h4>
+  <div class="markdown level1 summary">
+Get or sets the intersection behaviour model identified by code when no traffic signals are available
+&quot;german&quot; = right before left rule
+&quot;southAfrica&quot; = first in first out (FIFO) rule
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TrafficCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_Velocity.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.Velocity%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L91">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_Velocity_" data-uid="SOHCarModel.Model.CarDriver.Velocity*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_Velocity" data-uid="SOHCarModel.Model.CarDriver.Velocity">Velocity</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Velocity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_VelocityInKm.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.VelocityInKm%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L98">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_VelocityInKm_" data-uid="SOHCarModel.Model.CarDriver.VelocityInKm*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_VelocityInKm" data-uid="SOHCarModel.Model.CarDriver.VelocityInKm">VelocityInKm</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double VelocityInKm { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_Notify_SOHDomain_Steering_Common_PassengerMessage_.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.Notify(SOHDomain.Steering.Common.PassengerMessage)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L41">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_Notify_" data-uid="SOHCarModel.Model.CarDriver.Notify*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_Notify_SOHDomain_Steering_Common_PassengerMessage_" data-uid="SOHCarModel.Model.CarDriver.Notify(SOHDomain.Steering.Common.PassengerMessage)">Notify(PassengerMessage)</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Notify(PassengerMessage passengerMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SOHDomain.Steering.Common.PassengerMessage.html">PassengerMessage</a></td>
+        <td><span class="parametername">passengerMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver_Tick.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver.Tick%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L52">View Source</a>
+  </span>
+  <a id="SOHCarModel_Model_CarDriver_Tick_" data-uid="SOHCarModel.Model.CarDriver.Tick*"></a>
+  <h4 id="SOHCarModel_Model_CarDriver_Tick" data-uid="SOHCarModel.Model.CarDriver.Tick">Tick()</h4>
+  <div class="markdown level1 summary">
+Standard implementation of a driver agent that is bound to a single car and drives around with it on the given
+osmRoute.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Tick()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../components/Mars.Components.Agents.AbstractAgent.html#Mars_Components_Agents_AbstractAgent_Tick">AbstractAgent.Tick()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="../components/Mars.Interfaces.Agents.IAgent.html">IAgent</a>
+  </div>
+  <div>
+      <a class="xref" href="../components/Mars.Interfaces.Agents.ITickClient.html">ITickClient</a>
+  </div>
+  <div>
+      <a class="xref" href="../components/Mars.Interfaces.Agents.IEntity.html">IEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="../components/Mars.Interfaces.IModelObject.html">IModelObject</a>
+  </div>
+  <div>
+      <a class="xref" href="SOHCarModel.Steering.ICarSteeringCapable.html">ICarSteeringCapable</a>
+  </div>
+  <div>
+      <a class="xref" href="SOHDomain.Steering.Capables.ISteeringCapable.html">ISteeringCapable</a>
+  </div>
+  <div>
+      <a class="xref" href="SOHDomain.Steering.Capables.IPassengerCapable.html">IPassengerCapable</a>
+  </div>
+  <div>
+      <a class="xref" href="../components/Mars.Interfaces.Environments.IPositionable.html">IPositionable</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=SOHCarModel_Model_CarDriver.md&amp;value=---%0Auid%3A%20SOHCarModel.Model.CarDriver%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Models/SOHCarModel/Model/CarDriver.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright &copy; MARS GROUP. <strong>HAW Hamburg</strong></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

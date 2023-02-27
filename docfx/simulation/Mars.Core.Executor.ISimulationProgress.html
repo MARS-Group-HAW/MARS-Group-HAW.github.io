@@ -1,0 +1,715 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ISimulationProgress
+ | MARS LIFE Runtime System </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ISimulationProgress
+ | MARS LIFE Runtime System ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../images/mars/mars-icon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <ul class="nav level1 navbar-nav">
+                  <li>
+                      <a class="navbar-brand" href="/">
+                          MARS Website
+                      </a>
+                  </li>
+              </ul>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/mars/mars-icon-resized.png" alt="">
+              </a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../simulation/Mars.Core.html" title="Core API">Core API</a>
+                      </li>
+                      <li>
+                          <a href="../soh/SOHBicycleModel.Common.html" title="SmartOpenHamburg API">SmartOpenHamburg API</a>
+                      </li>
+                      <li>
+                          <a href="../components/Mars.Components.html" title="Model Components API">Model Components API</a>
+                      </li>
+                      <li>
+                          <a href="../common/Mars.Common.html" title="Common API">Common API</a>
+                      </li>
+                </ul>            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.html" title="Mars.Core" class="">Mars.Core</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.DependencyRegistrationCore.html" title="DependencyRegistrationCore" class="">DependencyRegistrationCore</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Data.html" title="Mars.Core.Data" class="">Mars.Core.Data</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Data.AbstractConfigLoader.html" title="AbstractConfigLoader" class="">AbstractConfigLoader</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.AbstractEntityManager.html" title="AbstractEntityManager" class="">AbstractEntityManager</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.AgentManagerImpl.html" title="AgentManagerImpl" class="">AgentManagerImpl</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.DomainDataMediatorImpl.html" title="DomainDataMediatorImpl" class="">DomainDataMediatorImpl</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.EntityManagerImpl.html" title="EntityManagerImpl" class="">EntityManagerImpl</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.IAgentManager.html" title="IAgentManager" class="">IAgentManager</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.IEntityManager.html" title="IEntityManager" class="">IEntityManager</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.IEntityMapping.html" title="IEntityMapping" class="">IEntityMapping</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.IGeneratedEntityLogger.html" title="IGeneratedEntityLogger" class="">IGeneratedEntityLogger</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.IGeneratedLayerLogger.html" title="IGeneratedLayerLogger" class="">IGeneratedLayerLogger</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.IGeneratedLogger-1.html" title="IGeneratedLogger&lt;TModel&gt;" class="">IGeneratedLogger&lt;TModel&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.IGeneratedTypeLogger.html" title="IGeneratedTypeLogger" class="">IGeneratedTypeLogger</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.IModelCompiler.html" title="IModelCompiler" class="">IModelCompiler</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.IOutputLogger.html" title="IOutputLogger" class="">IOutputLogger</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.IPlatformSelector.html" title="IPlatformSelector" class="">IPlatformSelector</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.ISchemaMigrationProvider.html" title="ISchemaMigrationProvider" class="">ISchemaMigrationProvider</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.ISerializerManager.html" title="ISerializerManager" class="">ISerializerManager</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.PlatformSelectorImpl.html" title="PlatformSelectorImpl" class="">PlatformSelectorImpl</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Data.Compiler.html" title="Mars.Core.Data.Compiler" class="">Mars.Core.Data.Compiler</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Data.Compiler.AbstractEntityMapper.html" title="AbstractEntityMapper" class="">AbstractEntityMapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Compiler.AbstractJitMapper.html" title="AbstractJitMapper" class="">AbstractJitMapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Compiler.AbstractLayerMapper.html" title="AbstractLayerMapper" class="">AbstractLayerMapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Compiler.AbstractMapper-1.html" title="AbstractMapper&lt;TModel&gt;" class="">AbstractMapper&lt;TModel&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Compiler.AbstractTypeMapper.html" title="AbstractTypeMapper" class="">AbstractTypeMapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Compiler.RoslynCompilerUtils.html" title="RoslynCompilerUtils" class="">RoslynCompilerUtils</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Data.Entities.html" title="Mars.Core.Data.Entities" class="">Mars.Core.Data.Entities</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Data.Entities.CircleFilter.html" title="CircleFilter" class="">CircleFilter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Entities.Condition.html" title="Condition" class="">Condition</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Entities.ConjunctiveWhere.html" title="ConjunctiveWhere" class="">ConjunctiveWhere</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Entities.DataFrame.html" title="DataFrame" class="">DataFrame</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Entities.DisjunctiveWhere.html" title="DisjunctiveWhere" class="">DisjunctiveWhere</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Entities.EqualityCondition.html" title="EqualityCondition" class="">EqualityCondition</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Entities.IntersectionFilter.html" title="IntersectionFilter" class="">IntersectionFilter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Entities.ISelection.html" title="ISelection" class="">ISelection</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Entities.NearestFilter.html" title="NearestFilter" class="">NearestFilter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Entities.Query.html" title="Query" class="">Query</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Entities.WindowFilter.html" title="WindowFilter" class="">WindowFilter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Entities.WithinFilter.html" title="WithinFilter" class="">WithinFilter</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Data.Exceptions.html" title="Mars.Core.Data.Exceptions" class="">Mars.Core.Data.Exceptions</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Data.Exceptions.AgentInitializationException.html" title="AgentInitializationException" class="">AgentInitializationException</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Data.Mapping.html" title="Mars.Core.Data.Mapping" class="">Mars.Core.Data.Mapping</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Data.Mapping.DefaultSourceProvider.html" title="DefaultSourceProvider" class="">DefaultSourceProvider</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Mapping.ReflectiveMapping.html" title="ReflectiveMapping" class="">ReflectiveMapping</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Data.Wrapper.html" title="Mars.Core.Data.Wrapper" class="">Mars.Core.Data.Wrapper</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.AbstractOperationWrapper.html" title="AbstractOperationWrapper" class="">AbstractOperationWrapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.AbstractWrapper.html" title="AbstractWrapper" class="">AbstractWrapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.AbstractWrapper-1.html" title="AbstractWrapper&lt;TOptions&gt;" class="">AbstractWrapper&lt;TOptions&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.GlobalRestrictions.html" title="GlobalRestrictions" class="">GlobalRestrictions</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.ICircleQueryOperation.html" title="ICircleQueryOperation" class="">ICircleQueryOperation</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.IIntersectionOperation.html" title="IIntersectionOperation" class="">IIntersectionOperation</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.ILookupOperation.html" title="ILookupOperation" class="">ILookupOperation</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.INearestOperation.html" title="INearestOperation" class="">INearestOperation</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.IOperation.html" title="IOperation" class="">IOperation</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.IPlatform.html" title="IPlatform" class="">IPlatform</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.IQueryOperation.html" title="IQueryOperation" class="">IQueryOperation</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.ISnapshot.html" title="ISnapshot" class="">ISnapshot</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.IWindowQueryOperation.html" title="IWindowQueryOperation" class="">IWindowQueryOperation</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.IWithinOperation.html" title="IWithinOperation" class="">IWithinOperation</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.IWrapper.html" title="IWrapper" class="">IWrapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.KnnGraphWrapper.html" title="KnnGraphWrapper" class="">KnnGraphWrapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.PostGisWrapper.html" title="PostGisWrapper" class="">PostGisWrapper</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Data.Wrapper.Document.html" title="Mars.Core.Data.Wrapper.Document" class="">Mars.Core.Data.Wrapper.Document</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Document.IMongoConnection.html" title="IMongoConnection" class="">IMongoConnection</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Document.IMongoWrapper.html" title="IMongoWrapper" class="">IMongoWrapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Document.MongoDbIteratorHelper.html" title="MongoDbIteratorHelper" class="">MongoDbIteratorHelper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Document.MongoDbWrapper.html" title="MongoDbWrapper" class="">MongoDbWrapper</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Data.Wrapper.File.html" title="Mars.Core.Data.Wrapper.File" class="">Mars.Core.Data.Wrapper.File</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.File.AbstractFileWrapper-1.html" title="AbstractFileWrapper&lt;TOptions&gt;" class="">AbstractFileWrapper&lt;TOptions&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.File.AscWrapper.html" title="AscWrapper" class="">AscWrapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.File.GeoJsonWrapper.html" title="GeoJsonWrapper" class="">GeoJsonWrapper</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Data.Wrapper.Memory.html" title="Mars.Core.Data.Wrapper.Memory" class="">Mars.Core.Data.Wrapper.Memory</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Memory.DataTableWrapper.html" title="DataTableWrapper" class="">DataTableWrapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Memory.GeoHashTrieWrapper.html" title="GeoHashTrieWrapper" class="">GeoHashTrieWrapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Memory.KdTreeWrapper.html" title="KdTreeWrapper" class="">KdTreeWrapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Memory.TripPosition.html" title="TripPosition" class="">TripPosition</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Memory.TripPositionCoordinateConverter.html" title="TripPositionCoordinateConverter" class="">TripPositionCoordinateConverter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Memory.TripsCollection.html" title="TripsCollection" class="">TripsCollection</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Memory.TripsLineConverter.html" title="TripsLineConverter" class="">TripsLineConverter</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Memory.TripsTrajectoryWrapper.html" title="TripsTrajectoryWrapper" class="">TripsTrajectoryWrapper</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Data.Wrapper.Relational.html" title="Mars.Core.Data.Wrapper.Relational" class="">Mars.Core.Data.Wrapper.Relational</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Relational.AbstractRelationalConnection.html" title="AbstractRelationalConnection" class="">AbstractRelationalConnection</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Relational.PostgresSqlDbConnection.html" title="PostgresSqlDbConnection" class="">PostgresSqlDbConnection</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Relational.PostgresSqlWrapper.html" title="PostgresSqlWrapper" class="">PostgresSqlWrapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Relational.RelationalMapperException.html" title="RelationalMapperException" class="">RelationalMapperException</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Relational.RelationalSqlWrapper-1.html" title="RelationalSqlWrapper&lt;TOptions&gt;" class="">RelationalSqlWrapper&lt;TOptions&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Relational.SqliteDbConnection.html" title="SqliteDbConnection" class="">SqliteDbConnection</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Relational.SqliteWrapper.html" title="SqliteWrapper" class="">SqliteWrapper</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Data.Wrapper.Stream.html" title="Mars.Core.Data.Wrapper.Stream" class="">Mars.Core.Data.Wrapper.Stream</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Stream.MqttWrapper.html" title="MqttWrapper" class="">MqttWrapper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Data.Wrapper.Stream.SimulationTypeInfo.html" title="SimulationTypeInfo" class="">SimulationTypeInfo</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Executor.html" title="Mars.Core.Executor" class="">Mars.Core.Executor</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Executor.IRuntimeModel.html" title="IRuntimeModel" class="">IRuntimeModel</a>
+                          </li>
+                          <li class="active">
+                            <a href="Mars.Core.Executor.ISimulationProgress.html" title="ISimulationProgress" class="active">ISimulationProgress</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Executor.IStepExecutor.html" title="IStepExecutor" class="">IStepExecutor</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Executor.Entities.html" title="Mars.Core.Executor.Entities" class="">Mars.Core.Executor.Entities</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Executor.Entities.Parametrization.html" title="Parametrization" class="">Parametrization</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Executor.Entities.StepParam.html" title="StepParam" class="">StepParam</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Executor.Implementation.html" title="Mars.Core.Executor.Implementation" class="">Mars.Core.Executor.Implementation</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Executor.Implementation.RuntimeModelImpl.html" title="RuntimeModelImpl" class="">RuntimeModelImpl</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Executor.Implementation.SimulationProgressImpl.html" title="SimulationProgressImpl" class="">SimulationProgressImpl</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Executor.Implementation.StepExecutionUseCase.html" title="StepExecutionUseCase" class="">StepExecutionUseCase</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Model.html" title="Mars.Core.Model" class="">Mars.Core.Model</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Model.IConfigLoader.html" title="IConfigLoader" class="">IConfigLoader</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Model.IModelContainer.html" title="IModelContainer" class="">IModelContainer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Model.IModelResolver.html" title="IModelResolver" class="">IModelResolver</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Model.Entities.html" title="Mars.Core.Model.Entities" class="">Mars.Core.Model.Entities</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Model.Entities.LayerInstanceContainer.html" title="LayerInstanceContainer" class="">LayerInstanceContainer</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Model.Exceptions.html" title="Mars.Core.Model.Exceptions" class="">Mars.Core.Model.Exceptions</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Model.Exceptions.InvalidMappingException.html" title="InvalidMappingException" class="">InvalidMappingException</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Model.Exceptions.MissingConstructorException.html" title="MissingConstructorException" class="">MissingConstructorException</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Model.Exceptions.ModelResolutionException.html" title="ModelResolutionException" class="">ModelResolutionException</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Model.Exceptions.ValidationException.html" title="ValidationException" class="">ValidationException</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Model.Implementation.html" title="Mars.Core.Model.Implementation" class="">Mars.Core.Model.Implementation</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Model.Implementation.DependencyBuilder.html" title="DependencyBuilder" class="">DependencyBuilder</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Model.Implementation.MappingHelper.html" title="MappingHelper" class="">MappingHelper</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Model.Implementation.ModelContainer.html" title="ModelContainer" class="">ModelContainer</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Model.Implementation.ValidationIssueLevel.html" title="ValidationIssueLevel" class="">ValidationIssueLevel</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Model.Implementation.ValidationResult.html" title="ValidationResult" class="">ValidationResult</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Model.Implementation.Validator.html" title="Validator" class="">Validator</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Simulation.html" title="Mars.Core.Simulation" class="">Mars.Core.Simulation</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Simulation.ISimulation.html" title="ISimulation" class="">ISimulation</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Simulation.ISimulationControl.html" title="ISimulationControl" class="">ISimulationControl</a>
+                          </li>
+                        </ul>                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Mars.Core.Simulation.Entities.html" title="Mars.Core.Simulation.Entities" class="">Mars.Core.Simulation.Entities</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Mars.Core.Simulation.Entities.SimulationRestartArgs.html" title="SimulationRestartArgs" class="">SimulationRestartArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="Mars.Core.Simulation.Entities.SimulationWorkflowState.html" title="SimulationWorkflowState" class="">SimulationWorkflowState</a>
+                          </li>
+                        </ul>                    </li>
+                  </ul>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mars.Core.Executor.ISimulationProgress">
+
+
+  <h1 id="Mars_Core_Executor_ISimulationProgress" data-uid="Mars.Core.Executor.ISimulationProgress" class="text-break">Interface ISimulationProgress
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mars.Core.Executor.html">Mars.Core.Executor</a></h6>
+  <h6><strong>Assembly</strong>: Mars.Core.dll</h6>
+  <h5 id="Mars_Core_Executor_ISimulationProgress_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISimulationProgress : IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Core_Executor_ISimulationProgress_Start_System_Int32_.md&amp;value=---%0Auid%3A%20Mars.Core.Executor.ISimulationProgress.Start(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Core/Executor/ISimulationProgress.cs/#L11">View Source</a>
+  </span>
+  <a id="Mars_Core_Executor_ISimulationProgress_Start_" data-uid="Mars.Core.Executor.ISimulationProgress.Start*"></a>
+  <h4 id="Mars_Core_Executor_ISimulationProgress_Start_System_Int32_" data-uid="Mars.Core.Executor.ISimulationProgress.Start(System.Int32)">Start(Int32)</h4>
+  <div class="markdown level1 summary">
+Starts a new progress bar with optional options for visualisation
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Start(int maxTicks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxTicks</span></td>
+        <td>The amount of execution iterations</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Core_Executor_ISimulationProgress_Tick_System_String_.md&amp;value=---%0Auid%3A%20Mars.Core.Executor.ISimulationProgress.Tick(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Core/Executor/ISimulationProgress.cs/#L16">View Source</a>
+  </span>
+  <a id="Mars_Core_Executor_ISimulationProgress_Tick_" data-uid="Mars.Core.Executor.ISimulationProgress.Tick*"></a>
+  <h4 id="Mars_Core_Executor_ISimulationProgress_Tick_System_String_" data-uid="Mars.Core.Executor.ISimulationProgress.Tick(System.String)">Tick(String)</h4>
+  <div class="markdown level1 summary">
+One step forward in the progress
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Tick(string message = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../common/Mars.Common.IO.Serializer.html#Mars_Common_IO_Serializer_Save__1___0_System_Byte____Mars_Common_IO_SerializerCompression_">Serializer.Save&lt;T&gt;(T, out Byte[], SerializerCompression)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Common.IO.Serializer.html#Mars_Common_IO_Serializer_Save__1___0_System_IO_Stream_Mars_Common_IO_SerializerCompression_">Serializer.Save&lt;T&gt;(T, Stream, SerializerCompression)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Common.IO.Serializer.html#Mars_Common_IO_Serializer_Save__1___0_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_System_IO_Stream_Mars_Common_IO_SerializerCompression_">Serializer.Save&lt;T&gt;(T, BinaryFormatter, Stream, SerializerCompression)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Common.IO.Serializer.html#Mars_Common_IO_Serializer_Save__1___0_System_String_Mars_Common_IO_SerializerCompression_">Serializer.Save&lt;T&gt;(T, String, SerializerCompression)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Common.IO.Serializer.html#Mars_Common_IO_Serializer_Save__1___0_System_String_">Serializer.Save&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Numerics.Matrix.html#Mars_Numerics_Matrix_Concatenate__1___0___0___">Matrix.Concatenate&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Numerics.Matrix.html#Mars_Numerics_Matrix_Replace__1___0_System_Object_System_Object_">Matrix.Replace&lt;T&gt;(T, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Common.Data.DomainDataImporter.html#Mars_Common_Data_DomainDataImporter_Import_System_Object_Mars_Interfaces_Model_InputConfiguration_">DomainDataImporter.Import(Object, InputConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Common.IO.ObjectSerialize.html#Mars_Common_IO_ObjectSerialize_Serialize_System_Object_">ObjectSerialize.Serialize(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="../common/Mars.Numerics.Matrix.html#Mars_Numerics_Matrix_IsEqual_System_Object_System_Object_System_Decimal_System_Decimal_">Matrix.IsEqual(Object, Object, Decimal, Decimal)</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/new/main/apiSpec/new?filename=Mars_Core_Executor_ISimulationProgress.md&amp;value=---%0Auid%3A%20Mars.Core.Executor.ISimulationProgress%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/MARS-Group-HAW/life/blob/main/Mars.Core/Executor/ISimulationProgress.cs/#L5" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <span>Copyright &copy; MARS GROUP. <strong>HAW Hamburg</strong></span>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

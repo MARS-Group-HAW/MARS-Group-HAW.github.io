@@ -1,0 +1,534 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "execution": {
+      "type": "object",
+      "properties": {
+        "maxProcessCount": {
+          "type": "integer",
+          "default": 1,
+          "description": "Can be used to limit simulation to sequential execution (limit to 1 process)"
+        },
+        "maxMemory": {
+          "type": "number",
+          "description": "The upper bound for local memory usage in megabytes"
+        },
+        "blockingTime": {
+          "type": "integer",
+          "description": "Amount of time to block"
+        },
+        "timeUnit": {
+          "$ref": "#/$defs/time_unit",
+          "description": "The unit for the time interval for the <see cref=\"MaximalBlockingTime\" />"
+        },
+        "tableDatabaseHost": {
+          "type": "string",
+          "description": "The optional host for table based database imports"
+        },
+        "tableDatabaseUser": {
+          "type": "string",
+          "description": "The granted username to access the table database in <see cref=\"TableDatabaseHost\" />"
+        },
+        "tableDatabasePassword": {
+          "type": "string",
+          "description": "The password for the specified user <see cref=\"TableDatabaseUser\" />"
+        }
+      }
+    },
+    "globals": {
+      "type": "object",
+      "description": "Global simulation parameters define the temporal dimensions and general output settings",
+      "properties": {
+        "steps": {
+          "type": "integer",
+          "description": "The full amount of steps to simulate"
+        },
+        "ticks": {
+          "type": "integer",
+          "description": "The alternative description for steps"
+        },
+        "startTime": {
+          "type": "string",
+          "description": "The date time start point for real-time simulation",
+          "pattern": "^\\d\\d\\d\\d-\\d\\d-\\d\\dT\\d\\d:\\d\\d:\\d\\d.\\d\\d\\dZ$"
+        },
+        "endTime": {
+          "type": "string",
+          "description": "The date time end point for real-time simulation",
+          "pattern": "^\\d\\d\\d\\d-\\d\\d-\\d\\dT\\d\\d:\\d\\d:\\d\\d.\\d\\d\\dZ$"
+        },
+        "deltaTUnit": {
+          "$ref": "#/$defs/time_unit",
+          "description": "The timespan unit for real-time reference"
+        },
+        "deltaT": {
+          "type": "integer",
+          "description": "The size of one step to continue the simulation execution"
+        },
+        "reportProgress": {
+          "type": "boolean",
+          "description": "Gets or sets the flag whether to activate progress report over websocket."
+        },
+        "console": {
+          "type": "boolean",
+          "description": "Gets or sets the flag to show the progress of the execution on the console. Default is false to prevent IO problems during test execution."
+        },
+        "pythonVisualization": {
+          "type": "boolean",
+          "description": "Opens a websocket and sends live simulation data to it for visualization purposes."
+        },
+        "output": {
+          "$ref": "#/$defs/output",
+          "description": "Defines the general output type. If not specified differently in layers and agents, the here defined output type is used."
+        },
+        "options": {
+          "type": "object",
+          "properties": {
+            "delimiter": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string"
+            }
+          }
+        },
+        "postgresOptions": {
+          "type": "object",
+          "properties": {
+            "user": {
+              "type": "string"
+            },
+            "database": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            },
+            "overrideByConflict": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "user",
+            "database",
+            "password"
+          ]
+        },
+        "csvOptions": {
+          "type": "object",
+          "properties": {
+            "outputPath": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "outputPath"
+          ]
+        },
+        "tripsOptions": {
+          "type": "object",
+          "properties": {
+            "outputPath": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "outputPath"
+          ]
+        }
+      }
+    },
+    "layers": {
+      "description": "Configuration of layers",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/active_type_mapping"
+      }
+    },
+    "agents": {
+      "description": "Configuration of agents",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/active_type_mapping",
+        "properties": {
+          "count": {
+            "type": "integer",
+            "description": "Amount of initially spawned agents"
+          },
+          "outputFilter": {
+            "$ref": "#/$defs/outputFilter"
+          }
+        }
+      }
+    },
+    "entities": {
+      "description": "Configuration of entities",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/active_type_mapping"
+      }
+    }
+  },
+  "required": [
+    "globals",
+    "layers",
+    "agents"
+  ],
+  "$defs": {
+    "identifiable_element": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Identifies the type"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "type_mapping": {
+      "$ref": "#/$defs/identifiable_element",
+      "properties": {
+        "file": {
+          "type": "string",
+          "description": "The path to the input file for this model type"
+        },
+        "value": {
+          "type": "string",
+          "description": "Gets or sets a value e.g., geojson content assigned to this vector-layer"
+        },
+        "inputConfiguration": {
+          "$ref": "#/$defs/input_configuration",
+          "description": "Gets or sets the temporal input configurations used to separate input and select temporal reference fields, when input is changing over time."
+        },
+        "inputs": {
+          "$ref": "#/$defs/inputs"
+        },
+        "output": {
+          "$ref": "#/$defs/output"
+        },
+        "outputs": {
+          "$ref": "#/$defs/outputs"
+        },
+        "outputKind": {
+          "$ref": "#/$defs/output_kind"
+        },
+        "individual": {
+          "$ref": "#/$defs/mappings"
+        },
+        "pythonVisualization": {
+          "type": "boolean",
+          "description": "Slows downs simulation execution and provides data via a websocket for visualisation purposes",
+          "default": false
+        },
+        "pythonVisualizationWithProperties": {
+          "type": "boolean",
+          "description": "Enables python visualization execution with further properties",
+          "default": false
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "active_type_mapping": {
+      "$ref": "#/$defs/type_mapping",
+      "properties": {
+        "frequency": {
+          "type": "integer",
+          "description": "The step frequency how often this type shall be activated",
+          "default": 1
+        }
+      }
+    },
+    "time_unit": {
+      "type": "string",
+      "description": "The unit for the time interval.",
+      "enum": [
+        "years",
+        "months",
+        "minutes",
+        "seconds",
+        "milliseconds",
+        "microseconds",
+        "hours",
+        "days",
+        "weeks",
+        "none"
+      ]
+    },
+    "output_kind": {
+      "type": "string",
+      "description": "Gets or sets the output kind, whether all full snapshot shall be created (including ignored or not), only deltas (if possible) or only when something has been changed.",
+      "enum": [
+        "Full",
+        "FullWithIgnored",
+        "Delta",
+        "Changes"
+      ]
+    },
+    "output": {
+      "type": "string",
+      "description": "Defines the output type.",
+      "enum": [
+        "none",
+        "csv",
+        "asc",
+        "geojson",
+        "mongodb",
+        "kafka",
+        "outputs",
+        "postgres",
+        "sqlite",
+        "redis",
+        "manual",
+        "inmemorydatatable",
+        "trips"
+      ]
+    },
+    "outputs": {
+      "type": "array",
+      "description": "All output kinds for this type",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "$ref": "#/$defs/output",
+            "description": "The output format"
+          },
+          "outputConfiguration": {
+            "type": "object",
+            "description": "Further configuration options for the output kind.",
+            "properties": {
+              "tripsFields": {
+                "type": "array",
+                "description": "The name of the agents property that is used for discrimination of positions.",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      }
+    },
+    "outputFilter": {
+      "type": "array",
+      "description": "Filters output for ticks depending on defined logical expression.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "parameter": {
+            "type": "string",
+            "description": "The name of the property of which its value is checked against given value collection"
+          },
+          "operator": {
+            "type": "string",
+            "description": "The operator to use for the containment check of parameter value within in a set",
+            "enum": [
+              "In",
+              "NotIn"
+            ]
+          },
+          "values": {
+            "type": "array",
+            "description": "The value collection which will checked against the parameter value.",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {}
+          }
+        },
+        "required": [
+          "parameter",
+          "operator",
+          "values"
+        ]
+      }
+    },
+    "mappings": {
+      "type": "array",
+      "description": "Represents an individual mapping where parameters of a type can be associated in 1:1 approach to a concrete field name of the outer input file (e.g. when names don't cover each other) or to a concrete value which is just restricted by the YAML/JSON data type specification",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": {
+            "type": "string",
+            "description": "The field name of an input, whose value is used for the this parameter"
+          },
+          "value": {
+            "description": "The manually defined value of the parameter"
+          }
+        },
+        "required": [
+          "field",
+          "value"
+        ]
+      }
+    },
+    "inputs": {
+      "type": "array",
+      "description": "All input sources for this type",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "Path to source"
+          },
+          "value": {
+            "type": "string",
+            "description": "Gets or sets a value e.g., geojson content or data-table."
+          },
+          "inputConfiguration": {
+            "$ref": "#/$defs/input_configuration",
+            "description": "Further configuration of the input source"
+          }
+        }
+      }
+    },
+    "input_configuration": {
+      "type": "object",
+      "description": "Gets or sets the configuration object containing all source-specific information how to read the input",
+      "properties": {
+        "encoding": {
+          "type": "string",
+          "description": "Represents a character encoding.",
+          "default": "UTF8"
+        },
+        "temporalSourceAttribute": {
+          "type": "string",
+          "description": "Identifies the temporal source attribute in the meta data for real-time simulation updates",
+          "default": "source"
+        },
+        "temporalJoinAttribute": {
+          "type": "string",
+          "description": "Identifies the temporal join attribute in the meta data for real-time simulation updates",
+          "default": "id"
+        },
+        "validTimeAtAttribute": {
+          "type": "string",
+          "description": "Identifies the attribute that contains the 'valid time at' information for real-time simulation updates."
+        },
+        "validTimeFromAttribute": {
+          "type": "string",
+          "description": "Identifies the attribute that contains the 'valid time from' information for real-time simulation updates."
+        },
+        "validTimeToAttribute": {
+          "type": "string",
+          "description": "Identifies the attribute that contains the 'valid time to' information for real-time simulation updates."
+        },
+        "geometryAttributeName": {
+          "type": "string",
+          "description": "Gets or set an optional name of the field used to retrieve a geometry information from the CSV."
+        },
+        "hasHeader": {
+          "type": "boolean",
+          "description": "Gets or sets a flag, indicating that this input source has header.",
+          "default": true
+        },
+        "delimiter": {
+          "type": "string",
+          "description": "Gets or sets the delimiter to separate the CSV input file.",
+          "default": ","
+        },
+        "isRaster": {
+          "type": "boolean",
+          "description": "Gets or sets the flag indicating that this CSV input is interpreted as 2D grid.",
+          "default": false
+        },
+        "geometryAsNodesEnabled": {
+          "type": "boolean",
+          "description": " Gets or sets the flag to import the geometric curves as own <see cref=\"ISpatialNode\" />. Default is INACTIVE(false)",
+          "default": false
+        },
+        "inferNodesOnEdgeIntersections": {
+          "type": "boolean",
+          "description": "This <see cref=\"ISpatialGraphEnvironment\" /> import configuration checks if edges intersect and if so, connect both edges by splitting the edges at the intersection point and insert two part-edges instead of one.",
+          "default": false
+        },
+        "inferHelperNodeWithinRadiusInM": {
+          "type": "boolean",
+          "description": "This import configuration checks if edges are within the given tolerance range of a node, if so, they are separated, a helper node is inserted and this one is connected to the original node.",
+          "default": false
+        },
+        "nodeTolerance": {
+          "type": "number",
+          "description": "Gets or sets the tolerance in meter to resolve for existing nodes. A higher value indicates a higher radius in which to look for already inserted nodes. Default is 10 meter"
+        },
+        "nodeIntegrationKind": {
+          "type": "string",
+          "description": "Gets or sets the kind how nearest or similar nodes shall be handled in the spatial graph.",
+          "enum": [
+            "MergeNode",
+            "LinkNode"
+          ]
+        },
+        "noHelperNodes": {
+          "type": "boolean",
+          "description": "Imports all nodes first and always uses these as start and goal nodes for the edges. No additional helper nodes are created.",
+          "default": true
+        },
+        "isBidirectedGraph": {
+          "type": "boolean",
+          "description": "Gets or sets the flag indicating that this graph has no direction where each edge needs to be imported in both directions.",
+          "default": true
+        },
+        "worldIndex": {
+          "type": "boolean",
+          "description": "Gets or sets the flag, indicating that the <see cref=\"ISpatialGraphEnvironment\" /> index the network",
+          "default": false
+        },
+        "useCache": {
+          "type": "boolean",
+          "description": "Gets ors sets the flag indicating that the import for the <see cref=\"ISpatialGraphEnvironment\" /> shall be cached or not.",
+          "default": false
+        },
+        "useCompressPathDatabase": {
+          "type": "boolean",
+          "description": "Gets ors sets the flag indicating that a compressed path database shall be used to precompute all shortest paths and use speedup the routing. REMARK: This flag should mostly and only be used when also <see cref=\"UseCache\"/> is true, since precomputing all paths is cost-intensive operation.",
+          "default": false
+        },
+        "modalities": {
+          "type": "array",
+          "description": "Modality that is allowed to use edges of the given graph",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "CarDriving",
+              "Cycling",
+              "Walking",
+              "TrainDriving",
+              "ShipDriving"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
