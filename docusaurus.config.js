@@ -144,6 +144,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/MARS-Group-HAW/',
               },
+              {
+                label: 'Imprint',
+                href: '/imprint',
+              },
             ],
           },
         ],
