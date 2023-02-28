@@ -66,3 +66,28 @@
   margin-left: 1em;
   margin-bottom: 1em;
 }
+
+
+.m-teamprofilecard {
+
+}
+.m-teamprofilecard-name {
+  margin-bottom: 0.25em;
+}
+
+.m-teamprofilecard-description {
+  font-size: 0.75em;
+}
+
+.m-teamprofilecard-year {
+  color: #666;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.m-teamprofilecard-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
