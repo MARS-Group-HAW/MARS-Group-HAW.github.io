@@ -108,11 +108,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'MARS Framework',
             items: [
               {
                 label: 'Tutorial',
                 to: '/docs/tutorial/intro',
+              },
+              {
+                label: 'API',
+                to: '/docfx/',
               },
             ],
           },
