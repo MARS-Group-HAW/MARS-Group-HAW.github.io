@@ -36,7 +36,7 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 
 <TeamProfileCard 
     name="Greg Kiker"
-    description="IoT, Smart Cities, Hefei University, China"
+    description="KNP model development and simulation platform comparison. Dept. of Agricultural and Biological Engineering, University of Florida"
     />
 
 <TeamProfileCard 
