@@ -1,3 +1,7 @@
+---
+sidebar_position: 20
+description: Explains how to create diagrams and dashboards from simulation output.
+---
 # Analyzing Simulation Output
 
 Simulation outputs can be analyzed and plotted with various tools. In this article, the analysis with [FalconSQL](https://plotly.com/chart-studio-help/database-connectors/personal-login/) is used as an example.

@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+description: Explains how to visualize agent movement in Kepler.
+---
+
 # Visualizing Agent Movement
 
 Agent movement in a geo-based coordination system can be visualized using [Kepler](https://kepler.gl).

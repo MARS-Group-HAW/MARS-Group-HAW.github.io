@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+description: Explains how to open a simple Python visualization that displays live results (mostly suited for grid-models).
+---
 # Simple Live Visualization
 
 The [MARS Simple Visualization](https://github.com/MARS-Group-HAW/mars-liveviz) is a small Python GUI to consume and visualize the [MARS WebSocket output](../configuration/sim_output_formats.md#real-time-websocket).
