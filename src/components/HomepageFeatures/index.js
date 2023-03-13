@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_firmware_re_fgdy.svg').default,
     description: (
       <>
-        The MARS Groups develops it's <a href="/docs/tutorial/intro">own C#-framework</a> for multi-agent simulations, called LIFE.
+        The MARS Groups develops its <a href="/docs/tutorial/intro">own C#-framework</a> for multi-agent simulations, called LIFE.
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_pair_programming_re_or4x.svg').default,
     description: (
       <>
-        The MARS Groups focuses on interdisciplinary teams. Through different and diverse mind sets best results <a href="/projects">come to live</a>.
+        The MARS Groups focuses on interdisciplinary teams. Through different and diverse mind sets best results come to live.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_teaching_re_g7e3.svg').default,
     description: (
       <>
-        The MARS Group is teaches at the <a href="https://www.haw-hamburg.de/">HAW Hamburg</a>. Also we <a href="/blog/tags/shortcourse">offer onsite modelling workshops</a> on the topic of Agent-based Modelling (ABM). 
+        The MARS Group teaches at the <a href="https://www.haw-hamburg.de/">HAW Hamburg</a>. Also, we <a href="/blog/tags/shortcourse">offer onsite modelling workshops</a> on the topic of Agent-based Modelling (ABM). 
       </>
     ),
   },
@@ -89,24 +89,6 @@ export default function HomepageFeatures() {
             </div>
           </div>
         </div>
-
-
-        <div style={{ marginTop: '2em'}} className="row">
-          <div className="col">
-            <h2>Partners</h2>
-
-            <div className="row">
-              <div className="col col--3">
-                <a href="https://www.haw-hamburg.de/">
-                  <img src="/img/HAW_Marke_RGB.svg" width="200"/>
-                </a>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
   );
