@@ -4,11 +4,11 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Multi-agent Modelling & AI',
+    title: 'Multi-Agent Modelling & AI',
     Svg: require('@site/static/img/undraw_firmware_re_fgdy.svg').default,
     description: (
       <>
-        The MARS Groups develops its <a href="/docs/tutorial/intro">own C#-framework</a> for multi-agent simulations, called LIFE.
+        The MARS Groups develops its <a href="/docs/tutorial/intro">own C#-framework</a> for Multi-Agent simulations, called LIFE.
       </>
     ),
   },
