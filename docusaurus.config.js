@@ -10,7 +10,7 @@ const katex = require('rehype-katex');
 const config = {
   title: 'MARS',
   tagline: 'Multi-Agent Research & Simulation',
-  url: 'https://mars-group-haw.github.io/',
+  url: 'https://www.mars-group.org/',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
