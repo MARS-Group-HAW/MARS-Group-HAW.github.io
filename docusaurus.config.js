@@ -41,14 +41,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/MARS-Group-HAW/MARS-Group-HAW.github.io/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/MARS-Group-HAW/MARS-Group-HAW.github.io/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -75,7 +75,7 @@ const config = {
       navbar: {
         title: 'MARS',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'MARS GROUP Logo',
           src: 'img/MARS GROUP Icon.png',
         },
         items: [
@@ -93,7 +93,7 @@ const config = {
           },
 
           {to: '/blog', label: 'Blog', position: 'left'},
-          
+
           /*{to: '/team', label: 'Team', position: 'left'},
           {to: '/student', label: 'For Students', position: 'left'},
           {to: '/publications', label: 'Publications', position: 'left'},
