@@ -17,44 +17,53 @@ A more detailed view on the system emphasises that the input files are described
 ![MARS simulation as information system](agent_lifecycle.png)
 
 
-
-
 ## Implementation of Agents
 
-Agent types are defined by implementing the ``IAgent<TLayer>`` interface. The ``IAgent<TLayer>`` interface expects the implementation of the ``Init(TLayer)`` and the ``Tick()`` method as well as a unique identifier in form of a UUID (Guid) which has to be assigned by the ``ID`` property.
+Agent types are defined by implementing the `IAgent<TLayer>` interface. The `IAgent<TLayer>` interface expects the implementation of the `Init(TLayer)` and the `Tick()` method as well as a unique identifier in form of a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) ([Guid](https://learn.microsoft.com/en-us/dotnet/api/System.Guid?view=netstandard-2.0)) which has to be assigned by the `ID` property.
 
 The agent and entity contract is structured as follows:
 
-```mermaidaaa
-interface IModelObject {
-}
+```mermaid
+classDiagram
+    class IModelObject {
+        <<interface>>
+    }
 
-interface IEntity {
-}
-IModelObject <|-- IEntity
-IEntity --> "ID" Guid
+    class IEntity {
+        <<interface>>
+    }
 
-interface ITickClient {
-    Tick() : void
-}
-IModelObject <|-- ITickClient
+    class ITickClient {
+        <<interface>>
+        +Tick()
+    }
 
-interface IAgent {
-}
-ITickClient <|-- IAgent
-IEntity <|-- IAgent
-``` 
+    class IAgent {
+        <<interface>>
+    }
 
-In the model code a ``using`` import for the namespace ``Mars.Components.Agents`` must be added:
+    class Guid {
+        <<interface>>
+    }
+
+    IModelObject <|-- IEntity
+    IModelObject <|-- ITickClient
+    IEntity <|-- IAgent
+    ITickClient <|-- IAgent
+
+    IEntity --> Guid : ID
+```
+
+In the model code a `using` import for the namespace `Mars.Interfaces.Agents` must be added:
 
 ```csharp
-using Mars.Components.Agents;
+using Mars.Interfaces.Agents;
 ```
 
 An agent definition may look like this. 
 
 ```csharp
-using Mars.Components.Agents;
+using Mars.Interfaces.Agents;
 
 public class MyAgentType : IAgent<MyLayer> 
 {
@@ -71,8 +80,6 @@ public class MyAgentType : IAgent<MyLayer>
     public Guid ID { get; set; }
 }
 ```
-
-
 
 Each agent type, which shall be available for the scenario configuration have to be registered within the `ModelDescription`. 
 
@@ -91,7 +98,13 @@ description.AddAgent<MyAgentType, MyLayerType>();
 
 When each agent type is registered, the type and their parameter can be used within the [scenario configuration](../configuration/agent_config.md). 
 
-> Note that the respective layer type must be registered to the `ModelDescription` beforehand.
+
+:::note
+
+Note that the respective layer type must be registered to the `ModelDescription` beforehand.
+
+:::
+
 
 ## Passing input to the Agent
 
@@ -125,10 +138,11 @@ The `Spawn<MyAgentType>()` call creates and registers a set of agents from the c
 > The number of agents is defined in the configuration via the `count` switch.
 
 
+:::danger
 
-&#10071;&#10071;&#10071; The `Spawn<MyAgentType>()` call returns an **iterator for creating and registering** objects. The [.NET Language Integrated Query (LINQ)](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/concepts/linq/) technology allows subsequent queries on the set of objects before they are actually created. Only when `ToList()` is iterated or called do the statements actually pass through. 
+The `Spawn<MyAgentType>()` call returns an **iterator for creating and registering** objects. The [.NET Language Integrated Query (LINQ)](https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/concepts/linq/) technology allows subsequent queries on the set of objects before they are actually created. Only when `ToList()` is iterated or called do the statements actually pass through. 
 
-
+:::
 
 Using `PropertyDescription` annotation for those parameters of an agent or entity which shall be assigned with input data from outside. Properties must be publicly visible and have both a `get` (getter) and `set` (setter) to allow values to be written.
 
@@ -181,13 +195,19 @@ The system tries to convert the input to the type automatically, so other input 
   ]
 }
 ```
+
 Then the system throws the following exception:
 
-> &#10071;&#10071;&#10071; The type 'Double' for property 'InputProperty' is not compatible with input 'True'.
+:::danger
+
+The type `Double` for property `InputProperty` is not compatible with input `True`.
+
+:::
+
 
 ### Indirect value assignment
 
-An <emp>indirect value assignment</emp> allows to initialize each instance of an agent with its individual data objects. These data objects are stored in a file (for instance a csv-file), which is assigned to the agent type in the simulation config.
+An *indirect value assignment* allows to initialize each instance of an agent with its individual data objects. These data objects are stored in a file (for instance a csv-file), which is assigned to the agent type in the simulation config.
 A given source (here `myAgentType.csv`) contains _x_ data objects (rows, without header row). Each data row represents one agent instance:
 
 | fieldNameInCsv | anotherField |
@@ -236,10 +256,10 @@ Mapping of values can now be specified via `MyInputProperty` and `myOtherName`:
 
 Models that define parameters that **must be externally mapped** can specify this requirement as `Required` in `PropertyDescription`. To initialize an object, there must then be a mapping for the respective annotated properties, otherwise the system throws an exception.
 
-````csharp
+```csharp
 public class MyAgentType : IAgent<MyLayer> 
 {
     [PropertyDescription(Required = true)]
     public double InputProperty { get; set; }
 } 
-````
+```
