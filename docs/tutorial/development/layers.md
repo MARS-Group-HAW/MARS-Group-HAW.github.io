@@ -17,7 +17,7 @@ In MARS, the following layers are distinguished
   * [Active Layer](#active-layer)
 * Data Layer
   * [Vector Layer](#vector-layer)
-  * [Raster Layer](#raster-layer)
+  * [Raster Layer](#raster_layer)
 
 The layer ``ILayer`` contract is structured as follows:
 
