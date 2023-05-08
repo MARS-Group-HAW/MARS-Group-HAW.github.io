@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.mars-group.org/blog</id>
     <title>MARS Blog</title>
-    <updated>2022-11-06T00:00:00.000Z</updated>
+    <updated>2023-04-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.mars-group.org/blog"/>
     <subtitle>MARS Blog</subtitle>
     <icon>https://www.mars-group.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Girls' Day 2023!]]></title>
+        <id>https://www.mars-group.org/blog/2023/04/15/girls-day</id>
+        <link href="https://www.mars-group.org/blog/2023/04/15/girls-day"/>
+        <updated>2023-04-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Girls' Day is an annual event during which school-aged girls can attend various activities focused on introducing them to different professions and fields in academia and industry. A special emphasis is placed on historically male-dominated domains such as computer science, engineering, and craft professions. For more information (in German), please see the Girls' Day 2023 website.]]></summary>
+        <content type="html"><![CDATA[<p>Girls' Day is an annual event during which school-aged girls can attend various activities focused on introducing them to different professions and fields in academia and industry. A special emphasis is placed on historically male-dominated domains such as computer science, engineering, and craft professions. For more information (in German), please see the <a href="https://www.girls-day.de/" target="_blank" rel="noopener noreferrer">Girls' Day 2023 website</a>.</p><p>In 2023, Girls' Day takes place on April 25<sup>th</sup>, and the MARS Group is excited to contribute by offering an interactive workshop to eight girls between the ages 12<!-- -->—<!-- -->14. The workshop will cover topics such as:</p><ul><li>Discover the world with <strong>geoinformatics</strong></li><li>Capturing human behavior in <strong>agent-based models</strong></li><li>Understanding infection outbreaks with <strong>epidemiology</strong></li></ul><p>We look forward to welcoming "our" girls and hope for interesting discussions and learnings!</p>]]></content>
+        <author>
+            <name>Nima Ahmady-Moghaddam</name>
+        </author>
+        <category label="girls day" term="girls day"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The MARS Group at the Savanna Science Network Meeting 2023!]]></title>
+        <id>https://www.mars-group.org/blog/2023/02/25/ssnm-2023</id>
+        <link href="https://www.mars-group.org/blog/2023/02/25/ssnm-2023"/>
+        <updated>2023-02-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Savanna Science Network Meeting (SSNM) is an annual one-week international conference in the Kruger National Park (KNP) of South Africa. Researchers from fields like ecology, geology gather to share recent project ideas, research findings, success stories and challenges with their peers. More recently, fields like computer science, machine learning, and data science are also heavily represented at the SSNM as the need for computational and data-driven modeling becomes increasingly clear.]]></summary>
+        <content type="html"><![CDATA[<p>The Savanna Science Network Meeting (SSNM) is an annual one-week international conference in the <a href="https://www.krugerpark.co.za/" target="_blank" rel="noopener noreferrer">Kruger National Park (KNP)</a> of South Africa. Researchers from fields like ecology, geology gather to share recent project ideas, research findings, success stories and challenges with their peers. More recently, fields like computer science, machine learning, and data science are also heavily represented at the SSNM as the need for computational and data-driven modeling becomes increasingly clear.</p><p>The <a href="https://www.sanparks.org/scientific-services/events/savanna-science-network-meeting-2023" target="_blank" rel="noopener noreferrer">SSNM 2023</a> takes place from March 5<sup>th</sup>—<!-- -->10<sup>th</sup>. For the MARS Group, it has become an annual tradition to attend and contribute. This year, we will share our progress and initial results from an agent-based traffic model for the KNP. The model spans the entire road network of the KNP and models daily routines of commuters, visitors, and Open Safari Vehicle (OSV) drivers. We hope that the model will be a valuable tool for <a href="https://www.sanparks.org/" target="_blank" rel="noopener noreferrer">SANParks</a> management as they decide how to manage traffic flow and density in their national parks to reduce traffic jams and improve the visitor experience.</p>]]></content>
+        <author>
+            <name>Nima Ahmady-Moghaddam</name>
+        </author>
+        <category label="ssnm 2023" term="ssnm 2023"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome Rebecca!]]></title>
         <id>https://www.mars-group.org/blog/2022/11/06/welcome-rebecca</id>
