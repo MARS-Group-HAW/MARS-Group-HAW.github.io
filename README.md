@@ -25,9 +25,9 @@ To create a new blog post, follow these steps:
 
 1. In the directory `blog/`, create a new directory (e.g., by duplicating one of the existing directories).
 2. Rename the new directory  
-   **Note** If the development server crashes after changing the folder structure, see the corresponding entry in the [Troubleshooting](#development-server-crashed-after-changing-folder-structure) section for a possible solution.
+   > **Note** If the development server crashes after changing the folder structure, see the corresponding entry in the [Troubleshooting](#development-server-crashed-after-changing-folder-structure) section for a possible solution.
 3. In the directory, add content for the blog post in `index.md`  
-   **Note** To add a new author, add a new entry to `blog/authors.yml`.
+   > **Note** To add a new author, add a new entry to `blog/authors.yml`.
 
 ### Writing LaTeX in Markdown
 
