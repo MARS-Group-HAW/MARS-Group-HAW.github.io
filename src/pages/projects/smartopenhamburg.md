@@ -8,6 +8,6 @@ The SmartOpenHamburg (SOHH) project is an initiative developed in collaboration 
 
 MARS Group contributes to this project a traffic model of the city of Hamburg in the form of a multi-agent system. The model has a georeferenced digital map of Hamburg’s traffic networks from multiple modalities (including pedestrian, bicycle, car), georeferenced structures and features of the city (buildings, rental bike stations, and various other points of interest within the city), complex pathfinding and movement algorithms to simulate typical traffic events and scenarios, multiple modalities each with its own configuration, and much more.
 
-The SOHH model is in continuous development and strives to be able to simulate a variety of scenarios relevant to traffic and urban planning. Visit us also on our project website [smartopenhamburg.de](https://smartopenhamburg.de/)!
+The SOHH model is in continuous development and strives to be able to simulate a variety of scenarios relevant to traffic and urban planning.
 
 Current SOHH deployments for testing can be found [here](/docs/tutorial/soh/scenarios).
