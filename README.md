@@ -37,10 +37,9 @@ To creat a new page, follow these steps:
 2. In the new MD file, write the contents that should be displayed on the page. This can include MD source text, HTML source code, and React components. For more details, see the [Docusaurus documentation on MD features](https://docusaurus.io/docs/markdown-features).
 3. In the JavaScript (JS) file `docusaurus.config.js`, create a homepage link to the new page via one of the following ways:
    1. To add the link to the top navigation bar, add a new entry to `themeConfig.navbar.items`. For example, the entry `{to: '/md-file-name', label: 'MyLinkLabel', position: 'left'},` would create a link in the navigation bar with the label `MyLinkLabel` that links to a page displaying the contents of the file `src/pages/md-file-name.md`.
-   2. To add a link to the footer, add a new entry to the desired section of `themeConfig.footer.links`. Currently, the footer sections `MARS Framework`, `Community`, and `More` are defiled. For example, the entry {label: 'Google', href: 'https://www.google.com/'} in the section `Community` would create a link in the `Community` section of the footer with the label `Google` to the Google search engine homepage.
+   2. To add the link to the footer, add a new entry to the desired section of `themeConfig.footer.links`. Currently, the footer sections `MARS Framework`, `Community`, and `More` are defined. For example, the entry `{label: 'Google', href: 'https://www.google.com/'}` in the section `Community` would create a link in the `Community` section of the footer with the label `Google` to the Google search engine homepage.
 
-> **Note**
-> The order of the entries corresponds to the order in which the links are displayed on the page.
+> **Note** The order of the entries corresponds to the order in which the links are displayed on the page.
 
 ### Writing LaTeX in Markdown
 
