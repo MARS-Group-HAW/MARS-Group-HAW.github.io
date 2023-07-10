@@ -15,7 +15,7 @@ Webpage content is written in Markdown files and can be edited as such. Dependin
 
 - `blog/`: blog posts
 - `docs/`: MARS framework API and developer documentation
-- `src/pages`: individual pages such as Imprint, Team, etc.
+- `src/pages/`: individual pages such as Imprint, Team, etc.
 
 Most changes are reflected live without having to restart the server.
 
@@ -28,6 +28,13 @@ To create a new blog post, follow these steps:
    > **Note** If the development server crashes after changing the folder structure, see the corresponding entry in the [Troubleshooting](#development-server-crashed-after-changing-folder-structure) section for a possible solution.
 3. In the directory, add content for the blog post in `index.md`  
    > **Note** To add a new author, add a new entry to `blog/authors.yml`.
+
+### Example: Create a new page
+
+To creat a new page, follow these steps:
+
+1. In the directory `src/pages/`, create a new Markdown (MD) file.
+2. In the new MD file, write the contents that should be displayed on the page. This can include MD source text, HTML source code, and React components. For more details, see the [Docusaurus documentation on MD features](https://docusaurus.io/docs/markdown-features).
 
 ### Writing LaTeX in Markdown
 
