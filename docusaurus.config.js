@@ -119,6 +119,21 @@ const config = {
             ]
           },
           {
+            type: 'dropdown',
+            label: 'Student Work',
+            position: 'left',
+            items: [
+              {
+                label: 'Theses',
+                to:'/student-work/theses'
+              },
+              {
+                label: 'Posters',
+                to:'/student-work/posters'
+              }
+            ],
+          },
+          {
             href: 'https://github.com/MARS-Group-HAW/',
             label: 'GitHub',
             position: 'right',
