@@ -7,16 +7,12 @@ import Teaser from '@site/src/components/Teaser';
 
 # Projects
 
-
-Projects the MARS Group is involved in:
-
-
+## Current projects
 
 <div class="row row--align-center">
     <Teaser title="ESIDA" description="" img="/img/logos/ESIDA.png" link="/projects/esida" />
     <Teaser title="SmartOpenHamburg" description="" img="/img/logos/SmartOpenHamburg.png" link="/projects/smartopenhamburg" />
 </div>
-
 
 ---
 

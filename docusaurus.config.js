@@ -98,7 +98,26 @@ const config = {
           {to: '/student', label: 'For Students', position: 'left'},
           {to: '/publications', label: 'Publications', position: 'left'},*/
           {to: '/student', label: 'Offerings', position: 'left'},
-          {to: '/projects', label: 'Projects', position: 'left'},
+          {
+            to: '/projects',
+            label: 'Projects',
+            position: 'left',
+            type: 'dropdown',
+            items: [
+              {
+                label: 'ESIDA',
+                to:'/projects/esida'
+              },
+              {
+                label: 'SOHH',
+                to:'/projects/smartopenhamburg'
+              },
+              {
+                label: 'EMSAfrica',
+                to:'/projects/emsafrica'
+              }              
+            ]
+          },
           {
             href: 'https://github.com/MARS-Group-HAW/',
             label: 'GitHub',
