@@ -46,14 +46,7 @@ To creat a new page, follow these steps:
 To add a new thesis entry on the [Theses](https://www.mars-group.org/student-work/theses) page, follow these steps:
 
 1. Add a PDF version of the thesis to the directory `static/img/student-work/theses/`.
-2. In `src/pages/theses.md`, add a new `Thesis` React component under the applicable semester header (see the examples in the file). The `Thesis` component takes the following parameters:
-   - `header`: A short header that is set as the title of the thesis entry
-   - `title`: The full title of the thesis (in English)
-   - `author`: The author of the thesis
-   - `type`: The type of the thesis (`ba` or `ma` or `phd`)
-     - If left blank, the string `Unspecified` will be printed.
-   - `abstract`: The abstract of the thesis (in English)
-   - `path`: The path to the PDF file of the thesis. Example: `/img/student-work/theses/<filename>.pdf`
+2. In `src/pages/theses.md`, add a new `StudentWork` React component under the applicable header. See the HTML comment in `src/pages/theses.md` for a description of the required parameters.
 3. Save the page to prompt a reload of the server, and check in your browser if the entry is set as desired.
 
 ### Create a new poster entry
@@ -61,12 +54,7 @@ To add a new thesis entry on the [Theses](https://www.mars-group.org/student-wor
 To add a new poster entry on the [Posters](https://www.mars-group.org/student-work/posters) page, follow these steps:
 
 1. Add a PDF version **and** a PNG version of the poster to the directory `static/img/student-work/posters/`.
-   - The PNG version is used for displaying a preview of the poster on the page, and the PDF version is made available for download.
-2. In `src/pages/posters.md`, add a new `Poster` React component under the applicable semester header (see the examples in the file). The `Poster` component takes the following parameters:
-   - `title`: The full title of the poster
-   - `author`: The author of the poster
-   - `description`: A brief description of the poster's content
-   - `path`: The path to the poster files **without** a file extension. Example: `/img/student-work/theses/<filename>`.
+2. In `src/pages/posters.md`, add a new `StudentWork` React component under the applicable year header. See the HTML comment in `src/pages/posters.md` for a description of the required parameters.
 3. Save the page to prompt a reload of the server, and check in your browser if the entry is set as desired.
 
 ### Writing LaTeX in Markdown

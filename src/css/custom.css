@@ -91,3 +91,15 @@
   height: 100px;
   object-fit: cover;
 }
+
+.m-studentwork {
+  display: flex;
+}
+
+.m-studentwork-preview {
+  flex: 0 0 40%;
+}
+
+.m-studentwork-text {
+  padding-right: 1em
+}
