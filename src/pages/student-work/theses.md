@@ -35,7 +35,7 @@ On this page, we list theses that were submitted by members and students of the 
   title="Bestimmung einer Gruenen Welle bei Lichtsignalschaltungen für Alster-Fahrradfahrer durch agentenbasierte Simulation mithilfe des MARS-Frameworks"
   author="Kalvin Doege"
   type="ba"
-  description="This study addresses the question of whether and under what conditions it would be possible to achieve a "green wave" for cyclists in Hamburg's city center. With the help of an agent-based traffic model, experiments were conducted and evaluated against the question."
+  description="This study addresses the question of whether and under what conditions it would be possible to achieve a green wave for cyclists in Hamburg's city center. With the help of an agent-based traffic model, experiments were conducted and evaluated against the question."
   semesterYear="ss2022"
   pathPdf="/img/student-work/theses/doege_ba_thesis.pdf"
 />
