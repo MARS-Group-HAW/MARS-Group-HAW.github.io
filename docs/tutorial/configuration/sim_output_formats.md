@@ -164,7 +164,7 @@ The WebSocket protocol is a TCP-based network protocol designed to establish a b
 
 
 
-When the agent or layer mapping have set the flag `pythonVisualization` to `true`, then the system opens up a real-time WebSocket server on `ws://127.0.0.1:4567`. The socket can be reached via `ws://127.0.0.1:4567`, and provides data  at the `vis` and `progrss` paths, allowing to consume and analyze the results via a stream processing system (windowing analysis). You can use any WebSocket client that meets the standard [RFC 6455](https://tools.ietf.org/html/rfc6455): 
+When the agent or layer mapping have set the flag `pythonVisualization` to `true` (in the `config.json` file under `globals`), then the system opens up a real-time WebSocket server on `ws://127.0.0.1:4567`. The socket can be reached via `ws://127.0.0.1:4567`, and provides data  at the `vis` and `progrss` paths, allowing to consume and analyze the results via a stream processing system (windowing analysis). You can use any WebSocket client that meets the standard [RFC 6455](https://tools.ietf.org/html/rfc6455): 
 
 | Model Type      | Support                       |
 |-----------------|-------------------------------|
