@@ -44,18 +44,6 @@
         <category label="hello" term="hello"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[ESIDA Kickoff Meeting in Arusha, Tanzania]]></title>
-        <id>https://www.mars-group.org/blog/2022/10/15/esida-kickoff-arusha</id>
-        <link href="https://www.mars-group.org/blog/2022/10/15/esida-kickoff-arusha"/>
-        <updated>2022-10-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The ESIDA kickoff meeting finally took place. With a delay of more than one year, nine ESIDA team members from Germany (University of Applied Sciences (HAW) Hamburg, University Medical Center Hamburg-Eppendorf (UKE), University of Hamburg (UHH), and the Bernhard Nocht Institute for Tropical Medicine (BNITM)) made their way to the Nelson Mandela African Institute of Science and Technology (NM-AIST) to present first results and discuss next steps.]]></summary>
-        <content type="html"><![CDATA[<p>The ESIDA kickoff meeting finally took place. With a delay of more than one year, nine ESIDA team members from Germany (University of Applied Sciences (HAW) Hamburg, University Medical Center Hamburg-Eppendorf (UKE), University of Hamburg (UHH), and the Bernhard Nocht Institute for Tropical Medicine (BNITM)) made their way to the Nelson Mandela African Institute of Science and Technology (NM-AIST) to present first results and discuss next steps.</p><p>This image shows a participatory mapping with the PhD candidates Ummul-Khair Mustafa (center) and Luba Pascoe (right) from the NM-AIST, both of whom work with the MARS Group and the MARS framework as part of their research work.</p>]]></content>
-        <author>
-            <name>Nima Ahmady-Moghaddam</name>
-        </author>
-        <category label="ESIDA" term="ESIDA"/>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Short Course on Social-Ecological Modelling and ABM in Gqeberha / Port Elizabeth]]></title>
         <id>https://www.mars-group.org/blog/2022/10/15/abm-shourt-course-port-elizabeth</id>
         <link href="https://www.mars-group.org/blog/2022/10/15/abm-shourt-course-port-elizabeth"/>
@@ -66,6 +54,18 @@
             <name>Nima Ahmady-Moghaddam</name>
         </author>
         <category label="shortcourse" term="shortcourse"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ESIDA Kickoff Meeting in Arusha, Tanzania]]></title>
+        <id>https://www.mars-group.org/blog/2022/10/15/esida-kickoff-arusha</id>
+        <link href="https://www.mars-group.org/blog/2022/10/15/esida-kickoff-arusha"/>
+        <updated>2022-10-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The ESIDA kickoff meeting finally took place. With a delay of more than one year, nine ESIDA team members from Germany (University of Applied Sciences (HAW) Hamburg, University Medical Center Hamburg-Eppendorf (UKE), University of Hamburg (UHH), and the Bernhard Nocht Institute for Tropical Medicine (BNITM)) made their way to the Nelson Mandela African Institute of Science and Technology (NM-AIST) to present first results and discuss next steps.]]></summary>
+        <content type="html"><![CDATA[<p>The ESIDA kickoff meeting finally took place. With a delay of more than one year, nine ESIDA team members from Germany (University of Applied Sciences (HAW) Hamburg, University Medical Center Hamburg-Eppendorf (UKE), University of Hamburg (UHH), and the Bernhard Nocht Institute for Tropical Medicine (BNITM)) made their way to the Nelson Mandela African Institute of Science and Technology (NM-AIST) to present first results and discuss next steps.</p><p>This image shows a participatory mapping with the PhD candidates Ummul-Khair Mustafa (center) and Luba Pascoe (right) from the NM-AIST, both of whom work with the MARS Group and the MARS framework as part of their research work.</p>]]></content>
+        <author>
+            <name>Nima Ahmady-Moghaddam</name>
+        </author>
+        <category label="ESIDA" term="ESIDA"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Focused on Climate Change: The MARS Group at the Klimakongress 2022]]></title>
