@@ -44,18 +44,6 @@
         <category label="hello" term="hello"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Short Course on Social-Ecological Modelling and ABM in Gqeberha / Port Elizabeth]]></title>
-        <id>https://www.mars-group.org/blog/2022/10/15/abm-shourt-course-port-elizabeth</id>
-        <link href="https://www.mars-group.org/blog/2022/10/15/abm-shourt-course-port-elizabeth"/>
-        <updated>2022-10-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The MARS Group held yet another interdisciplinary short course on agent-based modelling. This time, the focus was on the use of agent-based modelling to address social-ecological problems and research questions. The five-day course was held in Gqeberha/Port Elizabeth, South Africa, from September 12–16, 2022.]]></summary>
-        <content type="html"><![CDATA[<p>The MARS Group held yet another interdisciplinary short course on agent-based modelling. This time, the focus was on the use of agent-based modelling to address social-ecological problems and research questions. The five-day course was held in Gqeberha/Port Elizabeth, South Africa, from September 12–16, 2022.</p><p>Twelve participants from various disciplinary backgrounds within the social and ecological sciences attended the short course. Most of them were PhD candidates or postdocs who wanted to explore the possibility of integrating agent-based modelling into their research. The short course included the following topics, among others:</p><ul><li>Multi-agent modelling and simulation using MARS</li><li>Formulating and sharpening a research question</li><li>Developing conceptual models to base an implementation on</li><li>Working with temporal and spatial data</li><li>Visualizing and analyzing simulation results</li></ul><p>We look forward to further collaborations with the attendees and to holding more short courses in the future!</p>]]></content>
-        <author>
-            <name>Nima Ahmady-Moghaddam</name>
-        </author>
-        <category label="shortcourse" term="shortcourse"/>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[ESIDA Kickoff Meeting in Arusha, Tanzania]]></title>
         <id>https://www.mars-group.org/blog/2022/10/15/esida-kickoff-arusha</id>
         <link href="https://www.mars-group.org/blog/2022/10/15/esida-kickoff-arusha"/>
@@ -66,6 +54,18 @@
             <name>Nima Ahmady-Moghaddam</name>
         </author>
         <category label="ESIDA" term="ESIDA"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Short Course on Social-Ecological Modelling and ABM in Gqeberha / Port Elizabeth]]></title>
+        <id>https://www.mars-group.org/blog/2022/10/15/abm-shourt-course-port-elizabeth</id>
+        <link href="https://www.mars-group.org/blog/2022/10/15/abm-shourt-course-port-elizabeth"/>
+        <updated>2022-10-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The MARS Group held yet another interdisciplinary short course on agent-based modelling. This time, the focus was on the use of agent-based modelling to address social-ecological problems and research questions. The five-day course was held in Gqeberha/Port Elizabeth, South Africa, from September 12–16, 2022.]]></summary>
+        <content type="html"><![CDATA[<p>The MARS Group held yet another interdisciplinary short course on agent-based modelling. This time, the focus was on the use of agent-based modelling to address social-ecological problems and research questions. The five-day course was held in Gqeberha/Port Elizabeth, South Africa, from September 12–16, 2022.</p><p>Twelve participants from various disciplinary backgrounds within the social and ecological sciences attended the short course. Most of them were PhD candidates or postdocs who wanted to explore the possibility of integrating agent-based modelling into their research. The short course included the following topics, among others:</p><ul><li>Multi-agent modelling and simulation using MARS</li><li>Formulating and sharpening a research question</li><li>Developing conceptual models to base an implementation on</li><li>Working with temporal and spatial data</li><li>Visualizing and analyzing simulation results</li></ul><p>We look forward to further collaborations with the attendees and to holding more short courses in the future!</p>]]></content>
+        <author>
+            <name>Nima Ahmady-Moghaddam</name>
+        </author>
+        <category label="shortcourse" term="shortcourse"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Focused on Climate Change: The MARS Group at the Klimakongress 2022]]></title>
