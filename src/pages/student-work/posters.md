@@ -18,6 +18,19 @@ import StudentWork from '@site/src/components/StudentWork';
 
 On this page, we show posters that were submitted by members and students of the MARS Group.
 
+## 2024
+
+<div className="text--left">
+  <StudentWork
+    title="Drought Detection Methods in Comparison"
+    author="Minh Justin Tran"
+    description="Comparison of machine learning methods for the identification of droughts in satellite images"
+    semesterYear="ws2023"
+    pathPdf='/img/student-work/posters/FW2_DroughtDetection_JustinTran.pdf'
+    pathImage='/img/student-work/posters/FW2_DroughtDetection_JustinTran.png'
+  />
+</div>
+
 ## 2023
 
 ## 2022
