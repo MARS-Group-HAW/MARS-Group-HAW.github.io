@@ -11,6 +11,15 @@ On this page, we list theses that were submitted by members and students of the 
 
 ## Master
 
+<StudentWork
+  title="Anwendung von Reinforcement Learning und Potentialfeldern für eine Multi-Agenten-Steuerung für Drohnen zur Lokalisierung von Funksignalen"
+  author="Katja Schöttler"
+  type="ma"
+  description="This thesis deals with the generation of potential maps with a CNN autoencoder and reinforcement learning. For this purpose, a simulation environment developed with the MARS framework is used to explore and evaluate the generated maps. In addition to the technical setup, the results of the various network configurations tested are explained."
+  semesterYear="ws2023"
+  pathPdf="/img/student-work/theses/schoettler_ba_thesis.pdf"
+/>
+
 ## Bachelor
 
 <!-- StudentWork parameters for a thesis:
