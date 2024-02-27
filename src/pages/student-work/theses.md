@@ -47,7 +47,7 @@ On this page, we list theses that were submitted by members and students of the 
   type="ba"
   description="The work addresses the question of whether it is possible to achieve a reduction in inner-city road traffic by using IoT sensor data. With the help of suitable scenarios, a statement is then made about the effectiveness of IoT sensors in parking space search traffic."
   semesterYear="ws2021"
-  pathPdf="/img/student-work/theses/doege_ba_thesis.pdf"
+  pathPdf="/img/student-work/theses/osterholz_ba_thesis.pdf"
 />
 
 <StudentWork
