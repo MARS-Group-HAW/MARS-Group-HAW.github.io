@@ -22,6 +22,28 @@ On this page, we show posters that were submitted by members and students of the
 
 <div className="text--left">
   <StudentWork
+    title="Automated Plausibility Check for Bird Observations"
+    author="Marina Siebold"
+    description="Statistical and ML-based outlier detection for citizen science data."
+    semesterYear="ws2023"
+    pathPdf='/img/student-work/posters/siebold_fw2_poster.pdf'
+    pathImage='/img/student-work/posters/siebold_fw2_poster.png'
+  />
+</div>
+
+<div className="text--left">
+  <StudentWork
+    title="Feature Generation for Anomalous Bird Sighting Detection"
+    author="Simon Birker"
+    description="Generating additional spatio-temporal data items from open data."
+    semesterYear="ws2023"
+    pathPdf='/img/student-work/posters/birker_fw2_poster.pdf'
+    pathImage='/img/student-work/posters/birker_fw2_poster.png'
+  />
+</div>
+
+<div className="text--left">
+  <StudentWork
     title="Drought Detection Methods in Comparison"
     author="Minh Justin Tran"
     description="Comparison of machine learning methods for the identification of droughts in satellite images"
