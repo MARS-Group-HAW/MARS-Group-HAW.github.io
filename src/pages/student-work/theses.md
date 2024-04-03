@@ -30,7 +30,14 @@ On this page, we list theses that were submitted by members and students of the 
   semesterYear: The semester and year in which the thesis was submitted (e.g., "ws2023" or "ss2023")
   pathPdf: The path to the PDF file of the thesis (/img/student-work/theses/<filename>.pdf)
 -->
-
+<StudentWork
+  title="Ein agentenbasiertes Simulationsmodell für die Ausbreitung von Wiedehopfen in Norddeutschland"
+  author="David Duong"
+  type="ba"
+  description="This present work covers the development of multi-agent system, with the purpose of predicting the distribution of hoopoes in north germany. The hoopoes are agents and are using georeferenced data to accurately predict potential habitats."
+  semesterYear="ss2023"
+  pathPdf="/img/student-work/theses/duong_ba_thesis.pdf"
+/>
 
 <StudentWork
   title="Bestimmung einer Gruenen Welle bei Lichtsignalschaltungen für Alster-Fahrradfahrer durch agentenbasierte Simulation mithilfe des MARS-Frameworks"
