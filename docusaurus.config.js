@@ -97,7 +97,7 @@ const config = {
           /*{to: '/team', label: 'Team', position: 'left'},
           {to: '/student', label: 'For Students', position: 'left'},
           {to: '/publications', label: 'Publications', position: 'left'},*/
-          {to: '/student', label: 'Offerings', position: 'left'},
+          {to: '/student', label: 'Offers for theses', position: 'left'},
           {
             to: '/projects',
             label: 'Projects',
