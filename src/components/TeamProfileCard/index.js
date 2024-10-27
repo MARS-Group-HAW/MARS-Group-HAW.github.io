@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 
 export default function TeamProfileCard({
@@ -6,10 +6,21 @@ export default function TeamProfileCard({
   description,
   img,
   year,
-  githubUrl,
-  mastodonUrl,
-  twitterUrl
+  github,
+  mastodon,
+  twitter,
+  linkedIn,
+  researchGate,
+  googleScholar,
+  hawEmail,
+  webSite
 }) {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
     <div className={clsx('col col--4')}>
       <div className={clsx('m-teamprofilecard')}>
@@ -21,12 +32,31 @@ export default function TeamProfileCard({
         <div className="text--center padding-horiz--md">
           <h4 className="m-teamprofilecard-name">{name}</h4>
           
-          {description && <div className="m-teamprofilecard-year">{year}</div>}
+          {year && <div className="m-teamprofilecard-year">{year}</div>}
 
-          {description && <p class="m-teamprofilecard-description">{description}</p>}
-          {githubUrl && <a className="button button--outline button--secondary" href={githubUrl}>GitHub</a>}
-          {mastodonUrl && <a className="button button--outline button--secondary" href={mastodonUrl}>Mastodon</a>}
-          {twitterUrl && <a className="button button--outline button--secondary" href={twitterUrl}>Twitter</a>}
+          {description && <p className="m-teamprofilecard-description">{description}</p>}
+
+          {/* Dropdown für Links */}
+          <div className="dropdown">
+            <button 
+              onClick={toggleDropdown} 
+              className="button button--outline button--secondary"
+            >
+              Links anzeigen
+            </button>
+            {isDropdownOpen && (
+              <ul className="dropdown-content">
+                {hawEmail && <li><a href={`mailto:${hawEmail}`} target="_blank" rel="noopener noreferrer">Email</a></li>}
+                {github && <li><a href={github} target="_blank" rel="noopener noreferrer">GitHub</a></li>}
+                {linkedIn && <li><a href={linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn</a></li>}
+                {researchGate && <li><a href={researchGate} target="_blank" rel="noopener noreferrer">ResearchGate</a></li>}
+                {googleScholar && <li><a href={googleScholar} target="_blank" rel="noopener noreferrer">Google Scholar</a></li>}
+                {mastodon && <li><a href={mastodon} target="_blank" rel="noopener noreferrer">Mastodon</a></li>}
+                {twitter && <li><a href={twitter} target="_blank" rel="noopener noreferrer">Twitter</a></li>}
+                {webSite && <li><a href={webSite} target="_blank" rel="noopener noreferrer">Website</a></li>}
+              </ul>
+            )}
+          </div>
         </div>
       </div>
     </div>
