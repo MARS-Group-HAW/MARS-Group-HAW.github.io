@@ -18,7 +18,7 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
         linkedIn="https://www.linkedin.com/in/thomas-clemen-8237b5/"
         researchGate="https://www.researchgate.net/profile/Thomas-Clemen"
         googleScholar="https://scholar.google.com/citations?user=LY1IGYUAAAAJ&hl=en"
-        img="/img/team/thomas-clemen.jpeg"
+        img="/img/team/thomas-clemen.jpg"
         />
     <TeamProfileCard 
         name="Christian Lins"
