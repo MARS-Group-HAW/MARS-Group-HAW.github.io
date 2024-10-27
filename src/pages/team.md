@@ -99,14 +99,33 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 
 <div class="row">
 <TeamProfileCard 
-    name="Daniel Glake"
-    description="SmartOpen Hamburg. Technical Architect of MARS Systems, MARS Runtime, MARS DSL, OpenData Discovery and Integration"
-    img="/img/team/avatar.png"
-    />
-
-<TeamProfileCard 
     name="Juliane Bönecke"
     description="Epidemiological Research – ESIDA project"
+    img="/img/team/avatar.png"
+    />
+<TeamProfileCard 
+    name="Gerrit Günther"
+    description=""
+    img="/img/team/avatar.png"
+    />
+<TeamProfileCard 
+    name="Dominik Holzer"
+    description=""
+    img="/img/team/avatar.png"
+    />
+<TeamProfileCard 
+    name="Jonathan Fibich"
+    description=""
+    img="/img/team/avatar.png"
+    />
+<TeamProfileCard 
+    name="Luba Pascoe"
+    description=""
+    img="/img/team/avatar.png"
+    />
+<TeamProfileCard 
+    name="Celina Mfala"
+    description=""
     img="/img/team/avatar.png"
     />
 </div>
@@ -188,6 +207,11 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
     name="Jan-Niklas Voß"
     year="2022"
     description="Jan-Niklas Voß, MARS Explorer"
+    img="/img/team/avatar.png"
+    />
+<TeamProfileCard 
+    name="Daniel Glake"
+    description="SmartOpen Hamburg. Technical Architect of MARS Systems, MARS Runtime, MARS DSL, OpenData Discovery and Integration"
     img="/img/team/avatar.png"
     />
 <TeamProfileCard 

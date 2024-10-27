@@ -26,7 +26,7 @@ export default function TeamProfileCard({
 
   return (
     <div className={clsx('col col--4')}>
-      <div className={clsx('m-teamprofilecard')}>
+      <div className={clsx('m-teamprofilecard')} style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
         {img && 
           <div className="text--center">
             <img className="m-teamprofilecard-img" src={img} width={100} />
@@ -38,31 +38,31 @@ export default function TeamProfileCard({
           {year && <div className="m-teamprofilecard-year">{year}</div>}
 
           {description && <p className="m-teamprofilecard-description">{description}</p>}
-
-          {/* Dropdown nur anzeigen, wenn Links vorhanden sind */}
-          {hasLinks && (
-            <div className="dropdown">
-              <button 
-                onClick={toggleDropdown} 
-                className="button button--outline button--secondary"
-              >
-                Links anzeigen
-              </button>
-              {isDropdownOpen && (
-                <ul className="dropdown-content">
-                  {hawEmail && <li><a href={`mailto:${hawEmail}`} target="_blank" rel="noopener noreferrer">Email</a></li>}
-                  {github && <li><a href={github} target="_blank" rel="noopener noreferrer">GitHub</a></li>}
-                  {linkedIn && <li><a href={linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn</a></li>}
-                  {researchGate && <li><a href={researchGate} target="_blank" rel="noopener noreferrer">ResearchGate</a></li>}
-                  {googleScholar && <li><a href={googleScholar} target="_blank" rel="noopener noreferrer">Google Scholar</a></li>}
-                  {mastodon && <li><a href={mastodon} target="_blank" rel="noopener noreferrer">Mastodon</a></li>}
-                  {twitter && <li><a href={twitter} target="_blank" rel="noopener noreferrer">Twitter</a></li>}
-                  {webSite && <li><a href={webSite} target="_blank" rel="noopener noreferrer">Website</a></li>}
-                </ul>
-              )}
-            </div>
-          )}
         </div>
+
+        {/* Dropdown nur anzeigen, wenn Links vorhanden sind */}
+        {hasLinks && (
+          <div className="dropdown" style={{ marginTop: 'auto', textAlign: 'center' }}>
+            <button 
+              onClick={toggleDropdown} 
+              className="button button--outline button--secondary"
+            >
+              Links anzeigen
+            </button>
+            {isDropdownOpen && (
+              <ul className="dropdown-content">
+                {hawEmail && <li><a href={`mailto:${hawEmail}`} target="_blank" rel="noopener noreferrer">Email</a></li>}
+                {github && <li><a href={github} target="_blank" rel="noopener noreferrer">GitHub</a></li>}
+                {linkedIn && <li><a href={linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn</a></li>}
+                {researchGate && <li><a href={researchGate} target="_blank" rel="noopener noreferrer">ResearchGate</a></li>}
+                {googleScholar && <li><a href={googleScholar} target="_blank" rel="noopener noreferrer">Google Scholar</a></li>}
+                {mastodon && <li><a href={mastodon} target="_blank" rel="noopener noreferrer">Mastodon</a></li>}
+                {twitter && <li><a href={twitter} target="_blank" rel="noopener noreferrer">Twitter</a></li>}
+                {webSite && <li><a href={webSite} target="_blank" rel="noopener noreferrer">Website</a></li>}
+              </ul>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

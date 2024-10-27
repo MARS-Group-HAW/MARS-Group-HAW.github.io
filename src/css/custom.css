@@ -71,9 +71,11 @@
 .m-teamprofilecard {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%; /* gesamte Kartenhöhe */
+  align-items: center;
+  justify-content: flex-start; /* Inhalte nach oben ausrichten */
+  height: 100%;
 }
+
 
 
 .m-teamprofilecard-name {
