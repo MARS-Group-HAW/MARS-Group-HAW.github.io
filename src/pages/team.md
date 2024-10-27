@@ -13,8 +13,21 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 <div class="row">
     <TeamProfileCard 
         name="Thomas Clemen"
-        description="Project leadership and representation"
+        description="Project leadership, representation, Multi-Agent Systems, LLM-based Agents, Digital Twins"
+        hawEmail="thomas.clemen@haw-hamburg.de"
+        linkedIn="https://www.linkedin.com/in/thomas-clemen-8237b5/"
+        researchGate="https://www.researchgate.net/profile/Thomas-Clemen"
+        googleScholar="https://scholar.google.com/citations?user=LY1IGYUAAAAJ&hl=en"
         img="/img/team/thomas-clemen.jpeg"
+        />
+    <TeamProfileCard 
+        name="Christian Lins"
+        description="Project Co-leadership, representation, Evolutionary Algorithms, Computational Intelligence, Motion Capture, Artificial Intelligence"
+        hawEmail="christian.lins@haw-hamburg.de"
+        researchGate="https://www.researchgate.net/profile/Christian-Lins-2"
+        googleScholar="https://scholar.google.de/citations?user=BZsFbZkAAAAJ&hl=de"
+        webSite="https://lins.me/"
+        img="/img/team/christian_lins.jpg"
         />
 </div>
 
@@ -93,16 +106,55 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 
 <div class="row">
 <TeamProfileCard 
-    name="Nima Ahmady-Moghaddam"
-    description="ESIDA Project, SmartOpen Hamburg"
-    />
-<TeamProfileCard 
     name="Daniel Osterholz"
-    description="SmartOpen Hamburg"
+    description="SmartOpen Hamburg, Remote Sensing, Geoinformatics, GIS, Image Recognition, Computer Vision"
+    hawEmail="daniel.osterholz@haw-hamburg.de"
+    linkedIn="https://www.linkedin.com/in/daniel-osterholz-b0060032a/"
+    researchGate="https://www.researchgate.net/profile/Daniel-Osterholz"
+    img="/img/team/daniel_osterholz.jpg"
     />
 <TeamProfileCard 
-    name="Jonathan Ströbele"
-    description="ESIDA Project"
+    name="Tom Sommerfeld"
+    description="LLM(-Agenten), Machine Learning, Multi-Agenten-Systeme, NLP"
+    hawEmail="tom.sommerfeld@haw-hamburg.de"
+    linkedIn="https://de.linkedin.com/in/tom-sommerfeld-5b9b921b5/"
+    img="/img/team/tom_sommerfeld.jpg"
+    />
+<TeamProfileCard 
+    name="Simon Birker"
+    description="Data Science, Machine Learning, Citizen Science, Ornithology"
+    hawEmail="simon.birker@haw-hamburg.de"
+    linkedIn="https://www.linkedin.com/in/simon-birker/"
+    img="/img/team/simon_birker.jpg"
+    />
+<TeamProfileCard 
+    name="Dennis Fischer"
+    description="Neural Networks, Machine Learning, Routenplanung, Multi-Agenten-Systeme"
+    hawEmail="dennis.fischer@haw-hamburg.de"
+    linkedIn="https://www.linkedin.com/in/dennis-fischer-91618125a"
+    img="/img/team/dennis_fischer.jpg"
+    />
+<TeamProfileCard 
+    name="Marina Siebold"
+    description="Data Science, Machine Learning, Citizen Science, Ornithology"
+    hawEmail="marina.siebold@haw-hamburg.de"
+    linkedIn="https://www.linkedin.com/in/marina-siebold-22b588194/"
+    img="/img/team/marina_siebold.jpeg"
+    />
+<TeamProfileCard 
+    name="Leonard Bardtke"
+    description="Machine Learning, Reinforcement Learning, Multi-Agenten-Systeme"
+    hawEmail="leonard.bardtke@haw-hamburg.de"
+    linkedIn="https://www.linkedin.com/in/leonard-bardtke-8084092b4/"
+    img="/img/team/leonard_bardtke.jpg"
+    />
+<TeamProfileCard 
+    name="Ersan Baran"
+    description="Deep Learning, Reinforcement Learning, Multi-Agenten-Systeme"
+    img="/img/team/ersan_baran.jpeg"
+    hawEmail="ersan.baran@haw-hamburg.de"
+    linkedIn="https://www.linkedin.com/in/ersan-baran-269450335/"
+    researchGate="https://www.researchgate.net/profile/Ersan-Baran"
     />
 </div>
 
@@ -115,6 +167,11 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 ## Alummni
 
 <div class="row">
+<TeamProfileCard 
+    name="Jonathan Ströbele"
+    year="2023"
+    description="ESIDA Project"
+    />
 <TeamProfileCard 
     name="Jan-Niklas Voß"
     year="2022"
