@@ -69,8 +69,13 @@
 
 
 .m-teamprofilecard {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* gesamte Kartenhöhe */
 }
+
+
 .m-teamprofilecard-name {
   margin-bottom: 0.25em;
 }
@@ -107,6 +112,7 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  margin-bottom: 1rem; /* Abstand unter dem Dropdown */
 }
 
 .dropdown-content {
