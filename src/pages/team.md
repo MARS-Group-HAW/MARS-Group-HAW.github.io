@@ -35,31 +35,37 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 <TeamProfileCard 
     name="Marina Tropmann-Frick"
     description="Data Science: Analytics and Visualization"
+    img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Karen Bradshaw"
     description="GPU-based simulation, teaching socio-ecological modelling. Computer Science Department, Rhodes University, South Africa"
+    img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Yanling Zhou"
     description="IoT, Smart Cities, Hefei University, China"
+    img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Greg Kiker"
     description="KNP model development and simulation platform comparison. Dept. of Agricultural and Biological Engineering, University of Florida"
+    img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Michael Köhler-Bußmeier"
     description="Theoretical Computer Science, Computational Organisation Theory"
+    img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Jan Sudeikat"
     description="Cyber-physical Systems, Self-Organization in MAS"
+    img="/img/team/avatar.png"
     />
 </div>
 
@@ -71,16 +77,19 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 <TeamProfileCard 
     name="Ulfia A. Lenfers"
     description="Conceptual Modeling, Model Development, Requirements Engineering, Outreach"
+    img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Devotha Nyambo"
     description="Conceptual Modeling and Model Development – ESIDA Project"
+    img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Rebecca Sarku"
     description="Climate Adaptation, Climate Information Services, Designing Innovative Governance Arrangements, Adaptive Decision-making, and Digital Technologies for Agricultural and Sustainable Food Systems"
+    img="/img/team/avatar.png"
     />
 </div>
 
@@ -92,11 +101,13 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 <TeamProfileCard 
     name="Daniel Glake"
     description="SmartOpen Hamburg. Technical Architect of MARS Systems, MARS Runtime, MARS DSL, OpenData Discovery and Integration"
+    img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Juliane Bönecke"
     description="Epidemiological Research – ESIDA project"
+    img="/img/team/avatar.png"
     />
 </div>
 
@@ -171,96 +182,115 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
     name="Jonathan Ströbele"
     year="2023"
     description="ESIDA Project"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Jan-Niklas Voß"
     year="2022"
     description="Jan-Niklas Voß, MARS Explorer"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Julius Weyl"
     year="2019"
     description="SmartOpen Hamburg"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Andreas Löffler"
     year="2018"
     description="Smart Rescue Model"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Philipp Kayser"
     year="2018"
     description="GPU-based distributed environment"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Jan Dalski"
     year="2018"
     description="Generic Agent Architecture, WebGL Visualization and Website."
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Lennart Karsten"
     year="2018"
     description="GIS data processing, public relations, infrastructure and Linux support."
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Lukas Grundmann"
     year="2018"
     description="Immune system simulation, infrastructure and Linux support"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Petar Krastev"
     year="2018"
     description="Cascading deletion of assets"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Prannoy Mulmi"
     year="2018"
     description="Archiving finished simulation data"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Christian Hüning"
     year="2016"
     description="Development of MARS LIFE application and MARS Cloud"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Daniel Steiman"
     year="2015"
     description="Context awareness for multi agent simulations based on reactive computing"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Jana Asmussen"
     year="2015"
     description="Modelling of cheetah/impala hunting behaviour"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Daniela Niemeyer"
     year="2015"
     description="Goal-oriented action planning in evacuation scenarios"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Alexander Schnoor"
     year="2015"
     description="View protocol specification and Unity-based visualization"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Jan Steffen"
     year="2015"
     description="A spatio-temporal data warehouse for heterogenous ecological data"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Torben Woggan"
     year="2015"
     description="Layer logging service for simulation data output"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Mariusz Baldowski"
     year="2014"
     description="Investigation of forest biomass growth with a spatial composite indicator"
+    img="/img/team/avatar.png"
     />
 <TeamProfileCard 
     name="Hodabalo Pereki"
     year="2013"
     description="Simulation of tree growth and biomass fluctuations in Abdoulaye Wildlife Reserve"
+    img="/img/team/avatar.png"
     />
 </div>
 
