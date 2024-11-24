@@ -186,6 +186,21 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
     linkedIn="https://www.linkedin.com/in/ersan-baran-269450335/"
     researchGate="https://www.researchgate.net/profile/Ersan-Baran"
     />
+<TeamProfileCard 
+    name="Sebastian Wewer"
+    description="Deep Learning, Reinforcement Learning, Multi-Agenten-Systeme, Zelluläre Automaten, Ameisenkoloniesimulation"
+    img="/img/team/sebastian_wewer.jpg"
+    hawEmail="sebastian.wewer@haw-hamburg.de"
+    linkedIn="https://www.linkedin.com/in/sebastian-wewer-048973136/"
+    />
+<TeamProfileCard 
+    name="Helen Haase"
+    description="Reinforcement Learning, Multi-Agenten-Systeme, Machine Learning, Food Waste, Citizen Science"
+    img="/img/team/helen_haase.jpg"
+    hawEmail="sebastian.wewer@haw-hamburg.de"
+    linkedIn="https://www.linkedin.com/in/helen-haase-897ba924b/"
+    researchGate="https://www.researchgate.net/profile/Helen_Haase2"
+    />
 </div>
 
 ---
