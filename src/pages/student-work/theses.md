@@ -12,12 +12,39 @@ On this page, we list theses that were submitted by members and students of the 
 ## Master
 
 <StudentWork
+  title="Evaluierung von spezialisierten und generischen Modellen zur Identifikation von städtischen Einzelbäumen mittelsTransfer Learning"
+  author="Daniel Osterholz"
+  type="ma"
+  description="This thesis investigates the performance of generic, easily accessible, models (Segment Anything Model (SAM)) and their adaptation to specific domains, such as tree canopy detection in urban forests. To evaluate the performance, a model specialized for thisdomain (DeepForest (DF)) is compared with a finely tuned generic model."
+  semesterYear="ws2024"
+  pathPdf="/img/student-work/theses/osterholz_ms_thesis.pdf"
+/>
+
+<StudentWork
+  title="Indication of wet and dry periods in Germany using machine learning on meteorological and remote sensing data"
+  author="Justin Tran"
+  type="ma"
+  description="This thesis investigates the calculation, comparison, and forecasting of the Standardized Precipitation-Evapotranspiration Index (SPEI) using diverse data sources and methods."
+  semesterYear="ss2024"
+  pathPdf="/img/student-work/theses/tran_ms_thesis.pdf"
+/>
+
+<StudentWork
+  title="Der Data Hub: ein Geoinformationssystem für reproduzierbare Datenverarbeitung, informiert durch epidemiologische Bedarfe"
+  author="Jonathan Ströbele"
+  type="ma"
+  description="As part of this work, a geographic information system (data hub) was developed that integrates a variety of data types and sources and provides a decision support system for epidemiologists based on reproducible risk assessment frameworks."
+  semesterYear="ws2023"
+  pathPdf="/img/student-work/theses/stroebele_ms_thesis.pdf"
+/>
+
+<StudentWork
   title="Anwendung von Reinforcement Learning und Potentialfeldern für eine Multi-Agenten-Steuerung für Drohnen zur Lokalisierung von Funksignalen"
   author="Katja Schöttler"
   type="ma"
   description="This thesis deals with the generation of potential maps with a CNN autoencoder and reinforcement learning. For this purpose, a simulation environment developed with the MARS framework is used to explore and evaluate the generated maps. In addition to the technical setup, the results of the various network configurations tested are explained."
   semesterYear="ws2023"
-  pathPdf="/img/student-work/theses/schoettler_ba_thesis.pdf"
+  pathPdf="/img/student-work/theses/schoettler_ms_thesis.pdf"
 />
 
 ## Bachelor
@@ -30,6 +57,61 @@ On this page, we list theses that were submitted by members and students of the 
   semesterYear: The semester and year in which the thesis was submitted (e.g., "ws2023" or "ss2023")
   pathPdf: The path to the PDF file of the thesis (/img/student-work/theses/<filename>.pdf)
 -->
+
+<StudentWork
+  title="Tensorbasierte Agenten zur Ausbreitungssimulation von Infektionskrankheiten"
+  author="Ersan Baran"
+  type="ba"
+  description="In this bachelor thesis, the strengths of multi-agent systems and neural networks are combined to develop a novel simulation model that takes into account individual behaviors, spatial heterogeneity and dynamic interactions. This innovative approach promises more realistic and powerful simulations and thus better support for the development of effective strategies to combat infectious diseases."
+  semesterYear="ss2024"
+  pathPdf="/img/student-work/theses/baran_ba_thesis.pdf"
+/>
+
+<StudentWork
+  title="Entwicklung eines Multiagentensystems für die Simulation des Positionsangriffs im Handball unter Verwendung des MARS-Frameworks"
+  author="Lucas Neitsch"
+  type="ba"
+  description="This bachelor thesis describes the development of a multi-agent system for the simulation of positional attacks in handball using the MARS framework, which enables coaches to test their attacking moves in specific game situations and serves as a tool to improve tactical planning and decision-making."
+  semesterYear="ss2024"
+  pathPdf="/img/student-work/theses/neitsch_ba_thesis.pdf"
+/>
+
+<StudentWork
+  title="Automatisierte Objekterkennung und -zählung von Vögeln in großen Schwärmen mit Hilfe von Maschinellem Lernen"
+  author="Luise Kempa"
+  type="ba"
+  description="The thesis deals with the implementation of bird counting in flocks based on images using machine learning. An application is designed and implemented that determines the number of birds in an image. For the implementation, different existing neural networks are compared and then extended."
+  semesterYear="ws2023"
+  pathPdf="/img/student-work/theses/kempa_ba_thesis.pdf"
+/>
+
+<StudentWork
+  title="Modeling and Predicting Routes of Internally Displaced Persons: An Agent-Based Approach Using the MARS Framework in the Context of the Syrian Refugee Crisis"
+  author="Viviam Clara Ribeiro Guimaraes"
+  type="ba"
+  description="This thesis investigates the application of an agent-based model (ABM) to predict the distribution of Syrian internally displaced persons (IDPs) and assess its utility for humanitarian resource allocation. Leveraging the MARS framework, the study adapts an existing ABM designed for Syrian refugee distribution in Turkey to simulate the movement of internally displaced persons within Syria."
+  semesterYear="ws2023"
+  pathPdf="/img/student-work/theses/ribeiro_ba_thesis.pdf"
+/>
+
+<StudentWork
+  title="Identifikation Sozialer Gruppen von Fußgängern in Videos, Motion-Similarity-Clustering und Multi-Object-Tracking unter Anwendung eines CNNs zur Identifikation von Personen in Videostreams"
+  author="Tobias Ranfft"
+  type="ba"
+  description="Real-time recognition of grouped people in videos has recently become a relevant topic in research and for various applications, e.g. video surveillance, social studies or process optimization. The aim of this thesis is therefore to develop a system for the identification and labeling of persons and groups."
+  semesterYear="ss2023"
+  pathPdf="/img/student-work/theses/ranfft_ba_thesis.pdf"
+/>
+
+<StudentWork
+  title="Entwicklung eines digitalen Zwillings für eine Tello-Drohne im MARS-Framework"
+  author="Leon Chun Wai Yuen"
+  type="ba"
+  description="This thesis deals with the development of a digital twin prototype of a Tello-drone in a multi-agent system. A concept is presented on how a digital twin for individual quadrocopters can be developed as part of a multi-agent system within the framework of MARS."
+  semesterYear="ss2023"
+  pathPdf="/img/student-work/theses/yuen_ba_thesis.pdf"
+/>
+
 <StudentWork
   title="Ein agentenbasiertes Simulationsmodell für die Ausbreitung von Wiedehopfen in Norddeutschland"
   author="David Duong"
