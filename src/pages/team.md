@@ -136,14 +136,6 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 
 <div class="row">
 <TeamProfileCard 
-    name="Daniel Osterholz"
-    description="SmartOpen Hamburg, Remote Sensing, Geoinformatics, GIS, Image Recognition, Computer Vision"
-    hawEmail="daniel.osterholz@haw-hamburg.de"
-    linkedIn="https://www.linkedin.com/in/daniel-osterholz-b0060032a/"
-    researchGate="https://www.researchgate.net/profile/Daniel-Osterholz"
-    img="/img/team/daniel_osterholz.jpg"
-    />
-<TeamProfileCard 
     name="Tom Sommerfeld"
     description="LLM(-Agenten), Machine Learning, Multi-Agenten-Systeme, NLP"
     hawEmail="tom.sommerfeld@haw-hamburg.de"
@@ -212,6 +204,15 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 ## Alummni
 
 <div class="row">
+<TeamProfileCard 
+    name="Daniel Osterholz"
+    year="2024"
+    description="SmartOpen Hamburg, Remote Sensing, Geoinformatics, GIS, Image Recognition, Computer Vision"
+    hawEmail="daniel.osterholz@haw-hamburg.de"
+    linkedIn="https://www.linkedin.com/in/daniel-osterholz-b0060032a/"
+    researchGate="https://www.researchgate.net/profile/Daniel-Osterholz"
+    img="/img/team/daniel_osterholz.jpg"
+    />
 <TeamProfileCard 
     name="Jonathan Ströbele"
     year="2023"
