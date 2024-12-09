@@ -136,14 +136,6 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 
 <div class="row">
 <TeamProfileCard 
-    name="Daniel Osterholz"
-    description="SmartOpen Hamburg, Remote Sensing, Geoinformatics, GIS, Image Recognition, Computer Vision"
-    hawEmail="daniel.osterholz@haw-hamburg.de"
-    linkedIn="https://www.linkedin.com/in/daniel-osterholz-b0060032a/"
-    researchGate="https://www.researchgate.net/profile/Daniel-Osterholz"
-    img="/img/team/daniel_osterholz.jpg"
-    />
-<TeamProfileCard 
     name="Tom Sommerfeld"
     description="LLM(-Agenten), Machine Learning, Multi-Agenten-Systeme, NLP"
     hawEmail="tom.sommerfeld@haw-hamburg.de"
@@ -186,6 +178,21 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
     linkedIn="https://www.linkedin.com/in/ersan-baran-269450335/"
     researchGate="https://www.researchgate.net/profile/Ersan-Baran"
     />
+<TeamProfileCard 
+    name="Sebastian Wewer"
+    description="Deep Learning, Reinforcement Learning, Multi-Agenten-Systeme, Zelluläre Automaten, Ameisenkoloniesimulation"
+    img="/img/team/sebastian_wewer.jpg"
+    hawEmail="sebastian.wewer@haw-hamburg.de"
+    linkedIn="https://www.linkedin.com/in/sebastian-wewer-048973136/"
+    />
+<TeamProfileCard 
+    name="Helen Haase"
+    description="Reinforcement Learning, Multi-Agenten-Systeme, Machine Learning, Food Waste, Citizen Science"
+    img="/img/team/helen_haase.jpg"
+    hawEmail="sebastian.wewer@haw-hamburg.de"
+    linkedIn="https://www.linkedin.com/in/helen-haase-897ba924b/"
+    researchGate="https://www.researchgate.net/profile/Helen_Haase2"
+    />
 </div>
 
 ---
@@ -197,6 +204,15 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 ## Alummni
 
 <div class="row">
+<TeamProfileCard 
+    name="Daniel Osterholz"
+    year="2024"
+    description="SmartOpen Hamburg, Remote Sensing, Geoinformatics, GIS, Image Recognition, Computer Vision"
+    hawEmail="daniel.osterholz@haw-hamburg.de"
+    linkedIn="https://www.linkedin.com/in/daniel-osterholz-b0060032a/"
+    researchGate="https://www.researchgate.net/profile/Daniel-Osterholz"
+    img="/img/team/daniel_osterholz.jpg"
+    />
 <TeamProfileCard 
     name="Jonathan Ströbele"
     year="2023"
