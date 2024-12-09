@@ -26,6 +26,16 @@ Wie können unsere Agenten menschlicher, d.h. kognitiver, sozialer und intellige
 #### Themenfeld 3. 
 Das MARS Framework hat inzwischen eine erhebliche Komplexität erreicht, die die Erstellung von Agenten-basierten Simulationsmodellen für Einsteiger erschwert. Auf der anderen Seite gibt es sehr viele Beispielmodelle, Tutorials, API Dokumtationen, etc. In diesem Themenfeld geht es darum, eine LLM/RAG-Architektur dergestallt zu entwickeln, die diese Dokumente und Daten semantisch verarbeiten kann. Auf diese Weise soll ein interaktives System geschaffen werden, mit dem die Entwicklung von MARS Modellen vereinfacht wird.
 
+#### Themenfeld 4. 
+Kollegen von Stanford und Google haben eine Spiele-ähnliche Infrastruktur für interaktive menschliche Agenten entwickelt:  
+[Park, J. S., O’Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., & Bernstein, M. S. (2023). Generative Agents: Interactive Simulacra of Human Behavior. 1(1).](http://arxiv.org/abs/2304.03442)  
+Könnte man etwas Ähnliches mit MARS aufsetzen? 
+
+#### Themenfeld 5.
+Gemeinsam mit Kollegen aus den USA forschen wir daran, wie man sog. künstliche Gesellschaften oder synthetische Populationen effizient und validierbar generieren kann:  
+[Clemen, T., Tolk, A., Clemen, U. A., Glake, D., & Günther, G. (2024). Creating artificial societies for policy decision support: a research agenda and call to action. SIMULATION.](https://doi.org/10.1177/00375497241295765)  
+Welche Rolle können LLMs hier spielen? Wie authentisch sind die generierten, individuellen Parameter für die menschlichen Agenten? Könnte man die LLMs mit demographischen Daten feintunen?
+
 
 # Thesis offerings
 The MARS Group is currently researching a whole range of topics that are also relevant for students who want to write a Bachelor's or Master's thesis with us.
@@ -47,3 +57,13 @@ How can our agents be made more human, i.e. more cognitive, more social and more
 
 #### Subject area 3. 
 The MARS framework has now reached a level of complexity that makes it difficult for beginners to create agent-based simulation models. On the other hand, there are many example models, tutorials, API documentation, etc. The aim of this topic is to develop an LLM/RAG architecture that can process these documents and data semantically. In this way, an interactive system is to be created that simplifies the development of MARS models.
+
+#### Subject area 4.
+Colleagues at Stanford and Google have developed a game-like infrastructure for interactive human agents:
+[Park, J. S., O'Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., & Bernstein, M. S. (2023). Generative Agents: Interactive Simulacra of Human Behavior. 1(1).](http://arxiv.org/abs/2304.03442)
+Could something similar be set up with MARS? 
+
+#### Subject area 5.
+Together with colleagues from the USA, we are researching how so-called artificial societies or synthetic populations can be generated efficiently and validated:  
+[Clemen, T., Tolk, A., Clemen, U. A., Glake, D., & Günther, G. (2024). Creating artificial societies for policy decision support: a research agenda and call to action. SIMULATION.](https://doi.org/10.1177/00375497241295765)  
+What role can LLMs play here? How authentic are the generated, individual parameters for human agents? Could the LLMs be fine-tuned with demographic data?
