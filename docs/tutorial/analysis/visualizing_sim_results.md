@@ -55,10 +55,10 @@ The system offers a Python-based script used to create _heat maps_ of objects pe
       ```
       | Parameter | Description | Example |
       | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-      |  <path_to_file_without_file_extension>  |          Absolute or relative path to the file `CSV`. **Please do not include the file extension.** file |  Citizen (_not Citizen.csv_)|
-      |  <grid_cell_size>  |          Number that specifies the size of a single grid cell (in degrees) of the heat map you wish to generate |  **0.25**|
-      |  <column_name_of_longitude>  |          Name of the column in the output csv file from which longitude data should be retrieved. **This value depends on your csv file** |  **Lon** |
-      |  <column_name_of_latitude>  |          the name of the column in the output csv file from which latitude data should be retrieved. **This value depends on your csv file** |  **Lat**|
+      |  &lt;path_to_file_without_file_extension&gt;  |          Absolute or relative path to the file `CSV`. **Please do not include the file extension.** file |  Citizen (_not Citizen.csv_)|
+      |  &lt;grid_cell_size&gt;  |          Number that specifies the size of a single grid cell (in degrees) of the heat map you wish to generate |  **0.25**|
+      |  &lt;column_name_of_longitude&gt;  |          Name of the column in the output csv file from which longitude data should be retrieved. **This value depends on your csv file** |  **Lon** |
+      |  &lt;column_name_of_latitude&gt;  |          the name of the column in the output csv file from which latitude data should be retrieved. **This value depends on your csv file** |  **Lat**|
 
 2. The script generates a folder in the working directory and stores an asc file per tick inside the folder.
 
