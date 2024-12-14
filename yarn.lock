@@ -1927,7 +1927,7 @@
     mermaid ">=10.4"
     tslib "^2.6.0"
 
-"@docusaurus/theme-search-algolia@3.6.3":
+"@docusaurus/theme-search-algolia@^3.6.3", "@docusaurus/theme-search-algolia@3.6.3":
   version "3.6.3"
   resolved "https://registry.npmjs.org/@docusaurus/theme-search-algolia/-/theme-search-algolia-3.6.3.tgz"
   integrity sha512-rt+MGCCpYgPyWCGXtbxlwFbTSobu15jWBTPI2LHsHNa5B0zSmOISX6FWYAPt5X1rNDOqMGM0FATnh7TBHRohVA==
