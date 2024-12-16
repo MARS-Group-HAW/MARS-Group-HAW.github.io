@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[5256],{17514:s=>{s.exports=JSON.parse('{"label":"girls day","permalink":"/blog/tags/girls-day","allTagsPath":"/blog/tags","count":1}')}}]);

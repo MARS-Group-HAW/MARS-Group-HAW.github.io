@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[9285],{37061:s=>{s.exports=JSON.parse('{"label":"ssnm 2023","permalink":"/blog/tags/ssnm-2023","allTagsPath":"/blog/tags","count":1}')}}]);

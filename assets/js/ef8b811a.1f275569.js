@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[8947],{56600:e=>{e.exports=JSON.parse('{"authors":[{"name":"Nima Ahmady-Moghaddam","title":"M.Sc. CS Student","key":"nima","page":null,"count":6}]}')}}]);
