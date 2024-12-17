@@ -36,6 +36,12 @@ Gemeinsam mit Kollegen aus den USA forschen wir daran, wie man sog. künstliche 
 [Clemen, T., Tolk, A., Clemen, U. A., Glake, D., & Günther, G. (2024). Creating artificial societies for policy decision support: a research agenda and call to action. SIMULATION.](https://doi.org/10.1177/00375497241295765)  
 Welche Rolle können LLMs hier spielen? Wie authentisch sind die generierten, individuellen Parameter für die menschlichen Agenten? Könnte man die LLMs mit demographischen Daten feintunen?
 
+#### Themenfeld 6. (Bachelor)
+[General Transit Feed Specification (GTFS)](https://gtfs.org/) ist ein offener Standard für Fahrgastinformationen im öffentlichen Nahverkehr. Damit ist eine relativ komfortable Parametrisierung von Simulationsmodellen und die Integration von Echtzeitdaten möglich. Im Rahmen dieser Bachelorarbeit soll GTFS umfänglich in SmartOpenHamburg integriert werden. Außerdem soll getestet werden, ob auf diese Weise das Aufsetzen von Simulationsszenarien für andere Städte weltweit vereinfacht werden kann.
+
+#### Themenfeld 7 (Bachelor)
+Graph-Daten, z.B. aus OpenStreetMaps, stellen eine wichtige Grundlage für die SmartOpenHamburg-Szenarien dar. Leider ist die Qualität der Daten sehr unterschiedlich, was oft zu Problemen in den Modellen führt. Ein klassisches Problem ist, dass sich sog. Inseln bilden, weil die Zusammenhangskomponenten nicht vollständig sind. In dieser Bachelorarbeit geht es darum, dieses Problem systematisch zu evaluieren und Lösungsmöglichkeiten zu entwickeln. 
+
 
 # Thesis offerings
 The MARS Group is currently researching a whole range of topics that are also relevant for students who want to write a Bachelor's or Master's thesis with us.
@@ -67,3 +73,10 @@ Could something similar be set up with MARS?
 Together with colleagues from the USA, we are researching how so-called artificial societies or synthetic populations can be generated efficiently and validated:  
 [Clemen, T., Tolk, A., Clemen, U. A., Glake, D., & Günther, G. (2024). Creating artificial societies for policy decision support: a research agenda and call to action. SIMULATION.](https://doi.org/10.1177/00375497241295765)  
 What role can LLMs play here? How authentic are the generated, individual parameters for human agents? Could the LLMs be fine-tuned with demographic data?
+
+#### Subject area 6. (Bachelor)
+[General Transit Feed Specification (GTFS)](https://gtfs.org/) is an open standard for passenger information in public transportation. It allows a relatively comfortable parameterization of simulation models and the integration of real-time data. Within the scope of this bachelor thesis, GTFS is to be comprehensively integrated into SmartOpenHamburg. It will also be tested whether this can simplify the creation of simulation scenarios for other cities worldwide.
+
+#### Topic area 7. (Bachelor)
+Graphical data, e.g. from OpenStreetMaps, is an important basis for the SmartOpenHamburg scenarios. Unfortunately, the quality of the data varies greatly, which often leads to problems in the models. A classic problem are so-called islands, i.e. there are no connecting edges within the graphs. The aim of this bachelor thesis is to systematically evaluate this problem and develop possible solutions. 
+
