@@ -6,8 +6,29 @@ hide_table_of_contents: false
 (The English text follows below)
 # Abschlussarbeiten
 
-Die MARS Group forscht aktuell an einer ganzen Reihen von Themen, die auch für Studierende, die eine Bachelor- oder Masterarbeit bei uns schreiben wollen, relevant sind.
-Im Folgenden findet sich eine - unvollständige - Liste. Sollte eines oder mehrere Themenbereich für Sie interessant sein, kontaktieren Sie bitte [Prof. Dr. Thomas Clemen](mailto:thomas.clemen@haw-hamburg.de) direkt.
+Die MARS Group forscht aktuell an einer ganzen Reihen von Themen, die auch für Studierende, die eine Bachelor- oder Masterarbeit bei uns schreiben wollen, relevant sind. Dazu gehören u.a. die folgenden Oberthemen:
+
+- Multi-Agenten Systeme
+- Agenten-basierte Modellierung und Simulation
+- LLM-basierte Agenten, Generative Agenten und Agenten-zentrierte KI
+- Kooperation in Multi-Agenten Systemen
+- Multi-Agenten (Deep) Reinforcement Learning (MA(D)RL) 
+- Digitale Zwillinge
+- Umwelt- und Geoinformatik
+
+Auch wenn einige unserer Forschungsarbeiten Grundlagencharakter besitzen, so steht zumeist ein konkretes Anwendungsfeld im Vordergrund. Die folgende Liste zeigt einige Gebiete, in denen wir schon gearbeitet haben bzw. derzeit arbeiten:
+
+- Verkehr und intelligente Städte
+- Logistik
+- Ausbreitung von Infektionskrankheiten
+- Globale Klimaveränderung
+- Nationalparks und Wildschutzgebiete
+- Stundenpläne für Schulen
+- Waldökosysteme
+- Citizen Science 
+- Koordination von Dronenschwärmen und Löschflugzeugen
+
+Im Folgenden findet sich eine - unvollständige - Liste von möglichen (Anschluss-)Themen. Sollte eines oder mehrere Themenbereich für Sie interessant sein, kontaktieren Sie mich bitte direkt unter [Prof. Dr. Thomas Clemen](mailto:thomas.clemen@haw-hamburg.de).
 
 #### Themenfeld 1.   
 Uns beschäftigt die Frage, wie Software-Agenten in großen Szenarien, d.h. mit sehr vielen Agenten, intelligent und lernend realisiert werden können.
@@ -44,8 +65,29 @@ Graph-Daten, z.B. aus OpenStreetMaps, stellen eine wichtige Grundlage für die S
 
 
 # Thesis offerings
-The MARS Group is currently researching a whole range of topics that are also relevant for students who want to write a Bachelor's or Master's thesis with us.
-The following is an - incomplete - list. If one or more topics are of interest to you, please contact [Prof Dr Thomas Clemen](mailto:thomas.clemen@haw-hamburg.de) directly.
+The MARS Group is currently researching a whole range of topics that are also relevant for students who want to write a Bachelor's or Master's thesis with us. These include the following main topics:
+
+- Multi-agent systems
+- Agent-based modeling and simulation
+- LLM-based agents, generative agents and agent-centered AI
+- Cooperation in multi-agent systems
+- Multi-agent (deep) reinforcement learning (MA(D)RL) 
+- Digital twins
+- Environmental and geoinformatics
+
+Even if some of our research work is of a fundamental nature, the focus is usually on a specific field of application. The following list shows some of the areas in which we have already worked or are currently working:
+
+- Transportation and smart cities
+- Logistics
+- Spread of infectious diseases
+- Global climate change
+- National parks and wildlife sanctuaries
+- Timetables for schools
+- Forest ecosystems
+- Citizen science 
+- Coordination of drone swarms and fire-fighting aircraft
+
+The following is an - incomplete - list of possible (follow-up) topics. If one or more topics are of interest to you, please contact me directly at [Prof. Dr. Thomas Clemen](mailto:thomas.clemen@haw-hamburg.de).
 
 #### Subject area 1.   
 We are concerned with the question of how software agents in large scenarios, i.e. with very many agents, can be realised in an intelligent and learning manner.
