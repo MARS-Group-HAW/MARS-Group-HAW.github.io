@@ -12,6 +12,15 @@ On this page, we list theses that were submitted by members and students of the 
 ## Master
 
 <StudentWork
+  title="Spatio-Temporal Shifts in Citizen Science Data: Detecting Disruptions in Bird Sightings with Change Point Analysis"
+  author="Marina Siebold"
+  type="ma"
+  description="This thesis addresses this concern by implementing a CPD approach using the Bayesian Estimation of Abrupt Change, Seasonality, and Trend (BEAST) algorithm on a citizenscience bird dataset. Prior to BEAST analysis, a tailored preprocessing pipeline is developedto mitigate user bias."
+  semesterYear="ws2024"
+  pathPdf="/img/student-work/theses/siebold_ms_thesis.pdf"
+/>
+
+<StudentWork
   title="Evaluierung von spezialisierten und generischen Modellen zur Identifikation von städtischen Einzelbäumen mittelsTransfer Learning"
   author="Daniel Osterholz"
   type="ma"
