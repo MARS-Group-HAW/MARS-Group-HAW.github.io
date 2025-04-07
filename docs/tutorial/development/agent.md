@@ -5,6 +5,15 @@ sidebar_position: 10
 # Agent
 
 ## Definition of Agents
+In multi-agent systems, an agent is an autonomous entity capable of perceiving its environment through sensors and acting upon that environment through actuators. Agents can range from simple rule-based systems to complex intelligent programs that learn from experience and adapt their behavior over time. They are often designed to pursue certain goals, make decisions, and interact with other agents or their environment in a meaningful way.
+
+During a single tick, the agent undergoes a full cycle of perception, deliberation, and action. This process begins with the exploration of its environment, which gathers sensory input or data about the current state of the world. This sensory information is then interpreted and compared with the agent’s internal knowledge, including past experiences, learned models, and its current intentions or goals.
+
+Based on this evaluation, the agent then enters a decision-making phase. Here, it analyzes possible actions within its ActionSpace, which defines the set of actions available to it at any given moment. The agent may apply heuristic rules, learned policies, or optimization methods to select the most suitable action(s) for achieving its objectives.
+
+Finally, the chosen action(s) are executed, and the environment is influenced accordingly. This loop repeats with each tick, allowing the agent to continuously adapt and react to changes in its surroundings.
+
+## Agents in MARS
 
 Along with [layers](layers.md), agents are the main part of every model. Once the layers have been created, agent types can be specified. For this step, the modeler needs to know what each agent type is going to be, what attributes define it, and what its actions will look like. Once this has been established, the agent type creation can be started.
 
