@@ -1,0 +1,938 @@
+{
+  "source_base_path": "/home/ersba/RiderProjects/model-mars-laser-tag-game/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Body.DataVisualizationServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Body.DataVisualizationServer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Body.DataVisualizationServer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Body.MovingAgent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Body.MovingAgent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Body.MovingAgent",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Body.MovingAgent.yml\" sourcestartlinenumber=\"1\">Encapsulates the movement properties and capabilities of a LaserTag agent</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Body.PlayerBody.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Body.PlayerBody.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Body.PlayerBody",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Body.PlayerBody.yml\" sourcestartlinenumber=\"1\">Represents the spatially explicit body of a LaserTag agent that is situated in the LaserTag environment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Body.PlayerBodyLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Body.PlayerBodyLayer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Body.PlayerBodyLayer",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Body.PlayerBodyLayer.yml\" sourcestartlinenumber=\"1\">A layer type that represents the spatial environment and holds the spatially explicit bodies of the LaserTag\nagents.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Body.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Body.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Body",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Commons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Commons.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Commons",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Items.Flag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Items.Flag.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Items.Flag",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Items.Item.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Items.Item.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Items.Item",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Items.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Items.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Items",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.AbstractPlayerMind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.AbstractPlayerMind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.AbstractPlayerMind",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Mind.AbstractPlayerMind.yml\" sourcestartlinenumber=\"1\">Create a subclass of <pre><code class=\"lang-csharp\">AbstractPlayerMind</code></pre> for your own artificial intelligence.\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.AgentState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.AgentState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.AgentState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Example7QL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Example7QL.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Example7QL",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Mind.Example7QL.yml\" sourcestartlinenumber=\"1\">A learning agent using Q-Learning and having a state, which consists of multiple components\nconstituted by different physical attributes, like energy and ammunition level.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Example8Rule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Example8Rule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Example8Rule",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Example9QL.Action.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Example9QL.Action.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Example9QL.Action",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Example9QL.Location.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Example9QL.Location.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Example9QL.Location",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Example9QL.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Example9QL.State.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Example9QL.State",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Example9QL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Example9QL.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Example9QL",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Examples.Example1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Examples.Example1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Examples.Example1",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Examples.Example10Rule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Examples.Example10Rule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Examples.Example10Rule",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Examples.Example2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Examples.Example2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Examples.Example2",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Examples.Example3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Examples.Example3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Examples.Example3",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Examples.Example4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Examples.Example4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Examples.Example4",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Examples.Example5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Examples.Example5.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Examples.Example5",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Examples.Example6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Examples.Example6.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Examples.Example6",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Examples.ShooterCopy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Examples.ShooterCopy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Examples.ShooterCopy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Examples.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Examples.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Examples",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.FlagCollector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.FlagCollector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.FlagCollector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.IdleAgent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.IdleAgent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.IdleAgent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Intel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Intel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Intel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.PlayerMindLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.PlayerMindLayer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.PlayerMindLayer",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Mind.PlayerMindLayer.yml\" sourcestartlinenumber=\"1\">A layer type that holds the minds of the LaserTag agents.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.QTableManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.QTableManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.QTableManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.SecondFlagCollector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.SecondFlagCollector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.SecondFlagCollector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.Shooter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.Shooter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.Shooter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.YourPlayerMindPleaseRename.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.YourPlayerMindPleaseRename.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.YourPlayerMindPleaseRename",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.YourPlayerMindPleaseRenameCopy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.YourPlayerMindPleaseRenameCopy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind.YourPlayerMindPleaseRenameCopy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Mind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Mind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Mind",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Shared.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Shared.Color.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Shared.Color",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Shared.EnemySnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Shared.EnemySnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Shared.EnemySnapshot",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Shared.EnemySnapshot.yml\" sourcestartlinenumber=\"1\">Provides information about an explored enemy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Shared.FlagSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Shared.FlagSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Shared.FlagSnapshot",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Shared.FriendSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Shared.FriendSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Shared.FriendSnapshot",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Shared.FriendSnapshot.yml\" sourcestartlinenumber=\"1\">Provides information about other team members.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Shared.GameMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Shared.GameMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Shared.GameMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Shared.IPlayerBody.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Shared.IPlayerBody.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Shared.IPlayerBody",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Shared.IPlayerBody.yml\" sourcestartlinenumber=\"1\">The <pre><code class=\"lang-csharp\">IPlayerBody</code></pre> is the interface for any mind/AI to the world of agents.\nUse it to explore and interact with the battleground.\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Shared.Stance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Shared.Stance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Shared.Stance",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Shared.TeamScore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Shared.TeamScore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Shared.TeamScore",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Shared.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Shared.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Shared",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Spots.Barrier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Spots.Barrier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Spots.Barrier",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Spots.Barrier.yml\" sourcestartlinenumber=\"1\">A barrier that acts as an obstacle to agents.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Spots.Ditch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Spots.Ditch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Spots.Ditch",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Spots.Ditch.yml\" sourcestartlinenumber=\"1\">A ditch that agents can step into.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Spots.ExplosiveBarrel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Spots.ExplosiveBarrel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Spots.ExplosiveBarrel",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Spots.ExplosiveBarrel.yml\" sourcestartlinenumber=\"1\">A spot that represents an explosive barrel in the environment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Spots.FlagStand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Spots.FlagStand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Spots.FlagStand",
+      "Summary": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Spots.Hill.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Spots.Hill.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Spots.Hill",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Spots.Hill.yml\" sourcestartlinenumber=\"1\">A hill that agents can step onto.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Spots.OccupiableSpot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Spots.OccupiableSpot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Spots.OccupiableSpot",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Spots.OccupiableSpot.yml\" sourcestartlinenumber=\"1\">An object of interest (OOI) that can be occupied by agents.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Spots.Spot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Spots.Spot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Spots.Spot",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Spots.Spot.yml\" sourcestartlinenumber=\"1\">An object of interest (OOI) in the environment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Spots.Water.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Spots.Water.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Spots.Water",
+      "Summary": "<p sourcefile=\"api/LaserTagBox.Model.Spots.Water.yml\" sourcestartlinenumber=\"1\">A spot that represents a water body in the environment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.Spots.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.Spots.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model.Spots",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaserTagBox.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaserTagBox.Model.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaserTagBox.Model",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/agent-methods.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/agent-methods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/agent-properties.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/agent-properties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/environment.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/environment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/game-objective.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/game-objective.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/game_mechanics.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/game_mechanics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/rules.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/rules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ExampleGameWorldAtSimStart.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ExampleGameWorldAtSimStart.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/env-comps.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/env-comps.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mars_logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/mars_logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

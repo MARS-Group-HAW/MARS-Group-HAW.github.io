@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Agent Methods | Mars Laser Tag Game </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Agent Methods | Mars Laser Tag Game ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/docs/articles/agent-methods.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mars_logo.svg" alt="Mars Laser Tag Game">
+            Mars Laser Tag Game
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="agent-methods">Agent Methods</h1>
+
+<p>This section describes the methods provided by the <code>IPlayerBody</code> interface.<br>
+The digit at the end of each method name indicates the number of <code>ActionPoints</code> (AP) required to execute it.<br>
+Methods without a digit require <strong>0 AP</strong>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If the agent does not have enough <code>ActionPoints</code>, the method usually returns <code>false</code> or <code>null</code>.</p>
+</div>
+<hr>
+<h2 id="movement-methods">Movement Methods</h2>
+<h3 id="changestance2stance"><code>ChangeStance2(Stance)</code></h3>
+<p><strong>AP Cost:</strong> 2<br>
+<strong>Returns:</strong> <em>void</em></p>
+<p>Changes the agent's stance to <code>Standing</code>, <code>Kneeling</code>, or <code>Lying</code>.<br>
+Stance affects movement speed, <code>VisualRange</code>, and <code>VisibilityRange</code>.</p>
+<hr>
+<h3 id="gotoposition--bool"><code>GoTo(Position) : bool</code></h3>
+<p><strong>AP Cost:</strong> 0<br>
+<strong>Returns:</strong> <code>true</code> if move executed, <code>false</code> otherwise</p>
+<p>Pathfinding and movement method. Moves the agent one step toward a specified <code>(x, y)</code> destination.<br>
+If called again with a different position, the path is re-planned.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Returns <code>false</code> if the target is unreachable or outside the map.</p>
+</div>
+<hr>
+<h2 id="exploration-methods">Exploration Methods</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All exploration methods fail (return <code>null</code> or <code>false</code>) if the agent does not have enough <code>ActionPoints</code>.<br>
+By default, exploration methods cost <strong>1 ActionPoint</strong>, unless stated otherwise.</p>
+</div>
+<ul>
+<li><code>ExploreBarriers1() : List&lt;Position&gt;</code> – Detect visible <code>Barrier</code> tiles</li>
+<li><code>ExploreDitches1() : List&lt;Position&gt;</code> – Detect visible <code>Ditch</code> tiles</li>
+<li><code>ExploreHills1() : List&lt;Position&gt;</code> – Detect visible <code>Hill</code> tiles</li>
+<li><code>ExploreEnemies1() : List&lt;EnemySnapshot&gt;</code> – Detect visible opponents</li>
+<li><code>ExploreTeam() : List&lt;IPlayerBody&gt;</code> – Detect teammates</li>
+<li><code>ExploreWater1() : List&lt;Position&gt;</code> – Detect visible <code>Water</code> tiles</li>
+<li><code>ExploreBarrels1() : List&lt;Position&gt;</code> – All visible <code>ExplosiveBarrel</code> tiles</li>
+<li><code>ExploreExplosiveBarrels1() : List&lt;Position&gt;</code> – Only unexploded barrels</li>
+<li><code>ExploreEnemyFlagStands1() : List&lt;Position&gt;</code> – Detect your opponent’s flag stand</li>
+<li><code>ExploreFlags2() : List&lt;FlagSnapshot&gt;</code> – All visible flags (<strong>costs 2 AP</strong>)</li>
+<li><code>ExploreOwnFlagStand() : Position</code> – Detect your team’s flag stand</li>
+</ul>
+<hr>
+<h3 id="getdistanceposition--int"><code>GetDistance(Position) : int</code></h3>
+<p><strong>AP Cost:</strong> 0<br>
+<strong>Returns:</strong> Number of grid cells (or <code>-1</code> if not visible)</p>
+<p>Computes shortest distance to a position, if it's visible to the agent.</p>
+<hr>
+<h3 id="hasbeeline1position--bool"><code>HasBeeline1(Position) : bool</code></h3>
+<p><strong>AP Cost:</strong> 1<br>
+Checks for unobstructed line-of-sight to a grid position.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Returns <code>false</code> if vision is blocked or if insufficient AP.</p>
+</div>
+<hr>
+<h2 id="tagging-methods">Tagging Methods</h2>
+<h3 id="reload3"><code>Reload3()</code></h3>
+<p><strong>AP Cost:</strong> 3<br>
+<strong>Returns:</strong> <em>void</em></p>
+<p>Reloads the tagging weapon, restoring <code>RemainingShots</code> to 5.<br>
+Must be used when <code>RemainingShots == 0</code>.</p>
+<hr>
+<h3 id="tag5position"><code>Tag5(Position)</code></h3>
+<p><strong>AP Cost:</strong> 5<br>
+<strong>Returns:</strong> <code>true</code> if a tag or explosion was successful, <code>false</code> otherwise</p>
+<p>Fires a shot at the specified grid cell. The action can result in:</p>
+<ul>
+<li>Triggering an <strong>explosion</strong> if an unexploded <code>ExplosiveBarrel</code> is present.</li>
+<li>Attempting to <strong>tag</strong> an enemy agent using a <strong>probabilistic hit calculation</strong>.</li>
+</ul>
+<h4 id="conditions-for-execution">Conditions for Execution</h4>
+<p>The method will <strong>immediately fail and return <code>false</code></strong> if:</p>
+<ul>
+<li>The caller has <strong>less than 5 ActionPoints</strong></li>
+<li>The caller has <strong>no RemainingShots</strong></li>
+<li>There is <strong>no line of sight</strong> (<code>!HasBeeline</code>) to the <code>aimedPosition</code></li>
+<li>The target is a <strong>friendly agent</strong></li>
+</ul>
+<h4 id="tagging-logic">Tagging Logic</h4>
+<p>If the above checks pass and an <strong>enemy</strong> is present at the <code>aimedPosition</code>, the following probabilistic model determines if the tag is successful:</p>
+<pre><code class="lang-plaintext">Random.Next(10) + targetStanceValue + targetTerrainValue &gt; ownStanceThreshold
+</code></pre>
+<ul>
+<li><p><code>targetStanceValue</code>:</p>
+<ul>
+<li><code>Standing</code> → 2</li>
+<li><code>Kneeling</code> → 1</li>
+<li><code>Lying</code> → 0</li>
+</ul>
+</li>
+<li><p><code>targetTerrainValue</code> (based on field type):</p>
+<ul>
+<li>Normal ground → 1</li>
+<li>Ditch → 0</li>
+<li>Hill → 2</li>
+</ul>
+</li>
+<li><p><code>ownStanceThreshold</code>:</p>
+<ul>
+<li><code>Standing</code> → 8</li>
+<li><code>Kneeling</code> → 6</li>
+<li><code>Lying</code> → 4</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>This means: a tag is <strong>more likely</strong> when the attacker is in a low stance (e.g. <code>Lying</code>), and the defender is more exposed (e.g. <code>Standing</code> on a <code>Hill</code>).</p>
+</blockquote>
+<p>If the <strong>hit succeeds</strong>:</p>
+<ul>
+<li>The enemy's <code>Energy</code> is reduced by <strong>10</strong></li>
+<li>The caller gains <strong>10 GamePoints</strong></li>
+<li>If the tag causes the enemy’s <code>Energy</code> to drop to <strong>0 or less</strong>, the caller gains an <strong>additional 10 GamePoints</strong></li>
+</ul>
+<h4 id="team-mode-dependency">Team Mode Dependency</h4>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p><strong>GamePoints are only awarded in <code>Team Deathmatch</code> mode.</strong><br>
+In <code>Capture the Flag</code> mode, tags affect gameplay but do <strong>not</strong> yield points.</p>
+</div>
+<h4 id="special-case-explosive-barrel">Special Case: Explosive Barrel</h4>
+<p>If the targeted cell contains a <strong>live ExplosiveBarrel</strong>:</p>
+<ul>
+<li>The barrel explodes <strong>immediately</strong></li>
+<li>Explosion affects <strong>all agents</strong> in a <strong>3-tile radius</strong></li>
+<li>Returns <code>true</code> regardless of whether an enemy is present</li>
+</ul>
+<h4 id="side-effects">Side Effects</h4>
+<ul>
+<li>Reduces <code>RemainingShots</code> by 1 if fired</li>
+<li>Friendly agents are <strong>never</strong> tagged</li>
+</ul>
+<hr>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/docs/articles/agent-methods.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
