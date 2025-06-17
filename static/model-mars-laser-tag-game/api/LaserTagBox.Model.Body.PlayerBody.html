@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PlayerBody | Mars Laser Tag Game </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PlayerBody | Mars Laser Tag Game ">
+      
+      <meta name="description" content="Represents the spatially explicit body of a LaserTag agent that is situated in the LaserTag environment.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/new/master/apiSpec/new?filename=LaserTagBox_Model_Body_PlayerBody.md&amp;value=---%0Auid%3A%20LaserTagBox.Model.Body.PlayerBody%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mars_logo.svg" alt="Mars Laser Tag Game">
+            Mars Laser Tag Game
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="LaserTagBox.Model.Body.PlayerBody">
+
+
+
+  <h1 id="LaserTagBox_Model_Body_PlayerBody" data-uid="LaserTagBox.Model.Body.PlayerBody" class="text-break">
+Class PlayerBody  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LaserTagBox.html">LaserTagBox</a>.<a class="xref" href="LaserTagBox.Model.html">Model</a>.<a class="xref" href="LaserTagBox.Model.Body.html">Body</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LaserTagBox.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents the spatially explicit body of a LaserTag agent that is situated in the LaserTag environment.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlayerBody : MovingAgent, IAgent&lt;PlayerBodyLayer&gt;, IAgent, ITickClient, IEntity, IModelObject, IPlayerBody, IPositionable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html">MovingAgent</a></div>
+      <div><span class="xref">PlayerBody</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IAgent</span>&lt;<a class="xref" href="LaserTagBox.Model.Body.PlayerBodyLayer.html">PlayerBodyLayer</a>&gt;</div>
+      <div><span class="xref">IAgent</span></div>
+      <div><span class="xref">ITickClient</span></div>
+      <div><span class="xref">IEntity</span></div>
+      <div><span class="xref">IModelObject</span></div>
+      <div><a class="xref" href="LaserTagBox.Model.Shared.IPlayerBody.html">IPlayerBody</a></div>
+      <div><span class="xref">IPositionable</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_ID">MovingAgent.ID</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_Battleground">MovingAgent.Battleground</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_MemberId">MovingAgent.MemberId</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_XSpawn">MovingAgent.XSpawn</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_YSpawn">MovingAgent.YSpawn</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_Color">MovingAgent.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_Stance">MovingAgent.Stance</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_MovementDelayCounter">MovingAgent.MovementDelayCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_HasMoved">MovingAgent.HasMoved</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_Position">MovingAgent.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_XCor">MovingAgent.XCor</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_YCor">MovingAgent.YCor</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_Init_LaserTagBox_Model_Body_PlayerBodyLayer_">MovingAgent.Init(PlayerBodyLayer)</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_VisualRange">MovingAgent.VisualRange</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_VisibilityRange">MovingAgent.VisibilityRange</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_MovementDelayPenalty">MovingAgent.MovementDelayPenalty</a>
+    </div>
+    <div>
+      <a class="xref" href="LaserTagBox.Model.Body.MovingAgent.html#LaserTagBox_Model_Body_MovingAgent_GoTo_Mars_Interfaces_Environments_Position_">MovingAgent.GoTo(Position)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_ActionPoints_" data-uid="LaserTagBox.Model.Body.PlayerBody.ActionPoints*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_ActionPoints" data-uid="LaserTagBox.Model.Body.PlayerBody.ActionPoints">
+  ActionPoints
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Points that can be spent on actions per tick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ActionPoints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_Alive_" data-uid="LaserTagBox.Model.Body.PlayerBody.Alive*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_Alive" data-uid="LaserTagBox.Model.Body.PlayerBody.Alive">
+  Alive
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents the agent's vital state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Alive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_CarryingFlag_" data-uid="LaserTagBox.Model.Body.PlayerBody.CarryingFlag*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_CarryingFlag" data-uid="LaserTagBox.Model.Body.PlayerBody.CarryingFlag">
+  CarryingFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the agent is carrying the flag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CarryingFlag { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_Energy_" data-uid="LaserTagBox.Model.Body.PlayerBody.Energy*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_Energy" data-uid="LaserTagBox.Model.Body.PlayerBody.Energy">
+  Energy
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The agent's current energy count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Energy { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_GamePoints_" data-uid="LaserTagBox.Model.Body.PlayerBody.GamePoints*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_GamePoints" data-uid="LaserTagBox.Model.Body.PlayerBody.GamePoints">
+  GamePoints
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The agent's point count (for tagging enemy agents, etc.).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GamePoints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_RemainingShots_" data-uid="LaserTagBox.Model.Body.PlayerBody.RemainingShots*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_RemainingShots" data-uid="LaserTagBox.Model.Body.PlayerBody.RemainingShots">
+  RemainingShots
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The remaining number of shots (tagging opportunities) of the agent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemainingShots { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_TeamName_" data-uid="LaserTagBox.Model.Body.PlayerBody.TeamName*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_TeamName" data-uid="LaserTagBox.Model.Body.PlayerBody.TeamName">
+  TeamName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the team to which the agent belongs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TeamName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_WasTaggedLastTick_" data-uid="LaserTagBox.Model.Body.PlayerBody.WasTaggedLastTick*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_WasTaggedLastTick" data-uid="LaserTagBox.Model.Body.PlayerBody.WasTaggedLastTick">
+  WasTaggedLastTick
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if the agent was tagged during the last tick (i.e., the tick before the current tick).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WasTaggedLastTick { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_ChangeStance2_" data-uid="LaserTagBox.Model.Body.PlayerBody.ChangeStance2*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_ChangeStance2_LaserTagBox_Model_Shared_Stance_" data-uid="LaserTagBox.Model.Body.PlayerBody.ChangeStance2(LaserTagBox.Model.Shared.Stance)">
+  ChangeStance2(Stance)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes the agent's current stance to the given stance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeStance2(Stance newStance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newStance</code> <a class="xref" href="LaserTagBox.Model.Shared.Stance.html">Stance</a></dt>
+    <dd><p>The given stance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_ExploreBarrels1_" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreBarrels1*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_ExploreBarrels1" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreBarrels1">
+  ExploreBarrels1()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explores all <pre><code class="lang-csharp">ExplosiveBarrel</code></pre>s in sight of the agent. Costs 1 action point.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Position&gt; ExploreBarrels1()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Position</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_ExploreBarriers1_" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreBarriers1*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_ExploreBarriers1" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreBarriers1">
+  ExploreBarriers1()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explores the barriers in the agent's field of vision.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Position&gt; ExploreBarriers1()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Position</span>&gt;</dt>
+    <dd><p>A list of Barrier objects or null if the caller does not have enough ActionPoints</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_ExploreDitches1_" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreDitches1*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_ExploreDitches1" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreDitches1">
+  ExploreDitches1()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explores the ditches in the agent's field of vision.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Position&gt; ExploreDitches1()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Position</span>&gt;</dt>
+    <dd><p>A list of Ditch objects or null if the caller does not have enough ActionPoints</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_ExploreEnemies1_" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreEnemies1*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_ExploreEnemies1" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreEnemies1">
+  ExploreEnemies1()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explores enemy agents in the agent's field of vision.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;EnemySnapshot&gt; ExploreEnemies1()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="LaserTagBox.Model.Shared.EnemySnapshot.html">EnemySnapshot</a>&gt;</dt>
+    <dd><p>A list of EnemySnapshot objects or null if the caller does not have enough ActionPoints</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_ExploreEnemyFlagStands1_" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreEnemyFlagStands1*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_ExploreEnemyFlagStands1" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreEnemyFlagStands1">
+  ExploreEnemyFlagStands1()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explores the enemy flag stands.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Position&gt; ExploreEnemyFlagStands1()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Position</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_ExploreExplosiveBarrels1_" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreExplosiveBarrels1*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_ExploreExplosiveBarrels1" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreExplosiveBarrels1">
+  ExploreExplosiveBarrels1()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explores all explodable <pre><code class="lang-csharp">ExplosiveBarrel</code></pre>s in sight of the agent. Costs 1 action point.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Position&gt; ExploreExplosiveBarrels1()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Position</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_ExploreFlags2_" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreFlags2*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_ExploreFlags2" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreFlags2">
+  ExploreFlags2()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explores the flags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FlagSnapshot&gt; ExploreFlags2()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="LaserTagBox.Model.Shared.FlagSnapshot.html">FlagSnapshot</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_ExploreHills1_" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreHills1*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_ExploreHills1" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreHills1">
+  ExploreHills1()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explores the hills in the agent's field of vision.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Position&gt; ExploreHills1()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Position</span>&gt;</dt>
+    <dd><p>A list of Hill objects or null if the caller does not have enough ActionPoints</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_ExploreOwnFlagStand_" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreOwnFlagStand*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_ExploreOwnFlagStand" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreOwnFlagStand">
+  ExploreOwnFlagStand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explores the position of the own flag stand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Position ExploreOwnFlagStand()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Position</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_ExploreTeam_" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreTeam*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_ExploreTeam" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreTeam">
+  ExploreTeam()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explores the agent's team members across the entire environment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FriendSnapshot&gt; ExploreTeam()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="LaserTagBox.Model.Shared.FriendSnapshot.html">FriendSnapshot</a>&gt;</dt>
+    <dd><p>A list of FriendSnapshot objects</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_ExploreWater1_" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreWater1*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_ExploreWater1" data-uid="LaserTagBox.Model.Body.PlayerBody.ExploreWater1">
+  ExploreWater1()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Explores the water bodies in the agent's field of vision.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Position&gt; ExploreWater1()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Position</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_GetDistance_" data-uid="LaserTagBox.Model.Body.PlayerBody.GetDistance*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_GetDistance_Mars_Interfaces_Environments_Position_" data-uid="LaserTagBox.Model.Body.PlayerBody.GetDistance(Mars.Interfaces.Environments.Position)">
+  GetDistance(Position)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the distance from the caller to the given position, using the Manhattan distance measure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDistance(Position position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">Position</span></dt>
+    <dd><p>The position whose distance to the caller is to be determined</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer that represents the calculated distance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_HasBeeline1_" data-uid="LaserTagBox.Model.Body.PlayerBody.HasBeeline1*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_HasBeeline1_Mars_Interfaces_Environments_Position_" data-uid="LaserTagBox.Model.Body.PlayerBody.HasBeeline1(Mars.Interfaces.Environments.Position)">
+  HasBeeline1(Position)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether there exists a direct line of sight between the caller and the given position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasBeeline1(Position other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <span class="xref">Position</span></dt>
+    <dd><p>The position whose line of sight relative to the caller is to be determined</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if there exists an open line of sight between the caller's position and the given position.
+false if no such line of sight exists or if the caller does not have enough ActionPoints.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_InsertIntoEnv_" data-uid="LaserTagBox.Model.Body.PlayerBody.InsertIntoEnv*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_InsertIntoEnv" data-uid="LaserTagBox.Model.Body.PlayerBody.InsertIntoEnv">
+  InsertIntoEnv()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the agent into the LaserTag environment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InsertIntoEnv()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_MoveToPosition_" data-uid="LaserTagBox.Model.Body.PlayerBody.MoveToPosition*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_MoveToPosition_Mars_Interfaces_Environments_Position_" data-uid="LaserTagBox.Model.Body.PlayerBody.MoveToPosition(Mars.Interfaces.Environments.Position)">
+  MoveToPosition(Position)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves the agent to the given position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Position MoveToPosition(Position position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">Position</span></dt>
+    <dd><p>The position to which the agent is to be moved.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Position</span></dt>
+    <dd><p>The position to which the agent was moved</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_Reload3_" data-uid="LaserTagBox.Model.Body.PlayerBody.Reload3*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_Reload3" data-uid="LaserTagBox.Model.Body.PlayerBody.Reload3">
+  Reload3()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Refills the ammunition of the agent's tagging weapon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reload3()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_Respawn_" data-uid="LaserTagBox.Model.Body.PlayerBody.Respawn*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_Respawn" data-uid="LaserTagBox.Model.Body.PlayerBody.Respawn">
+  Respawn()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Respawns the agent at its flag stand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Respawn()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_Tag5_" data-uid="LaserTagBox.Model.Body.PlayerBody.Tag5*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_Tag5_Mars_Interfaces_Environments_Position_" data-uid="LaserTagBox.Model.Body.PlayerBody.Tag5(Mars.Interfaces.Environments.Position)">
+  Tag5(Position)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shoots at the given Position. Returns true if shot was successfully executed, otherwise false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Tag5(Position aimedPosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aimedPosition</code> <span class="xref">Position</span></dt>
+    <dd><p>The position to be shot at</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if an enemy on the given position was tagged, false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>Thrown if a player has an invalid Stance</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_TakeExplosionDamage_" data-uid="LaserTagBox.Model.Body.PlayerBody.TakeExplosionDamage*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_TakeExplosionDamage_System_Int32_" data-uid="LaserTagBox.Model.Body.PlayerBody.TakeExplosionDamage(System.Int32)">
+  TakeExplosionDamage(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the agent's explosion damage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TakeExplosionDamage(int damage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>damage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LaserTagBox_Model_Body_PlayerBody_Tick_" data-uid="LaserTagBox.Model.Body.PlayerBody.Tick*"></a>
+
+  <h3 id="LaserTagBox_Model_Body_PlayerBody_Tick" data-uid="LaserTagBox.Model.Body.PlayerBody.Tick">
+  Tick()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The behavior routine of the spatially explicit component of the LaserTag agent, which is executed
+automatically by the LaserTag framework.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Tick()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown if this method is called manually</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/LaserTagBox/Model/Body/PlayerBody.cs/#L16" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

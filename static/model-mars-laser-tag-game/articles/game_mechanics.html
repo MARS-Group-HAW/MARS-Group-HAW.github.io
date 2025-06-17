@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Game Mechanics | Mars Laser Tag Game </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Game Mechanics | Mars Laser Tag Game ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/docs/articles/game_mechanics.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mars_logo.svg" alt="Mars Laser Tag Game">
+            Mars Laser Tag Game
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="game-mechanics">Game Mechanics</h1>
+
+<p>This section outlines the core rules and systems that define how agents perceive, move, and interact in the LaserTag simulation. Understanding these mechanics is crucial to developing effective strategies.</p>
+<hr>
+<h2 id="enemy-vision">Enemy Vision</h2>
+<p>Agent visibility is determined using <code>ExploreEnemies1()</code>, which consumes <strong>1 ActionPoint</strong> and returns a list of visible opponents.<br>
+The method processes visibility in a strict step-by-step sequence:</p>
+<h3 id="step-1-is-the-target-within-visual-range">Step 1: Is the Target Within Visual Range?</h3>
+<p>Before anything else, the target must be within the calling agent’s <code>VisualRange</code>. If the target lies outside this range, no further checks are made.</p>
+<pre><code class="lang-csharp">public double VisualRange =&gt;
+    VisualRangePenalty + Stance switch
+    {
+        Standing =&gt; 10,
+        Kneeling =&gt; 8,
+        Lying    =&gt; 5
+    };
+</code></pre>
+<h4 id="visualrange-modifiers">VisualRange Modifiers</h4>
+<pre><code class="lang-csharp">private double VisualRangePenalty =&gt;
+    CurrentSpot switch
+    {
+        null      =&gt; 0,
+        Hill _    =&gt; 3,
+        Ditch _   =&gt; -3,
+        _         =&gt; 0
+    };
+</code></pre>
+<ul>
+<li><strong>Standing on a Hill</strong>: <code>+3</code> range bonus</li>
+<li><strong>Inside a Ditch</strong>: <code>-3</code> range penalty</li>
+<li><strong>Flat terrain</strong>: no change</li>
+</ul>
+<p>Only if the enemy lies within this effective <code>VisualRange</code>, the agent proceeds with further visibility checks.</p>
+<h3 id="step-2-team-check">Step 2: Team Check</h3>
+<p>Only agents from opposing teams are considered visible. Friendly agents are ignored even if all other conditions are met.</p>
+<h3 id="step-3-beeline-line-of-sight">Step 3: Beeline (Line-of-Sight)</h3>
+<p>The agent must have an unobstructed straight line to the target without any vision-blocking structures (e.g. Barriers, Hills).<br>
+This is verified using <code>HasBeeline(enemy)</code>, which uses <strong>Bresenham’s Line Algorithm</strong> to trace the path.</p>
+<h3 id="step-4-visibility-check">Step 4: Visibility Check</h3>
+<p>The enemy must be visible according to:</p>
+<pre><code class="lang-csharp">Battleground.GetIntValue(Position) is 2 or 3 || enemy.VisibilityRange &gt;= GetDistance(enemy.Position);
+</code></pre>
+<p>This means:</p>
+<ul>
+<li>If <strong>the caller is on a Hill or in a Ditch</strong> (<code>GetIntValue == 2 or 3</code>), visibility is automatically granted.</li>
+<li>Otherwise, the enemy’s <code>VisibilityRange</code> must be greater than or equal to the actual distance.</li>
+</ul>
+<h3 id="how-visibilityrange-is-calculated">How <code>VisibilityRange</code> is Calculated</h3>
+<p>Each agent has a dynamic visibility value depending on their stance and a possible penalty:</p>
+<pre><code class="lang-csharp">public double VisibilityRange =&gt;
+    VisibilityRangePenalty + Stance switch
+    {
+        Standing =&gt; 10,
+        Kneeling =&gt; 8,
+        Lying    =&gt; 5
+    };
+</code></pre>
+<ul>
+<li><strong>Standing</strong>: 10 units visibility</li>
+<li><strong>Kneeling</strong>: 8 units visibility</li>
+<li><strong>Lying</strong>: 5 units visibility</li>
+<li><strong>VisibilityRangePenalty</strong>: a dynamic modifier that reduces visibility due to the environment effects.</li>
+</ul>
+<h3 id="terrain-effects-on-visibility">Terrain Effects on Visibility</h3>
+<p>The <code>VisibilityRange</code> is affected by the terrain the agent is currently occupying via a <strong>penalty or bonus</strong>:</p>
+<pre><code class="lang-csharp">private double VisibilityRangePenalty =&gt;
+    CurrentSpot switch
+    {
+        null      =&gt; 0,
+        Hill _    =&gt; 3,
+        Ditch _   =&gt; -3,
+        _         =&gt; 0
+    };
+</code></pre>
+<ul>
+<li><strong>Hill</strong>: adds +3 to <code>VisibilityRange</code> (more exposed)</li>
+<li><strong>Ditch</strong>: subtracts 3 from <code>VisibilityRange</code> (better cover)</li>
+<li><strong>Flat ground or unknown</strong>: no modifier</li>
+</ul>
+<p>This means:</p>
+<ul>
+<li>Agents on <strong>Hills</strong> are easier to spot.</li>
+<li>Agents in <strong>Ditches</strong> are harder to spot.</li>
+</ul>
+<hr>
+<h2 id="movement">Movement</h2>
+<p>Agents navigate the map using a modified <a href="http://idm-lab.org/bib/abstracts/papers/aaai02b.pdf">D* Lite Algorithm</a>, which plans efficient routes and adapts when new obstacles appear.</p>
+<p>Movement is affected by <strong>stance</strong>, introducing a delay per action:</p>
+<ul>
+<li><code>Standing</code> → no delay (fastest)</li>
+<li><code>Kneeling</code> → 2-tick delay</li>
+<li><code>Lying</code> → 3-tick delay</li>
+</ul>
+<p>Delays are tracked using an internal <code>MovementDelayCounter</code>, which resets when a new goal is selected or the stance changes.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Use <code>Standing</code> for fast mobility, and <code>Lying</code> for stealth or accuracy — depending on your tactical needs.</p>
+</div>
+<hr>
+<h2 id="tagging">Tagging</h2>
+<p>Tagging simulates laser interactions and is implemented probabilistically in <code>Tag5(Position)</code>.<br>
+Refer to the <a href="agent-methods.html#tag5position"><code>Tag5(Position)</code> method</a> for full technical details.</p>
+<p>Tagging success is influenced by:</p>
+<ol>
+<li><p><strong>Attacker’s Stance (X)</strong></p>
+<ul>
+<li><code>Lying</code> → highest accuracy</li>
+<li><code>Standing</code> → lowest accuracy</li>
+</ul>
+</li>
+<li><p><strong>Target’s Stance (Y)</strong></p>
+<ul>
+<li><code>Standing</code> → easiest to tag</li>
+<li><code>Lying</code> → hardest to tag</li>
+</ul>
+</li>
+<li><p><strong>Target Terrain</strong></p>
+<ul>
+<li>On <code>Hill</code>: Y becomes <strong>easier</strong> to tag due to exposure</li>
+<li>In <code>Ditch</code>: Y becomes <strong>harder</strong> to tag due to cover</li>
+</ul>
+</li>
+<li><p><strong>Randomness</strong><br>
+Even ideal conditions don’t guarantee a hit — randomness ensures unpredictability.</p>
+</li>
+</ol>
+<hr>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/docs/articles/game_mechanics.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

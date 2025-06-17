@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Introduction | Mars Laser Tag Game </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Introduction | Mars Laser Tag Game ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/docs/test/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/mars_logo.svg" alt="Mars Laser Tag Game">
+            Mars Laser Tag Game
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<p>::: titlepage
+<img src="./logos/HAW_Hamburg.jpeg" alt="image">{width=&quot;5cm&quot;}
+<img src="./logos/mars_logo.png" alt="image">{width=&quot;4cm&quot;}</p>
+<p>\</p>
+<p>MARS LaserTag Game<br>
+Part I: Handbook<br>
+[Version 1.0.1]{.sans-serif}<br>
+[2025-06-17]{.sans-serif}</p>
+<p>\</p>
+<p>::: framed
+Contact:<br>
+Prof. Dr. Thomas Clemen, Berliner Tor 7, 20099 Hamburg, Germany<br>
+eMail: <a href="mailto:thomas.clemen@haw-hamburg.de">thomas.clemen@haw-hamburg.de</a><br>
+Web: <a href="www.mars-group.org">www.mars-group.org</a>{.uri}<br>
+Ersan Baran, Berliner Tor 7, 20099 Hamburg, Germany<br>
+eMail: <a href="mailto:ersan.baran@haw-hamburg.de">ersan.baran@haw-hamburg.de</a><br>
+:::
+:::</p>
+<h1 id="introduction">Introduction</h1>
+<p>LaserTag is an agent-based simulation game that is inspired by the
+real-world recreational shooting sport known as laser tag. The game is
+developed with the <a href="https://mars-group-haw.github.io/index.html">Multi-Agent Research and Simulation (MARS)
+Framework</a>, which is
+written in <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">C#</a> and
+runs on <a href="https://dotnet.microsoft.com/en-us/download">.NET</a>. Users of
+LaserTag can implement their own agents with customized behavioral logic
+by using the provided agent interface. The interface provides properties
+and methods which enable agent movement, agent state management,
+agent-agent and agent-environment interactions, and other functions.</p>
+<h1 id="game-objective-secobjective">Game Objective {#sec:objective}</h1>
+<p>The game can be played in two different modes: <strong>Team Deathmatch</strong> and
+<strong>Capture the Flag</strong>.</p>
+<h2 id="team-deathmatch-team-deathmatch-unnumbered">Team Deathmatch {#team-deathmatch .unnumbered}</h2>
+<p>In this mode, three or four teams compete against each other. Each team
+consists of three agents that share the same behavior logic. Each agent
+has an energy level, which decreases when the agent is tagged by an
+enemy agent. The first team to deplete the energy levels of all enemy
+agents wins the game.</p>
+<h2 id="capture-the-flag-capture-the-flag-unnumbered">Capture the Flag {#capture-the-flag .unnumbered}</h2>
+<p>This mode features two teams, each with their own base and a team flag
+located at a flag stand. The goal is to capture the enemy team's flag
+and bring it back to the own flag stand, while simultaneously preventing
+the enemy from stealing your own flag. A point is awarded each time a
+team successfully returns the enemy flag to its base.</p>
+<p>The match ends after a fixed number of ticks. Unlike in Team Deathmatch,
+agents respawn when their energy is depleted, allowing continuous play
+throughout the match duration.</p>
+<h1 id="project-setup-and-structure-secprojsetupandstruc">Project: Setup and Structure {#sec:projsetupandstruc}</h1>
+<h2 id="project-setup-ssecprojsetup">Project Setup {#ssec:projsetup}</h2>
+<p>Follow these steps to set up LaserTag on your machine:</p>
+<ol>
+<li><p>Install the <a href="https://www.jetbrains.com/rider/">JetBrains Rider</a> IDE.</p>
+</li>
+<li><p>Clone the <a href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game">GitHub
+repository</a>
+that contains LaserTag.</p>
+</li>
+<li><p>In Rider, open the directory <strong>LaserTagBox</strong>.</p>
+</li>
+<li><p>If <code>Mars.*</code> dependencies are not resolved, you need to install the
+<a href="https://www.nuget.org/packages/Mars.Life.Simulations">MARS NuGet
+package</a>.</p>
+<ol>
+<li><p>Click on the NuGet tab in the bottom bar of Rider.</p>
+</li>
+<li><p>In the search bar, enter &quot;Mars.Life.Simulations&quot;.</p>
+</li>
+<li><p>Install the newest version of the NuGet package.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="project-structure-ssecprojstruc">Project Structure {#ssec:projStruc}</h2>
+<p>Figure <a href="#fig:classdiag">1</a>{reference-type=&quot;ref&quot;
+reference=&quot;fig:classdiag&quot;} illustrates the project structure and the
+properties and methods that are relevant for implementing agent
+behavior. For more detailed information on properties and methods, see
+Section <a href="#ssec:props">7.1</a>{reference-type=&quot;ref&quot; reference=&quot;ssec:props&quot;}
+and Section <a href="#ssec:methods">7.2</a>{reference-type=&quot;ref&quot;
+reference=&quot;ssec:methods&quot;}, respectively.</p>
+<p><img src="img/LaserTagStructure.pdf" alt="LaserTag class diagram">{#fig:classdiag
+width=&quot;100%&quot; height=&quot;0.5\textheight&quot;}</p>
+<p>The implementation of your agents occurs in a class that inherits from
+<code>AbstractPlayerMind</code>. In Figure <a href="#fig:classdiag">1</a>{reference-type=&quot;ref&quot;
+reference=&quot;fig:classdiag&quot;}, this is shown by the class
+<code>YourPlayerMindPleaseRename</code> which is labeled in red. You can rename
+this class and make it your own, or add other classes to the project
+structure that inherit from <code>AbstractPlayerMind</code>. Your agent has a
+reference to the <code>PlayerMindLayer</code>, from which it can obtain the current
+simulation tick (<code>GetCurrentTick()</code>).</p>
+<p>In LaserTag, each agent has a mental and a physical representation --
+mind and body, respectively. The mind controls the body. Through
+<code>AbstractPlayerMind</code>, the mind obtains a reference to the interface
+<code>IPlayerBody</code>. This interface provides properties and methods that make
+up the agent's physical representation. The implementation of these
+properties and methods is found in the class <code>PlayerBody</code>. Your agent's
+mind can interact with the interface to guide its body and physical
+behavior. The class <code>MovingAgent</code> contains auxiliary properties and
+methods that the body requires to execute some of its functionalities.</p>
+<p>More details regarding the enums, structs, and other parts of the model
+can be found in later sections of the documentation.</p>
+<h1 id="simulation-setup-and-execution-secsimsetup">Simulation: Setup and Execution {#sec:simSetup}</h1>
+<p>The game is designed to be played by two, three or four teams. Follow
+these steps to set up and play a game:</p>
+<ol>
+<li><p>Open the file <code>Program.cs</code>.</p>
+</li>
+<li><p>Add your agents to the <code>ModelDescription</code> object using the provided
+syntax:</p>
+<p>::: center
+<code>description.AddAgent&lt;MyAgent, PlayerMindLayer&gt;();</code>
+:::</p>
+<p>In this example, <code>MyAgent</code> is the name of the class in which you
+implemented your agent.</p>
+</li>
+<li><p>Specify the configuration file to be used for the game using the
+provided syntax:</p>
+<p>::: center
+<code>var file = File.ReadAllText(&quot;MyConfig.json&quot;)</code>.
+:::</p>
+<p>In this example, <code>MyConfig.json</code> is the name of the JSON file that
+contains the desired game configuration.</p>
+</li>
+<li><p>Build and run the model in one of the following ways:</p>
+<ol>
+<li><p>In Rider, press the []{style=&quot;color: OliveGreen&quot;} Run button</p>
+</li>
+<li><p>In a terminal, go to the directory <strong>LaserTagBox</strong> and enter the
+commands <code>dotnet build</code> and <code>dotnet run</code>.</p>
+</li>
+</ol>
+</li>
+<li><p>If the configuration file contains a mapping parameter
+<code>&quot;Visualization&quot;: true</code>, the simulation output can be visualized
+using the standalone tool described in
+Section <a href="#sec:vis:stand">5.1</a>{reference-type=&quot;ref&quot;
+reference=&quot;sec:vis:stand&quot;}.</p>
+</li>
+</ol>
+<p>The JSON file <code>config.json</code> in the directory <strong>LaserTagBox</strong> can be used
+to configure a game. Each configuration file requires resource files
+that need to be in the directory <strong>Resources</strong>:</p>
+<ul>
+<li><p>A CSV file encoding the grid-based environment</p>
+</li>
+<li><p>A CSV file with agent parameters</p>
+</li>
+</ul>
+<p>In the section</p>
+<pre><code>  &quot;agents&quot;: [
+    {
+      &quot;name&quot;: &quot;PlayerBody&quot;,
+      &quot;count&quot;: 6,
+      &quot;file&quot;: &quot;Resources/player_positions_2.csv&quot;
+    },
+</code></pre>
+<p>the game is configured for six players (three per team), using a
+predefined file with initial spawn positions for two teams. For
+<strong>Capture the Flag</strong> games, a grid file such as <code>ctf_battleground.csv</code>
+must be used. This map includes two flag stands, which are encoded with
+the tile values <code>7</code> and <code>8</code>.</p>
+<p>The default environment is called <code>rec1_battleground.csv</code>. It encodes an
+environment consisting of <span class="math">\(50\times 50\)</span> grid cells. The default agent
+initialization file for three-player and four-player games is called
+<code>player_positions_3.csv</code> and <code>player_positions_4.csv</code>,
+respectively. Each file lists the spawn positions of the agents on the
+map at the beginning of the game.</p>
+<h1 id="visualization-analyzing-game-outcomes-secvis">Visualization: Analyzing Game Outcomes {#sec:vis}</h1>
+<p>A Python-based tool for post-game visualization is available in the
+directory <strong>Analysis</strong>. This tool can help you analyze and improve your
+agents' behavior during the development process. For the tool to work, a
+map file (<code>map.csv</code>) is required in the directory <strong>Resources/</strong> and a
+simulation output file (<code>PlayerBody.csv</code>) is required in the directory
+<strong>bin/Debug/net8.0/</strong>. Once these files are in place, simply
+double-click <code>vis.py</code> to start the visualizaton. For more detailed
+information, see the README file in <strong>Analysis</strong>.</p>
+<h2 id="standalone-visualization-tool-secvisstand">Standalone Visualization Tool {#sec:vis:stand}</h2>
+<p>In addition to the Python script, a standalone graphical visualization
+tool is available in the <strong>Visualization/</strong> directory. It is compatible
+with Windows, macOS, and Linux and allows interactive analysis of game
+data using a GUI.</p>
+<h3 id="usage-instructions-usage-instructions-unnumbered">Usage Instructions {#usage-instructions .unnumbered}</h3>
+<ol>
+<li><p>Navigate to the <strong>Visualization/</strong> directory.</p>
+</li>
+<li><p>Choose the appropriate archive for your operating system:</p>
+<ul>
+<li><p><code>visualization_windows.zip</code> for Windows</p>
+</li>
+<li><p><code>visualization_macOS.app.tar.xz</code> for macOS</p>
+</li>
+<li><p><code>visualization_linux.zip</code> for Linux</p>
+</li>
+</ul>
+</li>
+<li><p>Extract the archive.</p>
+</li>
+<li><p>Run the extracted application:</p>
+<ul>
+<li><p><strong>On Windows:</strong> <code>visualization.exe</code></p>
+</li>
+<li><p><strong>On Linux:</strong> <code>visualization.sh</code></p>
+</li>
+<li><p><strong>On macOS:</strong> open a terminal and execute:</p>
+<pre><code class="lang-{.bash">./visualization_macOS.app/Contents/MacOS/mmvp
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="note">Note:</h4>
+<p>The visualization tool was created using the <strong>Godot Engine</strong>. No
+additional installation is required --- the application runs as a
+portable binary on each platform.</p>
+<h3 id="macos-gatekeeper-warning-macos-gatekeeper-warning-unnumbered">macOS Gatekeeper Warning {#macos-gatekeeper-warning .unnumbered}</h3>
+<p>If macOS blocks the application due to it being from an unidentified
+developer, you can manually allow it. Run the following command in
+Terminal after extracting the app:</p>
+<p><code>xattr -d com.apple.quarantine</code></p>
+<p><code>/path/to/model-mars-laser-tag-game/Visualization/visualization_macOS.app</code></p>
+<p>If your project is located in your home directory, use:</p>
+<p><code>xattr -d com.apple.quarantine</code></p>
+<p><code>~/model-mars-laser-tag-game/Visualization/visualization_macOS.app</code></p>
+<p>Alternatively, you can right-click the app, select &quot;Open&quot;, and confirm
+the warning dialog once.</p>
+<h2 id="disabling-visualization">Disabling Visualization</h2>
+<p>If you do not want to use the visualization, you can disable it via the
+JSON configuration file. In the respective layer entry, set the
+<code>Visualization</code> parameter to <code>false</code>:</p>
+<pre><code>&quot;layers&quot;: [
+  {
+    &quot;name&quot;: &quot;PlayerBodyLayer&quot;,
+    &quot;file&quot;: &quot;Resources/ctf_Battleground.csv&quot;,
+    &quot;dimensionx&quot;: 51,
+    &quot;dimensiony&quot;: 51,
+    &quot;mapping&quot;: [
+      {
+        &quot;parameter&quot;: &quot;Visualization&quot;,
+        &quot;value&quot;: false
+      }
+    ]
+  }
+]
+</code></pre>
+<h1 id="rules-secrules">Rules {#sec:rules}</h1>
+<h2 id="game-logic">Game Logic</h2>
+<p>Below is a list of some of the most important parts of the game's logic:</p>
+<ul>
+<li><p>If an agent's <code>Energy</code> is equal to or below 0, then the agent is
+taken out of the environment and does not respawn for the rest of
+the game. The agent's points, however, are maintained and added to
+the cumulative score of the team at the end of the match.</p>
+</li>
+<li><p>An agent's <code>Energy</code> regenerates over time. At the end of each tick,
+an agent's <code>Energy</code> is increased by <span class="math">\(1\)</span>.</p>
+</li>
+<li><p>In <code>Capture the Flag</code> mode, agents respawn at their own team's flag
+stand after a short delay when their energy reaches zero.</p>
+</li>
+</ul>
+<h2 id="constraints-for-developers">Constraints for Developers</h2>
+<p>In order to play the game as intended, please adhere to the following
+rules when implementing your agents:</p>
+<ol>
+<li><p>Only interact with the interface <code>IPlayerBody</code> to access the agent's
+physical representation.</p>
+</li>
+<li><p>When interacting with the <code>PlayerMindLayer</code>, only invoke the
+<code>GetCurrentTick()</code> method. Other calls to the <code>PlayerMindLayer</code> are
+not allowed.</p>
+</li>
+<li><p>Your agent's constructor must be empty.</p>
+</li>
+<li><p>Loops that are known not to terminate after a reasonable time
+(example: <code>while(true)</code>) are not allowed.</p>
+</li>
+<li><p><code>PropertyDescription</code> tags for loading external information into
+your agents at runtime via an external configuration file are not
+allowed. The only allowed external data source is learned behavior
+for a learning agent.</p>
+</li>
+</ol>
+<h1 id="agent-properties-and-methods-secagentdesc">Agent Properties and Methods {#sec:AgentDesc}</h1>
+<p>The <code>IPlayerBody</code> contains a set of properties and methods that
+described the agent and define its behavioral capabilities. These
+properties and methods can be accessed by your agents by inheriting from
+<code>AbstractAgentMind</code> (see Figure <a href="#fig:classdiag">1</a>{reference-type=&quot;ref&quot;
+reference=&quot;fig:classdiag&quot;}).</p>
+<h2 id="properties-ssecprops">Properties {#ssec:props}</h2>
+<p>Below are the properties provided by the <code>IPlayerBody</code> interface that an
+agent's mind can access to gain information about the current state of
+its body.</p>
+<h3 id="general-properties-sssecgenattr">General properties {#sssec:genAttr}</h3>
+<ul>
+<li><p><code>ActionPoints</code>: An integer that specifies the number of points the
+agent has to perform actions during the current tick. Each action
+costs a specific number of <code>ActionPoints</code> (see
+Section <a href="#ssec:methods">7.2</a>{reference-type=&quot;ref&quot;
+reference=&quot;ssec:methods&quot;} for more details). At the end of each
+tick, <code>ActionPoints</code> is reset to <span class="math">\(10\)</span>.</p>
+</li>
+<li><p><code>Color</code>: The agent's color, indicating the team the agent belongs
+to.</p>
+</li>
+<li><p><code>Energy</code>: The agent's maximum energy level is <span class="math">\(100\)</span>. It decreases if
+the agent gets tagged by an opponent. If the energy level is less
+than or equal to zero, the agent is removed from the simulation.</p>
+</li>
+<li><p><code>GamePoints</code>: the agent's score, which is increased by tagging
+opponents. Each tag increases the score by <span class="math">\(10\)</span> points. If a tag
+causes the tagged agent's <code>Energy</code> to be less than or equal to zero,
+the tagged agent loses <span class="math">\(10\)</span> <code>GamePoints</code> and is removed from the
+simulation. The tagging agent receives <span class="math">\(10\)</span> additional <code>GamePoints</code>
+as a bonus.</p>
+</li>
+<li><p><code>CarryingFlag</code>: Indicates whether the agent is currently carrying an
+opponent's flag. This is only relevant in <code>Capture the Flag</code> mode.</p>
+</li>
+</ul>
+<h3 id="movement-properties-sssecmovattr">Movement properties {#sssec:movAttr}</h3>
+<ul>
+<li><p><code>Position</code>: Specifies the agent's current position on the map as an
+<span class="math">\((x,y)\)</span> tuple</p>
+</li>
+<li><p><code>Stance</code>: An enum that specifies the agent's current stance. An
+agent can assume three stances: <code>Standing</code>, <code>Kneeling</code>, and <code>Lying</code>.
+Each stance affects the property <code>VisualRange</code>, <code>VisibilityRange</code>,
+and the speed at which the agent can move.</p>
+</li>
+</ul>
+<h3 id="exploration-properties-sssecexplattr">Exploration properties {#sssec:explAttr}</h3>
+<ul>
+<li><p><code>VisualRange</code>: An integer that specifies the number of grid cells
+that the agent can see from its current position. The value of
+<code>VisualRange</code> is set based on the value of <code>Stance</code> using the
+following mapping:</p>
+<ul>
+<li><p><code>Standing</code><span class="math">\(\,\to\,\)</span><code>&lt;!-- --&gt;</code>{=html}10</p>
+</li>
+<li><p><code>Kneeling</code><span class="math">\(\,\to\,\)</span><code>&lt;!-- --&gt;</code>{=html}8</p>
+</li>
+<li><p><code>Lying</code><span class="math">\(\,\to\,\)</span><code>&lt;!-- --&gt;</code>{=html}5</p>
+</li>
+</ul>
+</li>
+<li><p><code>VisibilityRange</code>: An integer that specifies the maximum distance
+from which the agent can currently be seen by other agents. The
+value of <code>VisibilityRange</code> is set based on the value of <code>Stance</code>
+using the following mapping:</p>
+<ul>
+<li><p><code>Standing</code><span class="math">\(\,\to\,\)</span><code>&lt;!-- --&gt;</code>{=html}10</p>
+</li>
+<li><p><code>Kneeling</code><span class="math">\(\,\to\,\)</span><code>&lt;!-- --&gt;</code>{=html}8</p>
+</li>
+<li><p><code>Lying</code><span class="math">\(\,\to\,\)</span><code>&lt;!-- --&gt;</code>{=html}5</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="tagging-properties-sssectagattr">Tagging properties {#sssec:tagAttr}</h3>
+<ul>
+<li><p><code>RemainingShots</code>: An integer that specifies the agent's currently
+available opportunities to tag an opponent. If the agent's
+<code>RemainingShots</code> is equal to zero, then a <code>Reload</code> needs to be
+initiated.</p>
+</li>
+<li><p><code>WasTaggedLastTick</code>: A boolean that specifies if the agent was
+tagged during the previous tick.</p>
+</li>
+</ul>
+<h2 id="methods-ssecmethods">Methods {#ssec:methods}</h2>
+<p>Below are the methods provided by the <code>IPlayerBody</code> interface that an
+agent's mind can call to guide its body. The digit at the end of the
+method name indicates the number of <code>ActionPoints</code> required to execute
+the method. Methods with no digit at the end of the name cost zero
+<code>ActionPoints</code>.</p>
+<p><strong>Note:</strong> In general, a method call is not executed if the caller does
+not have enough <code>ActionPoints</code>. In this case, the method returns <code>false</code>
+or <code>null</code>. Please refer to individual method signatures and
+implementations (and the detailed descriptions below) for more
+information on return values of specific methods.</p>
+<h3 id="movement-methods-sssecmovmeth">Movement Methods {#sssec:movMeth}</h3>
+<ul>
+<li><p><code>ChangeStance2(Stance)</code>: This method takes a <code>Stance</code> and allows the
+calling agent to change between three possible stances: <code>Standing</code>,
+<code>Kneeling</code>, and <code>Lying</code>. Stance changes affect the values of the
+agent's <code>VisualRange</code>, <code>VisibilityRange</code>, and movement speed (see
+Section <a href="#sssec:explAttr">7.1.3</a>{reference-type=&quot;ref&quot;
+reference=&quot;sssec:explAttr&quot;}). This method has no return value.</p>
+</li>
+<li><p><code>GoTo(Position) : bool</code>: This is the main method used for
+pathfinding, movement, and path readjustment. When an agent invokes
+the method, the method devises a path from the agent's current
+position to the given <code>Position</code>. Each subsequent invocation of
+<code>GoTo(Position)</code> with the same destination will, if possible, move
+the agent one step closer to the destination until the destination
+is reached.</p>
+<p>In order for the agent to change its path before reaching its
+current destination, <code>GoTo(Position)</code> must be called with a
+different destination. For example, if the agent is currently moving
+towards the <code>Position</code> (a, b), this movement process can be
+interrupted and replaced by a new movement process by calling
+<code>goto((c, d))</code>, where <code>c != a</code> or <code>d != b</code>.</p>
+<p>The method returns <code>true</code> if a move was made and <code>false</code> if, for any
+reason, a move was not made.</p>
+<p><strong>Note:</strong> If <code>GoTo(Position)</code> is called with a destination that
+refers to a grid cell that is inaccessible (because there is a
+<code>Barrier</code>, <code>Water</code>, etc. on it or because it lies outside of the
+environment), then no path is calculated and no movement is
+initiated.</p>
+<p>For more information on <code>GoTo(Position)</code>, see
+Section <a href="#sssec:movement">8.2.2</a>{reference-type=&quot;ref&quot;
+reference=&quot;sssec:movement&quot;}.</p>
+</li>
+</ul>
+<h3 id="exploration-methods-sssecexplmeth">Exploration methods {#sssec:explMeth}</h3>
+<ul>
+<li><p><code>ExploreBarriers1() : List&lt;Position&gt;</code>: Returns a (potentially empty)
+list of positions of <code>Barrier</code> objects that are in the caller's
+<code>VisualRange</code> and which the caller can see (<code>HasBeeline == true</code>).</p>
+<p><strong>Note:</strong> Returns <code>null</code> if the caller does not have enough
+<code>ActionPoints</code>.</p>
+</li>
+<li><p><code>ExploreDitches1() : List&lt;Position&gt;</code>: Returns a list of positions of
+<code>Ditch</code> objects that are in the caller's <code>VisualRange</code> and which the
+caller can see (<code>HasBeeline == true</code>).</p>
+<p><strong>Note:</strong> Returns <code>null</code> if the caller does not have enough
+<code>ActionPoints</code>.</p>
+</li>
+<li><p><code>ExploreHills1() : List&lt;Position&gt;</code>: Returns a list of positions of
+<code>Hill</code> objects that are in the caller's <code>VisualRange</code> and which the
+caller can see (<code>HasBeeline == true</code>).</p>
+<p><strong>Note:</strong> Returns <code>null</code> if the caller does not have enough
+<code>ActionPoints</code>.</p>
+</li>
+<li><p><code>ExploreEnemies1() : List&lt;EnemySnapshot&gt;</code>: Performs an exploration
+of opponents in the caller's <code>VisualRange</code> and which the caller can
+see (<code>HasBeeline == true</code>). Returns a list of <code>EnemySnapshot</code>
+structs, offering limited information about the identified
+opponents.</p>
+<p><strong>Note:</strong> Returns <code>null</code> if the caller does not have enough
+<code>ActionPoints</code>.</p>
+</li>
+<li><p><code>ExploreTeam() : List&lt;IPlayerBody&gt;</code>: Returns a list of
+<code>FriendSnapshot</code> structs, offering limited information about the
+caller's team members.</p>
+</li>
+<li><p><code>ExploreWater1() : List&lt;Position&gt;</code>: Returns a list of positions of
+<code>Water</code> tiles that are within the caller's <code>VisualRange</code> and visible
+(<code>HasBeeline == true</code>).</p>
+<p><strong>Note:</strong> Returns <code>null</code> if the caller does not have enough
+<code>ActionPoints</code>.</p>
+</li>
+<li><p><code>ExploreBarrels1() : List&lt;Position&gt;</code>: Returns a list of positions of
+<code>ExplosiveBarrel</code> tiles, including barrels that have already
+exploded, if they are in <code>VisualRange</code> and visible.</p>
+<p><strong>Note:</strong> Returns <code>null</code> if the caller does not have enough
+<code>ActionPoints</code>.</p>
+</li>
+<li><p><code>ExploreExplosiveBarrels1() : List&lt;Position&gt;</code>: Returns a list of
+positions of unexploded <code>ExplosiveBarrel</code> tiles that are within
+<code>VisualRange</code> and visible.</p>
+<p><strong>Note:</strong> Returns <code>null</code> if the caller does not have enough
+<code>ActionPoints</code>.</p>
+</li>
+<li><p><code>ExploreEnemyFlagStands1() : List&lt;Position&gt;</code>: Returns a list of
+positions of <code>FlagStand</code> tiles belonging to opposing teams, if
+visible and within range.</p>
+<p><strong>Note:</strong> Only relevant in <code>Capture the Flag</code> mode.</p>
+</li>
+<li><p><code>ExploreFlags2() : List&lt;FlagSnapshot&gt;</code>: Returns a list of
+<code>FlagSnapshot</code> structs, each describing a flag's current position,
+team, and if it is carried (if applicable).</p>
+<p><strong>Note:</strong> Consumes <code>2</code> <code>ActionPoints</code>.</p>
+</li>
+<li><p><code>ExploreOwnFlagStand() : Position</code>: Returns the position of the
+caller's own <code>FlagStand</code>, if visible.</p>
+<p><strong>Note:</strong> Only available in <code>Capture the Flag</code> mode.</p>
+</li>
+<li><p><code>GetDistance(Position) : int</code>: Returns the shortest distance
+(measured in the the number of grid cells) from the caller's current
+position to the specified <code>Position</code>. In order for the distance to
+be calculable, the grid cell specified by <code>Position</code> must be visible
+(based on <code>HasBeeline1(Position)</code>). If the distance to the grid cell
+specified by <code>Position</code> is not calculable, the method returns <code>-1</code>.</p>
+</li>
+<li><p><code>HasBeeline1(Position) : bool</code>: This method may be called by an
+agent to check if the line of sight between its current position and
+the grid cell denoted by <code>Position</code> is free from vision-blocking
+obstacles (i.e., <code>Barrier</code> or <code>Hill</code> objects). If it is, the method
+returns <code>true</code>. If it is not (or if the caller does not have enough
+<code>ActionPoints</code>), the method returns <code>false</code>.</p>
+<p><strong>Note:</strong> Returns <code>false</code> if the caller does not have enough
+<code>ActionPoints</code>.</p>
+</li>
+</ul>
+<h3 id="tagging-methods-sssectagmeth">Tagging methods {#sssec:tagMeth}</h3>
+<ul>
+<li><p><code>Tag5(Position)</code>: This method takes a <code>Position</code> and prompts the
+calling agent to fire a shot onto the grid cell encoded by the
+position. If an enemy agent is currently located at that position,
+then that agent is tagged.</p>
+<p>Tagging is implemented as a probability-based process that is
+influenced by both agents' <code>Stance</code> and current positions (ground,
+<code>Hill</code>, or <code>Ditch</code>). For example, an agent in the <code>Lying</code> stance has
+higher accuracy but shorter <code>VisualRange</code>. If an agent is tagged,
+its <code>Energy</code> is decreased by <span class="math">\(10\)</span> and the property
+<code>WasTaggedLastTick</code> is set to <code>true</code>. The tagging agent's
+<code>GamePoints</code> is increased by <span class="math">\(10\)</span>.</p>
+<p>If an unexploded <code>ExplosiveBarrel</code> is located at the targeted
+position, it is immediately triggered and explodes. The explosion
+inflicts <span class="math">\(100\)</span> points of damage to all agents within a radius of
+three tiles and may cause nearby barrels to detonate as well.</p>
+<p><strong>Note:</strong> Returns <code>false</code> if the caller does not have enough
+<code>ActionPoints</code>.</p>
+<p>For more information on tagging, see Section
+<a href="#sssec:tagging">8.2.3</a>{reference-type=&quot;ref&quot;
+reference=&quot;sssec:tagging&quot;}.</p>
+</li>
+<li><p><code>Reload3()</code>: Reloads the caller's tag gun. This is necessary when
+<code>RemainingShots == 0</code> so that the agent can continue tagging
+enemies. A successful call to <code>Reload3()</code> refills the calling
+agent's <code>RemainingShots</code> to <span class="math">\(5\)</span>. This method does not return
+anything.</p>
+</li>
+</ul>
+<h1 id="model-description-secmodeldesc">Model Description {#sec:modelDesc}</h1>
+<p>The model's main components are the environment and the properties and
+methods that serve as an interface for the agents to shape their
+behavior and decision-making and interact with their environment and
+with each other.</p>
+<h2 id="the-environment-ssecenv">The Environment {#ssec:env}</h2>
+<p>The default environment is a <span class="math">\(50\times 50\)</span> grid layer. In order to
+effectively simulate the indoor nature of real-world laser tag, the
+environment is fenced in. To add texture and complexity to the
+environment and to allow agents to interact with it meaningfully, maps
+may feature structures (barriers, rooms, hills, and ditches).</p>
+<p>Figure <a href="#fig:envEx">2</a>{reference-type=&quot;ref&quot; reference=&quot;fig:envEx&quot;} shows
+a bird's eye view of an example of a square-shaped map at the start of
+the simulation. The following sections describe each of the spots. For
+more information on spots, see Sections
+<a href="#sssec:vision">8.2.1</a>{reference-type=&quot;ref&quot; reference=&quot;sssec:vision&quot;},
+<a href="#sssec:tagging">8.2.3</a>{reference-type=&quot;ref&quot; reference=&quot;sssec:tagging&quot;},
+and <a href="#sssec:spot">8.2.4</a>{reference-type=&quot;ref&quot; reference=&quot;sssec:spot&quot;}.</p>
+<p><img src="img/ExampleGameWorldAtSimStart.png" alt="Example of square-shaped map environment at simulation start (not
+drawn to scale)">{#fig:envEx
+width=&quot;50%&quot; height=&quot;0.5\textheight&quot;}</p>
+<h3 id="structures-sssecstruc">Structures {#sssec:struc}</h3>
+<p>There are a few structural elements in the environment that agents can
+interact with by calling one of the <code>Explore*</code> methods (except
+<code>ExploreTeam</code> and <code>ExploreEnemies1</code>).
+Figure <a href="#fig:structures">3</a>{reference-type=&quot;ref&quot;
+reference=&quot;fig:structures&quot;} shows the inheritance hierarchy of the
+structures. Each exploration costs one <code>ActionPoint</code>.</p>
+<p><img src="img/lasertag-env-comps.pdf" alt="Structures">{#fig:structures width=&quot;50%&quot;
+height=&quot;0.5\textheight&quot;}</p>
+<h4 id="barrier-parbarrierdesc">Barrier {#par:barrierDesc}</h4>
+<p>A <code>Barrier</code> is a structure that cannot be occupied, that acts as an
+impermeable obstacle to agents, and that disrupts an agent's vision.
+<code>Barrier</code> instances can be explored by calling <code>ExploreBarrier1</code>.</p>
+<h4 id="hill-parhilldesc">Hill {#par:hillDesc}</h4>
+<p>A <code>Hill</code> is a structure that can be occupied. While an agent occupies a
+<code>Hill</code>, the agent's <code>VisualRange</code> and <code>Visibility</code> are increased. The
+probability of the agent getting tagged also increases. Occpying a
+<code>Hill</code> might be a useful team tactic: An agent on a <code>Hill</code> can spot for
+another agent who is on the ground. <code>Hill</code> instances can be explored by
+calling <code>ExploreHill1</code>.</p>
+<h4 id="ditch-parditchdesc">Ditch {#par:ditchDesc}</h4>
+<p>A <code>Ditch</code> is a structure that can be occupied. While an agent occupies a
+<code>Ditch</code>, the agent's <code>VisualRange</code> and <code>Visibility</code> are decreased. The
+probability of the agent getting tagged also decreases. Occpying a
+<code>Ditch</code> might be a useful for ambushing enemies. <code>Ditch</code> instances can
+be explored by calling <code>ExploreDitch1</code>.</p>
+<h4 id="room-parroomdesc">Room {#par:roomDesc}</h4>
+<p>A room is a section of the grid layer that is enclosed by barriers,
+leaving only one or more small gaps to enter and exit the enclosed
+section.</p>
+<h4 id="water-parwaterdesc">Water {#par:waterDesc}</h4>
+<p><code>Water</code> is a non-occupiable terrain element. It blocks movement, but not
+vision. Agents can see across <code>Water</code> tiles if no other obstacles are in
+the way. <code>Water</code> tiles can be explored by calling <code>ExploreWater1</code>.</p>
+<h4 id="explosivebarrel-parbarreldesc">ExplosiveBarrel {#par:barrelDesc}</h4>
+<p>An <code>ExplosiveBarrel</code> is a destructible object that cannot be occupied.
+Like <code>Water</code>, it does not block vision. When hit by a tagging action, an
+unexploded <code>ExplosiveBarrel</code> detonates and deals damage to agents in a
+radius of three tiles. Exploded barrels remain visible and can still be
+explored using <code>ExploreBarrels1</code> or <code>ExploreExplosiveBarrels1</code>.</p>
+<h4 id="flagstand-parflagstanddesc">FlagStand {#par:flagstandDesc}</h4>
+<p>A <code>FlagStand</code> is a tile that belongs to a specific team and can be
+occupied by agents. At the beginning of the game, a flag is placed on
+each team's <code>FlagStand</code>. During gameplay, if both flags are brought to
+the same <code>FlagStand</code>, a capture is scored and both flags are returned to
+their respective <code>FlagStands</code>. Agents can respawn at their team's
+<code>FlagStand</code> in <code>Capture the Flag</code> mode. <code>FlagStand</code> tiles can be
+explored by calling <code>ExploreEnemyFlagStands1</code> or <code>ExploreOwnFlagStand</code>.</p>
+<h3 id="items-sssecitems">Items {#sssec:items}</h3>
+<p>An <code>Item</code> is an object that can exist on the grid and may interact with
+agents through pickup or triggering mechanics.</p>
+<h4 id="flag-parflagitemdesc">Flag {#par:flagItemDesc}</h4>
+<p>A <code>Flag</code> is an item that belongs to a specific team. Each flag starts
+the game on its team's <code>FlagStand</code>. The boolean property <code>PickedUp</code>
+indicates whether the flag is currently being carried by an agent.</p>
+<p>When an agent from the <em>opposing</em> team steps onto the tile containing
+the flag, it is automatically picked up. If the carrier reaches the
+opponent's <code>FlagStand</code>, the flag is automatically dropped on that tile.
+If an agent from the <em>same</em> team touches their own flag while it has
+been dropped or stolen, the flag is instantly returned (teleported) to
+its original <code>FlagStand</code>.</p>
+<h3 id="designing-your-own-maps">Designing your own maps</h3>
+<p>You can design your own LaserTag environments. To do so, create a CSV
+file and follow these guidelines:</p>
+<ul>
+<li><p>The shape of your map must be rectancular (<span class="math">\(n \times m\)</span>) or square
+(<span class="math">\(n \times n\)</span>).</p>
+</li>
+<li><p>Use a semicolon (<code>;</code>) as a separator.</p>
+</li>
+<li><p>Use the following encoding for LaserTag structures (see
+Section <a href="#sssec:struc">8.1.1</a>{reference-type=&quot;ref&quot;
+reference=&quot;sssec:struc&quot;} for more details):</p>
+<ul>
+<li><p>0$,\to,$empty cell</p>
+</li>
+<li><p>1$,\to,$<code>Barrier</code></p>
+</li>
+<li><p>2$,\to,$<code>Hill</code></p>
+</li>
+<li><p>3$,\to,$<code>Ditch</code></p>
+</li>
+<li><p>4$,\to,$<code>Water</code></p>
+</li>
+<li><p>5$,\to,$<code>ExplosiveBarrel</code></p>
+</li>
+<li><p>7$,\to,$<code>FlagStand</code> (red team)</p>
+</li>
+<li><p>8$,\to,$<code>FlagStand</code> (yellow team)</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>For reference and examples, see the default maps in the directory
+<code>LaserTagBox/Resources/</code>.</p>
+<h2 id="game-mechanics-ssecgamemechs">Game Mechanics {#ssec:gameMechs}</h2>
+<p>This section outlines some of the built-in logic, mechanisms, and rules
+of LaserTag to help you devise intelligent and feasible strategies for
+your agents.</p>
+<h3 id="vision-sssecvision">Vision {#sssec:vision}</h3>
+<p>The game features a vision system that depends on a number of variables
+and circumstances. The following example aims to illustrate the process.
+Agent X calls <code>ExploreEnemies1()</code> and hopes to see agent Y. X's ability
+to see Y may be influenced by each of the following conditions:</p>
+<ol>
+<li><p>the relation between <code>distance(X, Y)</code> and X's <code>VisualRange</code>.</p>
+</li>
+<li><p>the relation between <code>Distance(X, Y)</code> and Y's <code>VisibilityRange</code>.</p>
+</li>
+<li><p>whether X or Y is currently located on a <code>Hill</code>.</p>
+</li>
+<li><p>whether X or Y is currently located in a <code>Ditch</code>.</p>
+</li>
+<li><p>whether the line of sight between X and Y is obstructed by a barrier
+or hill.</p>
+</li>
+</ol>
+<p>Let us examine each condition in turn:</p>
+<ol>
+<li><p>If the distance between X and Y is less than or equal to X's
+<code>VisualRange</code>, then X may be able to see Y.</p>
+</li>
+<li><p>If the distance between X and Y is less than or equal to Y's
+<code>VisibilityRange</code>, then X may be able to see Y. Y's
+<code>VisibilityRange</code> is irrelevant for when X stands either on a <code>Hill</code>
+or in a <code>Ditch</code>.</p>
+</li>
+<li><p>A barrier or <code>Hill</code> can block an agent's line of sight. If there is
+nothing blocking X's line of sight to Y, then X may be able to
+see Y. For more information on line-of-sight computation, feel free
+to check out Bresenham's Line Algorithm which is implemented in
+LaserTag to determine if any of the grid cells along the line of
+sight between two agents holds an vision-blocking object (a barrier
+or <code>Hill</code>).</p>
+</li>
+<li><p>If X is located on a <code>Hill</code>, then his <code>VisualRange</code> is increased,
+making it possible for him to see Y from a farther distance.
+Likewise, if Y is located on a hill, then his <code>VisibilityRange</code> is
+increased, making it easier for X to see him.</p>
+</li>
+<li><p>If X is located in a <code>Ditch</code>, then his <code>VisualRange</code> is decreased,
+which requires Y to be closer to X in order for X to be able to
+see Y. Likewise, if Y is located in a <code>Ditch</code>, then his
+<code>VisibilityRange</code> is decreased, requiring X to be closer to Y in
+order for X to be able to see Y.</p>
+</li>
+</ol>
+<p>Conditions 1, 2, and 3 must be met in order for X to be able to see Y.
+Conditions 4 and 5 merely describe how standing on a <code>Hill</code> or in a
+<code>Ditch</code> might affect the vision process.</p>
+<h3 id="movement-sssecmovement">Movement {#sssec:movement}</h3>
+<p>Agents move along the grid via a modified version of the <a href="http://idm-lab.org/bib/abstracts/papers/aaai02b.pdf">D* Lite
+Algorithm</a>. The
+algorithm computes an initial (usually close-to-optimal or optimal)
+route from an agent's current position to the desired destination. Once
+the route has been calculated, the algorithm guides the agent towards
+the goal at a rate dependent on the agent's <code>Stance</code> and movement
+capabilities. The algorithm performs route adjustments and
+recalculations only if an obstacle intersects the agent's path that was
+not present during the initial route computation. This makes the
+algorithm highly efficient and perform at a better time complexity than
+more common path-finding algorithms such as A*.</p>
+<p>An agent's current <code>Stance</code> directly affects its mobility. Specifically,
+each stance imposes a movement delay that is applied before the next
+move can be executed:</p>
+<ul>
+<li><p><code>Standing</code> -- no delay (fastest movement)</p>
+</li>
+<li><p><code>Kneeling</code> -- incurs a movement delay of 2 ticks</p>
+</li>
+<li><p><code>Lying</code> -- incurs a movement delay of 3 ticks</p>
+</li>
+</ul>
+<p>This delay is managed through the agent's internal
+<code>MovementDelayCounter</code>, which counts down each tick. During this delay,
+the agent cannot take further movement actions. The delay value resets
+when the stance is changed or a new goal is selected.</p>
+<p>For more on how stances affect visibility and tagging, see Sections
+<a href="#sssec:tagging">8.2.3</a>{reference-type=&quot;ref&quot; reference=&quot;sssec:tagging&quot;}
+and <a href="#sssec:vision">8.2.1</a>{reference-type=&quot;ref&quot;
+reference=&quot;sssec:vision&quot;}.</p>
+<h3 id="tagging-sssectagging">Tagging {#sssec:tagging}</h3>
+<p>Tagging is the core game mechanic that drives LaserTag. In an attempt to
+simulate real-world tag-and-get-tagged interactions between laser tag
+players, the method <code>Tag5(Position)</code> relies on probability and
+randomization to create a balance between successful and unsuccessful
+tag attempts. If agent X attempts to tag agent Y, the outcome depends on
+the following factors:</p>
+<ol>
+<li><p>X's <code>Stance</code></p>
+</li>
+<li><p>Y's <code>Stance</code></p>
+</li>
+<li><p>whether Y is currently positioned on a regular grid cell, a hill, or
+a ditch</p>
+</li>
+<li><p>a dose of luck</p>
+</li>
+</ol>
+<p>Let us examine each factor in turn:</p>
+<ol>
+<li><p>If X's <code>Stance == Lying</code>, then he is most likely to tag Y. If X's
+<code>Stance == Standing</code>, then he is least likely to tag Y.</p>
+</li>
+<li><p>If Y's <code>Stance == Standing</code>, then X is most likely to tag him. If
+Y's <code>Stance == Lying</code>, then X is least likely to tag him.</p>
+</li>
+<li><p>If Y is located on a <code>Hill</code>, then his <code>Stance</code> cannot lower the
+likelihood of him being tagged. This is because being on a <code>Hill</code>
+leads to more exposure than being on the ground or in a <code>Ditch</code>.
+Conversely, if Y is located in a <code>Ditch</code>, then his <code>Stance</code> does not
+increase his likelihood of being tagged. This is because a being in
+a <code>Ditch</code> provides increased cover regardless of the agent's
+<code>Stance</code>.</p>
+</li>
+<li><p>Even if factors 1-3 are in Y's favor, there is still a chance that X
+tags Y. On the other hand, even if factors 1-3 are in X's favor,
+there is still a chance that he might miss Y and not tag him. This
+is due to the element of randomization added to the tagging
+mechanism.</p>
+</li>
+</ol>
+<h3 id="spots-sssecspot">Spots {#sssec:spot}</h3>
+<p>The environment features <code>Hill</code>, <code>Ditch</code>, <code>Barrier</code>, <code>Water</code>,
+<code>ExplosiveBarrel</code> and <code>FlagStand</code> objects for agents to interact with
+and, under certain circumstances, gain an advantage over their
+opponents. A <code>Barrier</code> object cannot be occupied. A <code>Hill</code> or <code>Ditch</code>
+can be occupied by only one agent at a time. Being on a <code>Hill</code> increases
+an agent's <code>VisualRange</code> and <code>VisibilityRange</code> by five each. Being in a
+<code>Ditch</code> lowers an agent's <code>VisualRange</code> and <code>VisibilityRange</code> by three
+each.</p>
+<p><code>Water</code> tiles cannot be entered, but do not block line of sight.
+<code>ExplosiveBarrel</code> tiles also cannot be occupied and allow agents to see
+across them, but they detonate when hit, causing area damage.
+<code>FlagStand</code> tiles can be occupied by agents and belong to a specific
+team. In <code>Capture the Flag</code> mode, they serve as spawn points for flags
+and agents.</p>
+<p>See Sections <a href="#sssec:vision">8.2.1</a>{reference-type=&quot;ref&quot;
+reference=&quot;sssec:vision&quot;}, <a href="#sssec:tagging">8.2.3</a>{reference-type=&quot;ref&quot;
+reference=&quot;sssec:tagging&quot;},
+<a href="#par:hillDesc">8.1.1.2</a>{reference-type=&quot;ref&quot; reference=&quot;par:hillDesc&quot;},
+<a href="#par:ditchDesc">8.1.1.3</a>{reference-type=&quot;ref&quot;
+reference=&quot;par:ditchDesc&quot;},
+<a href="#par:waterDesc">8.1.1.5</a>{reference-type=&quot;ref&quot;
+reference=&quot;par:waterDesc&quot;},
+<a href="#par:barrelDesc">8.1.1.6</a>{reference-type=&quot;ref&quot;
+reference=&quot;par:barrelDesc&quot;}, and
+<a href="#par:flagstandDesc">8.1.1.7</a>{reference-type=&quot;ref&quot;
+reference=&quot;par:flagstandDesc&quot;} for more information.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MARS-Group-HAW/model-mars-laser-tag-game/blob/master/docs/test/index.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
