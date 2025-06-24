@@ -166,8 +166,11 @@ Must be used when <code>RemainingShots == 0</code>.</p>
 <li>The caller has <strong>less than 5 ActionPoints</strong></li>
 <li>The caller has <strong>no RemainingShots</strong></li>
 <li>There is <strong>no line of sight</strong> (<code>!HasBeeline</code>) to the <code>aimedPosition</code></li>
-<li>The target is a <strong>friendly agent</strong></li>
 </ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>In <code>Team Deathmatch</code> mode, the method returns <code>false</code> when the target is a friendly agent.</p>
+</div>
 <h4 id="tagging-logic">Tagging Logic</h4>
 <p>If the above checks pass and an <strong>enemy</strong> is present at the <code>aimedPosition</code>, the following probabilistic model determines if the tag is successful:</p>
 <pre><code class="lang-plaintext">Random.Next(10) + targetStanceValue + targetTerrainValue &gt; ownStanceThreshold
