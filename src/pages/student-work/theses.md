@@ -68,6 +68,16 @@ On this page, we list theses that were submitted by members and students of the 
 -->
 
 <StudentWork
+  title="Extension of a Data Hub for Epidemiological Data with a Data Coverage and Analysis Component"
+  author="Michelle A. Valentina"
+  type="ba"
+  description="This paper presents the development of a dashboard for the Data Hub, a geographic information system (GIS) designed for epidemiologic research. The dashboard is designed to help researchers manage large datasets and visualize and analyze data to uncover patterns, relationships and trends. Python, JavaScript, HTML and CSS as well as various libraries and frameworks were used in the development to create an interactive platform for researching and managing data."
+  semesterYear="ss2025"
+  pathPdf="/img/student-work/theses/valentina_ba_thesis.pdf"
+/>
+
+
+<StudentWork
   title="Tensorbasierte Agenten zur Ausbreitungssimulation von Infektionskrankheiten"
   author="Ersan Baran"
   type="ba"
