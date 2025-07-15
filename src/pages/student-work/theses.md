@@ -12,6 +12,16 @@ On this page, we list theses that were submitted by members and students of the 
 ## Master
 
 <StudentWork
+  title="AI-driven validation of citizen science data: Anomaly Detection of Bird Sightings with Machine Learning Models and Statistical Approaches"
+  author="Simon Birker"
+  type="ma"
+  description="Citizen science platforms are important for biodiversity monitoring, but face limitations in manual data validation. This work investigates two automated validation approaches for the Ornitho platform: statistical filters and unsupervised outlier detection models. Both were tested on manipulated observational data. The outlier models achieved better F1 scores and were rated as understandable and useful by ornithologists. The study shows species-specific differences and offers practical recommendations for automated data validation in ecological systems."
+  semesterYear="ss2025"
+  pathPdf="/img/student-work/theses/birker_ms_thesis.pdf"
+/>
+
+
+<StudentWork
   title="Spatio-Temporal Shifts in Citizen Science Data: Detecting Disruptions in Bird Sightings with Change Point Analysis"
   author="Marina Siebold"
   type="ma"
