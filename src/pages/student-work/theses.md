@@ -167,3 +167,12 @@ On this page, we list theses that were submitted by members and students of the 
   pathPdf="/img/student-work/theses/ahmady-moghaddam_ba_thesis.pdf"
 />
 
+<StudentWork
+  title="Goal-Oriented Action Planning für die Simulationsplattform MARS"
+  author="Daniela Niemeyer"
+  type="ba"
+  description="This thesis deals with the implementation of goal-oriented action planning for the multi-agent simulation platform MARS. A particular focus is on the clean integration of the components into the existing architecture. A scenario in the form of the Simpan reference model is created for successive tests. Finally, it is examined how this model can be restructured in order to use it sensibly in conjunction with GOAP."
+  semesterYear="ws2014"
+  pathPdf="/img/student-work/theses/niemeyer_ba_thesis.pdf"
+/>
+

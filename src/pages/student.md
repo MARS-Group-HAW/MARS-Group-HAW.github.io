@@ -4,16 +4,17 @@ description: Offerings for student projects
 hide_table_of_contents: false
 ---
 (The English text follows below)
-# Abschlussarbeiten
+# Themen für Bachelor- und Masterarbeiten, sowie Semesterprojekte
 
 Die MARS Group forscht aktuell an einer ganzen Reihen von Themen, die auch für Studierende, die eine Bachelor- oder Masterarbeit bei uns schreiben wollen, relevant sind. Dazu gehören u.a. die folgenden Oberthemen:
 
 - Multi-Agenten Systeme
+	- Kooperation in Multi-Agenten Systemen
+	- Multi-Agenten (Deep) Reinforcement Learning (MA(D)RL)
+- Agentic AI
 - Agenten-basierte Modellierung und Simulation
-- LLM-basierte Agenten, Generative Agenten und Agenten-zentrierte KI
-- Kooperation in Multi-Agenten Systemen
-- Multi-Agenten (Deep) Reinforcement Learning (MA(D)RL) 
 - Digitale Zwillinge
+- LLMs und Prompt Engineering
 - Umwelt- und Geoinformatik
 
 Auch wenn einige unserer Forschungsarbeiten Grundlagencharakter besitzen, so steht zumeist ein konkretes Anwendungsfeld im Vordergrund. Die folgende Liste zeigt einige Gebiete, in denen wir schon gearbeitet haben bzw. derzeit arbeiten:
@@ -29,96 +30,125 @@ Auch wenn einige unserer Forschungsarbeiten Grundlagencharakter besitzen, so ste
 - Koordination von Dronenschwärmen und Löschflugzeugen
 
 Im Folgenden findet sich eine - unvollständige - Liste von möglichen (Anschluss-)Themen. Sollte eines oder mehrere Themenbereich für Sie interessant sein, kontaktieren Sie mich bitte direkt unter [Prof. Dr. Thomas Clemen](mailto:thomas.clemen@haw-hamburg.de).
+Auf Grund unserer engen Zusammenarbeit mit der [Logistik-Initiative Hamburg](https://www.hamburg-logistik.net/) und der [Carleton University in Ottawa, Kanada](https://carleton.ca/) haben Studierende auch die Möglichkeit, von ausgewählten Kolleginnen und Kollegen dieser Institutionen co-betreut zu werden. Melden Sie sich, wenn diese Option für Sie von Interesse sein könnte.
 
-#### Themenfeld 1.   
-Uns beschäftigt die Frage, wie Software-Agenten in großen Szenarien, d.h. mit sehr vielen Agenten, intelligent und lernend realisiert werden können.
-Welche Rolle können LLMs hier spielen?
-Wie kann eine solche Architektur effizient konzipiert und implementiert werden?
-Wie geht man mit den extrem großen Ergebnis-Datenmengen um, die eine solche Simulation erzeugt?
-Welche Rolle spielen Echtzeitdaten, z.B. aus IoT-Sensornetzen, in solchen Setups?
+## Agentic AI
+- Vergleich und ggf. Erweiterung unterschiedlicher Frameworks zur Agentic AI	- [AutoGen](https://github.com/microsoft/autogen)
+	- [LangChain](https://github.com/langchain-ai/langchain) 
+	- [CrewAI](https://github.com/crewAIInc/crewAI)
+	- [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
+	- [Dify](https://github.com/langgenius/dify)
+	- [Llama Index](https://github.com/run-llama/llama_index)- Value Alignment in Agentic AI Systems ([Zeng et al., 2025](https://arxiv.org/abs/2506.09656))- Agentic document extraction ([LandingAI](https://landing.ai/agentic-document-extraction))
+- Function Calling in LLMs ([HuggingFace](https://huggingface.co/docs/hugs/en/guides/function-calling))
+- Tool Augmented Language Models ([Parisi et al., 2025](https://arxiv.org/abs/2205.12255))
+- [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) / Vergleich mit OpenAPI und REST
+- [Agent2Agent Protocol (A2A)](https://github.com/a2aproject/A2A)
+- Federated data spaces with Agentic AI ([Pulido et al., 2025](https://www.sciencedirect.com/science/article/pii/S2666691X25000508?via%3Dihub))
 
-#### Themenfeld 2.  
-Unser SmartOpenHamburg-Modell stellt einen sogenannten Digitalen Zwilling des Verkehrsgeschehens der Stadt Hamburg dar. Die Agenten repräsentieren Menschen, die sich in Hamburg aufhalten, dort leben, arbeiten, Urlaub machen und unterschiedliche Verkehrswege nutzen. Dieses Modell wird ständig erweitert, um an aktuelle Fragestellungen angepasst zu werden. Zusätzlich möchten wir eine sogenannte Künstliche Gesellschaft aus Agenten schaffen, die die vorgenannten Menschen in der Stadt möglichst realitätsnah repräsentieren. Auch hier ein paar mögliche Fragestellungen:
-Wie kann die Dynamik an Verkehrskreuzungen abgebildet werden?
-Welche Parameter und Aktionsräume müssen die menschlichen Agenten besitzen, damit sich authentische Bewegungsmuster nachbilden lassen?  
-Wie lassen sich die IoT-Sensoren für die Ampelanlagen in Echtzeit in die Simulationsdynamik aufnehmen?  
-Wie können unsere Agenten menschlicher, d.h. kognitiver, sozialer und intelligenter gemacht werden?
+## LLM-Agenten
+- [AgentTorch](https://github.com/AgentTorch/AgentTorch)  
+- [TinyTroupe](https://microsoft.github.io/TinyTroupe/)
+- Kopplung von MARS LLM-Agenten mit Goal-oriented Action Planning ([GOAP](https://arnauld-alex.com/using-goap-for-advanced-gaming-ai-techniques))
 
-#### Themenfeld 3. 
-Das MARS Framework hat inzwischen eine erhebliche Komplexität erreicht, die die Erstellung von Agenten-basierten Simulationsmodellen für Einsteiger erschwert. Auf der anderen Seite gibt es sehr viele Beispielmodelle, Tutorials, API Dokumtationen, etc. In diesem Themenfeld geht es darum, eine LLM/RAG-Architektur dergestallt zu entwickeln, die diese Dokumente und Daten semantisch verarbeiten kann. Auf diese Weise soll ein interaktives System geschaffen werden, mit dem die Entwicklung von MARS Modellen vereinfacht wird.
+## LLMs
+- Grundlagen von Large-Language Models – Eigenentwicklung eines LLMs  (vgl. [Sebastian Raschka](https://github.com/rasbt))
+- Was denkt mein LLM? Persönlichkeitstests für große Sprachmodelle- Erarbeitung einer Empfehlung für die Etablierung von lokalen LLMs in Firmen und Behörden
+- Das MARS Framework hat inzwischen eine erhebliche Komplexität erreicht, die die Erstellung von Agenten-basierten Simulationsmodellen für Einsteiger erschwert. Auf der anderen Seite gibt es sehr viele Beispielmodelle, Tutorials, API Dokumtationen, etc. In diesem Themenfeld geht es darum, eine LLM/RAG-Architektur dergestallt zu entwickeln, die diese Dokumente und Daten semantisch verarbeiten kann. Auf diese Weise soll ein interaktives System geschaffen werden, mit dem die Entwicklung von MARS Modellen vereinfacht wird.
 
-#### Themenfeld 4. 
-Kollegen von Stanford und Google haben eine Spiele-ähnliche Infrastruktur für interaktive menschliche Agenten entwickelt:  
-[Park, J. S., O’Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., & Bernstein, M. S. (2023). Generative Agents: Interactive Simulacra of Human Behavior. 1(1).](http://arxiv.org/abs/2304.03442)  
-Könnte man etwas Ähnliches mit MARS aufsetzen? 
+## Urban Digital Twins- Fußgänger-Dynamik in [SmartOpenHamburg](https://github.com/MARS-Group-HAW/model-soh)  
+- SmartOpenOttawa (Adaption von [SmartOpenHamburg](https://github.com/MARS-Group-HAW/model-soh))
+- Erweiterung [SmartOpenHamburg](https://github.com/MARS-Group-HAW/model-soh), z.B. um neue Modalitäten, Szenarien, Fragestellungen, IoT-Sensorik, etc.
+- Gemeinsam mit Kollegen aus den USA forschen wir daran, wie man sog. künstliche Gesellschaften oder synthetische Populationen effizient und validierbar generieren kann ([Clemen et al., 2024](https://doi.org/10.1177/00375497241295765)). Welche Rolle können LLMs hier spielen? Wie authentisch sind die generierten, individuellen Parameter für die menschlichen Agenten? Könnte man die LLMs mit demographischen Daten feintunen?
 
-#### Themenfeld 5.
-Gemeinsam mit Kollegen aus den USA forschen wir daran, wie man sog. künstliche Gesellschaften oder synthetische Populationen effizient und validierbar generieren kann:  
-[Clemen, T., Tolk, A., Clemen, U. A., Glake, D., & Günther, G. (2024). Creating artificial societies for policy decision support: a research agenda and call to action. SIMULATION.](https://doi.org/10.1177/00375497241295765)  
-Welche Rolle können LLMs hier spielen? Wie authentisch sind die generierten, individuellen Parameter für die menschlichen Agenten? Könnte man die LLMs mit demographischen Daten feintunen?
+## Geoinformatik- KI-gestützte Auswertung von Satellitenbildern – mögliche Anwendungsfelder: Indikatoren der UN SDGs, automatisches Erkennen von spatialen Veränderungen, etc.   
+- A ChatGPT-Like Web App for Remote-Sensing-Based Geospatial Analysis ([Chat2Geo](https://github.com/GeoRetina/chat2geo))
+- Geospatial reasoning ([GoogleResearch](https://sites.research.google/gr/geospatial-reasoning/))
+- Analyse und Visualisierung von Daten aus [Hamburg](https://geoportal-hamburg.de/), [Ottawa](https://maps.ottawa.ca/geoottawa/), [Norderstedt](https://geoservice.norderstedt.de/geoportal/) oder anderen Städten und Regionen
+- Agenten-basierte Simulationsmodelle können beim Management von Nationalparks und anderen Schutzgebieten helfen ([Clemen et al., 2021](https://doi.org/10.1016/j.ecoinf.2021.101266). Bisher wurden schon solche Modelle für den [Kruger NP, Südafrika](https://github.com/MARS-Group-HAW/model-knp/) und für den [Elk Island NP, Kanada](https://github.com/MARS-Group-HAW/model-einp) prototypisch entwickelt. Diese können entweder weiterentwickelt werden oder als Vorlage für weitere Wildgebiete genutzt werden.
 
-#### Themenfeld 6. (Bachelor)
-[General Transit Feed Specification (GTFS)](https://gtfs.org/) ist ein offener Standard für Fahrgastinformationen im öffentlichen Nahverkehr. Damit ist eine relativ komfortable Parametrisierung von Simulationsmodellen und die Integration von Echtzeitdaten möglich. Im Rahmen dieser Bachelorarbeit soll GTFS umfänglich in SmartOpenHamburg integriert werden. Außerdem soll getestet werden, ob auf diese Weise das Aufsetzen von Simulationsszenarien für andere Städte weltweit vereinfacht werden kann.
+## Künstliche Intelligenz (mehr generell)
+- Das Potenzial und die Herausforderungen der KI für kollektive Intelligenz ([Riedl et al., 2025](https://journals.sagepub.com/doi/10.1177/26339137241308821))
 
-#### Themenfeld 7 (Bachelor)
-Graph-Daten, z.B. aus OpenStreetMaps, stellen eine wichtige Grundlage für die SmartOpenHamburg-Szenarien dar. Leider ist die Qualität der Daten sehr unterschiedlich, was oft zu Problemen in den Modellen führt. Ein klassisches Problem ist, dass sich sog. Inseln bilden, weil die Zusammenhangskomponenten nicht vollständig sind. In dieser Bachelorarbeit geht es darum, dieses Problem systematisch zu evaluieren und Lösungsmöglichkeiten zu entwickeln. 
+## Game programming
+- Spieleprogrammierung mit MARS  
+- Teams von LLM-Agenten spielen Fußball
 
+## Multi-Agenten Systeme (MAS)
+- Multi-agent collaboration
+- Dynamic task decomposition 
 
-# Thesis offerings
+# Topics for Bachelor's and Master's theses, as well as semester projects
+
 The MARS Group is currently researching a whole range of topics that are also relevant for students who want to write a Bachelor's or Master's thesis with us. These include the following main topics:
 
 - Multi-agent systems
+	- Cooperation in multi-agent systems
+	- Multi-Agent (Deep) Reinforcement Learning (MA(D)RL)
+- Agentic AI
 - Agent-based modeling and simulation
-- LLM-based agents, generative agents and agent-centered AI
-- Cooperation in multi-agent systems
-- Multi-agent (deep) reinforcement learning (MA(D)RL) 
 - Digital twins
+- LLMs and prompt engineering
 - Environmental and geoinformatics
 
-Even if some of our research work is of a fundamental nature, the focus is usually on a specific field of application. The following list shows some of the areas in which we have already worked or are currently working:
+Even though some of our research work is of a fundamental nature, the focus is usually on a specific field of application. The following list shows some of the areas in which we have already worked or are currently working:
 
 - Transportation and smart cities
-- Logistics
+- logistics
 - Spread of infectious diseases
 - Global climate change
-- National parks and wildlife sanctuaries
+- National parks and wildlife reserves
 - Timetables for schools
 - Forest ecosystems
-- Citizen science 
+- Citizen science
 - Coordination of drone swarms and fire-fighting aircraft
 
 The following is an - incomplete - list of possible (follow-up) topics. If one or more topics are of interest to you, please contact me directly at [Prof. Dr. Thomas Clemen](mailto:thomas.clemen@haw-hamburg.de).
+Due to our close cooperation with the [Logistics Initiative Hamburg](https://www.hamburg-logistik.net/) and [Carleton University in Ottawa, Canada](https://carleton.ca/), students also have the opportunity to be co-supervised by selected colleagues from these institutions. Get in touch if this option might be of interest to you.
 
-#### Subject area 1.   
-We are concerned with the question of how software agents in large scenarios, i.e. with very many agents, can be realised in an intelligent and learning manner.
-What role can LLMs play here?
-How can such an architecture be designed and implemented efficiently?
-How can the extremely large amounts of result data generated by such a simulation be handled?
-What role does real-time data, e.g. from IoT sensor networks, play in such setups?
+## Agentic AI
+- Comparison and possible extension of different frameworks for Agentic AI	- AutoGen](https://github.com/microsoft/autogen)
+	- LangChain](https://github.com/langchain-ai/langchain)
+	- CrewAI](https://github.com/crewAIInc/crewAI)
+	- Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel)
+	- Dify](https://github.com/langgenius/dify)
+	- Llama Index](https://github.com/run-llama/llama_index)
+- Value Alignment in Agentic AI Systems ([Zeng et al., 2025](https://arxiv.org/abs/2506.09656))- Agentic document extraction ([LandingAI](https://landing.ai/agentic-document-extraction))
+- Function Calling in LLMs ([HuggingFace](https://huggingface.co/docs/hugs/en/guides/function-calling))
+- Tool Augmented Language Models ([Parisi et al., 2025](https://arxiv.org/abs/2205.12255))
+- [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) / Vergleich mit OpenAPI und REST
+- [Agent2Agent Protocol (A2A)](https://github.com/a2aproject/A2A)
+- Federated data spaces with Agentic AI ([Pulido et al., 2025](https://www.sciencedirect.com/science/article/pii/S2666691X25000508?via%3Dihub))
 
-#### Subject area 2.  
-Our SmartOpenHamburg model describes a so-called digital twin of the traffic situation in the city of Hamburg. The agents represent people who are in Hamburg, live there, work there, go on holiday there and use different transport routes. This model is constantly being expanded in order to be adapted to current issues. In addition, we would like to create a so-called artificial society of agents that represent the aforementioned people in the city as realistically as possible. Here too are a few possible questions:
-How can the dynamics at traffic junctions be modelled?
-What parameters and action spaces do the human agents need to have so that authentic movement patterns can be modelled?
-How can the IoT sensors for the traffic lights be incorporated into the simulation dynamics in real time?
-How can our agents be made more human, i.e. more cognitive, more social and more intelligent?
+## LLM-Agenten
+- [AgentTorch](https://github.com/AgentTorch/AgentTorch)  
+- [TinyTroupe](https://microsoft.github.io/TinyTroupe/)
+- Coupling of MARS LLM agents with Goal-oriented Action Planning ([GOAP](https://arnauld-alex.com/using-goap-for-advanced-gaming-ai-techniques))
 
-#### Subject area 3. 
-The MARS framework has now reached a level of complexity that makes it difficult for beginners to create agent-based simulation models. On the other hand, there are many example models, tutorials, API documentation, etc. The aim of this topic is to develop an LLM/RAG architecture that can process these documents and data semantically. In this way, an interactive system is to be created that simplifies the development of MARS models.
+## LLMs
+- Basics of Large-Language Models - self-development of an LLM (see [Sebastian Raschka](https://github.com/rasbt))
+- What does my LLM think? Personality tests for large language models- Development of a recommendation for the establishment of local LLMs in companies and authorities
+- The MARS framework has now reached a level of complexity that makes the creation of agent-based simulation models difficult for beginners. On the other hand, there are many example models, tutorials, API documentation, etc. available. The aim of this topic is to develop an LLM/RAG architecture that can process these documents and data semantically. In this way, an interactive system is to be created that simplifies the development of MARS models.
 
-#### Subject area 4.
-Colleagues at Stanford and Google have developed a game-like infrastructure for interactive human agents:
-[Park, J. S., O'Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., & Bernstein, M. S. (2023). Generative Agents: Interactive Simulacra of Human Behavior. 1(1).](http://arxiv.org/abs/2304.03442)
-Could something similar be set up with MARS? 
+## Urban Digital Twins- Pedestrian dynamics in [SmartOpenHamburg](https://github.com/MARS-Group-HAW/model-soh)  
+- SmartOpenOttawa (adaptation of [SmartOpenHamburg](https://github.com/MARS-Group-HAW/model-soh))
+- Extension of [SmartOpenHamburg](https://github.com/MARS-Group-HAW/model-soh), e.g. to include new modalities, scenarios, questions, IoT sensor technology, etc.
+- Together with colleagues from the USA, we are researching how so-called artificial societies or synthetic populations can be generated efficiently and validated ([Clemen et al., 2024](https://doi.org/10.1177/00375497241295765)). What role can LLMs play here? How authentic are the generated, individual parameters for the human agents? Could the LLMs be fine-tuned with demographic data?
 
-#### Subject area 5.
-Together with colleagues from the USA, we are researching how so-called artificial societies or synthetic populations can be generated efficiently and validated:  
-[Clemen, T., Tolk, A., Clemen, U. A., Glake, D., & Günther, G. (2024). Creating artificial societies for policy decision support: a research agenda and call to action. SIMULATION.](https://doi.org/10.1177/00375497241295765)  
-What role can LLMs play here? How authentic are the generated, individual parameters for human agents? Could the LLMs be fine-tuned with demographic data?
+## Geoinformatics- AI-supported evaluation of satellite images - possible fields of application: Indicators of the UN SDGs, automatic detection of spatial changes, etc.   
+- A ChatGPT-Like Web App for Remote-Sensing-Based Geospatial Analysis ([Chat2Geo](https://github.com/GeoRetina/chat2geo))
+- Geospatial reasoning ([GoogleResearch](https://sites.research.google/gr/geospatial-reasoning/))
+- Analysis and visualization of data from [Hamburg](https://geoportal-hamburg.de/), [Ottawa](https://maps.ottawa.ca/geoottawa/), [Norderstedt](https://geoservice.norderstedt.de/geoportal/) or other cities and regions
+- Agent-based simulation models can help with the management of national parks and other protected areas ([Clemen et al., 2021](https://doi.org/10.1016/j.ecoinf.2021.101266). So far, prototypes of such models have been developed for [Kruger NP, South Africa](https://github.com/MARS-Group-HAW/model-knp/) and for [Elk Island NP, Canada](https://github.com/MARS-Group-HAW/model-einp). These can either be further developed or used as a template for other wild areas.
 
-#### Subject area 6. (Bachelor)
-[General Transit Feed Specification (GTFS)](https://gtfs.org/) is an open standard for passenger information in public transportation. It allows a relatively comfortable parameterization of simulation models and the integration of real-time data. Within the scope of this bachelor thesis, GTFS is to be comprehensively integrated into SmartOpenHamburg. It will also be tested whether this can simplify the creation of simulation scenarios for other cities worldwide.
+## Artificial intelligence (more generally)
+- The potential and challenges of AI for collective intelligence ([Riedl et al., 2025](https://journals.sagepub.com/doi/10.1177/26339137241308821))
 
-#### Topic area 7. (Bachelor)
-Graphical data, e.g. from OpenStreetMaps, is an important basis for the SmartOpenHamburg scenarios. Unfortunately, the quality of the data varies greatly, which often leads to problems in the models. A classic problem are so-called islands, i.e. there are no connecting edges within the graphs. The aim of this bachelor thesis is to systematically evaluate this problem and develop possible solutions. 
+## Game programming
+- Game programming with MARS
+- Teams of LLM agents play soccer
+
+## Multi-agent systems (MAS)
+- Multi-agent collaboration
+- Dynamic task decomposition
+
 
