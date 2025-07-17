@@ -11,6 +11,8 @@ On this page, we list theses that were submitted by members and students of the 
 
 ## Master
 
+### 2025
+
 <StudentWork
   title="AI-driven validation of citizen science data: Anomaly Detection of Bird Sightings with Machine Learning Models and Statistical Approaches"
   author="Simon Birker"
@@ -20,6 +22,14 @@ On this page, we list theses that were submitted by members and students of the 
   pathPdf="/img/student-work/theses/birker_ms_thesis.pdf"
 />
 
+<StudentWork
+  title="An Explainability Analysis of BERT’s Interpretability with GNN-Generated Knowledge Graph Embeddings Delivered through Soft Prompts"
+  author="Ahmad Khalidi"
+  type="ma"
+  description="Large language models (LLMs) suffer from hallucinations and biases. Retrieval augmented generation (RAG) with knowledge graph embeddings (KGEs) can mitigate this. We train a BERT model for link prediction using both natural language data and KGEs from graph neural networks (GNNs), showing improved performance. Explainable AI methods reveal that BERT partially interprets KGEs, with node connectivity emerging as a key factor in its decision strategies."
+  semesterYear="ws2024"
+  pathPdf="/img/student-work/theses/khalidi_ms_thesis.pdf"
+/>
 
 <StudentWork
   title="Spatio-Temporal Shifts in Citizen Science Data: Detecting Disruptions in Bird Sightings with Change Point Analysis"
@@ -29,6 +39,8 @@ On this page, we list theses that were submitted by members and students of the 
   semesterYear="ws2024"
   pathPdf="/img/student-work/theses/siebold_ms_thesis.pdf"
 />
+
+### 2024 
 
 <StudentWork
   title="Evaluierung von spezialisierten und generischen Modellen zur Identifikation von städtischen Einzelbäumen mittelsTransfer Learning"
@@ -47,6 +59,8 @@ On this page, we list theses that were submitted by members and students of the 
   semesterYear="ss2024"
   pathPdf="/img/student-work/theses/tran_ms_thesis.pdf"
 />
+
+### 2023
 
 <StudentWork
   title="Der Data Hub: ein Geoinformationssystem für reproduzierbare Datenverarbeitung, informiert durch epidemiologische Bedarfe"
@@ -77,6 +91,8 @@ On this page, we list theses that were submitted by members and students of the 
   pathPdf: The path to the PDF file of the thesis (/img/student-work/theses/<filename>.pdf)
 -->
 
+### 2025
+
 <StudentWork
   title="Extension of a Data Hub for Epidemiological Data with a Data Coverage and Analysis Component"
   author="Michelle A. Valentina"
@@ -86,6 +102,7 @@ On this page, we list theses that were submitted by members and students of the 
   pathPdf="/img/student-work/theses/valentina_ba_thesis.pdf"
 />
 
+### 2024
 
 <StudentWork
   title="Tensorbasierte Agenten zur Ausbreitungssimulation von Infektionskrankheiten"
@@ -104,6 +121,8 @@ On this page, we list theses that were submitted by members and students of the 
   semesterYear="ss2024"
   pathPdf="/img/student-work/theses/neitsch_ba_thesis.pdf"
 />
+
+### 2023 
 
 <StudentWork
   title="Automatisierte Objekterkennung und -zählung von Vögeln in großen Schwärmen mit Hilfe von Maschinellem Lernen"
@@ -150,6 +169,8 @@ On this page, we list theses that were submitted by members and students of the 
   pathPdf="/img/student-work/theses/duong_ba_thesis.pdf"
 />
 
+### 2022
+
 <StudentWork
   title="Bestimmung einer Gruenen Welle bei Lichtsignalschaltungen für Alster-Fahrradfahrer durch agentenbasierte Simulation mithilfe des MARS-Frameworks"
   author="Kalvin Doege"
@@ -176,6 +197,8 @@ On this page, we list theses that were submitted by members and students of the 
   semesterYear="ws2021"
   pathPdf="/img/student-work/theses/ahmady-moghaddam_ba_thesis.pdf"
 />
+
+### 2014 
 
 <StudentWork
   title="Goal-Oriented Action Planning für die Simulationsplattform MARS"

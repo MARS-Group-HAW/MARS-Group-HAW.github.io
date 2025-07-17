@@ -18,6 +18,42 @@ import StudentWork from '@site/src/components/StudentWork';
 
 On this page, we show posters that were submitted by members and students of the MARS Group.
 
+##2025
+
+<div className="text--left">
+  <StudentWork
+    title="Flexible Simulation Platform for Ant Colonies"
+    author="Sebastian Wewer"
+    description="An agent-oriented framework for the simulation of ant colonies."
+    semesterYear="ss2025"
+    pathPdf='/img/student-work/posters/fischer_fw2_poster.pdf'
+    pathImage='/img/student-work/posters/fischer_fw2_poster.png'
+  />
+</div>
+
+<div className="text--left">
+  <StudentWork
+    title="Agentenbasierte Nachbildung des LKW-Verkehrs im deutschen Straßennetz"
+    author="Dennis Fischer"
+    description="An agent-based simulation model for truck logistics."
+    semesterYear="ss2025"
+    pathPdf='/img/student-work/posters/fischer_fw2_poster.pdf'
+    pathImage='/img/student-work/posters/fischer_fw2_poster.png'
+  />
+</div>
+
+<div className="text--left">
+  <StudentWork
+    title="Towards Scalable Multi-Agent Simulations: Predicting LLM-Agent Responses"
+    author="Ersan Baran"
+    description="Making human agents more authentic."
+    semesterYear="ss2025"
+    pathPdf='/img/student-work/posters/baran_fw2_poster.pdf'
+    pathImage='/img/student-work/posters/baran_fw2_poster.png'
+  />
+</div>
+
+
 ## 2024
 
 <div className="text--left">
