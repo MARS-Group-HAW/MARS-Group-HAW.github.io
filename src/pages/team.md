@@ -18,7 +18,7 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
         linkedIn="https://www.linkedin.com/in/thomas-clemen-8237b5/"
         researchGate="https://www.researchgate.net/profile/Thomas-Clemen"
         googleScholar="https://scholar.google.com/citations?user=LY1IGYUAAAAJ&hl=en"
-        img="/img/team/thomas-clemen.jpg"
+        img="/img/team/thomas_clemen.jpg"
         />
     <TeamProfileCard 
         name="Christian Lins"
@@ -29,42 +29,52 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
         webSite="https://lins.me/"
         img="/img/team/christian_lins.jpg"
         />
+    <TeamProfileCard 
+        name="Gabriel Wainer"
+        description="Professor at Carleton University, Ottawa, Canada; Modeling & Simulation; DEVS"
+        hawEmail="gwainer@sce.carleton.ca"
+        researchGate="https://www.researchgate.net/profile/Gabriel-Wainer"
+        googleScholar="https://scholar.google.com/citations?user=eydj1p0AAAAJ&hl=en"
+        webSite="https://www.sce.carleton.ca/faculty/wainer/doku.php"
+        linkedIn="https://www.linkedin.com/in/gabrielwainer/"
+        img="/img/team/gabriel_wainer.jpg"
+        />
 </div>
 
 <div class="row">
 <TeamProfileCard 
     name="Marina Tropmann-Frick"
-    description="Data Science: Analytics and Visualization"
+    description="Professor at HAW Hamburg; Data Science, analytics, and visualization"
     img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Karen Bradshaw"
-    description="GPU-based simulation, teaching socio-ecological modelling. Computer Science Department, Rhodes University, South Africa"
-    img="/img/team/avatar.png"
+    description="Professor at Rhodes University, South Africa; GPU-based simulation"
+    img="/img/team/karen_bradshaw.jpg"
     />
 
 <TeamProfileCard 
     name="Yanling Zhou"
-    description="IoT, Smart Cities, Hefei University, China"
+    description="Professor at Hefei University, China"
     img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Greg Kiker"
-    description="KNP model development and simulation platform comparison. Dept. of Agricultural and Biological Engineering, University of Florida"
+    description="Professor at the University of Florida, USA; KNP model development and simulation platform comparison."
     img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Michael Köhler-Bußmeier"
-    description="Theoretical Computer Science, Computational Organisation Theory"
+    description="Professor at HAW Hamburg; Theoretical computer science, computational organisation theory"
     img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Jan Sudeikat"
-    description="Cyber-physical Systems, Self-Organization in MAS"
+    description="Professor at HAW Hamburg; Cyber-physical systems, self-organization in MAS"
     img="/img/team/avatar.png"
     />
 </div>
@@ -75,9 +85,14 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 
 <div class="row">
 <TeamProfileCard 
-    name="Ulfia A. Lenfers"
-    description="Conceptual Modeling, Model Development, Requirements Engineering, Outreach"
-    img="/img/team/avatar.png"
+    	name="Ulfia A. Clemen"
+    	description="Senior Project Manager Research and Innovation, Logistics Initiative Hamburg; AI in logistics, mobility, sustainability"
+    	hawEmail="uc@hamburg-logistik.net"
+    	researchGate="https://www.researchgate.net/profile/Ulfia-Clemen"
+    	googleScholar="https://scholar.google.com/citations?user=Xqd_LI4AAAAJ&hl=de"
+    	webSite="https://www.hamburg-logistik.net/en/"
+	linkedIn="https://www.linkedin.com/in/uaclemen/"
+    	img="/img/team/ulfia_clemen.jpg"
     />
 
 <TeamProfileCard 
