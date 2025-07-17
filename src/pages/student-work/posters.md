@@ -18,7 +18,7 @@ import StudentWork from '@site/src/components/StudentWork';
 
 On this page, we show posters that were submitted by members and students of the MARS Group.
 
-##2025
+## 2025
 
 <div className="text--left">
   <StudentWork
