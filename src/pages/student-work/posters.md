@@ -53,6 +53,16 @@ On this page, we show posters that were submitted by members and students of the
   />
 </div>
 
+<div className="text--left">
+  <StudentWork
+    title="Agentic-AI for automated report generation from speech recognition"
+    author="Patrick Zilke"
+    description="Agentic AI speech to text/report generation."
+    semesterYear="ss2025"
+    pathPdf='/img/student-work/posters/zilke_fw2_poster.pdf'
+    pathImage='/img/student-work/posters/zilke_fw2_poster.png'
+  />
+</div>
 
 ## 2024
 
