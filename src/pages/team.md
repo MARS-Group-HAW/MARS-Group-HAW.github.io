@@ -13,7 +13,7 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 <div class="row">
     <TeamProfileCard 
         name="Thomas Clemen"
-        description="Project leadership, representation, Multi-Agent Systems, LLM-based Agents, Digital Twins"
+        description="Professor at HAW Hamburg; Head of The MARS Group; Multi-Agent Systems, Agentic AI, Digital Twins"
         hawEmail="thomas.clemen@haw-hamburg.de"
         linkedIn="https://www.linkedin.com/in/thomas-clemen-8237b5/"
         researchGate="https://www.researchgate.net/profile/Thomas-Clemen"
@@ -22,7 +22,7 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
         />
     <TeamProfileCard 
         name="Christian Lins"
-        description="Project Co-leadership, representation, Evolutionary Algorithms, Computational Intelligence, Motion Capture, Artificial Intelligence"
+        description="Professor at HAW Hamburg; Head of the MARS Motion Lab; Evolutionary Algorithms, Computational Intelligence, Motion Capture"
         hawEmail="christian.lins@haw-hamburg.de"
         researchGate="https://www.researchgate.net/profile/Christian-Lins-2"
         googleScholar="https://scholar.google.de/citations?user=BZsFbZkAAAAJ&hl=de"
@@ -43,15 +43,26 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 
 <div class="row">
 <TeamProfileCard 
-    name="Marina Tropmann-Frick"
-    description="Professor at HAW Hamburg; Data Science, analytics, and visualization"
-    img="/img/team/avatar.png"
+    name="Karen Bradshaw"
+    description="Professor at Rhodes University, South Africa; GPU-based Simulation"
+    img="/img/team/karen_bradshaw.jpg"
     />
 
 <TeamProfileCard 
-    name="Karen Bradshaw"
-    description="Professor at Rhodes University, South Africa; GPU-based simulation"
-    img="/img/team/karen_bradshaw.jpg"
+    name="Cristina Ruiz Martin"
+    description="Assistant Professor at Carleton University, Canada; Organizational Resilience, DEVS, Agent-based Modeling"
+    hawEmail="cristinaruizmartin@sce.carleton.ca"
+    researchGate="https://www.researchgate.net/profile/Cristina-Ruiz-Martin"
+    googleScholar="https://scholar.google.es/citations?user=wQ0TKWwAAAAJ&hl=es"
+    webSite="https://carleton.ca/sce/people/ruiz/"
+    linkedIn="https://www.linkedin.com/in/cruizm/"
+    img="/img/team/cristina_ruiz_martin.jpg"
+    />
+
+<TeamProfileCard 
+    name="Marina Tropmann-Frick"
+    description="Professor at HAW Hamburg; Data Science, Analytics, and Visualization"
+    img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
@@ -62,19 +73,19 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 
 <TeamProfileCard 
     name="Greg Kiker"
-    description="Professor at the University of Florida, USA; KNP model development and simulation platform comparison."
+    description="Professor at the University of Florida, USA; Modeling & Simulation"
     img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Michael Köhler-Bußmeier"
-    description="Professor at HAW Hamburg; Theoretical computer science, computational organisation theory"
+    description="Professor at HAW Hamburg; Theoretical Computer Science, Computational Organisation Theory"
     img="/img/team/avatar.png"
     />
 
 <TeamProfileCard 
     name="Jan Sudeikat"
-    description="Professor at HAW Hamburg; Cyber-physical systems, self-organization in MAS"
+    description="Professor at HAW Hamburg; Cyber-Physical Systems, Self-Organization in MAS"
     img="/img/team/avatar.png"
     />
 </div>
