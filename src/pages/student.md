@@ -49,6 +49,7 @@ Auf Grund unserer engen Zusammenarbeit mit der [Logistik-Initiative Hamburg](htt
 - [AgentTorch](https://github.com/AgentTorch/AgentTorch)  
 - [TinyTroupe](https://microsoft.github.io/TinyTroupe/)
 - Kopplung von MARS LLM-Agenten mit Goal-oriented Action Planning ([GOAP](https://arnauld-alex.com/using-goap-for-advanced-gaming-ai-techniques))
+- Selbst-replizierende, evolutionäre Agenten
 
 ## LLMs
 - Grundlagen von Large-Language Models – Eigenentwicklung eines LLMs  (vgl. [Sebastian Raschka](https://github.com/rasbt))
@@ -123,6 +124,7 @@ Due to our close cooperation with the [Logistics Initiative Hamburg](https://www
 - [AgentTorch](https://github.com/AgentTorch/AgentTorch)  
 - [TinyTroupe](https://microsoft.github.io/TinyTroupe/)
 - Coupling of MARS LLM agents with Goal-oriented Action Planning ([GOAP](https://arnauld-alex.com/using-goap-for-advanced-gaming-ai-techniques))
+- Self-replicating, evolutionary agents
 
 ## LLMs
 - Basics of Large-Language Models - self-development of an LLM (see [Sebastian Raschka](https://github.com/rasbt))
