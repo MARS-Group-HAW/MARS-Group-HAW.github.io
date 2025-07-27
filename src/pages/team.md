@@ -50,7 +50,7 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 
 <TeamProfileCard 
     name="Cristina Ruiz Martin"
-    description="Assistant Professor at Carleton University, Canada; Organizational Resilience, DEVS, Agent-based Modeling"
+    description="Associate Professor, Teaching Stream, at Carleton University, Canada; Organizational Resilience, DEVS, Agent-based Modeling"
     hawEmail="cristinaruizmartin@sce.carleton.ca"
     researchGate="https://www.researchgate.net/profile/Cristina-Ruiz-Martin"
     googleScholar="https://scholar.google.es/citations?user=wQ0TKWwAAAAJ&hl=es"
