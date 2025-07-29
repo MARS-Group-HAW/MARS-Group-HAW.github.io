@@ -77,6 +77,7 @@ Auf Grund unserer engen Zusammenarbeit mit der [Logistik-Initiative Hamburg](htt
 ## Multi-Agenten Systeme (MAS)
 - Multi-agent collaboration
 - Dynamic task decomposition 
+- Benchmarking cooperative multi-agent reinforcement learning ([StarCraft Multi-Agent Challenge](https://github.com/oxwhirl/smac))
 
 # Topics for Bachelor's and Master's theses, as well as semester projects
 
@@ -152,5 +153,7 @@ Due to our close cooperation with the [Logistics Initiative Hamburg](https://www
 ## Multi-agent systems (MAS)
 - Multi-agent collaboration
 - Dynamic task decomposition
+- Benchmarking cooperative multi-agent reinforcement learning ([StarCraft Multi-Agent Challenge](https://github.com/oxwhirl/smac))
+
 
 

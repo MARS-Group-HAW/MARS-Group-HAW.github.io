@@ -62,12 +62,12 @@ export default function HomepageFeatures() {
               <div className="col col--6">
                 <h2>About Us</h2>
                 <p>
-                  The MARS (Multi-Agent Research and Simulation) group is an academical research project at the Hamburg University of Applied Sciences in Germany at the Department of Computer Science.
+          The MARS (Multi-Agent Research and Simulation) group is an academical research project at the Hamburg University of Applied Sciences in Germany at the Department of Computer Science. Our research currently focuses mainly on the following topics:
                 </p>
                 <ul>
-                  <li>A distributed simulation framework for multi-agent models, developed in C#.</li>
-                  <li>Modelling workshops that teach domain experts the basics of Agent-Based modelling.</li>
-                  <li>A technical advanced systems for computer scientists to build upon during their studies.</li>
+                  <li>Agentic AI and LLM-based Agents,</li>
+                  <li>Digital Twins, and</li>
+                  <li>Multi-Agent Systems.</li>
                 </ul>
               </div>
               <div className="col col--4">
