@@ -7,7 +7,7 @@ sidebar_label: Installation
 
 The MARS framework is written in C#/.NET, so you need to install the [.NET-SDK](https://dotnet.microsoft.com/en-us/download) on your computer to develop MARS models.
 
-The easiest way is to install [JetBrains Rider](https://www.jetbrains.com/rider/) as an Integrated Development Environment (IDE). This will handle the installation of .NET for you and give an easy way to execute and debug your models. Though a license is required for using Rider, which is [free for students](https://www.jetbrains.com/community/education/#students).
+The easiest way is to install [JetBrains Rider](https://www.jetbrains.com/rider/) as an Integrated Development Environment (IDE). This will handle the installation of .NET for you and give an easy way to execute and debug your models. Rider is [free for non commercial use](https://blog.jetbrains.com/blog/2024/10/24/webstorm-and-rider-are-now-free-for-non-commercial-use/).
 
 
 :::info
