@@ -1,9 +1,6 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Green4Bikes
 
-[💾 Download of the model](https://github.com/MARS-Group-HAW/model-soh-green4bikes/releases)
+[💾 Source code of the scenario](https://github.com/MARS-Group-HAW/model-soh/tree/master/SOHGreen4BikesBox) (part of the [SmartOpenHamburg repository](https://github.com/MARS-Group-HAW/model-soh))
  
 Green4Bikes simulates the use and consumption of bicycle rental stations in the area around Harbuger Central Station. It will simulate individual inbound and outbound pedestrian traffic where pedestrians use available public bicycles on their way to their mobility destination.
 
@@ -13,47 +10,19 @@ The choice for a bicycle depends on the travel cost savings. If no bicycles are 
 
 ## Start the simulation
 
-To run this scenario follow the instructions of your operating system.
-
-
-<Tabs>
-<TabItem value="mac_linux" label="macOS & Linux" default>
-
-To start the box on Unix-based systems, execute the following command (the `config.json`-file in the same folder is used):
+The scenario is part of the [SmartOpenHamburg repository](https://github.com/MARS-Group-HAW/model-soh). Install the [.NET SDK](https://dotnet.microsoft.com/download) (the projects currently target .NET 10), clone the repository and start the box. The `config.json` file in the box folder is used by default:
 
 ```bash
-./SOHGreen4Bikes
+git clone https://github.com/MARS-Group-HAW/model-soh.git
+cd model-soh/SOHGreen4BikesBox
+dotnet run
 ```
 
-Optionally a different external simulation config can be used with the ``--sm`` parameter:
+Optionally, a different simulation config can be passed with the `--sm` parameter:
 
 ```bash
-./SOHGreen4Bikes --sm config.json
+dotnet run -- --sm config.json
 ```
-
-:::caution
-There may be problems with the verification of the box and additional files with the extension ``*.dylib`` and ``*.dll``. Please execute the following command to make them accessible in your terminal:
-```bash
-xattr -d com.apple.quarantine ./SOHFerryTransferBox
-```
-:::
-
-</TabItem>
-<TabItem value="win" label="Windows">
-
-For Windows users, start the box by calling the following command (the `config.json`-file in the same folder is used):
-
-```bash
-SOHGreen4Bikes.exe
-```
-
-Optionally a different external simulation config can be used with the `--sm` parameter:
-
-```bash
-SOHGreen4Bikes.exe --sm config.json
-```
-</TabItem>
-</Tabs>
 
 ---
 

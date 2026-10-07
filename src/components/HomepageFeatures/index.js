@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_firmware_re_fgdy.svg').default,
     description: (
       <>
-        The MARS Groups develops its <a href="/docs/tutorial/intro">own C#-framework</a> for Multi-Agent simulations, called LIFE.
+        The MARS Group develops its <a href="/docs/tutorial/intro">own C# framework</a> for multi-agent simulations, called MARS LIFE.
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_pair_programming_re_or4x.svg').default,
     description: (
       <>
-        The MARS Groups focuses on interdisciplinary teams. Through different and diverse mind sets best results come to live.
+        The MARS Group focuses on interdisciplinary teams. Different and diverse mindsets bring out the best results.
       </>
     ),
   },
@@ -62,12 +62,14 @@ export default function HomepageFeatures() {
               <div className="col col--6">
                 <h2>About Us</h2>
                 <p>
-          The MARS (Multi-Agent Research and Simulation) group is an academical research project at the Hamburg University of Applied Sciences in Germany at the Department of Computer Science. Our research currently focuses mainly on the following topics:
+          The MARS (Multi-Agent Research and Simulation) group is an academic research group in the Department of Computer Science at the Hamburg University of Applied Sciences (HAW Hamburg), Germany. Our research currently focuses mainly on the following topics:
                 </p>
                 <ul>
-                  <li>Agentic AI and LLM-based Agents,</li>
-                  <li>Digital Twins, and</li>
-                  <li>Multi-Agent Systems.</li>
+                  <li>Multi-agent systems and multi-agent reinforcement learning,</li>
+                  <li>Agentic AI and LLM-based agents,</li>
+                  <li>Agent-based modelling and simulation,</li>
+                  <li>Digital twins, and</li>
+                  <li>Environmental informatics and geoinformatics.</li>
                 </ul>
               </div>
               <div className="col col--4">

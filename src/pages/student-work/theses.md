@@ -14,10 +14,10 @@ On this page, we list theses that were submitted by members and students of the 
 ### 2026
 
 <StudentWork
-  title="Multi-Agent Deep Reinforcement Learning for Efficient Aerial WildfireFighting"
+  title="Multi-Agent Deep Reinforcement Learning for Efficient Aerial Wildfire Fighting"
   author="Leonard Bardtke"
   type="ma"
-  description="Aerial wildfire suppression requires coordinated, adaptive decision-making under rapidly evolving conditions. This thesis investigates the application of Multi-Agent Deep Reinforcement Learning (MARL) to an operationally grounded agent-based wildfire simulation. It focuses on the systematic integration and interpretability of learned strategies. A staged complexity framework is introduced to enable step-by-step integration and validation, and the Dual Decomposition Framework (DDF) is developedto modularize reward and observation components and analyze their individual contributions to the learned policy."
+  description="Aerial wildfire suppression requires coordinated, adaptive decision-making under rapidly evolving conditions. This thesis investigates the application of Multi-Agent Deep Reinforcement Learning (MARL) to an operationally grounded agent-based wildfire simulation. It focuses on the systematic integration and interpretability of learned strategies. A staged complexity framework is introduced to enable step-by-step integration and validation, and the Dual Decomposition Framework (DDF) is developed to modularize reward and observation components and analyze their individual contributions to the learned policy."
   semesterYear="ss2026"
   pathPdf="/img/student-work/theses/bardtke_ms_thesis.pdf"
 />
@@ -57,7 +57,7 @@ On this page, we list theses that were submitted by members and students of the 
   title="Spatio-Temporal Shifts in Citizen Science Data: Detecting Disruptions in Bird Sightings with Change Point Analysis"
   author="Marina Siebold"
   type="ma"
-  description="This thesis addresses this concern by implementing a CPD approach using the Bayesian Estimation of Abrupt Change, Seasonality, and Trend (BEAST) algorithm on a citizenscience bird dataset. Prior to BEAST analysis, a tailored preprocessing pipeline is developedto mitigate user bias."
+  description="This thesis addresses this concern by implementing a CPD approach using the Bayesian Estimation of Abrupt Change, Seasonality, and Trend (BEAST) algorithm on a citizen science bird dataset. Prior to BEAST analysis, a tailored preprocessing pipeline is developed to mitigate user bias."
   semesterYear="ws2024"
   pathPdf="/img/student-work/theses/siebold_ms_thesis.pdf"
 />
@@ -65,10 +65,10 @@ On this page, we list theses that were submitted by members and students of the 
 ### 2024 
 
 <StudentWork
-  title="Evaluierung von spezialisierten und generischen Modellen zur Identifikation von städtischen Einzelbäumen mittelsTransfer Learning"
+  title="Evaluierung von spezialisierten und generischen Modellen zur Identifikation von städtischen Einzelbäumen mittels Transfer Learning"
   author="Daniel Osterholz"
   type="ma"
-  description="This thesis investigates the performance of generic, easily accessible, models (Segment Anything Model (SAM)) and their adaptation to specific domains, such as tree canopy detection in urban forests. To evaluate the performance, a model specialized for thisdomain (DeepForest (DF)) is compared with a finely tuned generic model."
+  description="This thesis investigates the performance of generic, easily accessible, models (Segment Anything Model (SAM)) and their adaptation to specific domains, such as tree canopy detection in urban forests. To evaluate the performance, a model specialized for this domain (DeepForest (DF)) is compared with a finely tuned generic model."
   semesterYear="ws2024"
   pathPdf="/img/student-work/theses/osterholz_ms_thesis.pdf"
 />

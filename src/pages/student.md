@@ -1,3 +1,8 @@
+---
+title: Themen für Abschlussarbeiten / Thesis Topics
+description: Themen für Bachelor- und Masterarbeiten in der MARS Group / Topics for bachelor's and master's theses in the MARS Group
+---
+
 # MARS Group – Themen für Abschlussarbeiten / Thesis Topics
 
 **Stand / Last updated:** Oktober 2026

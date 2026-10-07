@@ -151,7 +151,7 @@ Geographically limited
 
 Global
 - [OpenSteetMap](https://openstreetmap.org) holds a map of the world with street networks and additional data.
-- [ESA Copernicus Open Access Hub](https://scihub.copernicus.eu/dhus/#/home) the Open Access Hub provides complete, free and open access to Sentinel-1, Sentinel-2, Sentinel-3 and Sentinel-5P user products.
+- [Copernicus Data Space Ecosystem](https://dataspace.copernicus.eu/) provides complete, free and open access to Sentinel data (successor of the Copernicus Open Access Hub, which was shut down in 2023).
 - [EO Browser](https://apps.sentinel-hub.com/eo-browser/) provides satellite data.
 - [Natural Earth](http://www.naturalearthdata.com/downloads/) provides cultural, physical and raster categories.
 - [IPUMS TERRA](https://terra.ipums.org/) integrates population and environmental data across disciplinary scientific domains.

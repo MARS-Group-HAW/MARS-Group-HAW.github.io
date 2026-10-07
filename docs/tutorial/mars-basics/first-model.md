@@ -61,4 +61,4 @@ Open the `.sln`-file with a double click into Rider. In the upper left you shoul
 
 After running the model additional folders will be created: 
 
-- `<model>bin/Debug/net6.0/`: contains compiled model, as well as **outputs like CSV**, etc.
+- `<model>bin/Debug/net10.0/`: contains compiled model, as well as **outputs like CSV**, etc.

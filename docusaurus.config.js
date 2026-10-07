@@ -6,8 +6,12 @@
 const {themes} = require('prism-react-renderer');
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
-const math = require('remark-math');
-const katex = require('rehype-katex');
+// remark-math and rehype-katex are ES modules; on newer Node.js versions require() returns
+// the module namespace, so fall back to its default export.
+const mathModule = require('remark-math');
+const katexModule = require('rehype-katex');
+const math = mathModule.default ?? mathModule;
+const katex = katexModule.default ?? katexModule;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -155,7 +159,7 @@ const config = {
               },
               {
                 label: 'API',
-                to: '/docfx/',
+                href: 'pathname:///docfx/index.html',
               },
             ],
           },

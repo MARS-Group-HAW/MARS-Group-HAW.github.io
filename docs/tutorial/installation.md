@@ -18,7 +18,7 @@ For a more playful introduction into modelling with MARS, have a look at the [MA
 
 ## NuGet Packages
 
-The MARS framework is organized in [NuGet packages](https://www.nuget.org/packages/Mars.Life.Simulations/). To install the framework in your application, use the public `nuget` feed from Microsoft and make your you app is compatible with `netstandard2.0`.
+The MARS framework is organized in [NuGet packages](https://www.nuget.org/packages/Mars.Life.Simulations/). To install the framework in your application, use the public NuGet feed and make sure your project targets a compatible .NET version (MARS LIFE 6.x requires .NET 10; check the [package page](https://www.nuget.org/packages/Mars.Life.Simulations/) for the current requirements).
 
 [![](https://img.shields.io/nuget/v/Mars.Life.Simulations?label=Mars.Life.Simulations)](https://www.nuget.org/packages/Mars.Life.Simulations/)
 
@@ -37,7 +37,7 @@ Or if you are using an IDE:
 
 Search for `Mars.Life.Simulations` and select Install.
 
-The `Mars.Life.Simulations` provides the base for all MARS models. For models in need of more complex movement and modality (Walking, Driving, …) have a look at our [SmartOpenHamburg](./soh/) Package as well. It provides more detailed features regarding movement of agents.
+The `Mars.Life.Simulations` package provides the base for all MARS models. For models in need of more complex movement and modalities (walking, driving, …) have a look at [SmartOpenHamburg](./soh/) as well. Its source code, including many ready-to-run scenarios, is maintained in the public [model-soh repository](https://github.com/MARS-Group-HAW/model-soh).
 
 
 ## `config.json` validation in Rider
@@ -58,7 +58,7 @@ Add a `File path pattern` for files that are named `config.json`. `Save`.
 
 ![rider_preferences_schema](rider_json_schema_preferences.png)
 
-That's it. Know you have full schema support for manipulation on your simulation configuration json-file.
+That's it. Now you have full schema support for manipulation on your simulation configuration json-file.
 
 
 ![rider_json_schema](rider_json_schema.png)
