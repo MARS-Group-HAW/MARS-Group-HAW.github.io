@@ -215,7 +215,6 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
     name="Helen Haase"
     description="Reinforcement Learning, Multi-Agenten-Systeme, Machine Learning, Food Waste, Citizen Science"
     img="/img/team/helen_haase.jpg"
-    hawEmail="sebastian.wewer@haw-hamburg.de"
     linkedIn="https://www.linkedin.com/in/helen-haase-897ba924b/"
     researchGate="https://www.researchgate.net/profile/Helen_Haase2"
     />
@@ -227,7 +226,7 @@ import TeamProfileCard from '@site/src/components/TeamProfileCard';
 
 ---
 
-## Alummni
+## Alumni
 
 <div class="row">
 <TeamProfileCard 

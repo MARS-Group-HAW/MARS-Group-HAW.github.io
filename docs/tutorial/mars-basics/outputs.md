@@ -5,15 +5,15 @@ sidebar_label: Outputs
 
 # Outputs
 
-After you run the model, by hitting the Build-Taks in JetBrains Raider (small green triangle in the upper left of the IDE), the simulation will run, and produce outputs.
+After you run the model, by hitting the build task in JetBrains Rider (small green triangle in the upper left of the IDE), the simulation will run, and produce outputs.
 
-The results will be below the newly created folder `bin/Debug/net6.0/`.
+The results will be below the newly created folder `bin/Debug/net10.0/` (the last folder name depends on the target framework of your project).
 
 ```bash {4} title="Folder strcuture of a MARS model"
 .
 ├── <model>
 │   ├── <model>.csproj
-│   ├── bin/Debug/net6.0/  # Outputs will be here!
+│   ├── bin/Debug/net10.0/  # Outputs will be here!
 │   ├── Model           
 │   ├── Program.cs      
 │   ├── Resources

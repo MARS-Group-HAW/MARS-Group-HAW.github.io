@@ -12,7 +12,7 @@ In this article, general concepts such as model and multi-agent system are descr
 
 ![](pedestrian_enlarged.png)
 
-A model is a simplified representation of some specific aspects of reality. The goal is creating a model is typically to define and understand a concrete information system that closely resembles its real-world counterpart. When working with and running a model (in case of MARS, in the form of simulations), the obtained output data can be used to inform decisions in the real world. 
+A model is a simplified representation of some specific aspects of reality. The goal of creating a model is typically to define and understand a concrete information system that closely resembles its real-world counterpart. When working with and running a model (in case of MARS, in the form of simulations), the obtained output data can be used to inform decisions in the real world. 
 
 Agent-based modelling derives from the field of artificial intelligence (AI). This simulation paradigm incorporates individuals, so-called agents, who interact with each other and their surroundings. The behavior is programmed on an individual level to follow a set of rules: The interactions between agents that occur as a result of individual behavior are studied to gain insights into collective behavior. Note that an agent is not restricted to be an individual but can also be a group, community, or other entity that acts and reacts to external conditions.
 
@@ -24,9 +24,9 @@ The way of creating results bottom-up from an individual's actions leading to co
 
 MARS is a software framework written in object-oriented C# that enables the development and simulation of ABMs.
 
-The **MARS runtime system** provides agent-based simulation and geographical query processing methods with a set of standard mathematical functions and data structures for [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/3.1).
+The **MARS runtime system** (MARS LIFE) provides agent-based simulation and geographical query processing methods with a set of standard mathematical functions and data structures for [.NET](https://dotnet.microsoft.com/download). The current major version, MARS LIFE 6, targets .NET 10.
 
-The framework provides simulation core to execute the simulation with variable step-size. It is compatible with multiple platforms including **Microsoft Windows**, **macOS**, **Xamarin**, **Unity3D**, **Windows Store applications**, **Linux** or **mobile**.
+The framework provides a simulation core to execute the simulation with variable step size. It runs on **Microsoft Windows**, **macOS** and **Linux**.
 
 The framework offers a unified API to develop and execute individual-based models and scenarios. 
 
@@ -38,6 +38,6 @@ See the following video, for what's possible with MARS:
 
 Also see some more [complex models regarding mobility in urban settings](./soh/scenarios/).
 
-For a more simple model have a look at our [Wold-Sheep-Model](https://github.com/MARS-Group-HAW/model-wolf-sheep) for an introduction into what's possible with ABM, to simulation a predator-prey dynamic.
+For a more simple model have a look at our [Wolf-Sheep model](https://github.com/MARS-Group-HAW/model-wolf-sheep) for an introduction into what's possible with ABM, to simulate predator-prey dynamics.
 
 Also have a look at further models at our [GitHub account](https://github.com/MARS-Group-HAW?q=model).

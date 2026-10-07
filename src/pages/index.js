@@ -30,8 +30,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={siteConfig.tagline}
+      description="The MARS Group at HAW Hamburg researches multi-agent systems, agentic AI, agent-based modelling and simulation, digital twins and geoinformatics, and develops the open-source MARS framework.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

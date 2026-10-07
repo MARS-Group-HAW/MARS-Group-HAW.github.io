@@ -1,9 +1,6 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # FerryTransfer
 
-[💾 Download of the model](https://github.com/MARS-Group-HAW/model-soh-ferrytransfer/releases)
+[💾 Source code of the scenario](https://github.com/MARS-Group-HAW/model-soh/tree/master/SOHFerryTransferBox) (part of the [SmartOpenHamburg repository](https://github.com/MARS-Group-HAW/model-soh))
 
 The _FerryTransfer_ scenario creates a crowd of moving dock workers moving from a specified source point towards a specified target such as a randomly selected container terminal. They move within walking distance and use available ferry services that stop at the docks at regular intervals. 
 The default setup in each box is shown in the following figure.
@@ -14,46 +11,19 @@ Ferries and dock workers move along the ferry lines and public sidewalks. Timing
 
 ## Start the Simulation
 
-To run this scenario follow the instructions of your operating system.
-
-<Tabs>
-<TabItem value="mac_linux" label="macOS & Linux" default>
-
-To start the box on Unix-based systems, execute the following command (the `config.json`-file in the same folder is used):
+The scenario is part of the [SmartOpenHamburg repository](https://github.com/MARS-Group-HAW/model-soh). Install the [.NET SDK](https://dotnet.microsoft.com/download) (the projects currently target .NET 10), clone the repository and start the box. The `config.json` file in the box folder is used by default:
 
 ```bash
-./SOHFerryTransferBox
+git clone https://github.com/MARS-Group-HAW/model-soh.git
+cd model-soh/SOHFerryTransferBox
+dotnet run
 ```
 
-Optionally a different external simulation config can be used with the ``--sm`` parameter:
+Optionally, a different simulation config can be passed with the `--sm` parameter:
 
 ```bash
-./SOHFerryTransferBox --sm config.json
+dotnet run -- --sm config.json
 ```
-
-:::caution
-There may be problems with the verification of the box and additional files with the extension ``*.dylib`` and ``*.dll``. Please execute the following command to make them accessible in your terminal:
-```bash
-xattr -d com.apple.quarantine ./SOHFerryTransferBox
-```
-:::
-
-</TabItem>
-<TabItem value="win" label="Windows">
-
-For Windows users, start the box by calling the following command (the `config.json`-file in the same folder is used):
-
-```bash
-SOHFerryTransferBox.exe
-```
-
-Optionally a different external simulation config can be used with the ``--sm`` parameter:
-
-```bash
-SOHFerryTransferBox.exe --sm config.json
-```
-</TabItem>
-</Tabs>
 
 ---
 

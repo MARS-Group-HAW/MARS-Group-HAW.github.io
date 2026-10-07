@@ -8,47 +8,41 @@ This **getting started** describes the steps to download the model, which necess
 
 ## Installation
 
-[![](https://img.shields.io/nuget/v/Mars.Life.SOH?label=Mars.Life.SOH)](https://www.nuget.org/packages/Mars.Life.SOH/)
+The SmartOpenHamburg (SOH) model and its scenarios are maintained as source code in the public GitHub repository [model-soh](https://github.com/MARS-Group-HAW/model-soh). The model is built on the [`Mars.Life.Simulations`](https://www.nuget.org/packages/Mars.Life.Simulations/) package, which is restored automatically when the solution is built.
 
-
-The SmartOpenHamburg features of MARS are provided in a separate NuGet Package: [`Mars.Life.SOH`](https://www.nuget.org/packages/Mars.Life.SOH/)
+:::note
+The separate NuGet package `Mars.Life.SOH` has not been updated since 2023. For current work, use the source code from the repository.
+:::
 
 ## Contents
 
-The repository contains projects and a number of libraries to simulate mobility behavior in cities.
-
-**SOHModelStarter**: a model that is geared towards determining optimal routes using several modes of travel (modalities). Per default, the model is set in the district of Altona, Hamburg to run for 24 simulation hours with one agent (type `Citizen`) who is able to travel by walking on foot, riding a bicycle, and driving a car. The agent has a predefined daily routine which includes activities like work, errands, and others.
+The repository contains the `SOHModel` library with the mobility functionality (agents, modalities, layers) and a number of scenario projects ("boxes") that use it, for example `SOHTravellingBox`, `SOHCitizenDailyPlanBox`, `SOHFerryTransferBox` or `SOHGreen4BikesBox`. See [Ready to use scenarios](./scenarios/) for an overview.
 
 ## Setup your Environment
 
-First clone the repo from our internal [Git](https://git.haw-hamburg.de) with your credentials:
+Clone the repository:
 
 ```bash
-git clone https://git.haw-hamburg.de/mars/model-smart-open-hamburg-po.git
+git clone https://github.com/MARS-Group-HAW/model-soh.git
 ```
 
-Download and install the SDK for NetCore 3.1 from the official [website](https://dotnet.microsoft.com/download/dotnet-core/3.1).
+Download and install the [.NET SDK](https://dotnet.microsoft.com/download). The projects currently target .NET 10.
 
+Navigate into the cloned directory and build the solution in the directory where the `SOH.sln` file is located. All required dependencies are restored automatically:
 
-Navigate into the cloned directory and make sure that all required dependencies are installed automatically by building the model in the directory where the `SOHModel.sln` file is located:
-
-```
+```bash
 dotnet build
 ```
 
-We have prepared a scenario in the project SOHModelStarter for the entry with 10000 agents that you can start immediately. To be able to analyze results afterwards, we recommend the use of a relational database for queries via SQL. Other formats are also possible. We have set a local SQlite as default for you. For other output settings, please refer to the [Online Documentation].
+The scenario `SOHTravellingBox` lets agents travel within the area of Hamburg Dammtor and can be started immediately:
 
-Navigate to the folder and start the model:
-
-```
-cd SOHModelStarter
+```bash
+cd SOHTravellingBox
 dotnet run
 ```
 
-The results of the model are stored after each simulated second for each agent involved. A new SQLite database with the file name *+mars.sqlite** was created in the folder **bin/Debug/netcoreapp3.1** where all data is stored.
-
-Use your preferred tool for query or visualization. We recommend the tool [Falcon SQL](https://github.com/plotly/falcon) with which you can analyze relational queries in different ways with diagrams.
+The simulation writes the agents' trips to the file `HumanTraveler_trips.geojson`. Open [kepler.gl](https://kepler.gl/demo) and import the file via drag & drop to explore the computed trajectories (see also [Visualizing agent trips with kepler.gl](../analysis/visualizing_agent_trips_kepler.md)).
 
 ## Development Environment
 
-For own development open the ``SOHModel.sln`` file with [Visual Studio](https://visualstudio.microsoft.com/de/vs/), [Jetbrains Rider](https://www.jetbrains.com/de-de/rider/) or another IDE supporting C# development.
+For own development open the ``SOH.sln`` file with [Visual Studio](https://visualstudio.microsoft.com/de/vs/), [Jetbrains Rider](https://www.jetbrains.com/de-de/rider/) or another IDE supporting C# development.

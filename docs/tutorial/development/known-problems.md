@@ -62,7 +62,7 @@ ___
 
 **Problem:** you are unsure where to place input files or where output files of a simulation are put by the runtime system.
 
-**Solution:** output files are stored in the root directory of the simulation: \<root-directory-of-your-model\>\bin\Debug\netcoreapp3.1. (Alternatively to "Debug", a "Release" directory might be created by the system).
+**Solution:** output files are stored in the root directory of the simulation: \<root-directory-of-your-model\>\bin\Debug\\\<target-framework\> (e.g., `net10.0`). (Alternatively to "Debug", a "Release" directory might be created by the system).
 
 **Note:** when working with a SmartOpenHamburg model, the following class can be used to examine and specify paths to certain directories that fulfil specific functions within the model.
 
